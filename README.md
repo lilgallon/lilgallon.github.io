@@ -22,6 +22,12 @@ description: The description of the project
 ---
 ```
 
+## Useful links
+
+- github help pages : https://help.github.com/categories/github-pages-basics/
+- Custom domain name : https://help.github.com/articles/using-a-custom-domain-with-github-pages/
+
+
 ## Demo
 View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
 
