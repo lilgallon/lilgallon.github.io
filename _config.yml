@@ -23,7 +23,7 @@ contact: disqus
 
 # If you use disqus you need disqus shortname
 # https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: N3RO
+disqus_shortname: n3ro
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -49,7 +49,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: University of Bordeaux,
-  - line:  \'IUT Informatique\'
+  - line: IUT Informatique
 
 # Credits content
 credits: 'Powered by <a href="https://github.com">Github</a>, and <a href="http://startbootstrap.com">Freelancer</a>.'
