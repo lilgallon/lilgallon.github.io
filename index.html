@@ -1,3 +1,210 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="static/fontawesome/css/fontawesome-all.min.css">
+
+    <!-- include javascript -->
+    <script type="text/javascript" src="vendor/scripts/csi.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- navigation -->
+    <div data-include="include/navigation.html"></div>
+
+    <!-- header -->
+    <div data-include="include/header.html"></div>
+
+    <!-- Page Content -->
+    <div id="content" class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4 dark-title">Projects</h1>
+          <hr class="star-primary">
+
+          <!-- Projects -->
+          <div id="portfolio">
+            <div class="row">
+
+              <!-- Project -->
+              <div class="col-sm-4 portfolio-item">
+                <a href="project_template.html" class="portfolio-link">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img src="img/cascade.png" class="img-responsive" alt="cascade_preview">
+                </a>
+                <p class="description">Cascade, an android game</p>
+              </div>
+
+              <!-- An other project
+              <div class="col-sm-4 portfolio-item">
+                <a href="TO DO" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img src="img/TO DO.png" class="img-responsive" alt="TO DO">
+                </a>
+                <p class="description">TO DO</p>
+              </div>
+              -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header dark-title">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <!-- TODO: Filter java script -->
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header dark-title">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <!-- TODO Category java script filter -->
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Java</a>
+                    </li>
+                    <li>
+                      <a href="#">C++</a>
+                    </li>
+                    <li>
+                      <a href="#">C#</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Game</a>
+                    </li>
+                    <li>
+                      <a href="#">Utility</a>
+                    </li>
+                    <li>
+                      <a href="#">Plugin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div id="about" class="card my-4 dark-title">
+            <h5 class="card-header">Lilian Gallon, aka N3RO</h5>
+            <div class="card-body justify">
+              I am a French developer, studying computer sciences at the University of Bordeaux, in France.
+              I am currently finishing my second year, and this website is dedicated to show my projects.
+              <br>
+              I have been developing games and softwares using C++, C#, and Java, which is my main programming language.
+              Concerning websites, I used javascript, php, and the JQuery library.
+            </div>
+          </div>
+
+            <div class="card my-4 dark-title">
+                <h5 class="card-header">The website</h5>
+                <div class="card-body justify">
+                    This website has been built using <a href="https://jquery.com/">JQuery</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+                    The main theme was built by <a href="https://startbootstrap.com/">Start bootstrap</a> and then modified by me. It is available on <a href="https://startbootstrap.com/template-overviews/blog-post/">this link</a>.
+                    <br>
+                    Current version : 1.0, last update 21/03/18.
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+                    <h1 class="mt-4 dark-title">Comments</h1>
+                    <hr class="star-primary">
+
+                    <!-- Disqus Stuff -->
+                    <div id="disqus_thread"></div>
+                    <script id="dsq-count-scr" src="//n3ro.disqus.com/count.js" async></script>
+                    <script>
+
+                        /**
+                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                        var disqus_config = function () {
+                            this.page.url = "https://n3roo.github.io/";  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = "home_page"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://n3ro.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', + new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div data-include="include/footer.html"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

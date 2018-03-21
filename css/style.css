@@ -1,0 +1,271 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.justify{
+  text-align: justify;
+}
+
+footer{
+  text-decoration: none;
+}
+
+/* NAV */
+
+.bg-dark-blue{
+  background-color: #2c3e50;
+}
+
+/* ANCHOR CORRECTION */
+#content, #contact{
+  padding-top: 25px;
+}
+
+/* TITLES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+h1{
+  text-align: center;
+}
+
+.dark-title{
+  color: #2c3e50;
+}
+
+
+/* HEADER */
+
+header {
+  text-align: center;
+  color: #fff;
+  background: #18bc9c;
+}
+
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+  display: block;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+@media(min-width:768px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+/* START STYLE */
+
+hr.star-light,
+hr.star-primary {
+  margin: 25px auto 30px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+  overflow: visible;
+}
+
+
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: "Font Awesome 5 Free", serif;
+  font-size: 2em;
+}
+
+hr.star-light {
+  border-color: #fff;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+hr.star-primary {
+  border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+  color: #2c3e50;
+  background-color: #fff;
+}
+
+/* PROJECTS PRESENTATION */
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(24,288,156,.9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+
+#portfolio img{
+  width :100%;
+}
+
+#portfolio * {
+  z-index: 2;
+}
+
+#portfolio .description{
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+}
+
+@media(min-width:1000px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+/* FOOTER */
+footer {
+  color: #fff;
+}
+
+footer h3 {
+  margin-bottom: 30px;
+}
+
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2c3e50;
+}
+
+footer .footer-col {
+  margin-bottom: 50px;
+}
+
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+/* BUTTONS */
+.btn-social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline: 0;
+}
+
+.btn-outline {
+  margin-top: 15px;
+  border: solid 2px #fff;
+  font-size: 20px;
+  color: #fff;
+  background: 0 0;
+  transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  border: solid 2px #fff;
+  color: #18bc9c;
+  background: #fff;
+}
