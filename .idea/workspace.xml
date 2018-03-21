@@ -2,70 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f7ba58-d91e-4499-b2aa-a10dcf352d7e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/footer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/header.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/navigation.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/project_template.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/scripts/disqus.js" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/LICENCE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/about.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/contact.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/contact_disqus.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/contact_static.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/css/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/js_disqus.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/modals.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/nav.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_includes/portfolio_grid.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_layouts/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-07-13-project-6.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-07-14-project-5.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-07-15-project-4.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-07-16-project-3.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-07-17-project-2.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-07-18-project-1.markdown" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/css/font-awesome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/feed.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/backup/cabin.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/cabin.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/cake.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/circus.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/game.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/safe.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/portfolio/submarine.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/profile_default.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/cbpAnimatedHeader.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/cbpAnimatedHeader.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/classie.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/contact_me.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/contact_me_static.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/freelancer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/jqBootstrapValidation.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-1.11.0.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.easing.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/screenshot.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,12 +27,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project_template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project_template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_template.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
               <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="32">
+                <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -141,6 +92,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cascade.html" />
         <option value="$PROJECT_DIR$/project_template.html" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -233,12 +185,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521560258126</updated>
       <workItem from="1521560259214" duration="5903000" />
-      <workItem from="1521643649515" duration="14348000" />
+      <workItem from="1521643649515" duration="14471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20251000" />
+    <option name="totallyTimeSpent" value="20374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -252,7 +204,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13695653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40869564" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -645,6 +597,17 @@
         <state relative-caret-position="458">
           <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="32">
+            <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
