@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Search engine optimization (SEO) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Lilian Gallon, N3RO">
+    <meta name="category" content="Development, Coding">
+    <meta name="copyright" content="Lilian Gallon, N3RO">
+    <meta name="language" content="en">
+    <meta name="description"
+          content="Play the Yahtzee on your web navigator ! This website lists all the projects of Lilian Gallon, also known as N3RO. Lilian Gallon is a French developer, studying at the university of Bordeaux. There are useful tools and funny game here, give a try ! ;)">
+    <meta name="distribution" content="global">
+    <meta name="identifier-url" content="https://n3roo.github.io/">
+    <meta name="keywords" content="development, coding, games, lilian, gallon, bordeaux">
+    <meta name="publisher" content="Lilian Gallon">
+
+    <title>Yahtzee - N3RO</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css?1" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../static/fontawesome/css/fontawesome-all.min.css">
+
+    <!-- include javascript -->
+    <script type="text/javascript" src="../vendor/scripts/csi.min.js"></script>
+
+    <!-- Yahtzee stuff -->
+    <link href="../games/styles/yahtzee-style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../games/scripts/yahtzee-script.js?2"></script>
+
+</head>
+
+<body>
+
+<!-- navigation -->
+<div data-include="../include/navigation.html"></div>
+
+<!-- header -->
+<div data-include="../include/header.html"></div>
+
+<!-- Page Content -->
+<div id="content" class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Title -->
+            <h1 class="mt-4 dark-title">Yahtzee</h1>
+            <hr class="star-primary">
+
+            <!-- Author -->
+            <p class="lead">by <a href="#">N3RO</a></p>
+            <hr>
+            <!-- Date/Time -->
+            <p>Last update the 22/03/18.</p>
+
+            <hr>
+
+            <!-- Game -->
+            <div id="panel">
+                <table>
+                    <tr>
+                        <td>Informations :</td>
+                    </tr>
+                    <tr class="last-line">
+                        <td id="information">blabla</td>
+                    </tr>
+                    <tr>
+                        <td>Dés lancés :</td>
+                    </tr>
+                    <tr>
+                        <td id="rolled-dices"></td>
+                    </tr>
+                    <tr>
+                        <td>Dés gardés :</td>
+                    </tr>
+                    <tr>
+                        <td id="selected-dices"></td>
+                    </tr>
+                </table>
+                <br>
+                <input id="roll" type="submit" value="Lancer les dés">
+            </div>
+
+            <div id="result">
+                <table>
+                    <tr>
+                        <td>Combinaison</td>
+                        <td>Score</td>
+                    </tr>
+                    <tr>
+                        <td>Dé 1</td>
+                        <td id="dice-result-1"></td>
+                    </tr>
+                    <tr>
+                        <td>Dé 2</td>
+                        <td id="dice-result-2"></td>
+                    </tr>
+                    <tr>
+                        <td>Dé 3</td>
+                        <td id="dice-result-3"></td>
+                    </tr>
+                    <tr>
+                        <td>Dé 4</td>
+                        <td id="dice-result-4"></td>
+                    </tr>
+                    <tr>
+                        <td>Dé 5</td>
+                        <td id="dice-result-5"></td>
+                    </tr>
+                    <tr class="last-line">
+                        <td>Dé 6</td>
+                        <td id="dice-result-6"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><b>Somme</b></td>
+                        <td id="sum-result"></td>
+                    </tr>
+                    <tr class="last-line">
+                        <td><b>Bonus</b></td>
+                        <td id="bonus-result"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Brelan</td>
+                        <td id="tree-of-a-kind-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Carré</td>
+                        <td id="four-of-a-kind-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Full</td>
+                        <td id="full-house-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Petite suite</td>
+                        <td id="small-straight-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Grande suite</td>
+                        <td id="large-straight-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Chance</td>
+                        <td id="chance-result"></td>
+                    </tr>
+                    <tr class="last-line">
+                        <td>Yahtzee</td>
+                        <td id="yahtzee-result"></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Total score</b></td>
+                        <td id="total-result"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="history">
+                <h3>History</h3>
+                <hr>
+                <ul></ul>
+            </div>
+
+
+            <!-- /Game -->
+
+            <hr>
+
+            <!-- Post Content -->
+            <h3>Context</h3>
+            <hr>
+            <p>I made this project for last year at "IUT Informatique" of Bordeaux to learn JQuery. It was mean to be a small project.</p>
+
+            <br>
+
+            <h3>Rules</h3>
+            <hr>
+            <p>
+                It used the basic Yahtzee rules. The only rule that is not here, is the joker given by doing a yahtzee. Otherwise, it respects all the rules.</p>
+            <br>
+
+            <h3>Last version changelog</h3>
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Released</li>
+            </ul>
+        </div>
+
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Download Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Play</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <a href="https://github.com/N3ROO/Yahtzee" target="_blank"><button class="btn btn-secondary" type="button"><i class="fab fa-github"></i> View source</button></a>
+                        </span>
+                        <span class="input-group-btn">
+                            <a href="../games/yahtzee"><button class="btn btn-secondary" type="button"><i class="fas fa-eye"></i> Play</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Details</h5>
+                <div class="card-body">
+                    Licence : <a href="https://github.com/N3ROO/Yahtzee/blob/master/LICENCE.md" target="_blank">GNU GPL 3</a>
+                    <br>
+                    Last stable version : 1.0 , release date : 20/03/18
+                    <br>
+                    Compatibility : <i class="fab fa-safari"></i> <i class="fab fa-internet-explorer"></i> <i class="fab fa-firefox"></i> <i class="fab fa-chrome"></i>
+                    <br>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            No release planned atm
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Features</h5>
+                <div class="card-body">
+                    <ul>
+                        <li>Yahtzee game</li>
+                        <li>History</li>
+                        <li>French information messages</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mt-4 dark-title">Comments</h1>
+                <hr class="star-primary">
+
+                <!-- Disqus Stuff -->
+                <div id="disqus_thread"></div>
+                <script id="dsq-count-scr" src="//n3ro.disqus.com/count.js" async></script>
+                <script>
+
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                    var disqus_config = function () {
+                        this.page.url = "https://n3roo.github.io/";  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = "home_page"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://n3ro.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', + new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div data-include="../include/footer.html"></div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
