@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6f7ba58-d91e-4499-b2aa-a10dcf352d7e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/include/footer.html" afterPath="$PROJECT_DIR$/include/footer.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/work/project_template.html" afterPath="$PROJECT_DIR$/work/project_template.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,22 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="320" column="70" lean-forward="false" selection-start-line="320" selection-start-column="66" selection-end-line="320" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="project_template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work/project_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="206" column="12" lean-forward="true" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="267">
+              <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,11 +122,6 @@
               <item name="n3roo.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="n3roo.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="n3roo.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -188,12 +173,12 @@
       <updated>1521560258126</updated>
       <workItem from="1521560259214" duration="5903000" />
       <workItem from="1521643649515" duration="14650000" />
-      <workItem from="1521716846566" duration="9042000" />
+      <workItem from="1521716846566" duration="10566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29595000" />
+    <option name="totallyTimeSpent" value="31119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -378,9 +363,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/project_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="206" column="12" lean-forward="true" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="267">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
