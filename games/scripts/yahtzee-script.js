@@ -61,9 +61,6 @@ $(document).ready(function() {
     showDices();
 });
 
-
-
-
 /**
  * Used to init the game
  */
