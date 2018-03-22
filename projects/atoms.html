@@ -29,9 +29,6 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="../static/fontawesome/css/fontawesome-all.min.css">
 
-    <!-- include javascript -->
-    <script type="text/javascript" src="../vendor/scripts/csi.min.js"></script>
-
     <!-- atoms script -->
     <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
     <script src="../games/scripts/atoms-script.js?3" type="application/javascript"></script>
@@ -41,11 +38,10 @@
 <body>
 
 <!-- navigation -->
-<!--<div data-include="../include/navigation.html"></div>-->
 <?php include("../include/navigation.html"); ?>
 
 <!-- header -->
-<div data-include="../include/header.html"></div>
+<?php include("../include/header.html"); ?>
 
 <!-- Page Content -->
 <div id="content" class="container">
@@ -250,7 +246,7 @@
 </div>
 
 <!-- footer -->
-<div data-include="../include/footer.html"></div>
+<?php include("../include/footer.html"); ?>
 
 <!-- Bootstrap core JavaScript -->
 <script src="../vendor/jquery/jquery.min.js"></script>
