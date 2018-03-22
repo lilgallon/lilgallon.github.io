@@ -20,30 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="174" column="59" lean-forward="false" selection-start-line="174" selection-start-column="59" selection-end-line="174" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cascade.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cascade.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="64" column="74" lean-forward="false" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yahtzee.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/yahtzee.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="222" column="125" lean-forward="false" selection-start-line="222" selection-start-column="20" selection-end-line="222" selection-end-column="125" />
+            <state relative-caret-position="422">
+              <caret line="278" column="88" lean-forward="false" selection-start-line="278" selection-start-column="88" selection-end-line="278" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -245,12 +223,12 @@
       <updated>1521560258126</updated>
       <workItem from="1521560259214" duration="5903000" />
       <workItem from="1521643649515" duration="14650000" />
-      <workItem from="1521716846566" duration="26307000" />
+      <workItem from="1521716846566" duration="26952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46860000" />
+    <option name="totallyTimeSpent" value="47505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -478,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="174" column="59" lean-forward="false" selection-start-line="174" selection-start-column="59" selection-end-line="174" selection-end-column="59" />
+        <state relative-caret-position="422">
+          <caret line="278" column="88" lean-forward="false" selection-start-line="278" selection-start-column="88" selection-end-line="278" selection-end-column="88" />
           <folding />
         </state>
       </provider>
