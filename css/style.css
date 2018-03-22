@@ -49,6 +49,12 @@ h1{
 }
 
 
+/* WIDGETS */
+
+.input-group span{
+  margin: 5px;
+}
+
 /* HEADER */
 
 header {
