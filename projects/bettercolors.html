@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Search engine optimization (SEO) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Lilian Gallon, N3RO">
+    <meta name="category" content="Development, Coding">
+    <meta name="copyright" content="Lilian Gallon, N3RO">
+    <meta name="language" content="en">
+    <meta name="description"
+          content="Bettercolors is a minecraft mod that helps you to aim and click. It has an advanced aim assistance, and a silent click assistance. This website lists all the projects of Lilian Gallon, also known as N3RO. Lilian Gallon is a French developer, studying at the university of Bordeaux. There are useful tools and funny game here, give a try ! ;)">
+    <meta name="distribution" content="global">
+    <meta name="identifier-url" content="https://n3roo.github.io/">
+    <meta name="keywords" content="development, coding, games, lilian, gallon, bordeaux">
+    <meta name="publisher" content="Lilian Gallon">
+
+    <title>N3RO - Bettercolors</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css?1" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../static/fontawesome/css/fontawesome-all.min.css">
+
+    <!-- include javascript -->
+    <script type="text/javascript" src="../vendor/scripts/csi.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- navigation -->
+<div data-include="../include/navigation.html"></div>
+
+<!-- header -->
+<div data-include="../include/header.html"></div>
+
+<!-- Page Content -->
+<div id="content" class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Title -->
+            <h1 class="mt-4 dark-title">Bettercolors</h1>
+            <hr class="star-primary">
+
+            <!-- Author -->
+            <p class="lead">by <a href="#">N3RO</a></p>
+            <hr>
+            <!-- Date/Time -->
+            <p>Last update at 12:00 PM, the 22/03/2018</p>
+
+            <hr>
+
+            <!-- Preview Image -->
+            <img class="img-fluid rounded" src="../img/bettercolors-preview.PNG" alt="">
+
+            <hr>
+
+            <!-- Post Content -->
+            <h3>Context</h3>
+            <hr>
+            <p>
+                I made this project by my own to learn how to bypass basic anti-cheats. This experience could help me building a powerful anti-cheat later.
+                I started it on the 03/09/2017 and finished the first version on the 04/09/17.
+            </p>
+            <p>
+                This mod bypasses minecraft forge limitations & server-sided anticheats to provide powerful modules to help disabled people to play minecraft.
+                Moreover it has a clean external GUI with a console logger.
+            </p>
+            <p>
+                Why bettercolors ? At the beginning I wanted to make a mod that improves the game colors for resource packs,
+                but I preferred to make something more exciting,  which is this mod. I needed to bypass forge limitations and server-sided anti cheats to
+                make this mod 100% safe. So I decided to make an aim & click assistance for disabled people, and the name did not change.
+            </p>
+
+            <br>
+
+            <h3>Installation</h3>
+            <hr>
+            <p class="lead">Step 1:</p>
+            <p>Download the .jar mod file from the download button</p>
+            <p class="lead">Step 2:</p>
+            <p>Download the last <a href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.8.9.html" target="_blank">minecraft forge</a> version for minecraft 1.8.9</p>
+            <p class="lead">Step 3:</p>
+            <p>Install minecraft forge. If you are having troubles, follow a tutorial on <a href="https://www.youtube.com/results?search_query=install+minecraft+forge" target="_blank"></a>youtube</p>
+            <p class="lead">Step 4:</p>
+            <p>Put bettercolors.jar (the .jar mod you downloaded) in your minecraft repertory, under the "mods" directory. Follow a tutorial on youtube if you can't find this directory.</p>
+            <p class="lead">Step 5:</p>
+            <p>To use it, click on your <b>right-shift</b> key of your keyboard. It will open the setup menu.</p>
+
+            <br>
+
+            <h3>How to use it</h3>
+            <hr>
+            <p class="lead">Settings help</p>
+            <ul>
+                <li>The Aim force is defined by AimStepX and AimStepY,</li>
+                <li>The Activation time is the time in seconds while aim assistance and click assistance will work,</li>
+                <li>CPS Increment is the assistance in click per seconds that will be applied,</li>
+                <li>CPS Chance is the chance in % of click assistance (sometimes it will not hit if %<100),</li>
+                <li>Aim radius X is the radius in degrees in which the aim assistance will work (same for aim radius Y).</li>
+                <li>Team filter verifies if the attacked entity is in the player team, and activates the hacks if not</li>
+                <li>Click to activate / time to activate are used to know when to activate the hacks. If you click more than "clickToActivate" within "timeToActivate", the hacks will be turned on</li>
+                <li>AimStopDef: aim assist turns off when you use right click (defense with sword)</li>
+                <li>V5.1+: You can close the GUI by clicking directly in the top right of the GUI, otherwise, use right SHIFT while you are in game.</li>
+            </ul>
+            <p>The recommended values are the default ones.</p>
+            <p class="lead">Commands</p>
+            <ul>
+                <li>[INSERT] : Refresh configuration</li>
+                <li>[HOME] : Toggle aim assistance</li>
+                <li>[PAGE_UP] : Toggle click assistance</li>
+                <li>[END] : Show panel if closed</li>
+                <li>[RIGHT_SHIFT] : Toggle the settings GUI</li>
+            </ul>
+            <p class="lead">Error codes</p>
+            <p>In the error codes, 1 means okay and 0 means error. The error code contains few numbers : [abcdefghijklmnopqrs] which represent :</p>
+            <ul>
+                <li>a: The file "launcher_log(1)" is not in the .minecraft directory</li>
+                <li>b: Could not create "launcher_log(1)" file</li>
+                <li>c: Incorrect syntax (should be: "parameter:value")</li>
+                <li>d to s: send me your error code in the comment section, but it happens when the settings file has been changed manually.</li>
+            </ul>
+            <p>
+                These errors happens if you modify directly the settings file which is located in <b>.minecraft/launcher_log(1).txt</b>. I advice you to not change anything.
+                It was useful before because the GUI did not have every parameters, but not anymore.
+            </p>
+            <p>
+                Quick fix for the errors : delete the file called "launcher_log(1).txt" in your .minecraft directory.
+            </p>
+
+            <br>
+
+            <h3 id="licence">Licence & important note</h3>
+            <hr>
+            <p>
+                You can make a video or share the mod, but no matter what you will do, you <b>must</b> put my website to download the mod, no other download links are tolerated.
+                This one is 100% secure, and <b>please remember that this mod has been made to help disabled people to play minecraft.</b>
+                <span class="error text-danger">I'm not responsible of what you will do with this mod.</span> Moreover, before going on any server, please check that the use of this
+                mod is allowed.
+            </p>
+
+            <br>
+
+            <h3>Last version changelog : V.5.1</h3>
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Added HWID verification for the public release.</li>
+                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Added right SHIFT key to toggle the GUI which is closed by default.</li>
+            </ul>
+        </div>
+
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Download Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Download</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <a href="../downloads/bettercolors-5.1.jar" target="_blank" download><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
+                        </span>
+                        <span class="error text-danger">I'm not responsible of what you will do with this mod. Please read the licence before downloading.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Details</h5>
+                <div class="card-body">
+                    Licence : Please read the <a href="bettercolors.html#licence">licence section</a>.
+                    <br>
+                    Last stable version : 5.1 , release date : 23/11/2017
+                    <br>
+                    Compatibility : <i class="fas fa-gamepad"></i> Minecraft 1.8.9
+                    <br>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            No release planned atm
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Features</h5>
+                <div class="card-body">
+                    <ul>
+                        <li>Smooth aim assistance</li>
+                        <li>Advanced click assistance</li>
+                        <li>Teammate detection</li>
+                        <li>User-friendly external GUI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Version history -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">History</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <span>
+                            There aren't any other available versions.
+                            Only the 5.1 version has a system to shutdown the mod if it is not used as it intended. (see <a href="bettercolors.html#licence">licence</a>).
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mt-4 dark-title">Comments</h1>
+                <hr class="star-primary">
+
+                <!-- Disqus Stuff -->
+                <div id="disqus_thread"></div>
+                <script id="dsq-count-scr" src="//n3ro.disqus.com/count.js" async></script>
+                <script>
+
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                    var disqus_config = function () {
+                        this.page.url = "https://n3roo.github.io/";  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = "home_page"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://n3ro.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', + new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div data-include="../include/footer.html"></div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
