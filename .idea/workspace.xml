@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f7ba58-d91e-4499-b2aa-a10dcf352d7e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/include/navigation.html" afterPath="$PROJECT_DIR$/include/navigation.html" />
-      <change beforePath="$PROJECT_DIR$/work/cascade-preview.psd" afterPath="$PROJECT_DIR$/work/cascade-preview.psd" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/navigation.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
@@ -48,6 +47,16 @@
               <folding>
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,6 +128,7 @@
         <option value="$PROJECT_DIR$/projects/cascade.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/include/navigation.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -254,12 +264,12 @@
       <workItem from="1521560259214" duration="5903000" />
       <workItem from="1521643649515" duration="14650000" />
       <workItem from="1521716846566" duration="27183000" />
-      <workItem from="1521895107973" duration="19000" />
+      <workItem from="1521895107973" duration="58000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47755000" />
+    <option name="totallyTimeSpent" value="47794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -295,7 +305,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.travis.yml" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -467,6 +476,14 @@
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
