@@ -3,7 +3,7 @@
 
 <head>
 
-    <!-- Search engine optimization (SEO) -->
+    <!-- Search engine optimization (SEO) TODO -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Lilian Gallon, N3RO">
@@ -11,13 +11,13 @@
     <meta name="copyright" content="Lilian Gallon, N3RO">
     <meta name="language" content="en">
     <meta name="description"
-          content="Game of life is a small simulator. This website lists all the projects of Lilian Gallon, also known as N3RO. Lilian Gallon is a French developer, studying at the university of Bordeaux. There are useful tools and funny game here, give a try ! ;)">
+          content="Shutdown planner is a windows tool that plans shutdown for you. This website lists all the projects of Lilian Gallon, also known as N3RO. Lilian Gallon is a French developer, studying at the university of Bordeaux. There are useful tools and funny game here, give a try ! ;)">
     <meta name="distribution" content="global">
     <meta name="identifier-url" content="https://n3roo.github.io/">
     <meta name="keywords" content="development, coding, games, lilian, gallon, bordeaux">
     <meta name="publisher" content="Lilian Gallon">
 
-    <title>Game of life - N3RO</title>
+    <title>Shutdown planner - N3RO</title>
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
 
     <!-- Bootstrap core CSS -->
@@ -50,69 +50,51 @@
         <div class="col-lg-8">
 
             <!-- Title -->
-            <h1 class="mt-4 dark-title">Game of life</h1>
+            <h1 class="mt-4 dark-title">Shutdown planner</h1>
             <hr class="star-primary">
 
             <!-- Author -->
-            <p class="lead">by <a href="https://github.com/N3ROO/">N3RO</a></p>
+            <p class="lead">by <a href="https://github.com/N3ROO">N3RO</a></p>
             <hr>
             <!-- Date/Time -->
-            <p>Last update the 29/03/18.</p>
+            <p>Last update the 29/03/17.</p>
 
             <hr>
 
             <!-- Preview Image -->
-            <img class="img-fluid rounded" src="../img/game-of-life-preview.PNG" alt="">
+            <img class="img-fluid rounded" src="../img/shutdown-planner-preview.PNG" alt="">
 
             <hr>
 
             <!-- Post Content -->
             <h3>Context</h3>
             <hr>
-            <p>I made this project to learn python. I started it on the 12/12/17 and did the last update on the 20/12/17.</p>
+            <p>I made this project to get a windows tool that plans the shutdown of the computer since I was downloading things during the night. I started it on the 08/04/17 and did the last update on the 03/08/17.</p>
 
             <br>
             <h3>Installation</h3>
             <hr>
-            <p class="lead">Step 1 :</p>
-            <p>Get <a href="https://www.jetbrains.com/pycharm/">pycharm</a></p>
-            <p class="lead">Step 2 :</p>
-            <p>Download the zip containing the sources, or do a git clone to get the files</p>
-            <p class="lead">Step 3 :</p>
-            <p>Open pycharm : file > open > select the directory where the sources are located</p>
-            <p class="lead">Step 4 :</p>
-            <p>Now you can run it !</p>
+            <p class="lead">Step 1:</p>
+            <p>Download the executable.</p>
+            <p class="lead">Step 2:</p>
+            <p>Execute it on windows.</p>
 
             <br>
-            <h3>How to use it</h3>
+            <h3>How to use it / rules</h3>
             <hr>
-            <p class="lead">Rules :</p>
-            <ul>
-                <li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li>
-                <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
-                <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
-                <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
-            </ul>
-            <p class="lead">Commands :</p>
-            <ul>
-                <li>Left click + move the mouse : to move the view</li>
-                <li>Right click : to remove or add a cell</li>
-                <li>Mouse wheel : to zoom int and out</li>
-                <li>Space bar: Simulates a day</li>
-            </ul>
-
+            <p>You can restart it, and force the restart / shutdown at the desired time. You can cancel it at any time by clicking cancel.</p>
 
             <br>
-            <h3>Last version changelog (v1)</h3>
+            <h3>Last version changelog</h3>
             <hr>
             <ul class="list-group">
-                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Huge optimization: for the rule #4, instead of looking at every dead entity, we look at only the dead entity that could get alive. So we look at the neighbours of the alive entities.</li>
-                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Interaction: it is now possible to delete the last added entity, and to add the last deleted entity</li>
-                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Interaction: the system now detects automatically if the user wants to delete or to add entities</li>
-                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Simplified methods by removing column and line and putting cell instead</li>
-                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Cell class by defining operators</li>
-                <li class="list-group-item list-group-item-warning"><i class="fas fa-wrench"></i> It is now possible to add / kill an entity in the first column and in the first line</li>
-                <li class="list-group-item list-group-item-warning"><i class="fas fa-wrench"></i> Fixed a duplication bug in the alive entities that could slow the calculations when having a lot of entities alive</li>
+                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Shutdown message</li>
+                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Help window</li>
+                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Status</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Code optimization</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> In real time update</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Resize blocked</li>
+                <li class="list-group-item list-group-item-warning"><i class="fas fa-wrench"></i> Resize blocked</li>
             </ul>
         </div>
 
@@ -126,7 +108,10 @@
                 <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <a href="https://github.com/N3ROO/GameOfLife" target="_blank"><button class="btn btn-secondary" type="button"><i class="fab fa-github"></i> View source</button></a>
+                            <a href="https://github.com/N3ROO/ShutdownPlanner/releases/tag/4.0" target="_blank" download><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
+                        </span>
+                        <span class="input-group-btn">
+                            <a href="https://github.com/N3ROO/ShutdownPlanner" target="_blank"><button class="btn btn-secondary" type="button"><i class="fab fa-github"></i> View source</button></a>
                         </span>
                     </div>
                 </div>
@@ -136,12 +121,13 @@
             <div class="card my-4">
                 <h5 class="card-header dark-title">Details</h5>
                 <div class="card-body">
-                    Licence : <a href="https://github.com/N3ROO/GameOfLife/blob/master/CHANGELOG.md">GNU GPL V3</a>
+                    Licence : <a href="https://github.com/N3ROO/ShutdownPlanner/blob/master/LICENSE">GNU GPL V3</a>
                     <br>
-                    Last stable version : 1.0 , release date : 20/12/17
+                    Last stable version : 4.0 , release date : 03/08/17
                     <br>
                     Compatibility : <i class="fab fa-windows"></i> 7, 8.1, 10
-                    <!--<br>
+                    <!--
+                    <br>
                     <br>
                     <div class="progress">
 
@@ -154,6 +140,7 @@
                             V.2 : 40% Complete
                         </div>
                     </div>
+
                     -->
                 </div>
             </div>
@@ -163,31 +150,25 @@
                 <h5 class="card-header dark-title">Features</h5>
                 <div class="card-body">
                     <ul>
-                        <li>Add cells as you like</li>
-                        <li>Move</li>
-                        <li>Zoom</li>
+                        <li>Plan shutdown at the desired time</li>
+                        <li>Plan restart at the desired tile</li>
+                        <li>Force shutdown / restart</li>
+                        <li>Customize the planning message</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Version history
+            <!-- Version history -->
             <div class="card my-4">
                 <h5 class="card-header dark-title">History</h5>
                 <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            Version 1 : <a href="#" target="_blank"><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
-                        </span>
-                        <span class="input-group-btn">
-                            Version 2 : <a href="#" target="_blank"><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
-                        </span>
-                        <span class="input-group-btn">
-                            Version 3 : <a href="#" target="_blank"><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
+                            Version 3 : <a href="https://github.com/N3ROO/ShutdownPlanner/releases/tag/3.0" target="_blank"><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
                         </span>
                     </div>
                 </div>
             </div>
-            -->
 
         </div>
 
