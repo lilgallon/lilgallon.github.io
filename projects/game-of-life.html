@@ -62,40 +62,57 @@
             <hr>
 
             <!-- Preview Image -->
-            <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+            <img class="img-fluid rounded" src="../img/game-of-life-preview.PNG" alt="">
 
             <hr>
 
             <!-- Post Content -->
-            <!-- TODO: context -->
             <h3>Context</h3>
             <hr>
-            <p>I made this project to ... in ... . I started it on the ... and finished on the ... .</p>
+            <p>I made this project to learn python. I started it on the 12/12/17 and finished on the 20/12/17.</p>
 
             <br>
-            <!-- TODO : installation -->
             <h3>Installation</h3>
             <hr>
-            <p class="lead">Step 1:</p>
-            <p>Blabla</p>
-            <p class="lead">Step 2:</p>
-            <p>Blabla</p>
+            <p class="lead">Step 1 :</p>
+            <p>Get <a href="https://www.jetbrains.com/pycharm/">pycharm</a></p>
+            <p class="lead">Step 2 :</p>
+            <p>Download the zip containing the sources, or do a git clone to get the files</p>
+            <p class="lead">Step 3 :</p>
+            <p>Open pycharm : file > open > select the directory where the sources are located</p>
+            <p class="lead">Step 4 :</p>
+            <p>Now you can run it !</p>
 
             <br>
-            <!-- TODO: how to use it -->
-            <h3>How to use it / rules</h3>
+            <h3>How to use it</h3>
             <hr>
-            <p>Blabla</p>
+            <p class="lead">Rules :</p>
+            <ul>
+                <li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li>
+                <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+                <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+                <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+            </ul>
+            <p class="lead">Commands :</p>
+            <ul>
+                <li>Left click + move the mouse : to move the view</li>
+                <li>Right click : to remove or add a cell</li>
+                <li>Mouse wheel : to zoom int and out</li>
+                <li>Space bar: Simulates a day</li>
+            </ul>
+
 
             <br>
-            <!-- TODO: changelog -->
-            <h3>Last version changelog</h3>
+            <h3>Last version changelog (v1)</h3>
             <hr>
             <ul class="list-group">
-                <li class="list-group-item list-group-item-success"><i class="fas fa-plus"></i> Added functionality</li>
-                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Improved functionality</li>
-                <li class="list-group-item list-group-item-warning"><i class="fas fa-wrench"></i> Fixed functionality</li>
-                <li class="list-group-item list-group-item-danger"><i class="fas fa-minus"></i> Removed functionality</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Huge optimization: for the rule #4, instead of looking at every dead entity, we look at only the dead entity that could get alive. So we look at the neighbours of the alive entities.</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Interaction: it is now possible to delete the last added entity, and to add the last deleted entity</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Interaction: the system now detects automatically if the user wants to delete or to add entities</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Simplified methods by removing column and line and putting cell instead</li>
+                <li class="list-group-item list-group-item-info"><i class="fas fa-arrow-up"></i> Cell class by defining operators</li>
+                <li class="list-group-item list-group-item-warning"><i class="fas fa-wrench"></i> It is now possible to add / kill an entity in the first column and in the first line</li>
+                <li class="list-group-item list-group-item-warning"><i class="fas fa-wrench"></i> Fixed a duplication bug in the alive entities that could slow the calculations when having a lot of entities alive</li>
             </ul>
         </div>
 
@@ -103,98 +120,57 @@
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
 
-            <!-- Download Widget TODO -->
+            <!-- Download Widget -->
             <div class="card my-4">
                 <h5 class="card-header dark-title">Download</h5>
                 <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
-                            <a href="#" target="_blank" download><button class="btn btn-secondary" type="button"><i class="fas fa-download"></i> Download</button></a>
-                        </span>
-                        <span class="input-group-btn">
-                            <a href="#" target="_blank"><button class="btn btn-secondary" type="button"><i class="fab fa-github"></i> View source</button></a>
-                        </span>
-                        <span class="input-group-btn">
-                            <a href="#"><button class="btn btn-secondary" type="button"><i class="fas fa-eye"></i> Demo</button></a>
+                            <a href="https://github.com/N3ROO/GameOfLife" target="_blank"><button class="btn btn-secondary" type="button"><i class="fab fa-github"></i> View source</button></a>
                         </span>
                     </div>
                 </div>
             </div>
 
-            <!-- Libs Widget TODO
-            <div class="card my-4">
-              <h5 class="card-header dark-title">Libs used</h5>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <a href="#">Web Design</a>
-                      </li>
-                      <li>
-                        <a href="#">HTML</a>
-                      </li>
-                      <li>
-                        <a href="#">Freebies</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <a href="#">JavaScript</a>
-                      </li>
-                      <li>
-                        <a href="#">CSS</a>
-                      </li>
-                      <li>
-                        <a href="#">Tutorials</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-
-            <!-- Side Widget TODO -->
+            <!-- Side Widget -->
             <div class="card my-4">
                 <h5 class="card-header dark-title">Details</h5>
                 <div class="card-body">
-                    Licence : <a href="">my licence</a>
+                    Licence : <a href="https://github.com/N3ROO/GameOfLife/blob/master/CHANGELOG.md">GNU GPL V3</a>
                     <br>
-                    Last stable version : .. , release date : ../../..
+                    Last stable version : 1.0 , release date : 20/12/17
                     <br>
-                    Compatibility : <i class="fab fa-android"></i> 26 +, <i class="fab fa-windows"></i> 7, 8.1, 10, <i class="fab fa-linux"></i> ubuntu
-                    <br>
+                    Compatibility : <i class="fab fa-windows"></i> 7, 8.1, 10
+                    <!--<br>
                     <br>
                     <div class="progress">
-                        <!--
+
                         progress-bar progress-bar-success
                         progress-bar progress-bar-info
                         progress-bar progress-bar-warning
                         progress-bar progress-bar-danger
-                        -->
+
                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
                             V.2 : 40% Complete
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
 
-            <!-- Side Widget TODO -->
+            <!-- Side Widget -->
             <div class="card my-4">
                 <h5 class="card-header dark-title">Features</h5>
                 <div class="card-body">
                     <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
+                        <li>Add cells as you like</li>
+                        <li>Move</li>
+                        <li>Zoom</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Version history TODO -->
+            <!-- Version history
             <div class="card my-4">
                 <h5 class="card-header dark-title">History</h5>
                 <div class="card-body">
@@ -211,6 +187,7 @@
                     </div>
                 </div>
             </div>
+            -->
 
         </div>
 
