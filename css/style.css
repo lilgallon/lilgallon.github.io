@@ -1,5 +1,6 @@
 body {
   padding-top: 54px;
+  overflow-x: hidden;
 }
 
 @media (min-width: 992px) {
@@ -61,6 +62,12 @@ header {
   text-align: center;
   color: #fff;
   background: #18bc9c;
+}
+
+canvas{
+  position: absolute;
+  left: -40px;
+  top: 40px;
 }
 
 header .container {

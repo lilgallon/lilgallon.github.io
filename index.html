@@ -32,6 +32,11 @@
     <!-- include javascript -->
     <script type="text/javascript" src="vendor/scripts/csi.min.js"></script>
 
+    <!-- Animated graph -->
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/particle.js"></script>
+    <script type="text/javascript" src="scripts/graph.js"></script>
+
 </head>
 
 <body>
@@ -66,6 +71,7 @@
 
 <!-- header -->
 <header id="header">
+    <canvas id="canvas"></canvas>
     <div class="container">
         <div class="row">
             <div class = "col-lg-12">
@@ -241,18 +247,6 @@
                         </a>
                         <p class="description">Desynchronization based animation</p>
                     </div>
-
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#soon" class="portfolio-link">
-                            <div class="caption caption_light_blue">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="http://via.placeholder.com/223x161/c9c9c9/2c3e50?text=Progress: 10%" class="img-responsive" alt="sharedtodolist_preview">
-                        </a>
-                        <p class="description">Score based learning</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -345,7 +339,7 @@
                     modified by me. It is available on <a
                         href="https://startbootstrap.com/template-overviews/blog-post/" target="_blank">this link</a>.
                     <br>
-                    Current version : 1.1, last update 15/04/18.
+                    Current version : 1.2, last update 19/04/18.
                 </div>
             </div>
 
@@ -394,8 +388,58 @@
     </div>
 </div>
 
-<!-- footer -->
-<div data-include="include/footer.html"></div>
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>
+                        University of Bordeaux, <br>
+                        IUT Informatique <br>
+                        Currently working for :</a> <br>
+                        <br>
+                        <a href="https://www.engie-ineo.fr/en/" target="_blank">
+                            <img style="width:150px;" src="img/engieineo.png" alt="engieineo">
+                        </a>
+                    </p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+
+                        <li class="list-inline-item">
+                            <a href="https://stackoverflow.com/users/8811838/n3ro" target="_blank" class="btn-social btn-outline"><i class="fab fa-stack-overflow"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="https://github.com/N3ROO/" target="_blank" class="btn-social btn-outline"><i class="fab fa-github"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="http://steamcommunity.com/id/nero98/" target="_blank" class="btn-social btn-outline"><i class="fab fa-steam"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Credits</h3>
+                    <p>Powered by <a href="https://github.com/" target="_blank">Github</a>, and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright © N3RO, Lilian Gallon 2018
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
