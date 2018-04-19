@@ -67,7 +67,7 @@ header {
 canvas{
   position: absolute;
   left: -40px;
-  top: 0;
+  top: -30px;
 }
 
 header .container {
