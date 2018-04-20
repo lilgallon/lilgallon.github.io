@@ -45,8 +45,10 @@ function execute(){
         // For each dot, we will update its position
         for(var dot_index in dots){
             // Change the dots color according to the multiplier
-            dots[dot_index].color='hsl(' + (dot_index%5)*60 + ',100%,a%)'.replace('a',Number(100 - 14*multiplier) > 50 ? Number(100 - 14*multiplier) : 50)
-
+            // dots[dot_index].color='hsl(' + (dot_index%5)*60 + ',100%,a%)'.replace('a',Number(100 - 14*multiplier) > 50 ? Number(100 - 14*multiplier) : 50)
+            // For the moment we don't change the color
+            dot.color = 'hsl(' + (i%10)*30 +',100%,100%)';
+            
             // Update the dot position
             dots[dot_index].update()
 
