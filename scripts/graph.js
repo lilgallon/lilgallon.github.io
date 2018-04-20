@@ -10,12 +10,22 @@ var STROKE_WIDTH = 3;
 var multiplier = 0;
 
 function execute(){
-    // Retrieve the canvas container and its parameters
-    var canvas=document.getElementById("canvas"),
-            context=canvas.getContext("2d"),
-            width=canvas.width=window.innerWidth,
-            height=canvas.height=window.innerHeight,
-            dots=[];
+    // Set the size to the canvas the same as the header
+    // We prevent smoothing by putting the same dimensions for the
+    // canvas and the canvas container
+    var header_height_str = $("#header").css("height");
+    var header_width_str = $("#header").css("width");
+    $("#canvas").css("height", header_height_str);
+    $("#canvas").css("width", header_width_str);
+    var header_height = header_height_str.replace("px", "");
+    var header_width = header_width_str.replace("px", "");
+    var canvas=document.getElementById("canvas");
+    canvas.height = header_height;
+    canvas.width = header_width;
+    var context = canvas.getContext("2d");
+    var width = canvas.width;
+    var height = canvas.height;
+    var dots = [];
 
     // Init the dots list
     for(var i = 0; i < width/20 ; i++){
@@ -45,21 +55,20 @@ function execute(){
         // For each dot, we will update its position
         for(var dot_index in dots){
             // Change the dots color according to the multiplier
-            // dots[dot_index].color='hsl(' + (dot_index%5)*60 + ',100%,a%)'.replace('a',Number(100 - 14*multiplier) > 50 ? Number(100 - 14*multiplier) : 50)
-            // For the moment we don't change the color
-            dot.color = 'hsl(' + (i%10)*30 +',100%,100%)';
+            dots[dot_index].color='hsl(' + (dot_index%5)*60 + ',100%,a%)'.replace('a',Number(100 - 14*multiplier) > 50 ? Number(100 - 14*multiplier) : 50)
             
             // Update the dot position
             dots[dot_index].update()
-
+            
+            var radius = calculate_size(dots[dot_index])/2 + 1
             // Change the direction of the dots if they hit the borders
-            if(dots[dot_index].x > width || dots[dot_index].x < 0){
+            if(dots[dot_index].x + radius > width || dots[dot_index].x - radius < 0){
                 dots[dot_index].vx *= -1
-                dots[dot_index].x = dots[dot_index].x > width ? width : 0
+                dots[dot_index].x = dots[dot_index].x + radius > width ? width - radius : radius
             }
-            if(dots[dot_index].y > height || dots[dot_index].y < 0){
+            if(dots[dot_index].y + radius > height || dots[dot_index].y - radius < 0){
                 dots[dot_index].vy *= - 1
-                dots[dot_index].y = dots[dot_index].y > height ? height : 0
+                dots[dot_index].y = dots[dot_index].y + radius > height ? height - radius : radius
             }
 
             // Prepare ze anus
@@ -68,7 +77,7 @@ function execute(){
             // Creates the circle that represents a dot with its color
             context.fillStyle = dots[dot_index].color
             context.arc(dots[dot_index].x, dots[dot_index].y,
-                        dots[dot_index].size + 4*multiplier < 20 ? dots[dot_index].size + 4 *multiplier : 20,
+                        calculate_size(dots[dot_index]),
                         0,
                         Math.PI*2, false);
             
@@ -101,10 +110,27 @@ function execute(){
         requestAnimationFrame(update)
     }
 
+    function calculate_size(dot){
+        return dot.size + 4*multiplier < 20 ? dot.size + 4 *multiplier : 20;
+    }
+
     // On a resize, we need to update everything otherwise some dots could be outside
     window.onresize=function(){
-        width = canvas.width=window.innerWidth
-        height = canvas.height=window.innerHeight
+        var header_height_str = $("#header").css("height");
+        var header_width_str = $("#header").css("width");
+
+        $("#canvas").css("height", header_height_str);
+        $("#canvas").css("width", header_width_str);
+
+        var header_height = header_height_str.replace("px", "");
+        var header_width = header_width_str.replace("px", "");
+
+        var canvas=document.getElementById("canvas");
+        canvas.height = header_height;
+        canvas.width = header_width;
+
+        width = canvas.width;
+        height = canvas.height;
         dots = []
         for(var i = 0; i < width/20; i++){
             var dot = particle.create(Math.random()*(width - width/20) + width/20,
