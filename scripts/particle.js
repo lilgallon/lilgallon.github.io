@@ -60,7 +60,7 @@ var particle={
 		this.vy = Math.sin(heading)*speed;
 	},
 	accelerate:function(ax,ay){
-		// ACCELERATIONN
+		// ACCELERATION
 		this.vx += ax;
 		this.vy += ay;
 	},
