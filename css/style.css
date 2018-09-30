@@ -17,6 +17,10 @@ footer{
   text-decoration: none;
 }
 
+.justify-children p,li{
+  text-align: justify;
+}
+
 /* NAV */
 
 .bg-dark-blue{
