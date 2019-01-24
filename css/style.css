@@ -205,6 +205,10 @@ hr.star-primary:after {
   background: rgba(56,93,215,.9);
 }
 
+.caption_aqua{
+  background: rgba(83, 166, 243, 0.9);
+}
+
 .caption_pink{
   background: rgba(203,67,232,.9);
 }
