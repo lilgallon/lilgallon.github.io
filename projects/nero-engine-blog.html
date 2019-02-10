@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Search engine optimization (SEO) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Lilian Gallon, N3RO">
+    <meta name="category" content="Development, Coding">
+    <meta name="copyright" content="Lilian Gallon, N3RO">
+    <meta name="language" content="en">
+    <meta name="description"
+          content="This website lists all the projects of Lilian Gallon, also known as N3RO. Lilian Gallon is a French developer, studying at the university of Bordeaux. There are useful tools and funny game here, give a try ! ;)">
+    <meta name="distribution" content="global">
+    <meta name="identifier-url" content="https://n3roo.github.io/">
+    <meta name="keywords" content="development, coding, games, lilian, gallon, bordeaux">
+    <meta name="publisher" content="Lilian Gallon">
+
+    <title>Nero Engine Blog</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../static/fontawesome/css/fontawesome-all.min.css">
+
+    <!-- include javascript -->
+    <script type="text/javascript" src="../vendor/scripts/csi.min.js"></script>
+
+    <!-- Animated graph -->
+    <script type="text/javascript" src="../scripts/particles-min.js"></script>
+
+</head>
+
+<body>
+
+<!-- navigation -->
+<div data-include="../include/navigation.html"></div>
+
+<!-- header -->
+<header id="header">
+    <canvas id="particles-canvas"></canvas>
+    <div class="container">
+        <div class="row">
+            <div class = "col-lg-12">
+                <img src="../img/profile.png">
+                <div class="intro-text">
+                    <span class="name">N3RO</span>
+                    <hr class="star-light">
+                    <span class="skills">Game & software developer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div id="content" class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Article template
+            <h3>Article title</h3>
+            uthor
+            <p class="lead">by <a href="https://github.com/N3ROO">N3ROO</a>, date</p>
+            <hr>
+            Content
+            <p>Article content...</p>
+            An image
+            <img class="img-fluid rounded" src="https://placehold.it/900x300" alt="">
+            -->
+
+            <!-- Title -->
+            <h3>My most ambitious project yet</h3>
+            <!-- Author -->
+            <p class="lead">by <a href="https://github.com/N3ROO">N3ROO</a>, 10/02/19</p>
+            <hr>
+            <!-- Content -->
+            <p>This is my most ambitious project yet. I plan to implement everything that I have learned in Computer Science these last years.
+                I hope that the first version will be released this summer. To demonstrate the abilities of the engine I also plan to release a
+                2D game shooter and a physics scene.</p>
+            <p><b>Acknowledgments:</b>
+            <ul>
+                <li>University of Bordeaux,</li>
+                <li>Videos of <a href="https://www.youtube.com/channel/UCW-0slcL8cidzwxwndpP9WQ">Sam Parker</a>,</li>
+                <li>Videos of <a href="https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA">Javidx9 - One Lone Coder</a>.</li>
+            </ul>
+            </p>
+            <p>A new article is coming on how the polygon collision is working.</p>
+
+        </div>
+
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Article list -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">History</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <ul>
+                            <li>10/02/19: First article</li>
+                            <li>10/02/19: Blog creation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header dark-title">Details</h5>
+                <div class="card-body">
+                    <i class="fas fa-file"></i> Licence : <a href="https://github.com/N3ROO/nero-engine/blob/master/LICENSE">GPL 3.0</a>
+                    <br>
+                    <i class="fab fa-github"></i> Source : <a href="https://github.com/N3ROO/nero-engine">View source</a>
+                    <br>
+                    <i class="fa fa-tasks"></i> Todo list : <a href="https://github.com/N3ROO/nero-engine/projects">View todo list</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mt-4 dark-title">Comments</h1>
+                <hr class="star-primary">
+
+                <!-- Disqus Stuff -->
+                <div id="disqus_thread"></div>
+                <script id="dsq-count-scr" src="//n3ro.disqus.com/count.js" async></script>
+                <script>
+
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                    var disqus_config = function () {
+                        this.page.url = "https://n3roo.github.io/";  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = "home_page"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://n3ro.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', + new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div data-include="../include/footer.html"></div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    (function() {
+        window.addEventListener('load', function() {
+            let settings = {
+                // Handler settings (-1 = default)
+                amount: 100, // number of particles
+                tolerance: -1, // distance from which lines will be drawn
+                lineWidth: -1, // width of the lines between particles
+
+                // Particles settings (random between min and max)
+                // the size of a particle
+                sizeMin: -1,
+                sizeMax: -1,
+                // position of a particle
+                positionXMin: -1,
+                positionXMax: -1,
+                positionYMin: -1,
+                positionYMax: -1,
+                // speed of a particle
+                speedMin: -1,
+                speedMax: -1, 
+                // direction of a particle (in radians)
+                directionMin: -1,
+                directionMax: -1,
+                // color of a particle (HSL color from 0 to 360)
+                colorMin: -1,
+                colorMax: -1,
+
+                // Interaction settings (if the mouse goes in or out of the canvas)
+                multiplierIn: -1, // multiplier if the mouse is in the canvas
+                multiplierOut: -1 // multiplier if the mouse is out of the canvas
+            };
+            let particlesHandler = new ParticlesHandler("particles-canvas", settings);
+            particlesHandler.start();
+        });
+    })();
+</script>
+
+</body>
+
+</html>
