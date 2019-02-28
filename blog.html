@@ -26,30 +26,58 @@
     <meta name="keywords" content="development, coding, games, lilian, gallon, bordeaux">
     <meta name="publisher" content="Lilian Gallon">
 
-    <title>Nero Engine Blog</title>
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+    <title>N3RO Blog</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="../static/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/fontawesome/css/fontawesome-all.min.css">
 
     <!-- include javascript -->
-    <script type="text/javascript" src="../vendor/scripts/csi.min.js"></script>
+    <script type="text/javascript" src="vendor/scripts/csi.min.js"></script>
 
     <!-- Animated graph -->
-    <script type="text/javascript" src="../scripts/particles-min.js"></script>
+    <script type="text/javascript" src="scripts/particles-min.js"></script>
 
 </head>
 
 <body>
 
 <!-- navigation -->
-<div data-include="../include/navigation.html"></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#header">N3RO Projects</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#content">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#soon">Concepts</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 <!-- header -->
 <header id="header">
@@ -57,7 +85,7 @@
     <div class="container">
         <div class="row">
             <div class = "col-lg-12">
-                <img src="../img/profile.png">
+                <img src="img/profile.png">
                 <div class="intro-text">
                     <span class="name">N3RO</span>
                     <hr class="star-light">
@@ -71,9 +99,10 @@
 <!-- Page Content -->
 <div id="content" class="container">
     <div class="row">
+        <!-- Because for some reason col-lg-offset-2 won't work -->
+        <div class="col-lg-1"></div>
 
-        <!-- Post Content Column -->
-        <div class="col-lg-8">
+        <div class="col-lg-10">
 
             <!-- Article template
             <h3>Article title</h3>
@@ -92,7 +121,7 @@
             <p class="lead">by <a href="https://github.com/N3ROO">N3ROO</a>, 10/02/19</p>
             <hr>
             <!-- Content -->
-            <p>This is my most ambitious project yet. I plan to implement everything that I have learned in Computer Science these last years.
+            <p> <a href="https://github.com/N3ROO/nero-engine">Nero Engine</a> is my most ambitious project yet. I plan to implement everything that I have learned in Computer Science these last years.
                 I hope that the first version will be released this summer. To demonstrate the abilities of the engine I also plan to release a
                 2D game shooter and a physics scene.</p>
             <p><b>Acknowledgments:</b>
@@ -106,36 +135,6 @@
 
         </div>
 
-
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-            <!-- Article list -->
-            <div class="card my-4">
-                <h5 class="card-header dark-title">History</h5>
-                <div class="card-body">
-                    <div class="input-group">
-                        <ul>
-                            <li>10/02/19: First article</li>
-                            <li>10/02/19: Blog creation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Side Widget -->
-            <div class="card my-4">
-                <h5 class="card-header dark-title">Details</h5>
-                <div class="card-body">
-                    <i class="fas fa-file"></i> Licence : <a href="https://github.com/N3ROO/nero-engine/blob/master/LICENSE">GPL 3.0</a>
-                    <br>
-                    <i class="fab fa-github"></i> Source : <a href="https://github.com/N3ROO/nero-engine">View source</a>
-                    <br>
-                    <i class="fa fa-tasks"></i> Todo list : <a href="https://github.com/N3ROO/nero-engine/projects">View todo list</a>
-                </div>
-            </div>
-        </div>
-
     </div>
     <!-- /.row -->
 
@@ -146,6 +145,7 @@
 <div id="contact">
     <div class="container">
         <div class="row">
+            <div class="col-lg-1"></div>
             <div class="col-lg-8">
                 <h1 class="mt-4 dark-title">Comments</h1>
                 <hr class="star-primary">
@@ -178,11 +178,11 @@
 </div>
 
 <!-- footer -->
-<div data-include="../include/footer.html"></div>
+<div data-include="include/footer.html"></div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <script>
     (function() {
