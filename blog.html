@@ -44,6 +44,11 @@
     <!-- Animated graph -->
     <script type="text/javascript" src="scripts/particles-min.js"></script>
 
+    <!-- Code highlighter -->
+    <link rel="stylesheet" href="scripts/highlight/github-gist.css">
+    <script src="/scripts/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -111,6 +116,34 @@
             <p style="text-align:justify;">Article content...</p>
             <img class="img-fluid rounded" src="https://placehold.it/900x300" alt="">
             -->
+
+            <h3>Nero engine : Text rendering & Hud implementation</h3>
+            <p class="lead">by <a href="https://github.com/N3ROO">N3ROO</a>, 24/03/19</p>
+            <hr>
+            <p style="text-align:justify;">
+                Implementing the text renderer was easier than expected. JOGL provides a simple way to render text using java.awt fonts.
+                Here is a sample :
+            </p>
+            <pre>
+                <code class="java">
+                    // Init text renderer before
+                    TextRenderer textRenderer = new TextRenderer(new Font("SansSerif", Font.PLAIN, 36));
+                    // ...
+                    textRenderer.beginRendering(
+                            Renderer.getWindowWidth(),
+                            Renderer.getWindowHeight()
+                    );
+                    textRenderer.setColor(red, green, blue, alpha);
+                    textRenderer.draw(text, x + (int) xTranslation + xShift, y + (int) yTranslation + yShift);
+                    textRenderer.endRendering();
+                </code>
+            </pre>
+            <p>
+                However, it seems complicated to rotate the rendered text since there are no functions given to do so. It could be an issue in the future.
+                Regarding the HUD design, it is pretty simple yet powerful: we need to create an abstract class if the common attributes, and utility functions. Finally we just need to create inheriting classes that implement update() and render() functions.
+            </p>
+
+            <br>
 
             <h3>Objectives and projects of March</h3>
             <p class="lead">by <a href="https://github.com/N3ROO">N3ROO</a>, 14/03/2019</p>
