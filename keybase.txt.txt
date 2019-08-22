@@ -1,0 +1,4 @@
+---
+layout: none
+permalink: .well-known/brave-rewards-verification.txt
+---
