@@ -55,6 +55,10 @@
     text-align: right;
 }
 
+.justify{
+    text-align: justify;
+}
+
 /*           CONTAINERS            */
 
 footer {
@@ -187,9 +191,9 @@ a:active.btn {
 .playlists-by-genre-showcase{
     background: linear-gradient(270deg, #6900c3, #b550f2, #f250ae);
     background-size: 600% 600%;
-    -webkit-animation: GradientAnimation 30s ease infinite;
-    -moz-animation: GradientAnimation 30s ease infinite;
-    animation: GradientAnimation 30s ease infinite;
+    -webkit-animation: GradientAnimation 10s ease infinite;
+    -moz-animation: GradientAnimation 10s ease infinite;
+    animation: GradientAnimation 10s ease infinite;
 }
 
 .particles-parent {
