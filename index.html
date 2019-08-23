@@ -11,6 +11,9 @@
         <!-- Font awesome -->
         <link rel="stylesheet" href="vendors/fontawesome-free-5.10.1-web/css/all.css">
 
+        <!-- Particles.js -->
+        <script src="vendors/particles/particles.js"></script>
+
         <!-- Website CSS -->
         <link rel="stylesheet" href="resources/css/default.css">
 
@@ -28,7 +31,7 @@
         </div>
 
         <!-- Carousel -->
-        <div class="bd-example">
+        <div class="bd-example bottom-gradient">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -73,45 +76,38 @@
         <div class="container showcase">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777">
-                        </rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
+                    <img src="resources/images/bettercolors_showcase.png" alt="">
+                    <h2>Bettercolors 6</h2>
                     <p>
-                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                        ⚔️ Minecraft assistance mod built over the forge API. Working with Labymod 1.8.9, Forge version 1.8.9, 1.13.2 and 1.14.4!
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                        <a class="btn btn-secondary" href="https://github.com/N3ROO/Bettercolors" role="button" target="_blank">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777">
-                        </rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
+                    <div class="showcase-image particles-parent">
+                        <canvas id="particles-canvas"></canvas>
+                    </div>
+                    <h2>Particles.js</h2>
                     <p>
-                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                        ✨ An easy way to make your website look sexy. Highly customizable, easy to install and pure javascript.
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                        <a class="btn btn-secondary" href="https://github.com/N3ROO/particles.js" role="button" target="_blank">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777">
-                        </rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
+                    <div class="showcase-image playlists-by-genre-showcase">
+                        <img src="resources/images/playlists_by_genre_showcase.png" alt="">
+                    </div>
+                    
+                    <h2>Playlists by genre</h2>
                     <p>
-                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                        🔎 It looks at music filenames, detects the genre, and creates playlists. It detects very specific music genres like dubstep, drun and bass, rap, lofi, ...
                     </p>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                        <a class="btn btn-secondary" href="https://github.com/N3ROO/playlistsByGenre" role="button" target="_blank">View details »</a>
                     </p>
                 </div>
             </div>
@@ -184,5 +180,22 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- Particles.js -->
+        <script>
+            (function() {
+                let settings = {
+                    amount: 7,
+                    amountMax: 7,
+                    dynamicAmount: -1,
+                    positionXMin: 70 - 50,
+                    positionXMax: 70 + 50,
+                    positionYMin: 70 - 50,
+                    positionYMax: 70 + 50
+                };
+                let particlesHandler = new ParticlesHandler("particles-canvas", settings);
+                particlesHandler.start();
+            })();
+        </script>
     </body>
 </html>

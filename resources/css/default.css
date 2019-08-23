@@ -157,3 +157,45 @@ a:active.btn {
     font-weight: 300;
     line-height: 1;
 }
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.showcase-image {
+    height: 140px;
+    width:140px;
+    border-radius: 70px;
+    display: inline-block;
+    
+}
+
+.playlists-by-genre-showcase{
+    background: linear-gradient(270deg, #6900c3, #b550f2, #f250ae);
+    background-size: 600% 600%;
+    -webkit-animation: GradientAnimation 30s ease infinite;
+    -moz-animation: GradientAnimation 30s ease infinite;
+    animation: GradientAnimation 30s ease infinite;
+}
+
+.particles-parent {
+    background: linear-gradient(270deg, #00c3c2, #b550f2, #f25650);
+    background-size: 600% 600%;
+    -webkit-animation: GradientAnimation 30s ease infinite;
+    -moz-animation: GradientAnimation 30s ease infinite;
+    animation: GradientAnimation 30s ease infinite;
+}
