@@ -1,0 +1,159 @@
+
+/* It is possible to change the theme by updating these variables */
+:root {
+    --main-gradient: linear-gradient(
+        to right,
+        rgb(1,174,239) 0%,
+        rgb(122,30,179) 50%,
+        rgb(238,1,67) 100%
+    ) 1;
+
+    --main-color: rgb(36, 39, 43);
+    --second-color: rgb(204, 0, 102);
+    --third-color: rgb(1,174,239);
+    --fourth-color: rgb(238,1,67);
+    --fifth-color: rgb(122,30,179);
+
+    --main-text-color: rgb(255, 255, 255);
+}
+
+/*           UTILITY            */
+
+/* It is used to get a gradient line at the bottom of the specified container */
+.bottom-gradient {
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    -moz-border-image: var(--main-gradient);
+    -webkit-border-image: var(--main-gradient);
+    -o-border-image: var(--main-gradient);
+    border-image: var(--main-gradient);
+}
+
+/* It is used to get a gradient line at the top of the specified container */
+.top-gradient {
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    -moz-border-image: var(--main-gradient);
+    -webkit-border-image: var(--main-gradient);
+    -o-border-image: var(--main-gradient);
+    border-image: var(--main-gradient);
+}
+
+.main-color {
+    background: var(--main-color);
+}
+
+.second-color {
+    color: rgb(204, 0, 102);
+}
+
+.third-color {
+    color: rgb(1,174,239);
+}
+
+.align-right{
+    text-align: right;
+}
+
+/*           CONTAINERS            */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--main-text-color);
+}
+
+a:link,a:visited {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--fifth-color);
+    text-decoration: none;
+}
+
+a:link.btn,a:visited.btn {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+a:hover.btn {
+    color: var(--second-color);
+}
+
+a:active.btn {
+    color: var(--third-color);
+}
+
+.btn {
+    background: var(--main-color);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--second-color);
+}
+
+.btn:hover {
+    background: var(--main-color);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--second-color);
+}
+
+/*           SPECIFIC            */
+
+/* It concerns the social buttons that are below the logo in the footer */
+.social-below-logo {
+    padding-top: 5px;
+}
+
+.social-below-logo i {
+    padding-left: 5px;
+}
+
+.social-below-logo a:link,.social-below-logo a:visited {
+    color: var(--main-text-color)
+}
+
+.social-below-logo a:hover {
+    color: var(--second-color)
+}
+
+.social-below-logo a:active {
+    color: var(--third-color)
+}
+
+/* It concerns the projects showcased below the carousel */
+.showcase {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: var(--main-text-color);
+}
+
+/* It is used with <hr> */
+.separator {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border: 0;
+    height: 1px;
+
+    background: var(--second-color);
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+}
