@@ -55,8 +55,39 @@
     text-align: right;
 }
 
+.center{
+    text-align: center;
+}
+
 .justify{
     text-align: justify;
+}
+
+.link-style-1 a:link,.link-style-1 a:visited {
+    color: var(--main-text-color)
+}
+
+.link-style-1 a:hover {
+    color: var(--second-color)
+}
+
+.link-style-1:active {
+    color: var(--third-color)
+}
+
+.link-style-2 a:link,.link-style-2 a:visited {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.link-style-2 a:hover {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.link-style-2 a:active {
+    color: var(--fifth-color);
+    text-decoration: none;
 }
 
 /*           CONTAINERS            */
@@ -65,26 +96,6 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     color: var(--main-text-color);
-}
-
-a:link,a:visited {
-    color: var(--second-color);
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--second-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--third-color);
-    text-decoration: none;
-}
-
-a:active {
-    color: var(--fifth-color);
-    text-decoration: none;
 }
 
 a:link.btn,a:visited.btn {
@@ -125,17 +136,9 @@ a:active.btn {
     padding-left: 5px;
 }
 
-.social-below-logo a:link,.social-below-logo a:visited {
-    color: var(--main-text-color)
-}
-
-.social-below-logo a:hover {
-    color: var(--second-color)
-}
-
-.social-below-logo a:active {
-    color: var(--third-color)
-}
+/* .muted-link a:link,.muted-link a:visited {
+    color: 
+} */
 
 /* It concerns the projects showcased below the carousel */
 .showcase {
@@ -148,8 +151,8 @@ a:active.btn {
 .separator {
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     border: 0;
     height: 1px;
