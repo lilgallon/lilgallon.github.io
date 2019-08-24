@@ -642,42 +642,18 @@ class Particle{
 
         this.setSpeed(this.getSpeed() + multiplier_increment);
 
-        // This is a fix just for my use case! It is not in the original particle.js
-        // --> it is really bad, but it is simple and it "works"
-
-        // Radius
-        let r = width/2;
-        // Shift the axis so it is in the middle of the circle
-        let x = this.x - r;
-        let y = this.y - r;
-        // Calculate the distance
-        let d = Math.hypot(this.vx > 0 ? x + this.size : x - this.size, this.vy > 0 ? y + this.size : y - this.size);
-        // If the distance is bigger than the radius, then we are out of the rectangle
-        if(d > r) {
-            let a = Math.acos(x / (r - 5));
-
-            if(a > 0 && a < Math.PI / 4){
-                this.vx *= -1;
-            } else if (a > Math.PI / 4 && a < 2 * Math.PI / 4) {
-                this.vy *= -1;
-            } else if (a > 2 * Math.PI / 4 && a < 3 * Math.PI / 4) {
-                this.vy *= -1;
-            } else if (a > 3 * Math.PI / 4 && a < 4 * Math.PI / 4) {
-                this.vx *= -1;
-            } else if (a > 4 * Math.PI / 4 && a < 5 * Math.PI / 4) {
-                this.vx *= -1;
-            } else if (a > 5 * Math.PI / 4 && a < 6 * Math.PI / 4) {
-                this.vy *= -1;;
-            } else if (a > 6 * Math.PI / 4 && a < 7 * Math.PI / 4) {
-                this.vy *= -1;
-            } else if (a > 7 * Math.PI / 4 && a < 8 * Math.PI / 4) {
-                this.vx *= -1;
-            } else {
-                this.vx *= -1;
-                this.vy *= -1;
-            }
-        } else {
+        // Change the position of the particles according to the borders
+        if(this.x + this.size > width || this.x - this.size < 0){
+            this.vx *= -1;
+            this.x = this.x + this.size > width ? width - this.size : this.size
+        }else{
             this.x += this.vx;
+        }
+
+        if(this.y + this.size > height || this.y - this.size < 0){
+            this.vy *= - 1;
+            this.y = this.y + this.size > height ? height - this.size : this.size
+        }else{
             this.y += this.vy;
         }
 

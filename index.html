@@ -86,8 +86,8 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <div class="showcase-image particles-parent">
-                        <canvas id="particles-canvas"></canvas>
+                    <div class="showcase-image particles-showcase">
+                        <div class ="particles-parent"><canvas id="particles-canvas"></canvas></div>
                     </div>
                     <h2>Particles.js</h2>
                     <p>
@@ -226,17 +226,19 @@
         <!-- Particles.js -->
         <script>
             (function() {
-                let settings = {
-                    amount: 7,
-                    amountMax: 7,
-                    dynamicAmount: -1,
-                    positionXMin: 70 - 50,
-                    positionXMax: 70 + 50,
-                    positionYMin: 70 - 50,
-                    positionYMax: 70 + 50
-                };
-                let particlesHandler = new ParticlesHandler("particles-canvas", settings);
-                particlesHandler.start();
+                window.addEventListener('load', function() {
+                    let settings = {
+                        amount: 7,
+                        amountMax: 7,
+                        dynamicAmount: -1,
+                        positionXMin: 70 - 50,
+                        positionXMax: 70 + 50,
+                        positionYMin: 70 - 50,
+                        positionYMax: 70 + 50
+                    };
+                    let particlesHandler = new ParticlesHandler("particles-canvas", settings);
+                    particlesHandler.start();
+                });
             })();
         </script>
     </body>

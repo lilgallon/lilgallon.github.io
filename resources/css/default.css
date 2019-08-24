@@ -185,7 +185,6 @@ a:active.btn {
     width:140px;
     border-radius: 70px;
     display: inline-block;
-    
 }
 
 .playlists-by-genre-showcase{
@@ -196,10 +195,17 @@ a:active.btn {
     animation: GradientAnimation 10s ease infinite;
 }
 
-.particles-parent {
+.particles-showcase{
     background: linear-gradient(270deg, #00c3c2, #b550f2, #f25650);
     background-size: 600% 600%;
     -webkit-animation: GradientAnimation 30s ease infinite;
     -moz-animation: GradientAnimation 30s ease infinite;
     animation: GradientAnimation 30s ease infinite;
+}
+
+.particles-parent {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
