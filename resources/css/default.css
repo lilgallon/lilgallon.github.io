@@ -131,19 +131,23 @@ a:active.btn {
 /*           SPECIFIC            */
 
 .navbar-toggler {
-    background: #31353B;
+    /*background: #31353B;*/
+    background: var(--main-color);
     -webkit-transition: outline-color 0.5s;
     transition: outline-color 0.5s;
 }
 
 .navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler:visited {
-    outline-color: #6F717D;
+    border-color: var(--second-color);
+    outline-width: 0px;
     -webkit-transition: outline-color 0.5s;
     transition: outline-color 0.5s;
 }
 
 .dropdown-menu {
-    background: #31353B;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    background: var(--main-color);
     color: #6F717D;
     position: absolute;
 }
@@ -153,18 +157,31 @@ a:active.btn {
 }
 
 .dropdown-menu a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--second-color);
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
-    background: #31353B;
+    background: var(--main-color);
 }
 
 .lower-dropdown-section .dropdown-item:hover {
-    background: #31353B;
+    background: var(--main-color);
 }
 
 .dropdown-divider {
-    border-top-color: #6F717D;
+    border-top-color: var(--second-color);
+}
+
+.show > .dropdown-menu {
+    max-height: 900px;
+    visibility: visible;
+}
+
+.dropdown-menu {
+    display: block;
+    max-height: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 /* It concerns the social buttons that are below the logo in the footer */
