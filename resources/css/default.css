@@ -8,6 +8,13 @@
         rgb(238,1,67) 100%
     ) 1;
 
+    --second-color-separator: linear-gradient(
+        to right,
+        rgb(36, 39, 43) 10%,
+        rgb(204, 0, 102) 50%,
+        rgb(36, 39, 43) 90%
+    ) 1;
+
     --main-color: rgb(36, 39, 43);
     --second-color: rgb(204, 0, 102);
     --third-color: rgb(1,174,239);
@@ -131,7 +138,7 @@ a:active.btn {
 /*           SPECIFIC            */
 
 .navbar-toggler {
-    /*background: #31353B;*/
+    background: #31353B;
     background: var(--main-color);
     -webkit-transition: outline-color 0.5s;
     transition: outline-color 0.5s;
@@ -145,8 +152,7 @@ a:active.btn {
 }
 
 .dropdown-menu {
-    -webkit-transition: background 0.5s;
-    transition: background 0.5s;
+    border-width: 1px;
     background: var(--main-color);
     color: #6F717D;
     position: absolute;
@@ -168,7 +174,10 @@ a:active.btn {
 }
 
 .dropdown-divider {
-    border-top-color: var(--second-color);
+    -moz-border-image: var(--second-color-separator);
+    -webkit-border-image: var(--second-color-separator);
+    -o-border-image: var(--second-color-separator);
+    border-image: var(--second-color-separator);
 }
 
 .show > .dropdown-menu {
