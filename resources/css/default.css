@@ -155,7 +155,6 @@ a:active.btn {
     border-width: 1px;
     background: var(--main-color);
     color: #6F717D;
-    position: absolute;
 }
 
 .dropdown-menu a {
@@ -181,7 +180,7 @@ a:active.btn {
 }
 
 .show > .dropdown-menu {
-    max-height: 900px;
+    max-height: 200px;
     visibility: visible;
 }
 
