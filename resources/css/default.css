@@ -64,15 +64,18 @@
 }
 
 .link-style-1 a:link,.link-style-1 a:visited {
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    text-decoration: none;
 }
 
 .link-style-1 a:hover {
-    color: var(--second-color)
+    color: var(--second-color);
+    text-decoration: none;
 }
 
 .link-style-1:active {
-    color: var(--third-color)
+    color: var(--third-color);
+    text-decoration: none;
 }
 
 .link-style-2 a:link,.link-style-2 a:visited {
