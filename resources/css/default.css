@@ -21,7 +21,9 @@
     --fourth-color: rgb(238,1,67);
     --fifth-color: rgb(122,30,179);
 
+    --text-background-color: rgb(45, 48, 53);
     --main-text-color: rgb(255, 255, 255);
+    --second-text-color: #6F717D;
 }
 
 /*           UTILITY            */
@@ -154,11 +156,11 @@ a:active.btn {
 .dropdown-menu {
     border-width: 1px;
     background: var(--main-color);
-    color: #6F717D;
+    color: var(--second-text-color);
 }
 
 .dropdown-menu a {
-    color: #6F717D;
+    color: var(--second-text-color);
 }
 
 .dropdown-menu a:hover {
@@ -200,10 +202,6 @@ a:active.btn {
 .social-below-logo i {
     padding-left: 5px;
 }
-
-/* .muted-link a:link,.muted-link a:visited {
-    color: 
-} */
 
 /* It concerns the projects showcased below the carousel */
 .showcase {
@@ -276,4 +274,38 @@ a:active.btn {
     height: 100px;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.text-page-content {
+    font-family: 'Raleway', sans-serif;
+    background: var(--text-background-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.text-page h1, .text-page h2, .text-page h3, .text-page h4, .text-page h5, .text-page h6 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-text-color);
+}
+
+.text-page h1, .text-page h2{
+    margin-top: 30px;
+}
+
+.text-page p {
+    color: var(--second-text-color);
+    text-align: justify;
+}
+
+.text-page .no-p-margin {
+    margin-bottom: 0px;
+}
+
+.text-page ul {
+    color: var(--second-text-color);
+}
+
+#about {
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
