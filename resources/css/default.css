@@ -130,6 +130,43 @@ a:active.btn {
 
 /*           SPECIFIC            */
 
+.navbar-toggler {
+    background: #31353B;
+    -webkit-transition: outline-color 0.5s;
+    transition: outline-color 0.5s;
+}
+
+.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler:visited {
+    outline-color: #6F717D;
+    -webkit-transition: outline-color 0.5s;
+    transition: outline-color 0.5s;
+}
+
+.dropdown-menu {
+    background: #31353B;
+    color: #6F717D;
+    position: absolute;
+}
+
+.dropdown-menu a {
+    color: #6F717D;
+}
+
+.dropdown-menu a:hover {
+    color: rgb(255, 255, 255);
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    background: #31353B;
+}
+
+.lower-dropdown-section .dropdown-item:hover {
+    background: #31353B;
+}
+
+.dropdown-divider {
+    border-top-color: #6F717D;
+}
+
 /* It concerns the social buttons that are below the logo in the footer */
 .social-below-logo {
     padding-top: 5px;
