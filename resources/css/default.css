@@ -22,6 +22,7 @@
     --fifth-color: rgb(122,30,179);
 
     --text-background-color: rgb(45, 48, 53);
+    --text-background-color-2: rgb(55, 58, 63);
     --main-text-color: rgb(255, 255, 255);
     --second-text-color: #6F717D;
 }
@@ -194,6 +195,10 @@ a:active.btn {
     overflow: hidden;
 }
 
+.active {
+    background-color: var(--main-color) !important;
+}
+
 /* It concerns the social buttons that are below the logo in the footer */
 .social-below-logo {
     padding-top: 5px;
@@ -312,4 +317,36 @@ a:active.btn {
 #about {
     margin-top: 80px;
     margin-bottom: 50px;
+}
+
+#projects {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.project-showcase {
+    background-color: var(--text-background-color);
+    color: var(--second-text-color);
+    border-radius: 5px;
+}
+
+.project-header {
+    padding-top: 10px;
+}
+
+
+.project-header p {
+    margin: 10px;
+}
+
+.project-title {
+    padding-left: 0px !important;
+}
+
+.project-footer {
+    background-color: var(--text-background-color-2);
+}
+
+.project-footer p {
+    margin: 10px;
 }
