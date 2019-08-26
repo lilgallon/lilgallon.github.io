@@ -15,7 +15,7 @@
         rgb(36, 39, 43) 90%
     ) 1;
 
-    --background-gradient: 
+    --background-gradient:
         repeating-linear-gradient(
             145deg,
             transparent,
@@ -24,7 +24,35 @@
             rgba(38,42,45) 330px
         ),
         linear-gradient(
-            to bottom,
+             bottom,
+            rgb(36, 39, 43),
+            rgba(38,42,45)
+        );
+
+    --background-gradient-moz:
+        repeating-linear-gradient(
+            145deg,
+            transparent,
+            transparent 90px,
+            rgb(36, 39, 43) 80px,
+            rgba(38,42,45) 330px
+        ),
+        -moz-linear-gradient(
+            bottom,
+            rgb(36, 39, 43),
+            rgba(38,42,45)
+        );
+
+    --background-gradient-webkit:
+        -webkit-repeating-linear-gradient(
+            145deg,
+            transparent,
+            transparent 90px,
+            rgb(36, 39, 43) 80px,
+            rgba(38,42,45) 330px
+        ),
+        -webkit-linear-gradient(
+            bottom,
             rgb(36, 39, 43),
             rgba(38,42,45)
         );
@@ -72,7 +100,10 @@
 }
 
 .background-gradient {
+    background: var(--main-color); /*in case the browser is outdated af */
     background: var(--background-gradient);
+    background: var(--background-gradient-moz);
+    background: var(--background-gradient-webkit);
 }
 
 .main-color {
@@ -327,7 +358,7 @@ a:active.btn {
 
 .text-page-content {
     font-family: 'Raleway', sans-serif;
-    background: var(--text-background-color);
+    background: var(--text-background-color-alpha);
     border-radius: 5px;
     padding: 20px;
 }
