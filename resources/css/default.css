@@ -15,6 +15,20 @@
         rgb(36, 39, 43) 90%
     ) 1;
 
+    --background-gradient: 
+        repeating-linear-gradient(
+            145deg,
+            transparent,
+            transparent 40px,
+            rgb(36, 39, 43) 40px,
+            rgba(45,47,51,1) 43px
+        ),
+        linear-gradient(
+            to bottom,
+            rgb(36, 39, 43),
+            rgba(45,47,51,1)
+        );
+
     --main-color: rgb(36, 39, 43);
     --second-color: rgb(204, 0, 102);
     --third-color: rgb(1,174,239);
@@ -22,7 +36,9 @@
     --fifth-color: rgb(122,30,179);
 
     --text-background-color: rgb(45, 48, 53);
+    --text-background-color-alpha: rgb(45, 48, 53, 0.5);
     --text-background-color-2: rgb(55, 58, 63);
+    --text-background-color-2-alpha: rgb(55, 58, 63, 0.5);
     --main-text-color: rgb(255, 255, 255);
     --second-text-color: #6F717D;
 }
@@ -53,6 +69,10 @@
     border-style: solid;
     border-width: 0px 0px 2px 0px;
     border-color: var(--second-color);
+}
+
+.background-gradient {
+    background: var(--background-gradient);
 }
 
 .main-color {
@@ -351,7 +371,7 @@ a:active.btn {
 }
 
 .project-showcase {
-    background-color: var(--text-background-color);
+    background-color: var(--text-background-color-alpha);
     color: var(--second-text-color);
     border-radius: 5px;
     font-family: 'Raleway', sans-serif;
@@ -385,7 +405,7 @@ a:active.btn {
 }
 
 .project-stats {
-    background-color: var(--text-background-color-2);
+    background-color: var(--text-background-color-2-alpha);
     padding: 10px;
 }
 
@@ -395,7 +415,7 @@ a:active.btn {
 }
 
 .project-footer {
-    background-color: var(--text-background-color-2);
+    background-color: var(--text-background-color-2-alpha);
     padding:  0px  10px 5px 10px;
     margin:   5px 0px  0px  0px;
 }
@@ -434,7 +454,7 @@ a:active.btn {
 }
 
 .project-details .project-new-paragraph {
-    background-color: var(--text-background-color-2);
+    background-color: var(--text-background-color-2-alpha);
     padding:  10px  10px 10px 10px;
     margin:   0px 0px  5px  0px;
     text-align: justify;
@@ -446,7 +466,7 @@ a:active.btn {
 }
 
 .project-details .project-links {
-    background-color: var(--text-background-color-2);
+    background-color: var(--text-background-color-2-alpha);
     padding:  10px  10px 10px 10px;
     margin:   5px 0px  0px  0px;
 }
