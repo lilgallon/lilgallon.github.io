@@ -328,25 +328,111 @@ a:active.btn {
     background-color: var(--text-background-color);
     color: var(--second-text-color);
     border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .project-header {
     padding-top: 10px;
 }
 
-
 .project-header p {
     margin: 10px;
+}
+
+.project-header .container{
+    min-height: 55x;
 }
 
 .project-title {
     padding-left: 0px !important;
 }
 
-.project-footer {
-    background-color: var(--text-background-color-2);
+.project-title h1 {
+    color: var(--main-text-color);
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
-.project-footer p {
+.project-title div {
+    font-size: 11px;
+}
+
+.project-stats {
+    background-color: var(--text-background-color-2);
+    padding: 10px;
+}
+
+.project-stats h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.project-footer {
+    background-color: var(--text-background-color-2);
+    padding:  0px  10px 5px 10px;
+    margin:   5px 0px  0px  0px;
+}
+
+.project-footer div {
+    padding-top: 5px;
+}
+
+.project-footer a {
+    color: var(--second-text-color)
+}
+
+.project-description {
     margin: 10px;
+    font-style: italic;
+    font-size: 12px;
+    text-align: justify;
+    min-height: 90px;
+}
+
+.project-details h1 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-text-color);
+    font-size: 30px;
+}
+
+.project-details .project-showcase {
+    width: 100%;
+    min-height: 300px;
+}
+
+.project-details .project-title div {
+    font-size: 14px;
+}
+
+.project-details .project-description {
+    font-size: 16px;
+    min-height: 0px;
+}
+
+.project-details .project-stats {
+    font-size: 12px;
+}
+
+.project-details .project-new-paragraph {
+    background-color: var(--text-background-color-2);
+    padding:  10px  10px 10px 10px;
+    margin:   0px 0px  5px  0px;
+    text-align: justify;
+}
+
+.project-details .project-new-paragraph h2{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.project-details .project-links {
+    background-color: var(--text-background-color-2);
+    padding:  10px  10px 10px 10px;
+    margin:   5px 0px  0px  0px;
+}
+
+.project-details .project-links h2{
+    text-transform: uppercase;
+    font-size: 12px;
 }
