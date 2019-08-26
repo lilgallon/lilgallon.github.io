@@ -79,6 +79,10 @@
     text-align: justify;
 }
 
+.italic{
+    font-style: italic;
+}
+
 .link-style-1 a:link,.link-style-1 a:visited {
     color: var(--main-text-color);
     text-decoration: none;
