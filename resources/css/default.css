@@ -172,6 +172,10 @@
     text-align: justify;
 }
 
+.small-font {
+    font-size: 12px;
+}
+
 /* Small devices and lower <=sm */
 @media (max-width: 768px) {
     .text-center-sm {
@@ -636,4 +640,17 @@ a:active.btn {
     height: 56px;
     margin-top: 12px;
     margin-left: 12px;
+}
+
+.modal-content {
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+}
+
+.modal-header {
+    border-color: var(--second-color);
+}
+
+.modal-footer {
+    border-color: var(--second-color);
 }
