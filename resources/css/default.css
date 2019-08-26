@@ -539,6 +539,10 @@ a:active.btn {
     width: 100%;
 }
 
+.project-details .project-title h1{
+    font-size: 22px;
+}
+
 .project-details .project-title div {
     font-size: 14px;
 }
