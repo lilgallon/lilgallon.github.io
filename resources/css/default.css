@@ -209,6 +209,13 @@
     }
 }
 
+/* only lg */
+@media (max-width: 1200px) and (min-width: 993px) {
+    .project-description {
+        text-align: left !important;
+    }
+}
+
 /* Extra large devices and higher >=xl */
 @media (min-width: 1201) {
     
