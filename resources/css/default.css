@@ -664,3 +664,33 @@ a:active.btn {
 .modal-footer {
     border-color: var(--second-color);
 }
+
+.text-page-content .card {
+    background: none;
+    border-color: var(--text-background-color);
+}
+
+.text-page-content .btn {
+    background: var(--text-background-color);
+    color: var(--main-text-color);
+    border-width: 0px;
+
+    -webkit-box-shadow: 0px 2px 22px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 22px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 22px -10px rgba(0,0,0,0.75);
+}
+
+.text-page-content .btn:hover {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.text-page-content .btn:focus {
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+.text-page-content .card-body {
+    background: var(--text-background-color);
+    color: var(--second-text-color);
+}
