@@ -322,7 +322,11 @@
                             <div class="container">
                                 <div class="row text-center-lg">
                                     <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="image" alt="image" width=80>
+                                        <div class="responsive-project-details-image-2 fill-project-image-2" style="width: 80px; height:80px;">
+                                            <div class="particles-box-2">
+                                                <canvas id="particles-canvas-2"></canvas> 
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-xl-7 project-title">
                                         <h1>Particles.js</h1>
@@ -606,15 +610,14 @@
         <!-- Page script -->
         <script>
             (function() {
-                window.addEventListener('load', function() {
-                    // scroll
-                    $('.toTop').on('click', function(event) {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    });
-                });
+                let particlesDetailsInit = false;
+                let particlesCurrentlyOpenned = false;
+                let particlesHandler2 = null;
+                let particlesDetailsCurrentlyOpenned = false;
 
-                // particles
                 window.addEventListener('load', function() {
+
+                    // particles
                     let settings = {
                         amount: 4,
                         amountMax: 4,
@@ -627,8 +630,42 @@
                         positionYMin: 70 - 50,
                         positionYMax: 70 + 50
                     };
+
                     let particlesHandler = new ParticlesHandler("particles-canvas", settings);
                     particlesHandler.start();
+
+                    // scroll & particles
+                    $('.toTop').on('click', function(event) {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                        // particles of project detail
+                        if($(this).attr('href') == "#particles-js") {
+
+                            if(particlesCurrentlyOpenned) {
+                                particlesCurrentlyOpenned = false;
+                                particlesHandler2.stop();
+                            } else if(particlesDetailsInit) {
+                                particlesCurrentlyOpenned = true;
+                                particlesHandler2.start();
+                            }
+
+                            if(!particlesDetailsInit) {
+                                particlesHandler2 = new ParticlesHandler("particles-canvas-2", settings);
+                                particlesHandler2.start();
+                                particlesDetailsInit = true;
+
+                                particlesCurrentlyOpenned = true;
+                            }
+                        } else {
+                            if(particlesDetailsInit) {
+
+                                if(particlesCurrentlyOpenned) {
+                                    particlesCurrentlyOpenned = false;
+                                    particlesHandler2.stop();
+                                }
+                            }
+                        }
+                    });
                 });
             })();
         </script>
