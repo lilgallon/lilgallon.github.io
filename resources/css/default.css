@@ -113,6 +113,10 @@
     text-decoration: none;
 }
 
+.no-padding {
+    padding: 0px;
+}
+
 /*           CONTAINERS            */
 
 footer {
@@ -340,6 +344,12 @@ a:active.btn {
     margin-bottom: 50px;
 }
 
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-text-color);
+    font-size: 30px;
+}
+
 .project-showcase {
     background-color: var(--text-background-color);
     color: var(--second-text-color);
@@ -404,12 +414,6 @@ a:active.btn {
     font-size: 12px;
     text-align: justify;
     min-height: 90px;
-}
-
-.project-details h1 {
-    font-family: 'Raleway', sans-serif;
-    color: var(--main-text-color);
-    font-size: 30px;
 }
 
 .project-details .project-showcase {
