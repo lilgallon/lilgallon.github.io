@@ -353,6 +353,16 @@ a:active.btn {
     overflow: hidden;
 }
 
+.lower-dropdown-section .dropdown-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.dropdown-item:focus {
+    background-color: var(--main-color);
+    color: var(--second-text-color);
+}
+
 .active {
     background-color: var(--main-color) !important;
 }
