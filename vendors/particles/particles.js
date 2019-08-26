@@ -643,16 +643,16 @@ class Particle{
         this.setSpeed(this.getSpeed() + multiplier_increment);
 
         // Change the position of the particles according to the borders
-        if(this.x + this.size > width || this.x - this.size < 0){
+        if(this.x + this.getSize() > width || this.x - this.getSize() < 0){
             this.vx *= -1;
-            this.x = this.x + this.size > width ? width - this.size : this.size
+            this.x = this.x + this.getSize() > width ? width - this.getSize() : this.getSize()
         }else{
             this.x += this.vx;
         }
 
-        if(this.y + this.size > height || this.y - this.size < 0){
+        if(this.y + this.getSize() > height || this.y - this.getSize() < 0){
             this.vy *= - 1;
-            this.y = this.y + this.size > height ? height - this.size : this.size
+            this.y = this.y + this.getSize() > height ? height - this.getSize() : this.getSize()
         }else{
             this.y += this.vy;
         }

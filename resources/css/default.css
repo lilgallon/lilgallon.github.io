@@ -187,6 +187,7 @@
 
     .responsive-project-image {
         width: 100px;
+        height: 100px;
     }
 }
 
@@ -197,11 +198,24 @@
     }
 
     .responsive-project-image {
-        width: 90px;
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .fill-project-image {
+        border-radius: 45px !important;
+    }
+
+    .particles-box {
+        width: 63px !important;
+        height: 63px !important;
+        margin-top: 13px !important;
+        margin-left: 13px !important;
     }
 
     .responsive-project-details-image {
         width: 150px;
+        height: 150px;
     }
 
     .project-description {
@@ -568,4 +582,21 @@ a:active.btn {
 
 .project-details .project-links em {
     font-size: 12px;
+}
+
+.fill-project-image {
+    border-radius: 25px;
+    display: inline-block;
+    background: linear-gradient(270deg, #6900c3, #b550f2, #f250ae);
+    background-size: 600% 600%;
+    -webkit-animation: GradientAnimation 10s ease infinite;
+    -moz-animation: GradientAnimation 10s ease infinite;
+    animation: GradientAnimation 10s ease infinite;
+}
+
+.particles-box {
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 7px;
 }
