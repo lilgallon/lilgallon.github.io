@@ -8,6 +8,13 @@
         rgb(238,1,67) 100%
     ) 1;
 
+    --main-gradient-inversed: linear-gradient(
+        to right,
+        rgb(238,1,67) 0%,
+        rgb(122,30,179) 50%,
+        rgb(1,174,239) 100%
+    ) 1;
+
     --second-color-separator: linear-gradient(
         to right,
         rgb(36, 39, 43) 10%,
@@ -91,6 +98,15 @@
     -webkit-border-image: var(--main-gradient);
     -o-border-image: var(--main-gradient);
     border-image: var(--main-gradient);
+}
+
+.top-gradient-inversed {
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    -moz-border-image: var(--main-gradient-inversed);
+    -webkit-border-image: var(--main-gradient-inversed);
+    -o-border-image: var(--main-gradient-inversed);
+    border-image: var(--main-gradient-inversed);
 }
 
 .bottom-second-color {
@@ -670,6 +686,15 @@ a:active.btn {
     border-color: var(--text-background-color);
 }
 
+.text-page-content .card:hover {
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    -moz-border-image: var(--main-gradient-inversed);
+    -webkit-border-image: var(--main-gradient-inversed);
+    -o-border-image: var(--main-gradient-inversed);
+    border-image: var(--main-gradient-inversed);
+}
+
 .text-page-content .btn {
     background: var(--text-background-color);
     color: var(--main-text-color);
@@ -682,12 +707,12 @@ a:active.btn {
 
 .text-page-content .btn:hover {
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--second-color) !important;
 }
 
 .text-page-content .btn:focus {
     text-decoration: none;
-    color: var(--fourth-color);
+    color: var(--main-text-color);
 }
 
 .text-page-content .card-body {
