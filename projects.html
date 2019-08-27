@@ -553,7 +553,8 @@
                                     <h2>technologies</h2>
                                     <i class="fab fa-java fa-fw"></i> Java <br>
                                     <i class="fas fa-gamepad fa-fw"></i> Minecraft <br>
-                                    <i class="fas fa-book fa-fw"></i> MC Forge
+                                    <i class="fab fa-github fa-fw"></i> Github actions (CI)
+                                    <i class="fas fa-book fa-fw"></i> MC Forge <br>
                                 </div>
                             </div>
                         </div>
@@ -800,7 +801,7 @@
                                     <div class="col-xl-7 project-title">
                                         <h1>EzAPIs</h1>
                                         <div>python • lib</div>
-                                        <div>v1.0</div>
+                                        <div>version 1.0</div>
                                     </div>
                                 </div>
                             </div>
@@ -956,6 +957,173 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Fractals explorer -->
+                    <div id="fractals" class="collapse project-showcase bottom-second-color" data-parent="#projects">
+                        <div class="project-header">
+                            <div class="container">
+                                <div class="row text-center-lg">
+                                    <div class="col-xl-3">
+                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_fractals.png" alt="image" width=80>
+                                    </div>
+                                    <div class="col-xl-7 project-title">
+                                        <h1>Fractals explorer</h1>
+                                        <div>java • miscellaneous</div>
+                                        <div>version 1.0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                A java fractals explorer made using MVC design pattern. Made for the OOP course at the Bordeaux Intitute of Technology.
+                            </div>
+                        </div>
+
+                        <div class="project-new-paragraph">
+                            <h2>features</h2>
+                            <ul>
+                                <li>Mandelbrot fractal</li>
+                                <li>Tree fractal</li>
+                                <li>Zoom</li>
+                                <li>Iteration slider</li>
+                                <li>Multithreading</li>
+                            </ul>
+                            Multithreading can be improved, as well as the zoom. It is due to the fact that the number are insanely big, and so the precision
+                            is bad at the maximum zoom (rounded values).
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h2>stats</h2>
+                                    <i class="fas fa-history fa-fw"></i> 38 commits <br>
+                                    <i class="fas fa-tag fa-fw"></i> 1 releases <br>
+                                    <i class="fas fa-user fa-fw"></i> 2 contrib. <br>
+                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
+                                </div>
+                                <div class="col-lg-5">
+                                    <h2>even more stats</h2>
+                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 10/11/17 <br>
+                                    <i class="fas fa-calendar-check fa-fw"></i> last update 28/05/18 <br>
+                                    <i class="fas fa-exclamation-circle fa-fw"></i> 0 issues <br>
+                                    <i class="fas fa-check-circle fa-fw"></i> 0 closed issues
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2>technologies</h2>
+                                    <i class="fab fa-java fa-fw"></i> Java <br>
+                                    <i class="fas fa-book fa-fw"></i> Swing
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-links">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2>Download</h2>
+                                    <ul>
+                                        <li>Last version: 1.0</li>
+                                        <li>Release date: 29/05/18</li>
+                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Fractals_explorer/releases/tag/1.0">click here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <div>
+                                <a href="https://github.com/N3ROO/Fractals_explorer">
+                                    <i class="fab fa-github"></i> Go to the github page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cascade -->
+                    <div id="cascade" class="collapse project-showcase bottom-second-color" data-parent="#projects">
+                        <div class="project-header">
+                            <div class="container">
+                                <div class="row text-center-lg">
+                                    <div class="col-xl-3">
+                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_cascade.png" alt="image" width=80>
+                                    </div>
+                                    <div class="col-xl-7 project-title">
+                                        <h1>Cascade</h1>
+                                        <div>android • game</div>
+                                        <div>version 2.0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                The goal of the game is to destroy a brick wall in a as less clicks as possible. But ... care to not let unbreakable bricks...
+                            </div>
+                        </div>
+
+                        <div class="project-new-paragraph">
+                            <h2>context</h2>
+                            Made for the Introduction to mobile programming course at the Bordeaux Institute of Technology (grade: 19/20).
+                        </div>
+
+                        <div class="project-new-paragraph">
+                            <h2>rules</h2>
+                            <ul>
+                                <li>You can't destroy a single brick: the brick must have at least a same color neighbor,</li>
+                                <li>The top 10 scores are visible on the scoreboard page,</li>
+                                <li>For the score calculation, see above.</li>
+                            </ul>
+                            Score calculation: <br>
+                            <code>score = (number of cells removed)^2 * 5</code>
+                            <br>
+                            When the game finishes, so when there is no more cell to remove, we remove <code>number of cells remaining * 50</code>
+                            to the score. If there is no cell remaining on the grid, the user gets a +500 score bonus.
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h2>stats</h2>
+                                    <i class="fas fa-history fa-fw"></i> 70 commits <br>
+                                    <i class="fas fa-tag fa-fw"></i> 2 releases <br>
+                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
+                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
+                                </div>
+                                <div class="col-lg-5">
+                                    <h2>even more stats</h2>
+                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 02/03/18 <br>
+                                    <i class="fas fa-calendar-check fa-fw"></i> last update 28/08/18 <br>
+                                    <i class="fas fa-exclamation-circle fa-fw"></i> 3 issues <br>
+                                    <i class="fas fa-check-circle fa-fw"></i> 5 closed issues
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2>technologies</h2>
+                                    <i class="fab fa-java fa-fw"></i> Java <br>
+                                    <i class="fab fa-android fa-fw"></i> Android 5.0+ <br>
+                                    <i class="fab fa-android fa-fw"></i> Android API 21+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-links">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2>DOWNLOAD</h2>
+                                    <ul>
+                                        <li>Last version: 2.0</li>
+                                        <li>Release date: 19/03/18</li>
+                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Cascade/releases/tag/2.0">click here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <em>Older versions are availible on the Github page.</em>
+                        </div>
+
+                        <div class="project-footer">
+                            <div>
+                                <a href="https://github.com/N3ROO/Cascade">
+                                    <i class="fab fa-github"></i> Go to the github page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <!-- project_name template 
                     <div id="project_name" class="collapse project-showcase bottom-second-color" data-parent="#projects">
