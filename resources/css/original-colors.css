@@ -26,12 +26,12 @@
             transparent,
             transparent 90px,
             rgb(36, 39, 43) 80px,
-            rgba(38,42,45) 330px
+            rgb(38, 42, 45) 330px
         ),
         linear-gradient(
              bottom,
             rgb(36, 39, 43),
-            rgba(38,42,45)
+            rgb(38, 42, 45)
         );
 
     --background-gradient-moz:
@@ -40,12 +40,12 @@
             transparent,
             transparent 90px,
             rgb(36, 39, 43) 80px,
-            rgba(38,42,45) 330px
+            rgb(38, 42, 45) 330px
         ),
         -moz-linear-gradient(
             bottom,
             rgb(36, 39, 43),
-            rgba(38,42,45)
+            rgb(38, 42, 45)
         );
 
     --background-gradient-webkit:
@@ -54,12 +54,12 @@
             transparent,
             transparent 90px,
             rgb(36, 39, 43) 80px,
-            rgba(38,42,45) 330px
+            rgb(38, 42, 45) 330px
         ),
         -webkit-linear-gradient(
             bottom,
             rgb(36, 39, 43),
-            rgba(38,42,45)
+            rgb(38, 42, 45)
         );
 
     --main-color: rgb(36, 39, 43);
