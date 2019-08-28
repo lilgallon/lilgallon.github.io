@@ -50,9 +50,10 @@
         <!-- Particles.js -->
         <script src="/vendors/particles/particles.js"></script>
 
-        <!-- Website CSS & Font -->
+        <!-- Website CSS, Font & JS -->
         <link rel="stylesheet" href="resources/css/default.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="/resources/js/theme-switcher.js"></script>
 
         <title>Projects - nero.dev</title>
     </head>
@@ -60,6 +61,14 @@
     <body class="background-gradient">
         <!-- Navbar -->
         <nav class="navbar navbar-dark main-color fixed-top bottom-gradient">
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="theme-switcher">
+                <label class="onoffswitch-label" for="theme-switcher">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+
             <!-- Brand -->
             <a class="navbar-brand mx-auto" href="/index.html">
                 <img src="/resources/images/logo/nero_dev_beta_round_cut.png" height="40" alt="nero.dev">

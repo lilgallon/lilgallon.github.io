@@ -719,3 +719,95 @@ a:active.btn {
     background: var(--text-background-color);
     color: var(--second-text-color);
 }
+
+/* switch */
+.onoffswitch {
+    margin-top: 8px;
+    position: relative;
+    width: 85px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0px solid;
+    border-color: var(--second-text-color);
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "LIGHT";
+    padding-left: 10px;
+    background-color: var(--main-text-color);
+    color: var(--second-text-color);
+}
+
+.onoffswitch-inner:after {
+    content: "ORIGIN";
+    padding-right: 10px;
+    background: linear-gradient(270deg, #6900c3, #b550f2, #f250ae);
+    background-size: 600% 600%;
+    -webkit-animation: GradientAnimation 10s ease infinite;
+    -moz-animation: GradientAnimation 10s ease infinite;
+    animation: GradientAnimation 10s ease infinite;
+    color: var(--main-text-color);
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+
+    background: var(--main-text-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 0px solid ;
+    border-color: var(--second-text-color);
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    background: var(--second-text-color) !important;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
