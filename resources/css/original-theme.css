@@ -135,6 +135,10 @@
     .project-stats h2 {
         margin-top: 20px;
     }
+
+    .carousel {
+        margin-top: 50px;
+    }
 }
 
 /* Large devices and lower =<lg */
