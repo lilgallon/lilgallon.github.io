@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nero.dev
+Token: e4bdba851a3e3dd5c92eec76cc1be58971e2b10921f0bac5ca8ec4ae14cfa398
