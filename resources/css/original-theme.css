@@ -131,6 +131,10 @@
         width: 100px;
         height: 100px;
     }
+
+    .project-stats h2 {
+        margin-top: 20px;
+    }
 }
 
 /* Large devices and lower =<lg */
