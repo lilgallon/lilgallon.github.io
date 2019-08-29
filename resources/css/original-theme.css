@@ -139,6 +139,14 @@
     .carousel {
         margin-top: 50px;
     }
+
+    .showcase-image {
+        margin-top: 50px !important;
+    }
+
+    .showcase {
+        margin-top: 0 !important;
+    }
 }
 
 /* Large devices and lower =<lg */
