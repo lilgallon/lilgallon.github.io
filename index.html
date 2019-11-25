@@ -8,6 +8,7 @@
 
     <!-- boostrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- font awesome 5 -->
     <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
 
@@ -103,14 +104,39 @@
                         </a>
                     </div>
 
-                    <div class="title">Recent activity</div>
+                    <div class="title"><i class="fa-fw fas fa-home"></i> Welcome message</div>
 
                     <div class="activity">
                         <div class="content">
-                            something<br>something
+                            Wecome to my new brand new website!
+                            This one should not change for a while compared to the other ones.
+                            All the data is automatically fetched from APIs so that I don't have to
+                            update everything manually. <br>
+                            You can take a look at my projects and my blogs posts by using the left sidebar.
+                            If you want to know more about me, come see my <a href="/resume.html"><i class="far fa-file-word"></i> resume</a>.
+                            If you are curious about the history of this website, take a look <a href="/about.html">here</a>. <br>
+                            Thanks for browsing my website, have fun!
                         </div>
                         <div class="details">
-                            Posted xx/xx/xx by ...
+                            Posted 24/11/19 by Lilian Gallon (manually)
+                        </div>
+                    </div>
+
+                    <div class="title"><i class="fa-fw fas fa-clock"></i> Recent activity</div>
+
+                    <div class="activity">
+                        <div class="content">
+                            <div v-for="activity in activities">
+                                {{ activity.type }} on
+                                <a href="activity.repo_url">{{ activity.repo_name }}</a>
+                                ({{ activity.date }})
+                                <br>
+                            </div>
+                            <em class="fake-link" @click="updateRecentActivity(-5)" v-if="activitiesC > 5">See less... •</em>
+                            <em class="fake-link" @click="updateRecentActivity(5)">See more...</em>
+                        </div>
+                        <div class="details">
+                            from Github API - Only public activities are shown - Dates are shown using your locale time
                         </div>
                     </div>
                 </div>
@@ -183,6 +209,7 @@
 
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>

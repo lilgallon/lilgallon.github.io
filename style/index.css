@@ -17,6 +17,15 @@ html,body {
   top: 10px;
 }
 
+.fake-link {
+    font-size: x-small;
+}
+
+.fake-link:hover {
+    color: grey;
+    cursor: pointer;
+}
+
 /* NAVBAR CSS */
 
 /* It fixes the top margin of the input when the navbar is collapsed */
@@ -70,7 +79,6 @@ nav .form-control:focus {
 
 .middle-panel {
     background: #e1e4e8;
-    height: 900px;
     padding-top: 15px;
 }
 
@@ -87,10 +95,12 @@ nav .form-control:focus {
 }
 
 .middle-panel .content {
-    font-size: medium;
+    text-align: justify;
+    font-size: small;
 }
 
 .middle-panel .details {
+    margin-top: 5px;
     font-size: x-small;
     font-style: italic;
 }
