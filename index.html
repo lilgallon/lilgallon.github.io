@@ -126,17 +126,46 @@
 
                     <div class="activity">
                         <div class="content">
-                            <div v-for="activity in activities">
+                            <div v-for="activity in activitiesGH">
                                 {{ activity.type }} on
-                                <a href="activity.repo_url">{{ activity.repo_name }}</a>
+                                <a :href="activity.repo_url">{{ activity.repo_name }}</a>
                                 ({{ activity.date }})
                                 <br>
                             </div>
-                            <em class="fake-link" @click="updateRecentActivity(-5)" v-if="activitiesC > 5">See less... •</em>
-                            <em class="fake-link" @click="updateRecentActivity(5)">See more...</em>
+                            <em class="fake-link" @click="updateRecentGithubActivity(-5)" v-if="activitiesGHcount > 5">See less... •</em>
+                            <em class="fake-link" @click="updateRecentGithubActivity(5)">See more...</em>
                         </div>
                         <div class="details">
                             from Github API - Only public activities are shown - Dates are shown using your locale time
+                        </div>
+                    </div>
+
+                    <div class="title"><i class="fa-fw fab fa-twitter"></i> Recent tweets & <i class="fa-fw fab fa-stack-overflow"></i> Stackoverflow answers</div>
+
+                    <div class="activity">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="twitter-timeline"
+                                        href="https://twitter.com/LilianSurf?ref_src=twsrc%5Etfw"
+                                        data-tweet-limit="1">Tweets by LilianSurf</a>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
+                                <div class="col-6">
+                                    <div class="so-title">
+                                        <i class="fab fa-stack-overflow"></i> Stackoverflow answers:
+                                    </div>
+                                    <div v-for="activity in activitiesSO">
+                                        {{ activity.score }} point(s) for
+                                        <a :href="activity.url">this answer</a>
+                                        ({{ activity.date }})
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            from Twitter & StackExchange APIs
                         </div>
                     </div>
                 </div>

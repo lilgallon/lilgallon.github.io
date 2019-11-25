@@ -105,6 +105,14 @@ nav .form-control:focus {
     font-style: italic;
 }
 
+.middle-panel .content .so-title {
+    font-size: large;
+    margin-top: 5px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin-bottom: 10px;
+}
+
 /* RIGHT PANEL CSS */
 
 .right-panel {
@@ -117,7 +125,7 @@ nav .form-control:focus {
     text-align: center;
     color: grey;
     border-top: 1px solid rgb(216, 216, 216);
-    margin-top: 10px;
+    margin-top: 50px;
     padding-top: 10px;
     padding-left: 15px;
     font-size: x-small;
