@@ -1,0 +1,132 @@
+/* GENERAL CSS */
+
+html,body {
+    overflow-x: hidden;
+}
+
+.bg-black {
+    background: rgb(45, 50, 55);
+}
+
+.form-control {
+    height: 30px;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+}
+
+/* NAVBAR CSS */
+
+/* It fixes the top margin of the input when the navbar is collapsed */
+nav .show,.collapsing .form {
+    margin-top: 10px;
+}
+
+/* It changes the detault bootstrap input with a dark one */
+nav .form-control {
+    background: rgb(62, 71, 78);
+    border: 0;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: grey;
+    max-width: 300px;
+}
+
+nav .form-control:focus {
+    border-color:  rgb(133, 3, 46);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.025) inset, 0 0 5px rgb(250, 0, 83);
+    outline: 0 none;
+}
+
+/* LEFT PANEL CSS */
+
+.left-panel {
+    font-size: small;
+    background: white;
+    border-right: 1px solid rgb(216, 216, 216);
+    padding-top: 10px;
+}
+
+.left-panel input {
+    margin: 10px 0px 10px 0px;
+}
+
+.left-panel input::placeholder {
+    font-size: small;
+    font-style: italic;
+}
+
+.left-panel li {
+    list-style-type: none;
+}
+
+.left-panel ul {
+    padding-left: 0px;
+}
+
+/* MIDDLE PANEL CSS */
+
+.middle-panel {
+    background: #e1e4e8;
+    height: 900px;
+    padding-top: 15px;
+}
+
+.middle-panel .title {
+    margin-top: 15px;
+}
+
+.middle-panel .activity {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+.middle-panel .content {
+    font-size: medium;
+}
+
+.middle-panel .details {
+    font-size: x-small;
+    font-style: italic;
+}
+
+/* RIGHT PANEL CSS */
+
+.right-panel {
+    background: #e1e4e8;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    color: grey;
+    border-top: 1px solid rgb(216, 216, 216);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: x-small;
+}
+
+.footer li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer ul {
+    padding-left: 0px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer a:hover {
+    color: rgb(83, 83, 83);
+}
