@@ -23,3 +23,12 @@ html {
     color: grey;
     cursor: pointer;
 }
+
+.discret-link {
+    color: rgb(33, 37, 41);
+}
+
+.discret-link:hover {
+    color: grey;
+    text-decoration: none;
+}

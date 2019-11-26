@@ -21,3 +21,23 @@
 .left-panel ul {
     padding-left: 0px;
 }
+
+.left-panel .image {
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.left-panel .image img {
+    width: 100%;
+}
+
+.left-panel .title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+.left-panel .description {
+    font-size: x-small;
+}
