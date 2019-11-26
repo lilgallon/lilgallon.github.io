@@ -2,6 +2,7 @@
 let vue = new Vue({
     el: '#app',
     data: {
+        version: "2019.1.0b",
         projects: [
             {name: "project1", icon: "fas fa-user"},
             {name: "project2", icon: "fas fa-user-graduate"}

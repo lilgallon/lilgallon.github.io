@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134954906-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-134954906-1');
+    </script>
 
-    <!-- boostrap-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO -->
+    <meta name="description" content="Hey you! Yeah you! Come take a look at my website! I am Lilian Gallon, a French CS student from Bordeaux. Here, you can browse through my projects, or my blog posts to learn more about me."/>
+    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California"/>
+    <meta name="author" content="Lilian Gallon"/>
+    <meta name="copyright" content="Lilian Gallon"/>
+    <meta name="robots" content="follow"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Website preview -->
+    <meta property="og:image" content="https://nero.dev/resources/images/logo/website_preview.png" />
+
+    <!-- Boostrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- font awesome 5 -->
+    <!-- Font Awesome 5 -->
     <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
 
-    <!-- style -->
+    <!-- Website CSS -->
     <link rel="stylesheet" href="/style/index.css">
 
+    <title>Homepage - nero.dev</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <a class="navbar-brand" href="/">
-            <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
-        </a>
-
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-            <input class="form-control mr-sm-2" placeholder="Search">
-
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <a class="navbar-brand" href="/">
+                <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <input class="form-control mr-sm-2" placeholder="Search">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="row">
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
@@ -215,7 +256,7 @@
                                     <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a>
                                 </li>
                                 <li>
-                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version 2019.1.0</a>
+                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version {{ version }}</a>
                                 </li>
                             </ul>
                         </div>
