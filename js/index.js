@@ -2,7 +2,10 @@
 let vue = new Vue({
     el: '#app',
     data: {
+        /* GENERAL */
         version: "2019.1.0b",
+
+        /* SIDEBAR */
         projects: [
             {name: "project1", icon: "fas fa-user"},
             {name: "project2", icon: "fas fa-user-graduate"}
@@ -11,11 +14,23 @@ let vue = new Vue({
             {name: "Post1", icon: "fas fa-newspaper"},
             {name: "Post2", icon: "fas fa-newspaper"}
         ],
+
+        /* MIDDLE CONTENT */
         activitiesGH: [],
         activitiesGHcount: 0,
         activitiesSO: []
+
+        /* RIGHT CONTENT */
+        // ...
     },
     methods: {
+        /* GENERAL */
+        // ...
+
+        /* SIDEBAR */
+        //...
+
+        /* MIDDLE CONTENT */
         updateRecentGithubActivity(increment) {
             this.activitiesGHcount += increment
             axios.get("https://api.github.com/users/N3ROO/events/public")
@@ -56,9 +71,22 @@ let vue = new Vue({
                 }
             })
         }
+
+        /* RIGHT CONTENT */
+        // ...
     },
     mounted() {
+        /* GENERAL */
+        // ...
+
+        /* SIDEBAR */
+        //...
+
+        /* MIDDLE CONTENT */
         this.updateRecentGithubActivity(5);
         this.updateRecentStackOverflowActivity();
+
+        /* RIGHT CONTENT */
+        // ...
     }
 });
