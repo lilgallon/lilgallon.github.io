@@ -1,0 +1,27 @@
+.footer {
+    text-align: center;
+    color: grey;
+    border-top: 1px solid rgb(216, 216, 216);
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: x-small;
+}
+
+.footer li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer ul {
+    padding-left: 0px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer a:hover {
+    color: rgb(83, 83, 83);
+}
