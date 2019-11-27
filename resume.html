@@ -57,6 +57,7 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
+
     <title>Resume - nero.dev</title>
 </head>
 <body>
@@ -89,6 +90,15 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/resume.html">Resume <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Utility
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/musics.html">Musics</a>
+                          <a class="dropdown-item" href="/gists.html">Gists</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
                     </li>
@@ -101,9 +111,8 @@
             <!-- Sidebar -->
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
-                    <!-- ... -->
                     <div class="image">
-                        <img src="/resources/images/resume/IMG_2662.JPG" width="200px"/>
+                        <img src="/resources/images/resume/profile.jpg" width="200px"/>
                         <small><i class="fas fa-map-marker-alt"></i> San Francisco, California</small>
                     </div>
                     <div class="title">
@@ -111,9 +120,9 @@
                     </div>
                     <div class="description">
                         Fourth year French computer science student currently at the University of California, Santa Cruz.
-                        I am from the University of Bordeaux, France.
+                        From the University of Bordeaux, France.
                         <br/> <br/>
-                        <i class="fa-fw far fa-envelope"></i> lgallon@ucsc.edu <br>
+                        <i class="fa-fw far fa-envelope"></i> lgallon[at]ucsc[dot]edu <br>
                         <i class="fa-fw fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank" class="discret-link">Lilian Gallon</a> <br>
                         <i class="fa-fw fab fa-github"></i> <a href="https://github.com/N3ROO" target="_blank" class="discret-link">N3ROO</a> <br>
                         <i class="fa-fw fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/8811838/nero" target="_blank" class="discret-link">StackOverflow profile</a>
@@ -124,7 +133,117 @@
             <!-- Middle content -->
             <div class="col-xl-8 col-md-8 middle-panel">
                 <div class="container">
-                    <!-- ... -->
+                    <div class="section">
+                        <div class="title">
+                            Lilian Gallon
+                        </div>
+                        <div class="subtitle">
+                            Software engineering student
+                        </div>
+
+                        <br>
+
+                        <!-- Experience -->
+                        <div class="section-title">
+                            EXPERIENCE
+                        </div>
+                        <div>
+                            <b>Engie Inéo, Pessac, France</b>
+                            <em> - Software developer</em>
+                            <br>
+                            <small>april 2018 - june 2018</small>
+                            <ul>
+                                <li>
+                                    Design and implementation of a data analysis software to detect,
+                                    visualize and interpret the logical links between different energy readings.
+                                    <em>- <i class="fab fa-python"></i> Python with matplotlib, numpy, tkinter</em>
+                                </li>
+                                <li>
+                                    Web scraping script working on a website with credentials.
+                                    <em>- <i class="fab fa-python"></i> Python with beautifulsoup</em>
+                                </li>
+                                <li>
+                                    Script for periodic FTP synchronization.
+                                    <em>- <i class="fab fa-python"></i> Python </em>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="section-title">
+                            EDUCATION
+                        </div>
+                        <div>
+                            <b>University of California, Santa Cruz</b>
+                            <em> - First year of Master's degree in computer science</em>
+                            <br>
+                            <small>SEPTEMBER 2019 - JUNE 2020</small>
+
+                            <br>
+
+                            <ul v-for="term in terms">
+                                {{ term.name }}
+                                <li v-for="course in term.courses">
+                                    <a class="info" data-toggle="popover" title="Course description" :data-content="course.description">
+                                        <i class="far fa-comment"></i>  {{ course.title }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <b>University of Bordeaux</b>
+                            <em> - Bachelor’s degree in computer science</em>
+                            <br>
+                            <small>SEPTEMBER 2018 - JUNE 2019</small>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <b>Bordeaux Institute of Technology</b>
+                            <em> - Associate's degree in computer science</em>
+                            <br>
+                            <small>SEPTEMBER 2016 - JUNE 2018</small>
+                        </div>
+
+                        <br>
+
+                        <!-- Skills -->
+                        <div class="section-title">
+                            SKILLS
+                        </div>
+                        <div>
+                            <b>Languages</b>
+                            <ul>
+                                <li>+++: Python, Java, Javascript, HTML5/CSS</li>
+                                <li>++: C++, C</li>
+                                <li>+: SQL, C#, PHP</li>
+                            </ul>
+                            <b>Technologies</b>
+                            <ul>
+                                <li>Web: React, Vue.js, Flask, Bootstrap, JQuery</li>
+                                <li>Tools: Gradle, Maven</li>
+                                <li>CI: Github Actions, TravisCI</li>
+                                <li>Libraries: OpenGL, JavaFX, SFML, SDL, OpenCV</li>
+                                <li>Miscellaneous: Android development, Unity, Game modding</li>
+                            </ul>
+                            <b>Miscellaneous</b>
+                            <ul>
+                                <li>Fluent in English</li>
+                                <li>Fluent in French</li>
+                                <li>Experience with Agile management</li>
+                            </ul>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="section-title">
+                            PROJECTS
+                        </div>
+                        <div>
+                            You can see all my projects by browsing the <a href="/projects.html">projects page</a>.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Footer -->
@@ -203,6 +322,13 @@
 
     <!-- Utilities -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Bootstrap init -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 
     <!-- Javascript using vue -->
     <script src="js/resume.js"></script>

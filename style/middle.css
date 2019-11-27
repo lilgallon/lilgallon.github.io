@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("theme.css");
+
 .middle-panel {
     background: #e1e4e8;
     padding-top: 15px;
@@ -32,4 +35,43 @@
     padding-bottom: 9px;
     border-bottom: 1px solid rgb(216, 216, 216);
     margin-bottom: 10px;
+}
+
+.middle-panel .title {
+    font-size: xx-large;
+}
+
+.middle-panel .subtitle {
+    font-size: large;
+}
+
+.middle-panel .section {
+    font-family: 'Raleway', sans-serif;
+}
+
+.middle-panel .section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.middle-panel small {
+    text-transform: uppercase;
+    font-size: x-small;
+}
+
+.middle-panel li {
+    font-size: small;
+}
+
+.middle-panel li em {
+    color: grey;
+    font-size: x-small;
+}
+
+.middle-panel .info:hover {
+    cursor: pointer;
+    color: grey !important;
 }
