@@ -6,10 +6,6 @@
     padding-top: 15px;
 }
 
-.middle-panel .title {
-    margin-top: 15px;
-}
-
 .middle-panel .activity {
     background: white;
     border-radius: 5px;
@@ -20,12 +16,11 @@
 
 .middle-panel .content {
     text-align: justify;
-    font-size: small;
 }
 
 .middle-panel .details {
     margin-top: 5px;
-    font-size: x-small;
+    font-size: small;
     font-style: italic;
 }
 
@@ -37,8 +32,16 @@
     margin-bottom: 10px;
 }
 
-.middle-panel .title {
+.middle-panel .title1,.title2 {
+    margin-top: 15px;
+}
+
+.middle-panel .title1 {
     font-size: xx-large;
+}
+
+.middle-panel .title2 {
+    font-size: large;
 }
 
 .middle-panel .subtitle {
@@ -59,16 +62,14 @@
 
 .middle-panel small {
     text-transform: uppercase;
-    font-size: x-small;
 }
 
 .middle-panel li {
-    font-size: small;
+    font-size: medium;
 }
 
 .middle-panel li em {
     color: grey;
-    font-size: x-small;
 }
 
 .middle-panel .info:hover {

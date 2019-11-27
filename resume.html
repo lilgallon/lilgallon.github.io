@@ -113,7 +113,7 @@
                 <div class="container sticky">
                     <div class="image">
                         <img src="/resources/images/resume/profile.jpg" width="200px"/>
-                        <small><i class="fas fa-map-marker-alt"></i> San Francisco, California</small>
+                        <i class="fas fa-map-marker-alt"></i> San Francisco, California
                     </div>
                     <div class="title">
                         Lilian Gallon
@@ -134,7 +134,7 @@
             <div class="col-xl-8 col-md-8 middle-panel">
                 <div class="container">
                     <div class="section">
-                        <div class="title">
+                        <div class="title1">
                             Lilian Gallon
                         </div>
                         <div class="subtitle">
@@ -182,7 +182,9 @@
                             <br>
 
                             <ul v-for="term in terms">
-                                {{ term.name }}
+                                <div class="underline">
+                                    {{ term.name }}:
+                                </div>
                                 <li v-for="course in term.courses">
                                     <a class="info" data-toggle="popover" title="Course description" :data-content="course.description">
                                         <i class="far fa-comment"></i>  {{ course.title }}

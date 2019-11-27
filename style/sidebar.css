@@ -26,6 +26,7 @@
     border: 1px solid rgb(216, 216, 216);
     border-radius: 5px;
     padding: 5px;
+    font-size: small;
 }
 
 .left-panel .image img {
@@ -39,6 +40,6 @@
 }
 
 .left-panel .description {
-    font-size: x-small;
+    font-size: small;
     margin-bottom: 20px;
 }
