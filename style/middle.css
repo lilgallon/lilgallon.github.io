@@ -76,3 +76,48 @@
     cursor: pointer;
     color: grey !important;
 }
+
+.middle-panel .repo {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin: 10px;
+    padding-bottom: 20px;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.middle-panel .repo-image {
+    margin-right: 20px;
+}
+
+.middle-panel .repo-image img{
+    margin-top: 10px;
+    width: 75px;
+}
+
+.middle-panel .repo-title {
+    font-size: x-large;
+}
+
+.middle-panel .repo-subtitle {
+    font-size: medium !important;
+}
+
+.middle-panel .repo-details {
+    margin-top: 20px;
+    font-size: small;
+}
+
+.middle-panel .nrepo {
+    margin: 5px;
+}
+
+.middle-panel .nrepo .repo-title {
+    font-size: large;
+}
+
+.middle-panel .nrepo .repo-subtitle {
+    font-size: medium;
+}
+
+

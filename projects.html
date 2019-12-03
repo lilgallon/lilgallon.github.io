@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134954906-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-134954906-1');
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO -->
+    <meta name="description" content="Hey you! Yeah you! Come take a look at my website! I am Lilian Gallon, a French CS student from Bordeaux. Here, you can browse through my projects, or my blog posts to learn more about me."/>
+    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California"/>
+    <meta name="author" content="Lilian Gallon"/>
+    <meta name="copyright" content="Lilian Gallon"/>
+    <meta name="robots" content="follow"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Website preview -->
+    <meta property="og:image" content="https://nero.dev/resources/images/logo/website_preview.png" />
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome 5 
+    <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
+    -->
+    <link rel="stylesheet" href="/vendors/fontawesome-free-5.10.1-web/css/all.min.css">
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="/style/utility.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/sidebar.css">
+    <link rel="stylesheet" href="/style/middle.css">
+    <link rel="stylesheet" href="/style/right.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
+    <title>Projects - nero.dev</title>
+</head>
+
+<!--
+    TODO:
+    - Update metadata
+-->
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <a class="navbar-brand" href="/">
+                <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <input class="form-control mr-sm-2" placeholder="Search">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/projects.html">Projects <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Utility
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/musics.html">Musics</a>
+                            <a class="dropdown-item" href="/gists.html">Gists</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-xl-2 col-md-4 left-panel">
+                <div class="container sticky">
+                    <div class="image">
+                        <img src="/resources/images/resume/profile.jpg" width="200px"/>
+                        <i class="fas fa-map-marker-alt"></i> San Francisco, California
+                    </div>
+                    <div class="title">
+                        Lilian Gallon
+                    </div>
+                    <div class="description">
+                        Fourth year French computer science student currently at the University of California, Santa Cruz.
+                        From the University of Bordeaux, France.
+                        <br/> <br/>
+                        <i class="fa-fw far fa-envelope"></i> lgallon[at]ucsc[dot]edu <br>
+                        <i class="fa-fw fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank" class="discret-link">Lilian Gallon</a> <br>
+                        <i class="fa-fw fab fa-github"></i> <a href="https://github.com/N3ROO" target="_blank" class="discret-link">N3ROO</a> <br>
+                        <i class="fa-fw fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/8811838/nero" target="_blank" class="discret-link">StackOverflow profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle content -->
+            <div class="col-xl-8 col-md-8 middle-panel">
+                <div class="container">
+
+                    <h2>Main projects</h2>
+                    <hr>
+                    <br>
+
+                    <!-- Main projects -->
+                    <div class="repo" v-for="mrepo in mrepos_details">
+                        <div :id="mrepo.api.name" class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-1 repo-image center">
+                                    <img :src="mrepo.details.image" alt="">
+                                </div>
+                                <div class="col-md-9 col-lg-10 repo-content">
+                                    <div class="repo-title">
+                                        {{ mrepo.api.name }}
+                                        <span class="repo-subtitle">
+                                            <i class="fa-fw fas fa-star"></i> {{ mrepo.api.stargazers_count }}
+                                            <i class="fa-fw fas fa-eye"></i> {{ mrepo.api.watchers_count }}
+                                            <i class="fa-fw fas fa-code-branch"></i> {{ mrepo.api.forks_count }}
+                                            <i class="fa-fw fas fa-bug"></i> {{ mrepo.api.open_issues }}
+                                        </span>
+                                    </div>
+                                    <div class="repo-description" style="display:block;">
+                                        {{ mrepo.api.description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="repo-details">
+                            <b>Status:</b>
+                            <span v-if="mrepo.details.university">
+                                <i class="fas fa-university"></i> University project.
+                            </span>
+                            <span v-if="mrepo.details.released">
+                                Released
+                                <span v-if="mrepo.details.indev">
+                                    and currently maintained. <i class="fas fa-code"></i>
+                                </span>
+                                <span v-else>
+                                    and no future update planned at the moment. <i class="fas fa-pause"></i>
+                                </span>
+                            </span>
+                            <span v-else>
+                                Not released
+                                <span v-if="mrepo.details.indev">
+                                    but in development. <i class="fas fa-code"></i>
+                                </span>
+                                <span v-else>
+                                    and development paused. <i class="fas fa-times"></i>
+                                </span>
+                            </span>
+                            <br>
+                            <b>Details:</b>
+                            {{ mrepo.api.language}}, updated {{ mrepo.last_update }} days ago on <a href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                        </div>
+                    </div>
+
+                    <br>
+                    <h2>Minor projects</h2>
+                    <hr>
+                    <br>
+
+                    <!-- Normal projects -->
+                    <div class="row">
+                        <div class="col-lg-3 repo" v-for="nrepo in nrepos_details">
+                            <div :id="nrepo.api.name">
+                                <div class="repo-content">
+                                    <div class="repo-title">
+                                        {{ nrepo.api.name }}
+                                        <div class="repo-subtitle">
+                                            <i class="fa-fw fas fa-star"></i> {{ nrepo.api.stargazers_count }}
+                                            <i class="fa-fw fas fa-eye"></i> {{ nrepo.api.watchers_count }}
+                                            <i class="fa-fw fas fa-code-branch"></i> {{ nrepo.api.forks_count }}
+                                            <i class="fa-fw fas fa-bug"></i> {{ nrepo.api.open_issues }}
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="repo-description" style="display:block;">
+                                        {{ nrepo.api.description }}
+                                    </div>
+                                </div>
+
+                                <div class="repo-details">
+                                    <b>Details:</b>
+                                    {{ nrepo.api.language}}, updated {{ nrepo.last_update }} days ago on <a href="nrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="row">
+
+                        <!-- Left column -->
+                        <div class="col-md-4 col-6">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/N3ROO" target="_blank">
+                                        <i class="fa-fw fab fa-github"></i> Github profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank">
+                                        <i class="fa-fw fab fa-linkedin"></i> LinkedIn profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://stackoverflow.com/users/8811838/nero" target="_blank">
+                                        <i class="fa-fw fab fa-stack-overflow"></i> StackOverflow profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Middle column -->
+                        <div class="col-md-4 col-6">
+                            <ul>
+                                <li>
+                                    <a href="https://pages.github.com/" target="_blank">Hosted by Github pages</a>
+                                </li>
+                                <li>
+                                    <a href="https://domains.google/" target="_blank">Domain provided by Google</a>
+                                </li>
+                                <li>
+                                    Powered by <a href="https://vuejs.org/">Vue.js</a> & <a href="https://getbootstrap.com/">Bootstrap</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right column -->
+                        <div class="col-md-4 col-6">
+                            <ul>
+                                <li>
+                                    Design inspired by Github
+                                </li>
+                                <li>
+                                    <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version {{ version }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right content (hidden if < lg) -->
+            <div class="col-lg-2 right-panel d-none d-xl-block">
+                <!-- ... -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap (JQuery, Popper & Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Vue library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+
+    <!-- Utilities -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Javascript using vue -->
+    <script src="js/projects.js"></script>
+
+</body>
+</html>
