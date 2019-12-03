@@ -1,3 +1,5 @@
+@import url("theme.css");
+
 html {
     overflow-x: hidden;
 }
@@ -47,4 +49,13 @@ html {
 
 .center {
     text-align: center;
+}
+
+.bottom-gradient {
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    -moz-border-image: var(--main-gradient);
+    -webkit-border-image: var(--main-gradient);
+    -o-border-image: var(--main-gradient);
+    border-image: var(--main-gradient);
 }

@@ -1,3 +1,9 @@
 :root {
     --theme-color: rgb(250, 0, 83);
+    --main-gradient: linear-gradient(
+        to right,
+        rgb(1,174,239) 0%,
+        rgb(122,30,179) 50%,
+        rgb(238,1,67) 100%
+    ) 1;
 }
