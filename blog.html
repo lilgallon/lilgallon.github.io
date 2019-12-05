@@ -49,6 +49,9 @@
     <!-- Font Awesome 5 -->
     <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
 
+    <!-- Data -->
+    <!-- <script src="/data/posts.json"></script> -->
+
     <!-- Website CSS -->
     <link rel="stylesheet" href="/style/utility.css">
     <link rel="stylesheet" href="/style/navbar.css">
@@ -142,74 +145,17 @@
             <!-- Middle content -->
             <div class="col-xl-8 col-md-8 middle-panel">
                 <div class="container">
-                    <!--
-                    <div class="title2"><i class="fa-fw icon"></i> title</div>
-                    <div class="activity">
-                        <div class="content">
-                            blabla
-                        </div>
-                        <div class="details">
-                            Posted x/x/x by Lilian Gallon
-                        </div>
-                    </div>
-                    -->
-
-                    <div class="title2"><i class="fa-fw fas fa-home"></i> New website, once again</div>
-                    <div class="activity">
-                        <div class="content">
-                            Clean, and automatically updated by using APIs. I was tired to update the website manually, so
-                            I decided to automate everything! I did not like the last website because it was difficult to
-                            see the information. Now we have more information, and we can read it more easily. I may create
-                            a dark theme based on the last website though!
-                        </div>
-                        <div class="details">
-                            Posted 02/12/2019 by Lilian Gallon
-                        </div>
-                    </div>
-
-                    <div class="title2"><i class="fa-fw fab fa-itunes-note"></i> playlistsByGenre becomes Music genre finder</div>
-                    <div class="activity">
-                        <div class="content">
-                                I am about to have a presentation in front of a whole lecture class.
-                                I had to find an interesting subject, and I came up with an idea.
-                                How to find the genre of a music without using artificial intelligence?
-                                My project is the answer of this question. I need to improve the project
-                                for it to be ready on the 10th of October (the day of my presentation).
-                                <br>
-                                I have to make the contribution easier because the project depends on a
-                                dictionary binding genres to youtube channels. This way, people will find
-                                easier to add more and more data. Also, I thought about a website where people
-                                can find the music genre of some songs, and where they can put their contribution
-                                with an user-friendly interface.
-                                <br>
-                                The slideshow used will be released shortly after, and will serve as an introduction to the project.
-                        </div>
-                        <div class="details">
-                            Posted 10/01/2019 by Lilian Gallon
-                        </div>
-                    </div>
-
-                    <div class="title2"><i class="fa-fw fas fa-university"></i> I am back</div>
-                    <div class="activity">
-                        <div class="content">
-                            Now established at UCSC, I can resume my projects and all the stuff around.
-                            Some fixes have been pushed to particles.js which was updated to 1.5. In the next days,
-                            we can expect updates to be coming for the fractals explorer and the playlistByGenre project.
-                        </div>
-                        <div class="details">
-                            Posted 09/25/2019 by Lilian Gallon
-                        </div>
-                    </div>
-
-                    <div class="title2"><i class="fa-fw far fa-object-group"></i> New domain, new website, new look</div>
-                    <div class="activity">
-                        <div class="content">
-                            After a week of work, I am proud to release this new site! Everything has been re-coded from scratch using bootstrap.
-                            It should be compatible with all modern browsers. You can get more details by going to the about page. More blog posts
-                            are coming about my projects, stay tuned!
-                        </div>
-                        <div class="details">
-                            Posted 08/29/2019 by Lilian Gallon
+                    <div v-for="post in posts">
+                        <div class="title2"><i :class="post.symbol"></i> {{ post.title }}</div>
+                        <div class="activity">
+                            <div class="content">
+                                <div v-for="paragraph in post.paragraphs">
+                                    {{ paragraph }}
+                                </div>
+                            </div>
+                            <div class="details">
+                                Posted {{ post.date }} by {{ post.author }}
+                            </div>
                         </div>
                     </div>
                 </div>

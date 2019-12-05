@@ -8,9 +8,8 @@ let vue = new Vue({
         /* SIDEBAR */
         // ...
 
-
         /* MIDDLE CONTENT */
-        // ...
+        posts: []
 
         /* RIGHT CONTENT */
         // ...
@@ -23,7 +22,13 @@ let vue = new Vue({
         //...
 
         /* MIDDLE CONTENT */
-        // ...
+        updatePosts() {
+            fetch("/data/posts.json")
+            .then(async (response) => {
+                let json = await response.json();
+                this.posts = json.posts;
+            });
+        }
 
         /* RIGHT CONTENT */
         // ...
@@ -36,7 +41,7 @@ let vue = new Vue({
         //...
 
         /* MIDDLE CONTENT */
-        // ...
+        this.updatePosts();
 
         /* RIGHT CONTENT */
         // ...
