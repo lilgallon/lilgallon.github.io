@@ -432,7 +432,7 @@ a:active.btn {
     margin-bottom: 20px;
 }
 
-.playlists-by-genre-showcase{
+.music-genre-finder-showcase{
     background: linear-gradient(270deg, #6900c3, #b550f2, #f250ae);
     background-size: 600% 600%;
     -webkit-animation: GradientAnimation 10s ease infinite;
