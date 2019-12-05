@@ -115,16 +115,19 @@
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
 
+                    <em><small>The search feature does not only take into account the project/blog post name.</small></em>
+
                     <!-- Projects -->
                     <div class="title">
                         Projects
                     </div>
-                    <input class="form-control" placeholder="Search for projects...">
+                    <input class="form-control" placeholder="Search for projects..." @input="onProjectsSearch">
                     <div class="project-list">
                         <ul>
-                            <li v-for="project in projects">
-                                <i :class="project.icon"></i> {{ project.name }}
+                            <li v-for="(project, index) in projectsSearched" v-if="index <= 5">
+                                <i class="fa-fw far fa-folder"></i> <a :href="'/projects.html#' + project.name" class="discret-link">{{ project.name }}</a>
                             </li>
+                            <em v-if="projectsSearched.length - 5 > 0">{{ projectsSearched.length - 5 }} more...</em>
                         </ul>
                     </div>
 
@@ -132,12 +135,13 @@
                     <div class="title">
                         Blog posts
                     </div>
-                    <input class="form-control" placeholder="Search for posts...">
+                    <input class="form-control" placeholder="Search for posts..." @input="onPostsSearch">
                     <div class="project-list">
                         <ul>
-                            <li v-for="post in posts">
-                                <i :class="post.icon"></i> {{ post.name }}
+                            <li v-for="(post, index) in postsSearched" v-if="index <= 5">
+                                <i class="fa-fw far fa-newspaper"></i> <a href="/blog.html" class="discret-link">{{ post.title }} </a>
                             </li>
+                            <em v-if="postsSearched.length - 5 > 0">{{ postsSearched.length - 5 }} more...</em>
                         </ul>
                     </div>
                 </div>

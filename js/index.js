@@ -6,14 +6,10 @@ let vue = new Vue({
         version: "2019.1.0b",
 
         /* SIDEBAR */
-        projects: [
-            {name: "project1", icon: "fas fa-user"},
-            {name: "project2", icon: "fas fa-user-graduate"}
-        ],
-        posts: [
-            {name: "Post1", icon: "fas fa-newspaper"},
-            {name: "Post2", icon: "fas fa-newspaper"}
-        ],
+        projects: [],
+        posts: [],
+        projectsSearched: [],
+        postsSearched: [],
 
         /* MIDDLE CONTENT */
         activitiesGH: [],
@@ -28,7 +24,52 @@ let vue = new Vue({
         // ...
 
         /* SIDEBAR */
-        //...
+        updateProjects() {
+            axios.get("https://api.github.com/users/N3ROO/repos")
+            .then((response) => {
+                this.projects = response.data;
+                this.projectsSearched = response.data;
+            });
+        },
+        updateBlogPosts() {
+            fetch("/data/posts.json")
+            .then(async (response) => {
+                let json = await response.json();
+                this.posts = json.posts;
+                this.postsSearched = json.posts;
+            });
+        },
+        onProjectsSearch(event) {
+            let search = event.target.value;
+            let newProjects = [];
+            for (let project of this.projects) {
+                let data = project.name + " " +
+                           project.description+ " "
+                           project.language;
+                if (data.toLowerCase().includes(search.toLowerCase())) {
+                    newProjects.push(project);
+                }
+            }
+            this.projectsSearched = newProjects;
+        },
+        onPostsSearch(event) {
+            // Search by date, author, title, content
+            let search = event.target.value;
+            let newPosts = []
+            for (let post of this.posts) {
+                let data = post.date + " " +
+                           post.author + " " +
+                           post.title;
+                for (let paragraph of post.paragraphs) {
+                    data += " " + paragraph;
+                }
+
+                if (data.toLowerCase().includes(search.toLowerCase())) {
+                    newPosts.push(post);
+                }
+            }
+            this.postsSearched = newPosts;
+        },
 
         /* MIDDLE CONTENT */
         updateRecentGithubActivity(increment) {
@@ -52,7 +93,7 @@ let vue = new Vue({
                 }
             });
         },
-        updateRecentStackOverflowActivity(){
+        updateRecentStackOverflowActivity() {
             axios.get("https://api.stackexchange.com/2.2/users/8811838/answers?order=desc&sort=activity&site=stackoverflow")
             .then((response) => {
                 this.activitiesSO = [];
@@ -69,7 +110,7 @@ let vue = new Vue({
 
                     this.activitiesSO.push(activity)
                 }
-            })
+            });
         }
 
         /* RIGHT CONTENT */
@@ -80,7 +121,8 @@ let vue = new Vue({
         // ...
 
         /* SIDEBAR */
-        //...
+        this.updateProjects();
+        this.updateBlogPosts();
 
         /* MIDDLE CONTENT */
         this.updateRecentGithubActivity(5);
