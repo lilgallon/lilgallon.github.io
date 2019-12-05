@@ -120,4 +120,6 @@
     font-size: medium;
 }
 
-
+.middle-panel .activity .changelog {
+    margin-left: 20px;
+}
