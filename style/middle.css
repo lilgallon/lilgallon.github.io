@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("theme.css");
+
+.middle-panel {
+    background: #e1e4e8;
+    padding-top: 15px;
+}
+
+.middle-panel .activity {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+.middle-panel .content {
+    text-align: justify;
+}
+
+.middle-panel .details {
+    margin-top: 5px;
+    font-size: small;
+    font-style: italic;
+}
+
+.middle-panel .content .so-title {
+    font-size: large;
+    margin-top: 5px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin-bottom: 10px;
+}
+
+.middle-panel .title1,.title2 {
+    margin-top: 15px;
+}
+
+.middle-panel .title1 {
+    font-size: xx-large;
+}
+
+.middle-panel .title2 {
+    font-size: large;
+}
+
+.middle-panel .subtitle {
+    font-size: large;
+}
+
+.middle-panel .section {
+    font-family: 'Raleway', sans-serif;
+}
+
+.middle-panel .section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.middle-panel small {
+    text-transform: uppercase;
+}
+
+.middle-panel li {
+    font-size: medium;
+}
+
+.middle-panel li em {
+    color: grey;
+}
+
+.middle-panel .info:hover {
+    cursor: pointer;
+    color: grey !important;
+}
+
+.middle-panel .repo {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin: 10px;
+    padding-bottom: 20px;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.middle-panel .repo-image {
+    margin-right: 20px;
+}
+
+.middle-panel .repo-image img{
+    margin-top: 10px;
+    width: 75px;
+}
+
+.middle-panel .repo-title {
+    font-size: x-large;
+}
+
+.middle-panel .repo-subtitle {
+    font-size: medium !important;
+}
+
+.middle-panel .repo-details {
+    margin-top: 20px;
+    font-size: small;
+}
+
+.middle-panel .nrepo {
+    margin: 5px;
+}
+
+.middle-panel .nrepo .repo-title {
+    font-size: large;
+}
+
+.middle-panel .nrepo .repo-subtitle {
+    font-size: medium;
+}
+
+.middle-panel .activity .changelog {
+    margin-left: 20px;
+}

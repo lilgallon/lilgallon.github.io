@@ -1,0 +1,22 @@
+@import url("theme.css");
+
+/* It fixes the top margin of the input when the navbar is collapsed */
+nav .show,.collapsing .form {
+    margin-top: 10px;
+}
+
+/* It changes the detault bootstrap input with a dark one */
+nav .form-control {
+    background: rgb(62, 71, 78);
+    border: 0;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: grey;
+    max-width: 300px;
+}
+
+nav .form-control:focus {
+    border-color:  var(--theme-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.025) inset, 0 0 5px var(--theme-color);
+    outline: 0 none;
+}

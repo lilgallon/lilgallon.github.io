@@ -1,0 +1,51 @@
+.left-panel {
+    font-size: small;
+    background: white;
+    border-right: 1px solid rgb(216, 216, 216);
+    padding-top: 10px;
+}
+
+.left-panel input {
+    margin: 10px 0px 10px 0px;
+}
+
+.left-panel input::placeholder {
+    font-size: small;
+    font-style: italic;
+}
+
+.left-panel li {
+    list-style-type: none;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-panel ul {
+    padding-left: 0px;
+}
+
+.left-panel .image {
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+}
+
+.left-panel .image img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.left-panel .title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+.left-panel .description {
+    font-size: small;
+    margin-bottom: 20px;
+}

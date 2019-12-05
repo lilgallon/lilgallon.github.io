@@ -57,13 +57,12 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
-    <title>About - nero.dev</title>
+
+    <title>Resume - nero.dev</title>
 </head>
-
-
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
             <a class="navbar-brand" href="/">
                 <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
@@ -88,20 +87,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/resume.html">Resume</a>
-                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/about.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/resume.html">Resume <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Utility
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- <!-- <a class="dropdown-item" href="/musics.html">Musics</a> --> -->
-                            <a class="dropdown-item" href="/gists.html">Gists</a>
-                            <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
+                          <!-- <a class="dropdown-item" href="/musics.html">Musics</a> -->
+                          <a class="dropdown-item" href="/gists.html">Gists</a>
+                          <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -138,147 +137,117 @@
             <!-- Middle content -->
             <div class="col-xl-8 col-md-8 middle-panel">
                 <div class="container">
-                    <h2>About</h2>
-                    <hr>
+                    <div class="section">
+                        <div class="title1">
+                            Lilian Gallon
+                        </div>
+                        <div class="subtitle">
+                            Software engineering student
+                        </div>
 
-                    <div class="title2"><i class="fa-fw icon"></i> How has this website been built?</div>
-                    <div class="activity">
-                        <div class="content">
-                            It has been built from scratch using <a href="https://getbootstrap.com/">Bootstrap 4</a>, HTML5 and CSS. The data is automatically fetched
-                            by <a href="https://vuejs.org/">VueJS</a> and <a href="https://github.com/axios/axios">axios</a>. It uses Bootstrap JS scripts, so
-                            <a href="https://jquery.com/">JQuery</a> comes with it, as well as <a href="https://popper.js.org/">Popper.js</a>. The icons are provided
-                            by <a href="https://fontawesome.com/">Font Awesome 5 Free</a>. The nero.dev domain, and the font are provided by
-                            <a href="https://domains.google.com">Google</a>. Also, the website is hosted by <a href="https://pages.github.com/">Github pages</a>.
+                        <br>
 
+                        <!-- Experience -->
+                        <div class="section-title">
+                            EXPERIENCE
+                        </div>
+                        <div>
+                            <b>Engie Inéo, Pessac, France</b>
+                            <em> - Software developer</em>
                             <br>
-                            <br>
-                            Browsers compatibility (tested 05/12/2019):
+                            <small>april 2018 - june 2018</small>
                             <ul>
-                                <li>Brave <em class="text-info">optimized</em></li>
-                                <li>Firefox <em class="text-success">working</em></li>
-                                <li>Chrome <em class="text-success">working</em></li>
-                                <li>Edge <em class="text-success">working</em></li>
-                                <li>Opera <em class="text-muted">untested (contact me if you can test it :D)</em></li>
-                                <li>Safari <em class="text-muted">untested (contact me if you can test it :D)</em></li>
-                                <li>Internet Explorer <em class="text-danger">not working since it is an obsolete browser (Vue.js broken on it)</em></li>
+                                <li>
+                                    Design and implementation of a data analysis software to detect,
+                                    visualize and interpret the logical links between different energy readings.
+                                    <em>- <i class="fab fa-python"></i> Python with matplotlib, numpy, tkinter</em>
+                                </li>
+                                <li>
+                                    Web scraping script working on a website with credentials.
+                                    <em>- <i class="fab fa-python"></i> Python with beautifulsoup</em>
+                                </li>
+                                <li>
+                                    Script for periodic FTP synchronization.
+                                    <em>- <i class="fab fa-python"></i> Python </em>
+                                </li>
                             </ul>
-
-                            It is also compatible with phones.
                         </div>
-                    </div>
 
-                    <div class="title2"><i class="fa-fw icon"></i> Can I get the code?</div>
-                    <div class="activity">
-                        <div class="content">
-                            The github repository is private, and will stay private because there are sensible files. But if you need anything, feel free to
-                            ask by sending an email. In any case, if you use some code, you must provide some credits somewhere.
+                        <!-- Education -->
+                        <div class="section-title">
+                            EDUCATION
                         </div>
-                    </div>
+                        <div>
+                            <b>University of California, Santa Cruz</b>
+                            <em> - Master of Science, Computer Science</em>
+                            <br>
+                            <small>SEPTEMBER 2019 - JUNE 2020</small>
 
-                    <div class="title2"><i class="fa-fw icon"></i> What about the images?</div>
-                    <div class="activity">
-                        <div class="content">
-                            All the images have been done by me. If not, you will be provided with credits.
+                            <br>
+
+                            <ul v-for="term in terms">
+                                <div class="underline">
+                                    {{ term.name }}:
+                                </div>
+                                <li v-for="course in term.courses">
+                                    <a class="info" data-toggle="popover" title="Course description" :data-content="course.description">
+                                        <i class="far fa-comment"></i>  {{ course.title }}
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <br>
-                    <h2>Sitemap</h2>
-                    <hr>
-
-                    <div class="title2"><i class="fa-fw icon"></i> Sitemap</div>
-                    <div class="activity">
-                        <div class="content">
-                            <a href="/">Homepage</a>
+                        <div>
+                            <b>University of Bordeaux</b>
+                            <em> - Bachelor of Science, Computer Science</em>
                             <br>
-                            <a href="/projects.html♂">Projects</a>
-                            <br>
-                            <a href="/blog.html">Blog</a>
-                            <br>
-                            <a href="/about.html">About</a>
-                            <br>
-                            Utility: <a href="/gists.html">Gists</a> • <a href="/about.html#changelog">Changelog</a>
+                            <small>SEPTEMBER 2018 - JUNE 2019</small>
                         </div>
-                    </div>
 
-                    <br>
-                    <h2>Contact</h2>
-                    <hr>
+                        <br>
 
-                    <div class="title2"><i class="fa-fw icon"></i> Contact</div>
-                    <div class="activity">
-                        <div class="content">
-                            <b>Discord</b>: nero! 🏄#3072 <br>
-                            <b>Student mail (FR)</b>: lilian.gallon[at]etu[dot]u-bordeaux[dot]fr <br>
-                            <b>Student mail (USA)</b>: lgallon[at]ucsc[dot]edu <br>
-                            <b>LinkedIn</b>: <a href="https://www.linkedin.com/in/lilian-gallon/">https://www.linkedin.com/in/lilian-gallon/</a> <br>
+                        <div>
+                            <b>Bordeaux Institute of Technology</b>
+                            <em> - Associate of Science degree, Computer Science</em>
+                            <br>
+                            <small>SEPTEMBER 2016 - JUNE 2018</small>
                         </div>
-                    </div>
 
-                    <br>
-                    <h2 id="changelog">Changelog</h2>
-                    <hr>
+                        <br>
 
-                    <div class="title2"><i class="fa-fw icon"></i> Changelog</div>
-                    <div class="activity">
-                        <div class="content">
-                            <b>Found a bug or a typo?</b>
-                            <br>
+                        <!-- Skills -->
+                        <div class="section-title">
+                            SKILLS
+                        </div>
+                        <div>
+                            <b>Languages</b>
+                            <ul>
+                                <li>+++: Python, Java, Javascript, HTML5/CSS</li>
+                                <li>++: C++, C</li>
+                                <li>+: SQL, C#, PHP</li>
+                            </ul>
+                            <b>Technologies</b>
+                            <ul>
+                                <li>Web: React, Vue.js, Flask, Bootstrap, JQuery</li>
+                                <li>Tools: Gradle, Maven</li>
+                                <li>CI: Github Actions, TravisCI</li>
+                                <li>Libraries: OpenGL, JavaFX, SFML, SDL, OpenCV</li>
+                                <li>Miscellaneous: Android development, Unity, Game modding</li>
+                            </ul>
+                            <b>Miscellaneous</b>
+                            <ul>
+                                <li>Fluent in English</li>
+                                <li>Fluent in French</li>
+                                <li>Experience with Agile management</li>
+                            </ul>
+                        </div>
 
-                            Contact me, and you will get credited! :) You can see my contact information above.
-
-                            <br>
-                            <br>
-                            <b>What's coming next?</b>
-                            <br>
-                            Nothing at the moment.
-
-                            <br>
-                            <br>
-                            <b>Minor updates</b>
-                            <br>
-
-                            <em>These updates are not shown in the changelog, because they do not add, improve, fix or remove features.</em>
-                            <br>
-                            Nothing at the moment.
-
-                            <br>
-                            <br>
-                            <b>Changelog</b>
-                            <br>
-                            Version 2019.1.0b (05/12/2019):
-                            <div class="changelog">
-                                <div>
-                                    ✔️ Homepage: search sidebar, github actiity, twitter activity, stack overflow activity
-                                </div>
-                                <div>
-                                    ✔️ Projects: divided in two sections: major projets, and the rest
-                                </div>
-                                <div>
-                                    ✔️ Blog: basic posts loaded from json
-                                </div>
-                                <div>
-                                    ✔️ About
-                                </div>
-                                <div>
-                                    ✔️ Utility: Gists
-                                </div>
-
-                                <!--
-                                <div>
-                                    ✔️ added
-                                </div>
-                                <div>
-                                    💫 fixed
-                                </div>
-                                <div>
-                                    ✨ improved
-                                </div>
-                                <div>
-                                    ❌ deleted
-                                </div>
-                                -->
-                            </div>
+                        <!-- Skills -->
+                        <div class="section-title">
+                            PROJECTS
+                        </div>
+                        <div>
+                            You can see all my projects by browsing the <a href="/projects.html">projects page</a>.
                         </div>
                     </div>
                 </div>
@@ -360,8 +329,15 @@
     <!-- Utilities -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+    <!-- Bootstrap init -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
     <!-- Javascript using vue -->
-    <script src="js/about.js"></script>
+    <script src="js/resume.js"></script>
 
 </body>
 </html>

@@ -1,1477 +1,314 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134954906-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134954906-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-134954906-1');
+    </script>
 
-        gtag('config', 'UA-134954906-1');
-        </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- SEO -->
+    <meta name="description" content="Website of Lilian Gallon, French CS student from Bordeaux curently studying at the University of California - Santa Cruz."/>
+    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California, UCSC, Santa Cruz, nero!"/>
+    <meta name="author" content="Lilian Gallon"/>
+    <meta name="copyright" content="Lilian Gallon"/>
+    <meta name="robots" content="follow"/>
 
-        <!-- SEO -->
-        <meta name="description" content="Hey you! Yeah you! Come take a look at my website! I am Lilian Gallon, a French CS student from Bordeaux. Come here! There are a lot of dev projects, maybe one will interest you. ;)"/>
-        <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California"/>
-        <meta name="author" content="Lilian Gallon"/>
-        <meta name="copyright" content="Lilian Gallon"/>
-        <meta name="robots" content="follow"/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/resources/images/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+    <!-- Website preview -->
+    <meta property="og:image" content="https://nero.dev/resources/images/logo/website_preview.png" />
 
-        <!-- Website preview -->
-        <meta property="og:image" content="https://nero.dev/resources/images/logo/website_preview.png" />
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome 5 
+    <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
+    -->
+    <link rel="stylesheet" href="/vendors/fontawesome-free-5.10.1-web/css/all.min.css">
 
-        <!-- Font awesome -->
-        <link rel="stylesheet" href="vendors/fontawesome-free-5.10.1-web/css/all.css">
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="/style/utility.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/sidebar.css">
+    <link rel="stylesheet" href="/style/middle.css">
+    <link rel="stylesheet" href="/style/right.css">
+    <link rel="stylesheet" href="/style/footer.css">
 
-        <!-- Particles.js -->
-        <script src="/vendors/particles/particles.js"></script>
+    <title>Projects - nero.dev</title>
+</head>
 
-        <!-- Website CSS, Font & JS -->
-        <link rel="stylesheet" href="/resources/css/original-theme.css" id="original-theme">
-        <link rel="stylesheet" href="/resources/css/light-theme.css" id="light-theme">
-        <script src="/resources/js/theme-switcher.js"></script>
 
-        <title>Projects - nero.dev</title>
-    </head>
-
-    <body class="wrap background-gradient">
-        <!-- Navbar -->
-        <nav class="navbar navbar-dark fixed-top bottom-gradient">
-            <div class="onoffswitch">
-                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="theme-switcher">
-                <label class="onoffswitch-label" for="theme-switcher">
-                    <span class="onoffswitch-inner"></span>
-                    <span class="onoffswitch-switch"></span>
-                </label>
-            </div>
-
-            <!-- Brand -->
-            <a class="navbar-brand mx-auto" href="/index.html">
-                <img src="/resources/images/logo/nero_dev_round_cut.png" height="40" alt="nero.dev">
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
+            <a class="navbar-brand" href="/">
+                <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
 
-            <li class="nav-item dropdown">
-                <button class="navbar-toggler" role="button" type="button" data-toggle="dropdown"> 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/"><i class="fas fa-home fa-fw"></i> Homepage</a>
-                    <a class="dropdown-item" href="/blog.html"><i class="far fa-newspaper fa-fw"></i> Blog</a>
-                    <a class="dropdown-item active" href="/projects.html"><i class="fas fa-code fa-fw"></i> Projects</a>
-                    <div class="dropdown-divider"></div>
-                    <div class="lower-dropdown-section">
-                        <div class="dropdown-item muted-link">
-                            <small class="text-muted"><em> <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a></em></small>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <!-- <input class="form-control mr-sm-2" placeholder="Coming soon..."> -->
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/projects.html">Projects <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Utility
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <a class="dropdown-item" href="/musics.html">Musics</a> -->
+                            <a class="dropdown-item" href="/gists.html">Gists</a>
+                            <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
-                        <div class="dropdown-item">
-                            <small class="text-muted"><em>v.<a href="/about.html#changelog" class="text-muted">2019.0.1</a> ~ found a <a href="/about.html#bug" class="text-muted">bug</a>?</em></small>
-                        </div>
-                    </div>
-                </div>
-            </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        <div id="projects" class="container">
-            <div class="row">
+        <div class="row">
 
-                <!-- Projects showcase-->
-                <div class="col-lg-7">
-                    <h1 class="section-title">Projects</h1>
-                    <div class="container no-padding">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_bettercolors.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Bettercolors</h1>
-                                                    <div>java • mod</div>
-                                                    <div>v6.0.0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            Minecraft assistance mod built over the MC forge API. Working with Labymod 1.8.9, Forge version 1.8.9, 1.13.2 and 1.14.4!
-                                        </div>
+            <!-- Sidebar -->
+            <div class="col-xl-2 col-md-4 left-panel">
+                <div class="container sticky">
+                    <div class="image">
+                        <img src="/resources/images/resume/profile.jpg" width="200px"/>
+                        <i class="fas fa-map-marker-alt"></i> San Francisco, California
+                    </div>
+                    <div class="title">
+                        Lilian Gallon
+                    </div>
+                    <div class="description">
+                        Fourth year French computer science student currently at the University of California, Santa Cruz.
+                        From the University of Bordeaux, France.
+                        <br/> <br/>
+                        <i class="fa-fw far fa-envelope"></i> lgallon[at]ucsc[dot]edu <br>
+                        <i class="fa-fw fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank" class="discret-link">Lilian Gallon</a> <br>
+                        <i class="fa-fw fab fa-github"></i> <a href="https://github.com/N3ROO" target="_blank" class="discret-link">N3ROO</a> <br>
+                        <i class="fa-fw fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/8811838/nero" target="_blank" class="discret-link">StackOverflow profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle content -->
+            <div class="col-xl-8 col-md-8 middle-panel">
+                <div class="container">
+
+                    <h2>Main projects</h2>
+                    <hr>
+
+                    <!-- Main projects -->
+                    <div class="repo" v-for="mrepo in mrepos_details">
+                        <div :id="mrepo.api.name" class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-1 repo-image center">
+                                    <img :src="mrepo.details.image" alt="">
+                                </div>
+                                <div class="col-md-9 col-lg-10 repo-content">
+                                    <div class="repo-title">
+                                        {{ mrepo.api.name }}
+                                        <span class="repo-subtitle">
+                                            <i class="fa-fw fas fa-star"></i> {{ mrepo.api.stargazers_count }}
+                                            <i class="fa-fw fas fa-eye"></i> {{ mrepo.api.watchers_count }}
+                                            <i class="fa-fw fas fa-code-branch"></i> {{ mrepo.api.forks_count }}
+                                            <i class="fa-fw fas fa-bug"></i> {{ mrepo.api.open_issues }}
+                                        </span>
                                     </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 166 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 22 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> Apache-2.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#bettercolors" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
+                                    <div class="repo-description" style="display:block;">
+                                        {{ mrepo.api.description }}
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <div class="responsive-project-image fill-project-image" style="width: 50px; height:50px;">
-                                                        <div class="particles-box"> 
-                                                            <canvas id="particles-canvas"></canvas> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Particles.js</h1>
-                                                    <div>javascript • lib</div>
-                                                    <div>v1.4</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            An easy way to make your website look sexy. Highly customizable, easy to install and pure javascript.
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 72 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 5 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#particles-js" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_music_genre_finder.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>MusicGenreFinder</h1>
-                                                    <div>python • utility</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            It looks at music names, detects the genre, and creates playlists.
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 15 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 0 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#music-genre-finder" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_ezapi.gif" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>EzAPIs</h1>
-                                                    <div>python • lib</div>
-                                                    <div>v1.0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            A compilation of useful and minimalist python APIs made for beginners. Currently for Web Scraping and Progress Bars.
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 36 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 2 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> MIT
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#ezapis" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_nero_engine.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Nero engine</h1>
-                                                    <div>java • engine</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            An easy to use java 2D game engine powered by JavaFX 12. With CI, advanced test coverage and documentation.
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 81 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 0 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#nero-engine" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_fractals.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Fractals expl.</h1>
-                                                    <div>java • misc</div>
-                                                    <div>v1.0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            A java fractals explorer made using MVC design pattern. Made for the OOP course
-                                            at the Bordeaux Intitute of Technology.
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 38 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 1 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 2 contributors <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#fractals" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_cascade.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Cascade</h1>
-                                                    <div>android • game</div>
-                                                    <div>v2.0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            The goal of the game is to destroy a brick wall in a as less clicks as possible.
-                                            But ... care to not let unbreakable bricks...
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 70 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 2 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#cascade" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_dofus_tools.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Dofus tools</h1>
-                                                    <div>js • utility</div>
-                                                    <div>v1.0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            A website with few tools to make your life easier on Dofus (French MMORPG).
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 59 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 1 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> MIT
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#dofus-tools" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="/resources/images/showcase/showcase_shutdown_planner.png" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>Shutdown p.</h1>
-                                                    <div>c# • utility</div>
-                                                    <div>v5.1</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            My first ever personal project! A simple windows shutdown planner.
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> 25 commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> 5 releases <br>
-                                        <i class="fas fa-user fa-fw"></i> 1 contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#shutdown-planner" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Template
-                            <div class="col-lg-4 col-md-6">
-                                <div class="project-showcase bottom-second-color">
-                                    <div class="project-header">
-                                        <div class="container">
-                                            <div class="row text-center-lg">
-                                                <div class="col-xl-5">
-                                                    <img class="responsive-project-image" src="link" alt="" width=50>
-                                                </div>
-                                                <div class="col-xl-6 project-title">
-                                                    <h1>project title</h1>
-                                                    <div>vx</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-description">
-                                            description
-                                        </div>
-                                    </div>
-
-                                    <div class="project-stats">
-                                        <h2>stats</h2>
-                                        <i class="fas fa-history fa-fw"></i> x commits <br>
-                                        <i class="fas fa-tag fa-fw"></i> x releases <br>
-                                        <i class="fas fa-user fa-fw"></i> x contributor <br>
-                                        <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                    </div>
-
-                                    <div class="project-footer">
-                                        <div>
-                                            <a href="#todo" class="toTop" data-toggle="collapse">
-                                                <i class="fas fa-arrow-right"></i> Show details
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
-
+                        <div class="repo-details">
+                            <b>Status:</b>
+                            <span v-if="mrepo.details.university">
+                                <i class="fas fa-university"></i> University project.
+                            </span>
+                            <span v-if="mrepo.details.released">
+                                Released
+                                <span v-if="mrepo.details.indev">
+                                    and currently maintained. <i class="fas fa-code"></i>
+                                </span>
+                                <span v-else>
+                                    and no future update planned at the moment. <i class="fas fa-pause"></i>
+                                </span>
+                            </span>
+                            <span v-else>
+                                Not released
+                                <span v-if="mrepo.details.indev">
+                                    but in development. <i class="fas fa-code"></i>
+                                </span>
+                                <span v-else>
+                                    and development paused. <i class="fas fa-times"></i>
+                                </span>
+                            </span>
+                            <br>
+                            <b>Details:</b>
+                            {{ mrepo.api.language}}, updated {{ mrepo.last_update }} days ago on <a :href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
                         </div>
                     </div>
-                    <div class="push"></div>
+
+                    <br>
+                    <h2>Minor projects</h2>
+                    <hr>
+
+                    <!-- Normal projects -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5 col-xl-3 repo" v-for="nrepo in nrepos_details">
+                            <div :id="nrepo.api.name">
+                                <div class="repo-content">
+                                    <div class="repo-title">
+                                        {{ nrepo.api.name }}
+                                        <div class="repo-subtitle">
+                                            <i class="fa-fw fas fa-star"></i> {{ nrepo.api.stargazers_count }}
+                                            <i class="fa-fw fas fa-eye"></i> {{ nrepo.api.watchers_count }}
+                                            <i class="fa-fw fas fa-code-branch"></i> {{ nrepo.api.forks_count }}
+                                            <i class="fa-fw fas fa-bug"></i> {{ nrepo.api.open_issues }}
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="repo-description" style="display:block;">
+                                        {{ nrepo.api.description }}
+                                    </div>
+                                </div>
+
+                                <div class="repo-details">
+                                    <b>Details:</b>
+                                    {{ nrepo.api.language}}, updated {{ nrepo.last_update }} days ago on <a :href="nrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project details -->
-                <div class="col-lg-5 project-details order-first order-lg-last">
-                    <h1 class="section-title">Details</h1>
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="row">
 
-                    <!-- Bettercolors -->
-                    <div id="bettercolors" class="collapse show project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_bettercolors.png" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Bettercolors</h1>
-                                        <div>java • mod</div>
-                                        <div>version 6.0.0 / MC1.8.9-1.13.2-1.14.4</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                    A silent "hack" built within the forge API. It bypasses powerful anticheats (forge mods and servers) to help you
-                                    improve your gameplay.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            I made this project to learn Java in a funny way. I started 2 years ago but the other repositories are, and will stay
-                            private. Only this repository will stay public because it can be used by newbies to improve their aim and their click
-                            rate without giving them a huge advantage. This has been made for educational purposes.
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>features</h2>
+                        <!-- Left column -->
+                        <div class="col-md-4 col-6">
                             <ul>
-                                <li><i class="fas fa-crosshairs fa-fw"></i> Aim assistance</li>
-                                <li><i class="fas fa-mouse-pointer fa-fw"></i> Click assistance</li>
-                                <li><i class="far fa-window-restore fa-fw"></i> External interface</li>
-                                <li><i class="fas fa-terminal fa-fw"></i> Console</li>
-                                <li><i class="fas fa-user-friends fa-fw"></i> Teammate detection</li>
-                                <li><i class="fas fa-cogs fa-fw"></i> Settings</li>
-                                <li><i class="fas fa-user-cog fa-fw"></i> Settings presets</li>
+                                <li>
+                                    <a href="https://github.com/N3ROO" target="_blank">
+                                        <i class="fa-fw fab fa-github"></i> Github profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank">
+                                        <i class="fa-fw fab fa-linkedin"></i> LinkedIn profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://stackoverflow.com/users/8811838/nero" target="_blank">
+                                        <i class="fa-fw fab fa-stack-overflow"></i> StackOverflow profile
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
-                        <div class="project-new-paragraph">
-                            <h2>disclamer</h2>
-                            Please make sure that the server you are playing on allows the use of this mod ! Use it at your own risk. I won't be responsible for anything you do wrong with this mod.
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 166 com. <br>
-                                    <i class="fas fa-tag fa-fw"></i> 22 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> Apache-2.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 03/09/17 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 21/07/19 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 7 issues (or feat. request) <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 13 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-java fa-fw"></i> Java <br>
-                                    <i class="fas fa-gamepad fa-fw"></i> Minecraft <br>
-                                    <i class="fab fa-github fa-fw"></i> Github actions (CI)
-                                    <i class="fas fa-book fa-fw"></i> MC Forge <br>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>Minecraft 1.8.9</h2>
-                                    <ul>
-                                        <li>Last version: 6.0.0</li>
-                                        <li>Release date: 22/07/19</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Bettercolors/releases/tag/6.0.0-MC1.8.9">click here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h2>Minecraft 1.13.2</h2>
-                                    <ul>
-                                        <li>Last version: 6.0.0</li>
-                                        <li>Release date: 02/07/2019</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Bettercolors/releases/tag/6.0.0-MC1.13.2">click here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h2>Minecraft 1.14.4</h2>
-                                    <ul>
-                                        <li>Last version: 6.0.0</li>
-                                        <li>Release date: 21/07/2019</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Bettercolors/releases/tag/6.0.0-MC1.14.4">click here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h2>How to install?</h2>
-                                    <div class="small-font link-style-2">
-                                        I made a simple tutorial in this page. Click <a href="#how-to-install-bettercolors" data-toggle="modal">here</a> to see it.
-                                    </div>
-                                </div>
-                            </div>
-                            <em>Older versions are availible on the Github page. Also, the full documentation is waiting for you there.</em>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/Bettercolors">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal how to install bettercolors -->
-                    <div class="modal fade" id="how-to-install-bettercolors" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">How to install bettercolors</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    1. Download <a href="https://files.minecraftforge.net/maven/net/minecraftforge/forge/">Forge</a> for your Minecraft version by clicking on <em>Installer</em>, <br>
-                                    2. Execute the installer by double-clicking, and select <em>Client</em>, and it should install automatically, <br>
-                                    3. Download bettercolors.jar and put it in your minecraft directory: <br>
-                                    3.1. Press <em>windows key</em> and <em>R</em> at the same time,<br>
-                                    3.2. Write %appdata%, press enter<br>
-                                    3.3. Go to .minecraft and create a folder <em>mods</em><br>
-                                    3.4. Then put bettercolors.jar in it.<br>
-                                    4. Launch your game with Forge<br>
-                                    5. Once you are in the game, you can press <em>INSERT</em> key to toggle the interface<br>
-                                    If you fail, go to youtube, and search how to install a minecraft mod. It is easy. If you need more help about the mod, go
-                                    to the github page <a href="https://github.com/N3ROO/Bettercolors">right here</a>.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- particles.js -->
-                    <div id="particles-js" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <div class="responsive-project-details-image-2 fill-project-image-2" style="width: 80px; height:80px;">
-                                            <div class="particles-box-2">
-                                                <canvas id="particles-canvas-2"></canvas> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Particles.js</h1>
-                                        <div>javascript • lib</div>
-                                        <div>version 1.4</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                ✨ An easy way to make your website look sexy. Highly customizable, easy to install and pure javascript.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            I made one for my website a long time ago. People requested to get the code, but it was very ugly. So I recoded it
-                            from scratch, and made it very easy to use with a big documentation.
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>features</h2>
+                        <!-- Middle column -->
+                        <div class="col-md-4 col-6">
                             <ul>
-                                <li>Easy to install</li>
-                                <li>Pure javascript (no dependencies)</li>
-                                <li>Lightweight & Optimized</li>
-                                <li>Highly customizable (in real-time update)</li>
-                            </ul>
-                            Compatible with ECMAScript5 browsers (2015)
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 72 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 5 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 24/01/19 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 23/08/19 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 3 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 16 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-js-square fa-fw"></i> JS (ECMAScript5)
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>DOWNLOAD</h2>
-                                    <ul>
-                                        <li>Last version: 1.4</li>
-                                        <li>Release date: 16/07/19</li>
-                                        <li class="link-style-2">Download page: <a href="https://github.com/N3ROO/particles.js/releases/tag/1.4">click here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <em>Older versions are availible on the Github page.</em>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/particles.js">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Playlists by genre -->
-                    <div id="music-genre-finder" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image " src="/resources/images/showcase/showcase_music_genre_finder.png" alt="" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Music Genre Finder</h1>
-                                        <div>python • utility</div>
-                                        <div>no release yet</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                🔎 It looks at music names, detects the genre, and creates playlists.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            Currently, all projects dealing with genre classification on Github are using AI (I guess that it's the trend) and only detect very basic genres like Jazz, Rock, and Pop.
-                            <br>
-                            The goal of this project is to detect very specific genres like Dubstep, Rap, Lofi, Future Bass, and so on.
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>how?</h2>
-                            To do so, we use the Youtube API with a dictionnary that we built. This dictionnary consists in giving scores for each genre according to the Youtube channel. For example,
-                            for UKF Dubstep, we associate a score of 100 for Dubstep. So if we found that the music has been uploaded to UKF Dubstep, we can be sure that it is a dubstep music.
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 15 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 0 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 22/06/19 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 24/07/19 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 0 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 0 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-python fa-fw"></i> Python 3.7 <br>
-                                    <i class="fab fa-youtube fa-fw"></i> Youtube API
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <h2>download</h2>
-                            There is nothing here
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/music-genre-finder">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- EzAPIs -->
-                    <div id="ezapis" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_ezapi.gif" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>EzAPIs</h1>
-                                        <div>python • lib</div>
-                                        <div>version 1.0</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                A compilation of useful and minimalist python APIs made for beginners. Currently for Web Scraping and Progress Bars.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            During my placement at Engie Ineo, I had to create a software from scratch that a beginner could understand. So it gave me
-                            the idea to create an API that is super easy to use. I started it by doing an API to create progress bar the simpliest way
-                            possible. Then I did the same for web scraping. I find it really fun to code APIs.
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 36 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 2 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> MIT
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 28/05/18 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 08/04/19 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 0 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 0 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-python fa-fw"></i> Python 3.6+
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>EzWebScraping</h2>
-                                    <ul>
-                                        <li>Last version: 1.0</li>
-                                        <li>Release date: 08/04/19</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/ez-apis/ez-web-scraping/releases/tag/1.0">click here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h2>EzProgressBar</h2>
-                                    <ul>
-                                        <li>Last version: 1.0</li>
-                                        <li>Release date: 08/04/19</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/ez-apis/ez-progress-bar/releases/tag/1.0">click here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/ez-apis">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- nero engine -->
-                    <div id="nero-engine" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_nero_engine.png" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Nero engine</h1>
-                                        <div>java • engine</div>
-                                        <div>no release yet</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                An easy to use java 2D game engine powered by JavaFX 12. With CI, advanced test coverage and documentation.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            Because I find it funny, I learn a lot of things from it and because it may help me later on.
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>services used</h2>
-                            Core:
-                            <ul>
-                                <li>Gluon JavaFX 12</li>
-                                <li>Apache Log4j2</li>
-                            </ul>
-                            Tests (cov & CI):
-                            <ul>
-                                <li>Travis CI</li>
-                                <li>Codecov</li>
-                                <li>JUnit 5</li>
-                            </ul>
-                            Miscellaneous:
-                            <ul>
-                                <li>Java DiscordRPC</li>
+                                <li>
+                                    <a href="https://pages.github.com/" target="_blank">Hosted by Github pages</a>
+                                </li>
+                                <li>
+                                    <a href="https://domains.google/" target="_blank">Domain provided by Google</a>
+                                </li>
+                                <li>
+                                    Powered by <a href="https://vuejs.org/">Vue.js</a> & <a href="https://getbootstrap.com/">Bootstrap</a>
+                                </li>
                             </ul>
                         </div>
 
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 81 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 0 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 05/05/19 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 29/06/19 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 4 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 1 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-python fa-fw"></i> Java 12 <br>
-                                    <i class="fas fa-book fa-fw"></i> Gluon JavaFX 12 <br>
-                                    <i class="fas fa-book fa-fw"></i> Apache Log4j2 <br>
-                                    <i class="fas fa-book fa-fw"></i> DiscordRPC <br>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>Download</h2>
-                                    There is nothing here
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/javafx-nero-engine">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Fractals explorer -->
-                    <div id="fractals" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_fractals.png" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Fractals explorer</h1>
-                                        <div>java • miscellaneous</div>
-                                        <div>version 1.0</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                A java fractals explorer made using MVC design pattern. Made for the OOP course at the Bordeaux Intitute of Technology.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>features</h2>
+                        <!-- Right column -->
+                        <div class="col-md-4 col-6">
                             <ul>
-                                <li>Mandelbrot fractal</li>
-                                <li>Tree fractal</li>
-                                <li>Zoom</li>
-                                <li>Iteration slider</li>
-                                <li>Multithreading</li>
+                                <li>
+                                    Design inspired by Github
+                                </li>
+                                <li>
+                                    <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version {{ version }}</a>
+                                </li>
                             </ul>
-                            Multithreading can be improved, as well as the zoom. It is due to the fact that the number are insanely big, and so the precision
-                            is bad at the maximum zoom (rounded values).
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 38 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 1 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 2 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 10/11/17 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 28/05/18 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 0 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 0 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-java fa-fw"></i> Java <br>
-                                    <i class="fas fa-book fa-fw"></i> Swing
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>Download</h2>
-                                    <ul>
-                                        <li>Last version: 1.0</li>
-                                        <li>Release date: 29/05/18</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Fractals_explorer/releases/tag/1.0">click here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/Fractals_explorer">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
                         </div>
                     </div>
-
-                    <!-- Cascade -->
-                    <div id="cascade" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_cascade.png" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Cascade</h1>
-                                        <div>android • game</div>
-                                        <div>version 2.0</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                The goal of the game is to destroy a brick wall in a as less clicks as possible. But ... care to not let unbreakable bricks...
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>context</h2>
-                            Made for the Introduction to mobile programming course at the Bordeaux Institute of Technology (grade: 19/20).
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>rules</h2>
-                            <ul>
-                                <li>You can't destroy a single brick: the brick must have at least a same color neighbor,</li>
-                                <li>The top 10 scores are visible on the scoreboard page,</li>
-                                <li>For the score calculation, see above.</li>
-                            </ul>
-                            Score calculation: <br>
-                            <code>score = (number of cells removed)^2 * 5</code>
-                            <br>
-                            When the game finishes, so when there is no more cell to remove, we remove <code>number of cells remaining * 50</code>
-                            to the score. If there is no cell remaining on the grid, the user gets a +500 score bonus.
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 70 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 2 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 02/03/18 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 28/08/18 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 3 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 5 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-java fa-fw"></i> Java <br>
-                                    <i class="fab fa-android fa-fw"></i> Android 5.0+ <br>
-                                    <i class="fab fa-android fa-fw"></i> Android API 21+
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>DOWNLOAD</h2>
-                                    <ul>
-                                        <li>Last version: 2.0</li>
-                                        <li>Release date: 19/03/18</li>
-                                        <li class="link-style-2">Download: <a href="https://github.com/N3ROO/Cascade/releases/tag/2.0">click here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <em>Older versions are availible on the Github page.</em>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/Cascade">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Dofus tools-->
-                    <div id="dofus-tools" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_dofus_tools.png" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Dofus tools</h1>
-                                        <div>javascript • utility</div>
-                                        <div>version 1.0</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                A website with few tools to make your life easier on Dofus (French MMORPG).
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>how?</h2>
-                            It uses python scripts to retrieve data from dofus.com with EzAPI. All the interface is done using
-                            bootstrap, and the inputs are handled by JQuery scripts. I worked hard on the website ergonomy.
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 59 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 1 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> MIT
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 30/08/18 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 04/09/18 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 0 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 0 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-js-square fa-fw"></i> Javascript <br>
-                                    <i class="fab fa-python fa-fw"></i> Python <br>
-                                    <i class="fas fa-book fa-fw"></i> Bootstrap/JQuery <br>
-                                    <i class="fas fa-book fa-fw"></i> EzAPI 1.0
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <h2>website</h2>
-                            <div class="link-style-2">
-                                Access to the website right <a href="https://nero.dev/dofus-tools/"> here</a>.
-                            </div>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/dofus-tools/">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Shutdown planner -->
-                    <div id="shutdown-planner" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="/resources/images/showcase/showcase_shutdown_planner.png" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>Shutdown planner</h1>
-                                        <div>c# • utility</div>
-                                        <div>version 5.1</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                My first ever personal project! A simple windows shutdown planner.
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            I used to have a really bad Internet connection. When I had updates or heavy downloads, I would let my
-                            computer turned on during the night. But during the day I was going to school. So I needed to get my computer
-                            to turn off by itself.
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> 25 commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> 5 releases <br>
-                                    <i class="fas fa-user fa-fw"></i> 1 contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> GPL-3.0
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation 08/03/17 <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update 28/05/19 <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> 0 issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> 0 closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fas fa-code fa-fw"></i> C# <br>
-                                    <i class="fab fa-windows fa-fw"></i> Windows forms
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <h2>Download</h2>
-                            <ul>
-                                <li>Last version: 5.1</li>
-                                <li>Release date: 25/06/18</li>
-                                <li class="link-style-2">Download: <a href="https://github.com/N3ROO/ShutdownPlanner/releases/tag/5.1">click here</a></li>
-                            </ul>
-                            <em>Older versions are availible on the Github page.</em>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="https://github.com/N3ROO/ShutdownPlanner">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- project_name template 
-                    <div id="project_name" class="collapse project-showcase bottom-second-color" data-parent="#projects">
-                        <div class="project-header">
-                            <div class="container">
-                                <div class="row text-center-lg">
-                                    <div class="col-xl-3">
-                                        <img class="responsive-project-details-image" src="image" alt="image" width=80>
-                                    </div>
-                                    <div class="col-xl-7 project-title">
-                                        <h1>project_name</h1>
-                                        <div>tags</div>
-                                        <div>version</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                short description
-                            </div>
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>why?</h2>
-                            blabla
-                        </div>
-
-                        <div class="project-new-paragraph">
-                            <h2>how?</h2>
-                            blibli
-                        </div>
-
-                        <div class="project-stats">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <h2>stats</h2>
-                                    <i class="fas fa-history fa-fw"></i> x commits <br>
-                                    <i class="fas fa-tag fa-fw"></i> x releases <br>
-                                    <i class="fas fa-user fa-fw"></i> x contrib. <br>
-                                    <i class="fas fa-balance-scale-right fa-fw"></i> license
-                                </div>
-                                <div class="col-lg-5">
-                                    <h2>even more stats</h2>
-                                    <i class="fas fa-calendar-plus fa-fw"></i> creation xx/xx/xx <br>
-                                    <i class="fas fa-calendar-check fa-fw"></i> last update xx/xx/xx <br>
-                                    <i class="fas fa-exclamation-circle fa-fw"></i> x issues <br>
-                                    <i class="fas fa-check-circle fa-fw"></i> x closed issues
-                                </div>
-                                <div class="col-lg-4">
-                                    <h2>technologies</h2>
-                                    <i class="fab fa-python fa-fw"></i> Python 3.7 <br>
-                                    <i class="fab fa-java fa-fw"></i> Java 12 <br>
-                                    <i class="fab fa-js-square fa-fw"></i> Javascript <br>
-                                    <i class="fas fa-book fa-fw"></i> Lib x
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-links">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h2>Software X</h2>
-                                    <ul>
-                                        <li>Last version: x</li>
-                                        <li>Release date: x</li>
-                                        <li class="link-style-2">Download: <a href="#link1">click here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h2>Software Y</h2>
-                                    <ul>
-                                        <li>Last version: x</li>
-                                        <li>Release date: x</li>
-                                        <li class="link-style-2">Download: <a href="#link2">click here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <em>Older versions are availible on the Github page.</em>
-                        </div>
-
-                        <div class="project-footer">
-                            <div>
-                                <a href="#link3">
-                                    <i class="fab fa-github"></i> Go to the github page
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-
                 </div>
+            </div>
+
+            <!-- Right content (hidden if < lg) -->
+            <div class="col-lg-2 right-panel d-none d-xl-block">
+                <!-- ... -->
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="top-gradient">
-            <div class="container">
-                <div class="row">
-                    <!-- Left side -->
-                    <div id="left" class="offset-md-1 col-lg-3">
-                        <div>
-                            <img src="/resources/images/logo/nero_dev_round_cut.png" height="40" alt="nero.dev">
-                            <div class="social-below-logo link-style-1">
-                                <a href="https://github.com/N3ROO" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                </a>
-                                <a href="https://stackoverflow.com/users/8811838/nero" target="_blank">
-                                    <i class="fab fa-stack-overflow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Right side -->
-                    <div class="offset-md-4 col-lg-3 align-right">
-                        <div class="link-style-2">
-                            Powered by <a href="https://github.com/" target="_blank">Github</a> & <a href="https://domains.google/" target="_blank">Google</a>
-                        </div>
-                        <div class="muted-link">
-                            <small class="text-muted"><em> <a href="/about.html" class="text-muted">About</a> • <a href="/sitemap.html" class="text-muted">Sitemap</a></em></small>
-                        </div>
-                        <div>
-                            <small class="text-muted"><em>© Lilian Gallon, version <a href="/about.html" class="text-muted">2019.0.1</a></em></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <!-- Bootstrap (JQuery, Popper & Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <!-- Bootstrap JS (optional) -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Vue library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 
-        <!-- Page script -->
-        <script>
-            (function() {
-                let particlesDetailsInit = false;
-                let particlesCurrentlyOpenned = false;
-                let particlesHandler2 = null;
-                let particlesDetailsCurrentlyOpenned = false;
+    <!-- Utilities -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-                window.addEventListener('load', function() {
+    <!-- Javascript using vue -->
+    <script src="js/projects.js"></script>
 
-                    // particles
-                    let settings = {
-                        amount: 4,
-                        amountMax: 4,
-                        amountMin: 4,
-                        sizeMin: 2,
-                        sizeMax: 3,
-                        dynamicAmount: -1,
-                        positionXMin: 70 - 50,
-                        positionXMax: 70 + 50,
-                        positionYMin: 70 - 50,
-                        positionYMax: 70 + 50
-                    };
-
-                    let particlesHandler = new ParticlesHandler("particles-canvas", settings);
-                    particlesHandler.start();
-
-                    // scroll & particles
-                    $('.toTop').on('click', function(event) {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-
-                        // particles of project detail
-                        if($(this).attr('href') == "#particles-js") {
-
-                            if(particlesCurrentlyOpenned) {
-                                particlesCurrentlyOpenned = false;
-                                particlesHandler2.stop();
-                            } else if(particlesDetailsInit) {
-                                particlesCurrentlyOpenned = true;
-                                particlesHandler2.start();
-                            }
-
-                            if(!particlesDetailsInit) {
-                                particlesHandler2 = new ParticlesHandler("particles-canvas-2", settings);
-                                particlesHandler2.start();
-                                particlesDetailsInit = true;
-
-                                particlesCurrentlyOpenned = true;
-                            }
-                        } else {
-                            if(particlesDetailsInit) {
-
-                                if(particlesCurrentlyOpenned) {
-                                    particlesCurrentlyOpenned = false;
-                                    particlesHandler2.stop();
-                                }
-                            }
-                        }
-                    });
-                });
-            })();
-        </script>
-    </body>
+</body>
 </html>
