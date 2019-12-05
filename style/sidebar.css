@@ -16,6 +16,11 @@
 
 .left-panel li {
     list-style-type: none;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
 }
 
 .left-panel ul {
