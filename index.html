@@ -193,7 +193,7 @@
                     </div>
 
                     <!-- Recent github activity -->
-                    <div class="title2"><i class="fa-fw fas fa-clock"></i> Recent activity</div>
+                    <div class="title2"><i class="fa-fw fab fa-github"></i> Recent activity</div>
                     <div class="activity">
                         <div class="content">
                             <div v-for="activity in activitiesGH">
@@ -210,29 +210,35 @@
                         </div>
                     </div>
 
-                    <!-- Recent Twitter & Stackoverflow activity -->
-                    <div class="title2"><i class="fa-fw fab fa-twitter"></i> Recent tweets & <i class="fa-fw fab fa-stack-overflow"></i> Stackoverflow answers</div>
+                    <!-- Recent Twitter -->
+                    <div class="title2"><i class="fa-fw fab fa-twitter"></i> Recent tweets</div>
                     <div class="activity">
                         <div class="content">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xl-6 col-lg-12">
                                     <a class="twitter-timeline"
                                         href="https://twitter.com/LilianSurf?ref_src=twsrc%5Etfw"
                                         data-tweet-limit="1">Tweets by LilianSurf</a>
                                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 </div>
-                                <div class="col-6">
-                                    <div class="so-title">
-                                        <i class="fab fa-stack-overflow"></i> Stackoverflow answers:
-                                    </div>
-                                    <div v-for="activity in activitiesSO">
-                                        {{ activity.score }} point(s) for
-                                        <a :href="activity.url">this answer</a>
-                                        ({{ activity.date }})
-                                        <br>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                        <div class="details">
+                            from Twitter & StackExchange APIs
+                        </div>
+                    </div>
+
+                    <!-- Stackoverflow activity -->
+                    <div class="title2"><i class="fa-fw fab fa-stack-overflow"></i> Recent answers</div>
+                    <div class="activity">
+                        <div class="so-title">
+                            <i class="fab fa-stack-overflow"></i> Stackoverflow answers:
+                        </div>
+                        <div v-for="activity in activitiesSO">
+                            {{ activity.score }} point(s) for
+                            <a :href="activity.url">this answer</a>
+                            ({{ activity.date }})
+                            <br>
                         </div>
                         <div class="details">
                             from Twitter & StackExchange APIs
