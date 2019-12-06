@@ -147,11 +147,44 @@
             <div class="col-xl-8 col-md-8 middle-panel">
                 <div class="container">
 
+                    <h2>Special projects</h2>
+                    <hr>
+
+                    <!-- Manual repos -->
+                    <div class="repo">
+                        <div id="ezAPIs" class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-1 repo-image center" >
+                                    <img src="/resources/images/showcase/showcase_ezapi.gif" style="background:rgb(62, 71, 78); border-radius:75px; padding: 4px;" alt="">
+                                </div>
+                                <div class="col-md-9 col-lg-10 repo-content">
+                                    <div class="repo-title">
+                                        EzAPIs
+                                    </div>
+                                    <div class="repo-description">
+                                        Github organization containing a compilation of useful and minimalist python APIs. Composed of:<br>
+                                        - <a href="https://github.com/ez-apis/ez-web-scraping">ez-web-scraping</a>: 🔐 A minimalist way to retrieve data from websites that require login <br>
+                                        - <a href="https://github.com/ez-apis/ez-progress-bar">ez-progress-bar</a>: 💤 A minimalist way to display a progress bar while running code.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="repo-details">
+                            <b>Status:</b> Released and no future update planned at the moment. <i class="fas fa-pause"></i>
+                            <br>
+                            <b>Details:</b>
+                            Python, updated 04/08/2019 on <a href="https://github.com/ez-apis"><i class="fab fa-github"></i> github</a>.
+                        </div>
+                    </div>
+
                     <h2>Main projects</h2>
                     <hr>
 
                     <!-- Main projects -->
                     <div class="repo" v-for="mrepo in mrepos_details">
+
+                        <!-- Auto repos -->
                         <div :id="mrepo.api.name" class="container">
                             <div class="row">
                                 <div class="col-md-2 col-lg-1 repo-image center">
@@ -167,7 +200,7 @@
                                             <i class="fa-fw fas fa-bug"></i> {{ mrepo.api.open_issues }}
                                         </span>
                                     </div>
-                                    <div class="repo-description" style="display:block;">
+                                    <div class="repo-description">
                                         {{ mrepo.api.description }}
                                     </div>
                                 </div>
@@ -222,7 +255,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="repo-description" style="display:block;">
+                                    <div class="repo-description">
                                         {{ nrepo.api.description }}
                                     </div>
                                 </div>

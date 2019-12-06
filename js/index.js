@@ -6,6 +6,13 @@ let vue = new Vue({
         version: "2019.1.0",
 
         /* SIDEBAR */
+        specialProjects: [
+            {
+                name: "ezAPIs",
+                description: "Github organization containing a compilation of useful and minimalist python APIs. Composed of ez-web-scraping: 🔐 A minimalist way to retrieve data from websites that require login & ez-progress-bar: 💤 A minimalist way to display a progress bar while running code.",
+                language: "Python"
+            }
+        ],
         projects: [],
         posts: [],
         projectsSearched: [],
@@ -22,14 +29,17 @@ let vue = new Vue({
     },
     methods: {
         /* GENERAL */
-        // ...
+        union(a1, a2) {
+            return a1.concat(a2.filter( ({a}) => !a1.find(f => f.a == a) ));
+        },
 
         /* SIDEBAR */
         updateProjects() {
             axios.get("https://api.github.com/users/N3ROO/repos")
             .then((response) => {
-                this.projects = response.data;
-                this.projectsSearched = response.data;
+                let projects = this.union(response.data, this.specialProjects);
+                this.projects = projects;
+                this.projectsSearched = projects;
             });
         },
         updateBlogPosts() {
@@ -42,10 +52,12 @@ let vue = new Vue({
         },
         onProjectsSearch(event) {
             let search = event.target.value;
+
+            let projects = this.union(this.projects, this.specialProjects);
             let newProjects = [];
-            for (let project of this.projects) {
+            for (let project of projects) {
                 let data = project.name + " " +
-                           project.description+ " "
+                           project.description  + " "
                            project.language;
                 if (data.toLowerCase().includes(search.toLowerCase())) {
                     newProjects.push(project);
