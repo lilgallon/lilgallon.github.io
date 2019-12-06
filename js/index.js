@@ -14,7 +14,8 @@ let vue = new Vue({
         /* MIDDLE CONTENT */
         activitiesGH: [],
         activitiesGHcount: 0,
-        activitiesSO: []
+        activitiesSO: [],
+        activitiesSOcount: 0
 
         /* RIGHT CONTENT */
         // ...
@@ -73,7 +74,7 @@ let vue = new Vue({
 
         /* MIDDLE CONTENT */
         updateRecentGithubActivity(increment) {
-            this.activitiesGHcount += increment
+            this.activitiesGHcount += increment;
             axios.get("https://api.github.com/users/N3ROO/events/public")
             .then((response) => {
                 this.activitiesGH = [];
@@ -86,18 +87,19 @@ let vue = new Vue({
                         repo_url: d.repo.url.replace("api.github.com/repos/", "github.com/"),
                         repo_name: d.repo.name,
                         type: d.type.replace("Event", ""),
-                        date: new Date(d.created_at).toLocaleString()
+                        date: new Date(d.created_at).toLocaleDateString("en-US")
                     }
 
                     this.activitiesGH.push(activity);
                 }
             });
         },
-        updateRecentStackOverflowActivity() {
+        updateRecentStackOverflowActivity(increment) {
+            this.activitiesSOcount += increment;
             axios.get("https://api.stackexchange.com/2.2/users/8811838/answers?order=desc&sort=activity&site=stackoverflow")
             .then((response) => {
                 this.activitiesSO = [];
-                for(let i = 0; i < 12; i++) {
+                for(let i = 0; i < this.activitiesSOcount; i++) {
                     let d = response.data.items[i];
 
                     if (d === undefined) break;
@@ -126,7 +128,7 @@ let vue = new Vue({
 
         /* MIDDLE CONTENT */
         this.updateRecentGithubActivity(5);
-        this.updateRecentStackOverflowActivity();
+        this.updateRecentStackOverflowActivity(5);
 
         /* RIGHT CONTENT */
         // ...

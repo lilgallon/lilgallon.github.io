@@ -199,10 +199,8 @@
                     <div class="title2"><i class="fa-fw fab fa-github"></i> Recent activity</div>
                     <div class="activity">
                         <div class="content">
-                            <div v-for="activity in activitiesGH">
-                                {{ activity.type }} on
-                                <a :href="activity.repo_url">{{ activity.repo_name }}</a>
-                                ({{ activity.date }})
+                            <div v-for="activity in activitiesGH" style="text-align: left;">
+                                {{ activity.date }}: {{ activity.type }} on <a :href="activity.repo_url">{{ activity.repo_name }}</a>
                                 <br>
                             </div>
                             <em class="fake-link" @click="updateRecentGithubActivity(-5)" v-if="activitiesGHcount > 5">See less... •</em>
@@ -234,15 +232,12 @@
                     <!-- Stackoverflow activity -->
                     <div class="title2"><i class="fa-fw fab fa-stack-overflow"></i> Recent answers</div>
                     <div class="activity">
-                        <div class="so-title">
-                            <i class="fab fa-stack-overflow"></i> Stackoverflow answers:
-                        </div>
-                        <div v-for="activity in activitiesSO">
-                            {{ activity.score }} point(s) for
-                            <a :href="activity.url">this answer</a>
-                            ({{ activity.date }})
+                        <div v-for="activity in activitiesSO" style="text-align: left;">
+                            {{ activity.date }}: {{ activity.score }} point(s) for <a :href="activity.url">this answer</a>
                             <br>
                         </div>
+                        <em class="fake-link" @click="updateRecentStackOverflowActivity(-5)" v-if="activitiesSOcount > 5">See less... •</em>
+                        <em class="fake-link" @click="updateRecentStackOverflowActivity(5)">See more...</em>
                         <div class="details">
                             from Twitter & StackExchange APIs
                         </div>

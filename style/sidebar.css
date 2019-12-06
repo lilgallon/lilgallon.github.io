@@ -49,3 +49,7 @@
     font-size: small;
     margin-bottom: 20px;
 }
+
+.left-panel .project-list {
+    padding-bottom: 10px;
+}
