@@ -3,7 +3,7 @@ let vue = new Vue({
     el: '#app',
     data: {
         /* GENERAL */
-        version: "2019.1.0b",
+        version: "2019.1.0",
 
         /* SIDEBAR */
         projects: [],
