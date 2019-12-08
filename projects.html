@@ -122,21 +122,21 @@
             <!-- Sidebar -->
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
-                    <div class="image">
-                        <img src="/resources/images/resume/profile.jpg" width="200px"/>
-                        <i class="fas fa-map-marker-alt"></i> San Francisco, California
-                    </div>
+                    <!-- Projects -->
                     <div class="title">
-                        Lilian Gallon
+                        Projects
                     </div>
-                    <div class="description">
-                        Fourth year French computer science student currently at the University of California, Santa Cruz.
-                        From the University of Bordeaux, France.
-                        <br/> <br/>
-                        <i class="fa-fw far fa-envelope"></i> lgallon[at]ucsc[dot]edu <br>
-                        <i class="fa-fw fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank" class="discret-link">Lilian Gallon</a> <br>
-                        <i class="fa-fw fab fa-github"></i> <a href="https://github.com/N3ROO" target="_blank" class="discret-link">N3ROO</a> <br>
-                        <i class="fa-fw fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/8811838/nero" target="_blank" class="discret-link">StackOverflow profile</a>
+                    <input class="form-control" placeholder="Search for projects..." @input="onProjectsSearch">
+                    <div class="project-list">
+                        <ul>
+                            <li v-for="(project, index) in projectsSearched" v-if="index <= 5">
+                                <i class="fa-fw far fa-folder"></i> <a
+                                :href="'/projects.html#' + project.name"
+                                class="discret-link"
+                                @click="moveAndFocusProject(100)">{{ project.name }}</a>
+                            </li>
+                            <em v-if="projectsSearched.length - 5 > 0">{{ projectsSearched.length - 5 }} more...</em>
+                        </ul>
                     </div>
 
                     <a class="github-button" href="https://github.com/N3ROO" data-size="large" data-show-count="true" aria-label="Follow @N3ROO on GitHub">Follow @N3ROO</a>

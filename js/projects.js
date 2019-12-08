@@ -6,7 +6,15 @@ let vue = new Vue({
         version: "2019.1.1",
 
         /* SIDEBAR */
-        // ...
+        specialProjects: [
+            {
+                name: "EzAPIs (organization)",
+                description: "Github organization containing a compilation of useful and minimalist python APIs. Composed of ez-web-scraping: 🔐 A minimalist way to retrieve data from websites that require login & ez-progress-bar: 💤 A minimalist way to display a progress bar while running code.",
+                language: "Python"
+            }
+        ],
+        projects: [],
+        projectsSearched: [],
 
         /* MIDDLE CONTENT */
         mrepos : [
@@ -69,10 +77,67 @@ let vue = new Vue({
     },
     methods: {
         /* GENERAL */
-        // ...
+        union(a1, a2) {
+            let a = [];
+
+            for (let obj of a1) {
+                a.push(obj);
+            }
+
+            for (let obj of a2) {
+                a.push(obj);
+            }
+
+            return a;
+        },
+        moveAndFocusProject(delay=0) {
+
+            setTimeout(function() {
+                let focusedProjects = document.getElementsByClassName("focus");
+                if (focusedProjects.length > 0) {
+                    let focusedProject = focusedProjects[0];
+                    focusedProject.classList.remove("focus");
+                }
+
+                // Move page to enchor
+                let enchor = window.location.hash.substr(1);
+                enchor = enchor.replace("%20", "_");
+                let project_dom = document.getElementById(enchor);
+
+                console.log(enchor);
+                if (project_dom !== null) {
+                    let project_y = project_dom.getBoundingClientRect().top + window.pageYOffset - 50;
+                    window.scrollTo({top: project_y, behavior: 'smooth'});
+
+                    // Change backgroundof focused project
+                    project_dom.parentElement.classList.add("focus");
+                }
+            }, delay);
+        },
 
         /* SIDEBAR */
-        //...
+        updateProjects() {
+            axios.get("https://api.github.com/users/N3ROO/repos")
+            .then((response) => {
+                this.projects = response.data;
+                this.projectsSearched = response.data;
+            });
+        },
+        onProjectsSearch(event) {
+            let search = event.target.value;
+
+            let projects = this.union(this.projects, this.specialProjects);
+            let newProjects = [];
+            for (let project of projects) {
+                let data = project.name + " " +
+                           project.description  + " "
+                           project.language;
+                if (data.toLowerCase().includes(search.toLowerCase())) {
+                    newProjects.push(project);
+                }
+            }
+            this.projectsSearched = newProjects;
+        },
 
         /* MIDDLE CONTENT */
         updateRepos() {
@@ -128,20 +193,11 @@ let vue = new Vue({
     mounted() {
         /* GENERAL */
         window.addEventListener('load', () => {
-            // Move page to enchor
-            let enchor = window.location.hash.substr(1);
-            enchor = enchor.replace("%20", "_");
-            console.log("("+enchor+")");
-            let project_dom = document.getElementById(enchor);
-            let project_y = project_dom.getBoundingClientRect().top + window.pageYOffset - 10;
-            window.scrollTo({top: project_y, behavior: 'smooth'});
-
-            // Change backgroundof focused project
-            project_dom.parentElement.classList.add("focus");
+            this.moveAndFocusProject();
         });
 
         /* SIDEBAR */
-        //...
+        this.updateProjects();
 
         /* MIDDLE CONTENT */
         this.updateRepos();
