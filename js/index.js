@@ -8,7 +8,7 @@ let vue = new Vue({
         /* SIDEBAR */
         specialProjects: [
             {
-                name: "ezAPIs",
+                name: "EzAPIs (organization)",
                 description: "Github organization containing a compilation of useful and minimalist python APIs. Composed of ez-web-scraping: 🔐 A minimalist way to retrieve data from websites that require login & ez-progress-bar: 💤 A minimalist way to display a progress bar while running code.",
                 language: "Python"
             }
@@ -30,16 +30,25 @@ let vue = new Vue({
     methods: {
         /* GENERAL */
         union(a1, a2) {
-            return a1.concat(a2.filter( ({a}) => !a1.find(f => f.a == a) ));
+            let a = [];
+
+            for (let obj of a1) {
+                a.push(obj);
+            }
+
+            for (let obj of a2) {
+                a.push(obj);
+            }
+
+            return a;
         },
 
         /* SIDEBAR */
         updateProjects() {
             axios.get("https://api.github.com/users/N3ROO/repos")
             .then((response) => {
-                let projects = this.union(response.data, this.specialProjects);
-                this.projects = projects;
-                this.projectsSearched = projects;
+                this.projects = response.data;
+                this.projectsSearched = response.data;
             });
         },
         updateBlogPosts() {

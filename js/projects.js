@@ -127,7 +127,18 @@ let vue = new Vue({
     },
     mounted() {
         /* GENERAL */
-        // ...
+        window.addEventListener('load', () => {
+            // Move page to enchor
+            let enchor = window.location.hash.substr(1);
+            enchor = enchor.replace("%20", "_");
+            console.log("("+enchor+")");
+            let project_dom = document.getElementById(enchor);
+            let project_y = project_dom.getBoundingClientRect().top + window.pageYOffset - 10;
+            window.scrollTo({top: project_y, behavior: 'smooth'});
+
+            // Change backgroundof focused project
+            project_dom.parentElement.classList.add("focus");
+        });
 
         /* SIDEBAR */
         //...
