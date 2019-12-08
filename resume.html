@@ -179,7 +179,8 @@
                                     <em>- <i class="fab fa-python"></i> Python </em>
                                 </li>
                             </ul>
-                            <a class="info" data-toggle="popover" title="More details"
+                            <a class="info discret-link" data-toggle="popover" title="More details"
+                               data-trigger="focus" tabindex="0"
                                data-content="Detection of logical models on energy data in order to optimize energy consumption. Each survey analyzed had at least
                                             30,000 records (the biggest one had 3M records). To give you an idea, analyzing 30,000 records takes about 10 seconds,
                                             and around 5 minutes with 3M records.">
@@ -205,7 +206,7 @@
                                     {{ term.name }}:
                                 </div>
                                 <li v-for="course in term.courses">
-                                    <a class="info" data-toggle="popover" title="Course description" :data-content="course.description">
+                                    <a class="info discret-link" data-toggle="popover" data-trigger="focus" tabindex="0" title="Course description" :data-content="course.description">
                                         <i class="far fa-comment"></i>  {{ course.title }}
                                     </a>
                                 </li>
