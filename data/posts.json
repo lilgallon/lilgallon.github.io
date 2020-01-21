@@ -2,7 +2,17 @@
     "posts":
     [
         {
-            "date": "02/12/2019",
+            "date": "01/20/2020",
+            "author": "Lilian Gallon",
+            "symbol": "fa-fw fas fa-cube",
+            "title": "Bettercolors 6.1.0 preview & Minecraft Tutorial",
+            "paragraphs": [
+                "Bettercolors 6.1.0 will be released soon. I am still hesitating if I should include some features, or if I should add them in a future update since 6.1.0 already fixes a lot of issues. This way, I can focus on issues for the 6.1.0 version, and then on new features for 6.2.0. Once that the stable 6.1.0 version will be released, I will work on porting Bettercolors 6.1.0 for Minecraft 1.14.4 to Minecraft 1.15.2",
+                "I added a new tab on my website called \"Tutorials\". I added the tutorial that I made for my CSE185E class at UCSC. It was my final project, and I got an A."
+            ]
+        },
+        {
+            "date": "12/02/2019",
             "author": "Lilian Gallon",
             "symbol": "fa-fw fas fa-home",
             "title": "New website, once again",
