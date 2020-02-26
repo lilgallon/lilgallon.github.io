@@ -55,6 +55,11 @@
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+    <!-- Github calendar -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+
     <!-- Website CSS -->
     <link rel="stylesheet" href="/style/utility.css">
     <link rel="stylesheet" href="/style/navbar.css">
@@ -222,10 +227,17 @@
                             <em class="fake-link" @click="updateRecentGithubActivity(-5)" v-if="activitiesGHcount > 5">See less... •</em>
                             <em class="fake-link" @click="updateRecentGithubActivity(5)">See more...</em>
                         </div>
+
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
+
                         <div class="details">
                             from Github API - Only public activities are shown - Dates are shown using your locale time
                         </div>
                     </div>
+
 
                     <!-- Recent Twitter -->
                     <div class="title2"><i class="fa-fw fab fa-twitter"></i> Recent tweets</div>
@@ -336,6 +348,12 @@
 
     <!-- Javascript using vue -->
     <script src="js/index.js"></script>
+
+    <script>
+        //GitHubCalendar(".calendar", "N3ROO");
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "N3ROO", { responsive: true });
+    </script>
 
 </body>
 </html>
