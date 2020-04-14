@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url("theme.css");
 
 .middle-panel {
@@ -37,22 +39,26 @@
 }
 
 .middle-panel .title1 {
+    font-family: 'Rubik', sans-serif;
     font-size: xx-large;
 }
 
 .middle-panel .title2 {
+    font-family: 'Rubik', sans-serif;
     font-size: large;
 }
 
 .middle-panel .subtitle {
+    font-family: 'Rubik', sans-serif;
     font-size: large;
 }
 
 .middle-panel .section {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .middle-panel .section-title {
+    font-family: 'Rubik', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     width: 200px;

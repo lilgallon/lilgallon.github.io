@@ -97,15 +97,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/resume.html">Resume</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/about.html">About <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cheatsheets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/ai-cheatsheet.html">Artificial Intelligence</a>
+                            <a class="dropdown-item" href="/ml-cheatsheet.html">Machine Learning</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tutorials
+                        Courses
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/minecraftmod.html">How to create a Minecraft mod</a>
+                            <a class="dropdown-item" href="/mcmod-lesson.html">How to create a Minecraft mod</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -116,6 +122,9 @@
                             <a class="dropdown-item" href="/gists.html">Gists</a>
                             <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about.html">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
@@ -265,6 +274,36 @@
                             <br>
                             <b>Changelog</b> <!-- ✔️ 💫 ✨ ❌ -->
                             <br>
+
+                            Version 2020.1.0 (14/04/2020):
+                            <div class="changelog">
+                                <ul>
+                                    <li>
+                                        <i class="fa-fw fas fa-book"></i> <s>Tutorials</s> became Courses:
+                                        <ul>
+                                            <li>✔️ Added a Machine Learning course</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-fw far fa-clipboard"></i> Cheatsheets:
+                                        <ul>
+                                            <li>✔️ Added cheatsheets: AI & ML (work still in progress though)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-fw far fa-file"></i> Resume:
+                                        <ul>
+                                            <li>✔️ Moved the project with CISCO to Experiences</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-fw fas fa-wrench"></i> Misceallenous:
+                                        <ul>
+                                            <li>💫 Contacted Github for them to fix the issue in their API where it says stargazers_count = watchers_count for any repository online</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
 
                             Version 2020.0.0 (20/01/2020):
                             <div class="changelog">

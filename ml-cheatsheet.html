@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
-    <title>Minecraft mod tutorial - nero.dev</title>
+    <title>Machine Learning Cheatsheet - nero.dev</title>
 </head>
 
 <body>
@@ -94,15 +94,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/resume.html">Resume</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cheatsheets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/ai-cheatsheet.html">Artificial Intelligence</a>
+                            <a class="dropdown-item active" href="/ml-cheatsheet.html">Machine Learning <span class="sr-only">(current)</span></a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tutorials
+                        Courses
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active" href="/minecraftmod.html">How to create a Minecraft mod <span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="/mcmod-lesson.html">How to create a Minecraft mod</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -114,6 +120,9 @@
                             <a class="dropdown-item" href="/gists.html">Gists</a>
                             <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
@@ -128,17 +137,16 @@
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
                     <div class="image">
-                        <img src="/resources/images/logo/forge.jpg" width="200px"/>
-                        <a href="/download/how-to-create-a-minecraft-mod.pdf" download><i class="fas fa-file-pdf"></i> Download the tutorial</a>
+                        <img src="/resources/images/logo/ml.jpg" width="200px"/>
+                        <a href="/download/todo" download><i class="fas fa-file-pdf"></i> Download the raw notes</a>
                     </div>
                     <div class="title">
-                        Minecraft mod tutorial
+                        Machine Learning Cheatsheet
                     </div>
                     <div class="description">
-                        Redacted by Lilian Gallon as the final project for the CSE185E class at UCSC.
+                        Redacted by Lilian Gallon for the CSE142 class at UCSC.
                         <br/><br/>
-                        <i class="fa-fw fas fa-cube"></i> Minecraft 1.14.4 <br>
-                        <i class="fa-fw fab fa-github"></i> <a href="https://github.com/shorebre4k/nickel-mod" target="_blank" class="discret-link">Github repo</a> <br>
+                        Difficulty: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br>
                     </div>
 
                     <a class="github-button" href="https://github.com/N3ROO" data-size="large" data-show-count="true" aria-label="Follow @N3ROO on GitHub">Follow @N3ROO</a>
@@ -150,100 +158,27 @@
                 <div class="container">
                     <div class="section">
                         <div class="title1">
-                            How to create a Minecraft mod
+                            Machine Learning Cheatsheet
                         </div>
                         <div class="subtitle">
-                            Keywords: Minecraft, Game modding, Tutorial, Forge API
+                            Keywords: Cheatsheet, University of California, Santa Cruz, Machine Learning
                         </div>
 
                         <br>
 
                         <div class="section-title">
-                            Summary
+                            Redaction in progress
                         </div>
                         <div>
-                            Game modding is a growing field of game developing which started from the initiative of players.
-                            When the game itself is not enough, you can improve it by adding your own functionalities.
-                            It is a way to learn coding by having fun. However, it can be difficult to get into game modding
-                            because you need to read a lot of documentation (if you find it) and know how the game is coded.
-                            This tutorial will guide you through your journey on how to make ― your first? ― Minecraft mod.
-                            You will learn each part of it, from setting up your Integrated Development Environment to adding
-                            your mod in your Minecraft game. We will also use the latest technologies available at this time.
-                            So the tutorial is taught using Minecraft Forge 1.14.4, GitHub Actions and IntelliJ IDEA 2019!
+                            coming soon... (May 2020)
                         </div>
 
-                        <br>
-
-                        <div class="section-title">
-                            Intended audience
-                        </div>
-                        <div>
-                            This tutorial is designed for people with a minimum of knowledge about Computer Science (Java and
-                            data structures). It is not needed to know Oriented Object Programming, but it will be easier to
-                            follow the tutorial by knowing this concept. Some parts of this tutorial won’t be required to
-                            create a Minecraft mod, but it will teach you good programming practices. Continuous Integration
-                            and Unit testing are some of these non-required parts. It is not necessary to have a Minecraft.net
-                            account to program the mod, but it will be mandatory if you want to use it in your own world.
-                        </div>
-
-                        <br>
-
-                        <div class="section-title">
-                            Style guide
-                        </div>
-                        <div>
-                            We will use a modern style guide to redact this tutorial. The Google Developer Documentation
-                            Style Guide [1] was chosen as it is adapted to this kind of tutorial. It is really simple to
-                            understand compared to the other ones (Oxford, Chicago and APA for example). Moreover, the theme
-                            is clean and the tone has to be conversational, friendly and respectful without being overly
-                            colloquial or frivolous.
-                        </div>
-
-                        <br>
-
-                        <div class="section-title">
-                            System requirements
-                        </div>
-                        <div>
-                            Recommended means that this tutorial has been made using this technology. If a technology is
-                            not cited, it means that it is not working (ex: Forge 1.14.4 is incompatible with Java JDK >11)
-                            or not tested.
-
-                            <ul>
-                                <li>
-                                    Operating System:
-                                    <ul>
-                                        <li>Windows 10 (recommended)</li>
-                                        <li>Linux (part 2.1.1 differ a lot, slight changes for part 2.1.2 and 2.1.3)</li>
-                                        <li>MacOS (same as Linux)</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Java JDK:
-                                    <ul>
-                                        <li>JDK 1.8 (recommended)</li>
-                                        <li>JDK 9 (Not maintained anymore, slight changes for part 2.1.2)</li>
-                                        <li>JDK 10 (Not maintained anymore, slight changes for part 2.1.2)</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Minecraft Forge:
-                                    <ul>
-                                        <li>1.14.4 (recommended)</li>
-                                        <li>1.14.x (Unknown issues may occur)</li>
-                                        <li>1.13.x (Slight changes for part 2.1.3, and 3.)</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Integrated development environment
-                                    <ul>
-                                        <li>IntelliJ IDEA 2019.x (recommended)</li>
-                                        <li>IntelliJ IDEA 2018.x (Slight changes for part 2.1.3)</li>
-                                        <li>Eclipse Neon (parts 2.1.2 and 2.1.3 differ a lot)</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <br><br><br><br>
+                        <br><br><br><br>
+                        <br><br><br><br>
+                        <br><br><br><br>
+                        <br><br><br><br>
+                        <br><br><br><br>
                     </div>
                 </div>
 

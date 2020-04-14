@@ -16,7 +16,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Website of Lilian Gallon, French CS student from Bordeaux curently studying at the University of California - Santa Cruz."/>
-    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California, UCSC, Santa Cruz, nero!"/>
+    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California"/>
     <meta name="author" content="Lilian Gallon"/>
     <meta name="copyright" content="Lilian Gallon"/>
     <meta name="robots" content="follow"/>
@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Font Awesome 5 -->
-    <link rel="stylesheet" href="/vendors/fontawesome-free-5.11.2-web/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
 
     <!-- Vue.js -->
     <script src="/vendors/vuejs/vue.min.js"></script>
@@ -63,12 +63,12 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
-
-    <title>Resume - nero.dev</title>
+    <title>Minecraft mod tutorial - nero.dev</title>
 </head>
+
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <a class="navbar-brand" href="/">
                 <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
@@ -81,8 +81,6 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-                <!-- <input class="form-control mr-sm-2" placeholder="Coming soon..."> -->
-
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
@@ -93,8 +91,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/resume.html">Resume <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume.html">Resume</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -110,7 +108,7 @@
                         Courses
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/mcmod-lesson.html">How to create a Minecraft mod</a>
+                            <a class="dropdown-item active" href="/minecraftmod.html">How to create a Minecraft mod <span class="sr-only">(current)</span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -118,8 +116,9 @@
                         Utility
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/gists.html">Gists</a>
-                          <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
+                            <a class="dropdown-item" href="/musics.html">Musics</a>
+                            <a class="dropdown-item" href="/gists.html">Gists</a>
+                            <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -138,26 +137,20 @@
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
                     <div class="image">
-                        <img src="/resources/images/resume/profile.jpg" width="200px"/>
-                        <i class="fas fa-map-marker-alt"></i> San Francisco, California
+                        <img src="/resources/images/logo/forge.jpg" width="200px"/>
+                        <a href="/download/how-to-create-a-minecraft-mod.pdf" download><i class="fas fa-file-pdf"></i> Download the tutorial</a>
                     </div>
                     <div class="title">
-                        Lilian Gallon
+                        Minecraft mod tutorial
                     </div>
                     <div class="description">
-                        Fourth year French computer science student currently at the University of California, Santa Cruz.
-                        From the University of Bordeaux, France.
-                        <br/> <br/>
-                        <i class="fa-fw far fa-envelope"></i> lgallon[at]ucsc[dot]edu <br>
-                        <i class="fa-fw fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank" class="discret-link">Lilian Gallon</a> <br>
-                        <i class="fa-fw fab fa-github"></i> <a href="https://github.com/N3ROO" target="_blank" class="discret-link">N3ROO</a> <br>
-                        <i class="fa-fw fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/8811838/nero" target="_blank" class="discret-link">StackOverflow profile</a>
+                        Redacted by Lilian Gallon as the final project for the CSE185E class at UCSC.
+                        <br/><br/>
+                        <i class="fa-fw fas fa-cube"></i> Minecraft 1.14.4 <br>
+                        <i class="fa-fw fab fa-github"></i> <a href="https://github.com/shorebre4k/nickel-mod" target="_blank" class="discret-link">Github repo</a> <br>
                     </div>
 
                     <a class="github-button" href="https://github.com/N3ROO" data-size="large" data-show-count="true" aria-label="Follow @N3ROO on GitHub">Follow @N3ROO</a>
-
-                    <br><br>Websites of friends:<br>
-                    - <a href="https://ljolliet.github.io/" target="_blank">Louis</a>
                 </div>
             </div>
 
@@ -166,143 +159,99 @@
                 <div class="container">
                     <div class="section">
                         <div class="title1">
-                            Lilian Gallon
+                            How to create a Minecraft mod
                         </div>
                         <div class="subtitle">
-                            Software engineering student
+                            Keywords: Minecraft, Game modding, Tutorial, Forge API
                         </div>
 
                         <br>
 
-                        <!-- Experience -->
                         <div class="section-title">
-                            EXPERIENCE
+                            Summary
                         </div>
                         <div>
-                            <b>Engie Inéo, Pessac, France</b>
-                            <em> - Software developer</em>
-                            <br>
-                            <small>april 2018 - june 2018</small>
+                            Game modding is a growing field of game developing which started from the initiative of players.
+                            When the game itself is not enough, you can improve it by adding your own functionalities.
+                            It is a way to learn coding by having fun. However, it can be difficult to get into game modding
+                            because you need to read a lot of documentation (if you find it) and know how the game is coded.
+                            This tutorial will guide you through your journey on how to make ― your first? ― Minecraft mod.
+                            You will learn each part of it, from setting up your Integrated Development Environment to adding
+                            your mod in your Minecraft game. We will also use the latest technologies available at this time.
+                            So the tutorial is taught using Minecraft Forge 1.14.4, GitHub Actions and IntelliJ IDEA 2019!
+                        </div>
+
+                        <br>
+
+                        <div class="section-title">
+                            Intended audience
+                        </div>
+                        <div>
+                            This tutorial is designed for people with a minimum of knowledge about Computer Science (Java and
+                            data structures). It is not needed to know Oriented Object Programming, but it will be easier to
+                            follow the tutorial by knowing this concept. Some parts of this tutorial won’t be required to
+                            create a Minecraft mod, but it will teach you good programming practices. Continuous Integration
+                            and Unit testing are some of these non-required parts. It is not necessary to have a Minecraft.net
+                            account to program the mod, but it will be mandatory if you want to use it in your own world.
+                        </div>
+
+                        <br>
+
+                        <div class="section-title">
+                            Style guide
+                        </div>
+                        <div>
+                            We will use a modern style guide to redact this tutorial. The Google Developer Documentation
+                            Style Guide [1] was chosen as it is adapted to this kind of tutorial. It is really simple to
+                            understand compared to the other ones (Oxford, Chicago and APA for example). Moreover, the theme
+                            is clean and the tone has to be conversational, friendly and respectful without being overly
+                            colloquial or frivolous.
+                        </div>
+
+                        <br>
+
+                        <div class="section-title">
+                            System requirements
+                        </div>
+                        <div>
+                            Recommended means that this tutorial has been made using this technology. If a technology is
+                            not cited, it means that it is not working (ex: Forge 1.14.4 is incompatible with Java JDK >11)
+                            or not tested.
+
                             <ul>
                                 <li>
-                                    Design and implementation of a data analysis software to detect,
-                                    visualize and interpret the logical links between different energy readings.
-                                    <em>- <i class="fab fa-python"></i> Python with matplotlib, numpy, tkinter</em>
+                                    Operating System:
+                                    <ul>
+                                        <li>Windows 10 (recommended)</li>
+                                        <li>Linux (part 2.1.1 differ a lot, slight changes for part 2.1.2 and 2.1.3)</li>
+                                        <li>MacOS (same as Linux)</li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Web scraping script working on a website with credentials.
-                                    <em>- <i class="fab fa-python"></i> Python with beautifulsoup</em>
+                                    Java JDK:
+                                    <ul>
+                                        <li>JDK 1.8 (recommended)</li>
+                                        <li>JDK 9 (Not maintained anymore, slight changes for part 2.1.2)</li>
+                                        <li>JDK 10 (Not maintained anymore, slight changes for part 2.1.2)</li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Script for periodic FTP synchronization.
-                                    <em>- <i class="fab fa-python"></i> Python </em>
+                                    Minecraft Forge:
+                                    <ul>
+                                        <li>1.14.4 (recommended)</li>
+                                        <li>1.14.x (Unknown issues may occur)</li>
+                                        <li>1.13.x (Slight changes for part 2.1.3, and 3.)</li>
+                                    </ul>
                                 </li>
-                            </ul>
-                            <a class="info discret-link" data-toggle="popover" title="More details"
-                               data-trigger="focus" tabindex="0"
-                               data-content="Detection of logical models on energy data in order to optimize energy consumption. Each survey analyzed had at least
-                                            30,000 records (the biggest one had 3M records). To give you an idea, analyzing 30,000 records takes about 10 seconds,
-                                            and around 5 minutes with 3M records.">
-                                <i class="far fa-comment"></i> More details about my work at Engie Inéo
-                            </a>
-                        </div>
-
-                        <br>
-
-                        <div>
-                            <b>Cisco, San Jose, USA</b>
-                            <em> - Sponsored project at UCSC</em>
-                            <br>
-                            <small>January 2020 - June 2020</small>
-                            <ul>
                                 <li>
-                                    Working on a topic around networking (can't say more atm because of the NDA).
-                                    <em>- Python / C++ </em>
+                                    Integrated development environment
+                                    <ul>
+                                        <li>IntelliJ IDEA 2019.x (recommended)</li>
+                                        <li>IntelliJ IDEA 2018.x (Slight changes for part 2.1.3)</li>
+                                        <li>Eclipse Neon (parts 2.1.2 and 2.1.3 differ a lot)</li>
+                                    </ul>
                                 </li>
                             </ul>
-
-                        </div>
-
-                        <br>
-
-                        <!-- Education -->
-                        <div class="section-title">
-                            EDUCATION
-                        </div>
-                        <div>
-                            <b>University of California, Santa Cruz</b>
-                            <em> - Master of Science, Computer Science</em>
-                            <br>
-                            <small>SEPTEMBER 2019 - JUNE 2020</small>
-
-                            <br>
-
-                            <ul v-for="term in terms">
-                                <div class="underline">
-                                    {{ term.name }}:
-                                </div>
-                                <li v-for="course in term.courses">
-                                    <a class="info discret-link" data-toggle="popover" data-trigger="focus" tabindex="0" title="Course description" :data-content="course.description">
-                                        <i class="far fa-comment"></i>  {{ course.title }}
-                                    </a>
-                                </li>
-                            </ul>
-
-                            Software Design Project I & II: A sponsored project by <a href="https://www.cisco.com/" target="_blank">Cisco</a> about Low-Latency Gaming.
-                        </div>
-                        <br>
-
-                        <div>
-                            <b>University of Bordeaux</b>
-                            <em> - Bachelor of Science, Computer Science</em>
-                            <br>
-                            <small>SEPTEMBER 2018 - JUNE 2019</small>
-                        </div>
-
-                        <br>
-
-                        <div>
-                            <b>Bordeaux Institute of Technology</b>
-                            <em> - Associate of Science degree, Computer Science</em>
-                            <br>
-                            <small>SEPTEMBER 2016 - JUNE 2018</small>
-                        </div>
-
-                        <br>
-
-                        <!-- Skills -->
-                        <div class="section-title">
-                            SKILLS
-                        </div>
-                        <div>
-                            <b>Languages</b>
-                            <ul>
-                                <li>+++: Python, Java, Javascript, HTML5/CSS</li>
-                                <li>++: C++, C</li>
-                                <li>+: SQL, C#, PHP</li>
-                            </ul>
-                            <b>Technologies</b>
-                            <ul>
-                                <li>Web: React, Vue.js, Flask, Bootstrap, JQuery</li>
-                                <li>Tools: Gradle, Maven</li>
-                                <li>CI: Github Actions, TravisCI</li>
-                                <li>Libraries: OpenGL, JavaFX, SFML, SDL, OpenCV</li>
-                                <li>Miscellaneous: Android development, Unity, Game modding</li>
-                            </ul>
-                            <b>Miscellaneous</b>
-                            <ul>
-                                <li>Fluent in English</li>
-                                <li>Fluent in French</li>
-                                <li>Experience with Agile management</li>
-                            </ul>
-                        </div>
-
-                        <!-- Skills -->
-                        <div class="section-title">
-                            PROJECTS
-                        </div>
-                        <div>
-                            You can see all my projects by browsing the <a href="/projects.html">projects page</a>.
                         </div>
                     </div>
                 </div>
@@ -378,18 +327,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- Vue library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+
     <!-- Utilities -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- Bootstrap init -->
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
-
     <!-- Javascript using vue -->
-    <script src="js/resume.js"></script>
+    <script src="js/tutorial.js"></script>
 
 </body>
 </html>
