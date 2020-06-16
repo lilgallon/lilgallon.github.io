@@ -90,16 +90,7 @@ let vue = new Vue({
 
             return a;
         },
-        setTheme(theme) {
-            this.theme = theme;
-            localStorage.setItem('theme', this.theme);
-            document.getElementById('theme').href = '/style/' + this.theme + '.css';
-        },
-
-        toggleTheme() {
-            if (this.theme === 'dark') this.setTheme('light');
-            else this.setTheme('dark');
-        },
+        // ...,
         moveAndFocusProject(delay=0) {
 
             setTimeout(function() {
@@ -207,11 +198,7 @@ let vue = new Vue({
             this.moveAndFocusProject();
         });
 
-        if (localStorage.getItem('theme') === 'dark') {
-            this.setTheme('dark');
-        } else {
-            this.setTheme('light');
-        }
+        // ...
 
         /* SIDEBAR */
         this.updateProjects();
