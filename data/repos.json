@@ -1,0 +1,876 @@
+[
+    {
+        "description": "\ud83d\udca4 A minimalist way to display a progress bar while running code.",
+        "forks": 0,
+        "language": "Python",
+        "name": "ez-progress-bar",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "## Changes\r\n- \u2714\ufe0f Basic progress bar that do not require multithreading\r\n- \u2714\ufe0f Basic customization: icon, title, description\r\n\r\n*release date:  28/05/18*",
+                "published_at": "2019-04-08 19:44:01",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 0,
+        "topics": [
+            "progress-bar",
+            "python",
+            "api"
+        ],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83d\udd10 A minimalist way to retrieve data from websites that require login",
+        "forks": 0,
+        "language": "Python",
+        "name": "ez-web-scraping",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "## Changes\r\n- \u2714\ufe0f Website connection\r\n- \u2714\ufe0f Authentification with POST request\r\n- \u2714\ufe0f Authentification with GET request\r\n\r\n*release date: 29/03/19*",
+                "published_at": "2019-04-08 19:50:06",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 3,
+        "topics": [
+            "python",
+            "api",
+            "web-scraping",
+            "authentification"
+        ],
+        "watchers": 3
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "Terminus",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "### V1.2\r\n\r\n* Script management (!= quests)\r\n* Commands yes, chmod, grep, man, touch\r\n* Pipe management (|) so each command now return a string \r\n* Write and append management (\\>\\> and \\>) \r\n* Rights/permission management (rwx)\r\n* Json file reading\r\n* Json template finished\r\n* Hand json writing of the world\r\n* Hand json writing of the man\r\n* Using #_ tokens in json to add particular word (like login)\r\n* CTRL-C \r\n* Fixing a few bugs about completion, mv command, script arguments\r\n* Secured admin mode\r\n* Yes/no when exiting \r\n* Adding a new quest\r\n* Adding several pnj to explain more the functions available.",
+                "published_at": "2019-05-01 10:11:52",
+                "tag_name": "V1.2",
+                "title": "Version 1.2"
+            },
+            {
+                "body": "* commands mv, tree, jobs, clear\r\n* Up/down arrows\r\n* Tab on a command and Objects\r\n* Hidden place/entity\r\n* Options in commands\r\n* Path after login@terminus\r\n* Quest dependency \r\n* Admin mode\r\n* Simplify command management\r\n* Fr version",
+                "published_at": "2019-03-21 16:10:57",
+                "tag_name": "V1.1",
+                "title": "Version 1.1"
+            }
+        ],
+        "stars": 4,
+        "topics": [],
+        "watchers": 4
+    },
+    {
+        "description": "\ud83c\udfae A tiny javascript game.",
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "Atoms",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "## Version 1.0 - 17/04/18\r\n- \u2714\ufe0f Basic game\r\n- \u2714\ufe0f Debug mode\r\n- \u2714\ufe0f Difficulty choice\r\n- \u2714\ufe0f History",
+                "published_at": "2019-05-28 10:46:42",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "javascript-game",
+            "iut-bordeaux",
+            "bordeaux-institude-of-technology",
+            "bordeaux-university"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\ud83d\udcc8 A simple python bandwidth monitor to track your upload, your download, and the data consumed.",
+        "forks": 1,
+        "language": "Python",
+        "name": "BandwidthMonitor",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "- \u2714\ufe0f Upload monitor (Mbits/sec)\r\n- \u2714\ufe0f Download monitor (Mbits/sec)\r\n- \u2714\ufe0f Data consumed monitor (up & down) -> useful if you use your mobile data\r\n\r\nTo close it, you need to close the terminal.",
+                "published_at": "2019-05-29 15:22:17",
+                "tag_name": "0.1",
+                "title": "Version 0.1"
+            }
+        ],
+        "stars": 4,
+        "topics": [
+            "bandwidth-monitor",
+            "bandwidth",
+            "network",
+            "tracker"
+        ],
+        "watchers": 4
+    },
+    {
+        "description": "\u2694\ufe0f  Minecraft assistance (hack) mod built over the forge API easy to understand & well documented. Working with Labymod 1.8.9, Forge 1.8.9, 1.12.2, 1.13.2, 1.14.4 & 1.15.2 :)",
+        "forks": 1,
+        "language": "Java",
+        "name": "Bettercolors",
+        "open_issues": [
+            "Aim assistance's max range is 10",
+            "Version 6.1.1 for MC_1.15.2",
+            "Reach",
+            "Add the ability to specify the entities that modules will target",
+            "Add friend list",
+            "Add a \"reset to default\" button",
+            "Add an option to toggle & customize random shift calculation"
+        ],
+        "releases": [
+            {
+                "body": "It contains the same features as the 6.1.0 version for MC1.14.4, but it works with Minecraft 1.15.2.",
+                "published_at": "2020-03-09 01:49:51",
+                "tag_name": "6.1.0-MC1.15.2",
+                "title": "Version 6.1.0 for MC 1.15.2"
+            },
+            {
+                "body": "![themes](https://raw.githubusercontent.com/N3ROO/Bettercolors/MC_1.8.9/.github/new_themes_crop500.png)\r\n\r\nThis update is backwards compatible with V6.1.0-b1 MC_1.14.4. The settings files are compatible with any Minecraft version. -> You can use the same settings file for MC1.8.9 as MC1.14.4 for example.\r\n\r\n- \u2795 Added 3 new themes: Material Light, Material Oceanic, Material Gold (in addition to the Default one)\r\n- \u2795 Added 'report a bug' menu item\r\n- \u2728 Moved update checker to the menu (instead of the footer)\r\n- \u2728 Changed console font to Cascadia (with ligatures & emojis)\r\n- \ud83d\udcab The selected settings file is now saved and loaded during startup\r\n- \ud83d\udcab Fixed window size to match different themes\r\n- \ud83d\udcab Fixed non-bettercolors settings file being shown in the settings tab\r\n- \ud83d\udcab Fixed wrong version difference computation (#39)\r\n- \ud83d\udcab Only bettercolors' settings files are now shown in the settings selector (#40)\r\n- \ud83d\udcab Loading settings now automatically update the toggle key (#41)\r\n- \ud83d\udcab Improved toggle key selector (#41)",
+                "published_at": "2020-03-09 00:13:45",
+                "tag_name": "6.1.0-MC1.14.4",
+                "title": "Version 6.1.0 for MC 1.14.4"
+            },
+            {
+                "body": "It contains the same features as the 6.1.0 version for MC1.8.9, but it works with Minecraft 1.12.2.\r\nRequested by @JoShMiQueL",
+                "published_at": "2020-03-08 21:40:56",
+                "tag_name": "6.1.0-MC1.12.2",
+                "title": "Version 6.1.0 for MC1.12.2"
+            },
+            {
+                "body": "![themes](https://raw.githubusercontent.com/N3ROO/Bettercolors/MC_1.8.9/.github/new_themes_crop500.png)\r\n\r\nThis update changes the settings directory. So if you want to keep your custom settings,\r\nmove your settings files to the config/ folder instead of the bettercolors/ folder (#23).\r\n\r\n- \u2795 Added an option to change the toggle key (insert by default) (#15)\r\n- \u2795 Added 'write changelog of last version in console if the mod is out dated' (#30)\r\n- \u2795 Added 3 new themes: Material Light, Material Oceanic, Material Gold (in addition to the Default one)\r\n- \u2795 Added 'report a bug' menu item\r\n- \u2728 Moved update checker to the menu (instead of the footer)\r\n- \u2728 Changed console font to Cascadia (with ligatures & emojis)\r\n- \ud83d\udcab The selected settings file is now saved and loaded during startup\r\n- \ud83d\udcab Fixed window size to match different themes\r\n- \ud83d\udcab Fixed non-bettercolors settings file being shown in the settings tab\r\n- \ud83d\udcab Fixed wrong version difference computation (#39)\r\n- \ud83d\udcab Only bettercolors' settings files are now shown in the settings selector (#40)\r\n- \ud83d\udcab Loading settings now automatically update the toggle key (#41)\r\n- \ud83d\udcab Improved toggle key selector (#41)",
+                "published_at": "2020-02-11 01:05:15",
+                "tag_name": "6.1.0-MC1.8.9",
+                "title": "Version 6.1.0 for MC 1.8.9"
+            },
+            {
+                "body": "**This version is a pre-release**\r\n\r\nThis update changes the settings' directory. So if you want to keep your custom settings, move your settings files to the config/ folder instead of the bettercolors folder. \r\n\r\n- Fixed \"Stop on right click stays activated even if toggled off\" (#29)\r\n- Added \"write changelog of last version in console if the mod is out dated\" (#30)\r\n- Increased the size of the console (100 -> 200)\r\n- Added an option to change the toggle key (insert by default) (#15)\r\n- Changed settings directory to config/ instead of bettercolors/ (#36)",
+                "published_at": "2019-12-14 14:04:38",
+                "tag_name": "6.1.0-b1-MC1.14.4",
+                "title": "Version 6.1.0-b1 for MC 1.14.4"
+            },
+            {
+                "body": "This is an **important** security update. It also fixes some bugs.\r\n\r\n- \u2728 Changed modid to make sure that bettercolors is not recognizable (#28) - thanks @patricktelling\r\n- \ud83d\udcab Fixed stop on right click that stayed activated even if toggled off (#29)\r\n- \ud83d\udcab Fixed aim assistance that was not turned off when the user was in the pause menu (#25)",
+                "published_at": "2019-10-22 05:53:33",
+                "tag_name": "6.0.1-MC1.8.9",
+                "title": "Version 6.0.1 for MC 1.8.9"
+            },
+            {
+                "body": "This is an **important** security update. It is also updated to the latest stable forge release.\r\n\r\n- \ud83d\udcab Fixed \"missing forge files\" during build due to forge's package layout change (#27) - thanks @patricktelling\r\n- \u2728 Changed modid to make sure that bettercolors is not recognizable (#28) - thanks @patricktelling\r\n- \u2728 Updated to the latest forge stable version (28.1.0)\r\n",
+                "published_at": "2019-10-22 01:36:26",
+                "tag_name": "6.0.1-MC1.14.4",
+                "title": "Version 6.0.1 for MC 1.14.4"
+            },
+            {
+                "body": "This update is backwards compatible with settings files from v6.0.0-b2 and higher.\r\n\r\n- \u2714\ufe0f Added error messages in the console if some resources were not loaded\r\n- \u2728 Improved font rendering (anti aliasing)\r\n- \u2728 Improved error messages (they can be sent even if the window is not ready)\r\n- \ud83d\udcab Fixed & improved version checker",
+                "published_at": "2019-07-22 11:05:01",
+                "tag_name": "6.0.0-MC1.8.9",
+                "title": "Version 6.0.0 for MC 1.8.9"
+            },
+            {
+                "body": "~~Working with forge **1.14.4 28.0.11**. Should be compatible with higher versions.~~\r\n20/10/2019: Download updated: now working with forge **1.14.4 28.1.61** (latest)\r\n\r\nWhat changed from 1.13.2:\r\n- \u2728 Input events are handled in a better way\r\n- \u2728 Huge optimization when searching for entities (we look for entities in an area instead of looking at ALL the entities)\r\n- \u2728 Improved log in console (it shows the name of entities properly)\r\n- \ud83d\udcab Click assist now works properly with packets\r\n- \ud83d\udcab Autosword now works properly with enchantments\r\n- \ud83d\udcab Fixed the rare crash due to the console overflow",
+                "published_at": "2019-07-21 13:51:04",
+                "tag_name": "6.0.0-MC1.14.4",
+                "title": "Version 6.0.0 for MC 1.14.4"
+            },
+            {
+                "body": "**Update 21/10/19**: This version won't be maintained anymore. You can use the one for Minecraft 1.14.4. An important security issue (#28) is not fixed in this version. If you really want it to be updated, open an issue on github. We will update it if someone really wants to. :) We answer really fast!\r\n\r\nForge 1.13.2 seems to be stable at this point.\r\nThis update is backwards compatible with settings files from v6.0.0-b2 and higher.\r\n\r\n- Added error messages in the console if some resources were not loaded\r\n- Improved font rendering (antialiasing)\r\n- Improved error messages (they can be sent even if the window is not ready)\r\n- Fixed crash in mod menu (#21)\r\n- Fixed team filter (#20)\r\n- Fixed & improved version checker\r\n- Fixed resource loading (forge fixed the resource loader, so I had to remove the trick to get it working)",
+                "published_at": "2019-07-02 19:57:35",
+                "tag_name": "6.0.0-MC1.13.2",
+                "title": "Version 6.0.0 for MC 1.13.2"
+            },
+            {
+                "body": "You have to use forge client (installer) 1.13.2 25.0.73 (or above) from the official website : [forge 1.13.2 downloads](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.13.2.html).\r\n\r\n**It uses a beta forge version. Unexpected crashes may occur.** If you want to help the development, [create an issue on github](https://github.com/N3ROO/Bettercolors/issues) with the crashlog.\r\n\r\nMajor things that changed from 1.8 (and that could have some issues):\r\n- Key input listening (to toggle the GUI and some modules)\r\n- Swing support (for the external GUI)\r\n- Resource path (for icons)",
+                "published_at": "2019-03-08 10:25:34",
+                "tag_name": "6.0.0-b3-MC1.13.2",
+                "title": "Version 6.0.0-b3 for MC 1.13.2"
+            },
+            {
+                "body": "*It should be the last beta version*\r\n\r\n**V6.0.0-b3**\r\n- Autosprint :\r\n    - Fixed player sprinting backwards (#11)\r\n- Autosword :\r\n    - Fixed autosword automatically toggling on even if not attacking living entities (#12)\r\n- Miscellaneous\r\n    - Fixed a rare crash probably linked to the fact that there was too much text in the console (#13)\r\n    - Improved version checker\r\n- Interface\r\n    - Added margin in tabs (#9)\r\n    - Changed default toggle key from right shift to insert\r\n    \r\n- Developer section :\r\n    - Changed versioning to semantic versioning\r\n    - Improved documentation to set up the project",
+                "published_at": "2018-11-12 15:32:43",
+                "tag_name": "6.0.0-b3-MC1.8",
+                "title": "Version 6.0.0-b3 for MC1.8"
+            },
+            {
+                "body": "**V6.0-b2**\r\n*Settings file of this version are incompatible with the precedents*\r\n- Aim assistance :\r\n   - Fixed random shifts not calculating at each click (#6 - #4)\r\n   - Improved default settings\r\n- Auto sprint :\r\n    - Fixed a crash (#5)\r\n- Settings :\r\n    - Fixed CA team filter and AA team filter (#3)\r\n    - Improved settings design to prevent conflicts\r\n- Interface :\r\n    - Improved option names\r\n",
+                "published_at": "2018-10-06 13:48:52",
+                "tag_name": "6.0-b2",
+                "title": "Version 6.0-b2"
+            },
+            {
+                "body": "**V6.0-b1 : MAJOR UPDATE**\r\n\r\n*Everything has been recoded from scratch. Now adding new modules is extremely easy and everything is optimized.*\r\n- Interface :\r\n    - New external interface made to contain a lot of modules,\r\n    - Dynamic components : you can resize it the way you want,\r\n    - A settings management section : you can save, load, and create settings presets.\r\n- Modules :\r\n    - Aim assistance :\r\n        - Added \"Stop when reached\" option\r\n    - Click Assistance :\r\n        - Fixed the fact that it sometimes stays activated whereas it shouldn't\r\n    - Autosword : automatically use the best sword in your hotbar,\r\n    - Autosprint : automatically sprint when going forward.\r\n- Misc :\r\n    - Overall optimisation,\r\n    - Settings file is now in the game directory,\r\n    - Version checker.",
+                "published_at": "2018-09-30 17:47:48",
+                "tag_name": "6.0-b1",
+                "title": "Version 6.0-b1"
+            },
+            {
+                "body": "- Added HWID verification\r\n- Added right SHIFT key to toggle the GUI which is closed by default",
+                "published_at": "2018-07-31 18:27:05",
+                "tag_name": "5.1",
+                "title": "Version 5.1"
+            },
+            {
+                "body": "- From 4.1 (unreleased) : Fixed aim step Y (was the default value instead of the customized value)\r\n- Added console windows output\r\n- Right click desactivate aimassist during a fight\r\n- Fixed aim step Y in report showing the default value",
+                "published_at": "2018-07-31 18:26:35",
+                "tag_name": "5.0",
+                "title": "Version 5.0"
+            },
+            {
+                "body": "- Added CPS use only on entity setting (before it was always true V3.0-)\r\n- Fixed a very rare crash\r\n- Auto save settings",
+                "published_at": "2018-07-31 18:25:36",
+                "tag_name": "4.0",
+                "title": "Version 4.0"
+            },
+            {
+                "body": "- Very smooth aim\r\n- Aim refresh parameter\r\n- Human / Artificial click assist parameter (artificial bypasses CPS counter)\r\n- Fixed possible freeze",
+                "published_at": "2018-07-31 18:24:06",
+                "tag_name": "3.0",
+                "title": "Version 3.0"
+            },
+            {
+                "body": "- Changed mod from \"better shadows\" to \"better colors\"",
+                "published_at": "2018-07-31 18:23:29",
+                "tag_name": "2.1",
+                "title": "Version 2.1"
+            },
+            {
+                "body": "- Fixed aim toggle\r\n- Improved hack activation: now it activates when the player is playing (before it worked while he was in Gui / outside minecraft)\r\n- Activation settings: time & number of attacks\r\n- Fixed settings not loaded while starting (before you had to reload to use your settings)\r\n- Added \"PAGE_UP\" key to toggle click assist\r\n- Added aim assist and click assist activated status in report",
+                "published_at": "2018-07-31 18:22:55",
+                "tag_name": "2.0",
+                "title": "Version 2.0"
+            },
+            {
+                "body": "- Fixed hack (was not working anymore with team filter turned on)\r\n- The hack stops automatically when no target is found after the beginning of the timer\r\n- Optimized team filter (It does not call useAimAssist & useClickAssist when the target is a teammate)\r\n",
+                "published_at": "2018-07-31 18:22:30",
+                "tag_name": "1.7",
+                "title": "Version 1.7"
+            },
+            {
+                "body": "- Added team tag filter on aim assist and click assist",
+                "published_at": "2018-07-31 18:21:45",
+                "tag_name": "1.6",
+                "title": "Version 1.6"
+            },
+            {
+                "body": "- Fixed debug",
+                "published_at": "2018-07-31 18:21:24",
+                "tag_name": "1.5",
+                "title": "Version 1.5"
+            },
+            {
+                "body": "- Debug key (END)\r\n- Improved setting loader",
+                "published_at": "2018-07-31 18:20:57",
+                "tag_name": "1.4",
+                "title": "Version 1.4"
+            },
+            {
+                "body": "- Hack disabled while in GUI now\r\n- Only left click works now (before right click was ok)\r\n- Added use on mobs setting\r\n- Code cleaning",
+                "published_at": "2018-07-31 18:20:31",
+                "tag_name": "1.3",
+                "title": "Version 1.3"
+            },
+            {
+                "body": "- Added click assist (increment CPS when attacking with chance %)\r\n- Added attacking time customization (= time in which the hacks are toggled)\r\n- Added aimassist toggle system with HOME key",
+                "published_at": "2018-07-31 18:20:04",
+                "tag_name": "1.2",
+                "title": "Version 1.2"
+            },
+            {
+                "body": "- Smoother aimassist\r\n- Refreshrate setting removed\r\n- Removed comments\r\n",
+                "published_at": "2018-07-31 18:19:33",
+                "tag_name": "1.1",
+                "title": "Version 1.1"
+            },
+            {
+                "body": "- Settings customization\r\n- AimAssist",
+                "published_at": "2018-07-31 18:19:00",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 7,
+        "topics": [
+            "minecraft-mod",
+            "minecraft-forge",
+            "minecraft-hacking",
+            "game-hacking",
+            "game-modding",
+            "forge",
+            "minecraft",
+            "hack",
+            "cheat",
+            "labymod"
+        ],
+        "watchers": 7
+    },
+    {
+        "description": "\ud83c\udfeb Projet ISN BAC S 2015-2016 (19.5/20)",
+        "forks": 0,
+        "language": "Processing",
+        "name": "Blackjack",
+        "open_issues": [],
+        "releases": [],
+        "stars": 1,
+        "topics": [],
+        "watchers": 1
+    },
+    {
+        "description": "[PROJECT PAUSED] Bleach is an anti-cheat plugin for minecraft servers",
+        "forks": 0,
+        "language": "Java",
+        "name": "Bleach",
+        "open_issues": [],
+        "releases": [],
+        "stars": 2,
+        "topics": [
+            "anticheat",
+            "craftbukkit",
+            "eclipse",
+            "minecraft",
+            "server",
+            "multiplayer",
+            "mod",
+            "plugin",
+            "spigot",
+            "bukkit"
+        ],
+        "watchers": 2
+    },
+    {
+        "description": "A racing game created using the Karting Microgame of Unity.",
+        "forks": 0,
+        "language": "C#",
+        "name": "Bolides",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [
+            "unity3d",
+            "karting-game",
+            "webgl",
+            "csharp"
+        ],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83d\udcf1 An android game for the Introduction to Mobile programming at the Bordeaux Institute of Technology.",
+        "forks": 0,
+        "language": "Java",
+        "name": "Cascade",
+        "open_issues": [
+            "First start settings init problem",
+            "End screen animation repeating",
+            "The layout is not compatible for every devices"
+        ],
+        "releases": [
+            {
+                "body": "### Version 2 \"User friendly interface\" - Release date : 19/03/18\r\n- \u2714 Clean overall theme\r\n- \u2714 End screen with useful information (score place, score total, restart option, best combo, number of clicks)\r\n- \u2714\ufe0f Visual effects on touch\r\n- \u2714\ufe0f Cells animation\r\n- \u2714 Interface animation\r\n- \u2714 Last score information animation\r\n- \u2714 Settings to toggle animation, game colors, and particles\r\n- \u2714 Settings previewer with a grid view\r\n- \u2714 Sounds\r\n- \u2714 Statistics\r\n- \u2728 Changed score calculation to get an exponential one",
+                "published_at": "2018-03-19 11:46:14",
+                "tag_name": "2.0",
+                "title": "Version 2.0: User friendly interface"
+            },
+            {
+                "body": "",
+                "published_at": "2018-03-12 18:42:24",
+                "tag_name": "1.12",
+                "title": "Version 1.1: Stable version of the game base"
+            }
+        ],
+        "stars": 0,
+        "topics": [
+            "android-app",
+            "game",
+            "bordeaux-university",
+            "bordeaux-institude-of-technology",
+            "iut-bordeaux"
+        ],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83d\ude0e Un site proposant divers outils pour se simplifier la vie sur Dofus.",
+        "forks": 0,
+        "language": "HTML",
+        "name": "dofus-tools",
+        "open_issues": [],
+        "releases": [],
+        "stars": 1,
+        "topics": [
+            "dofus",
+            "dofustouch",
+            "forgemagie",
+            "javascript",
+            "outils",
+            "html-css",
+            "jquery",
+            "jquery-ui"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "Un outil pour g\u00e9rer la qu\u00eate du Dofus Ocre cr\u00e9\u00e9 par Mopolo, l\u00e9g\u00e8rement am\u00e9lior\u00e9",
+        "forks": 0,
+        "language": "HTML",
+        "name": "Eternelle-Moisson",
+        "open_issues": [
+            "Blue / purple theme",
+            "Search feature for each page"
+        ],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "watchers": 0
+    },
+    {
+        "description": "A compilation of useful and simple python APIs : Progress bar, Web scraping, and more to come ...",
+        "forks": 0,
+        "language": "Python",
+        "name": "EzAPI",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "## EzProgressBar Version 1.0 - 28/05/18\r\n- \u2714\ufe0f Basic progress bar that do not require multithreading\r\n- \u2714\ufe0f Basic customization: icon, title, description\r\n\r\n## EzWebScraping Version 1.0 - 29/03/19\r\n- \u2714\ufe0f Website connection\r\n- \u2714\ufe0f Authentification with POST request\r\n- \u2714\ufe0f Authentification with GET request\r\n",
+                "published_at": "2019-03-29 18:09:34",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 2,
+        "topics": [
+            "api",
+            "python",
+            "interface",
+            "progress-bar",
+            "easy-to-use",
+            "web-scraping",
+            "http-requests"
+        ],
+        "watchers": 2
+    },
+    {
+        "description": "\ud83d\udcc5 Un script python qui permet de r\u00e9cup\u00e9rer les informations de l'almanax du jour en un clic.",
+        "forks": 0,
+        "language": "Python",
+        "name": "FastDofusAlmanax",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "Bas\u00e9 sur un terminal : \r\n- Bonus du jour\r\n- Almanax du jour\r\n",
+                "published_at": "2018-05-06 12:07:02",
+                "tag_name": "0.1",
+                "title": "Version 0.1"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "dofus",
+            "alamanx"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\u2744 A java fractals explorer.",
+        "forks": 0,
+        "language": "Java",
+        "name": "Fractals_explorer",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "",
+                "published_at": "2018-03-29 12:45:48",
+                "tag_name": "1.0",
+                "title": "First release"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "fractal",
+            "fractal-algorithms",
+            "mandelbrot-fractal",
+            "mandelbrot-viewer",
+            "mvc-architecture",
+            "iut-bordeaux",
+            "bordeaux-institude-of-technology",
+            "bordeaux-university"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\ud83d\udd79\ufe0f Simple Game of life implementation in Python.",
+        "forks": 0,
+        "language": "Python",
+        "name": "GameOfLife",
+        "open_issues": [],
+        "releases": [],
+        "stars": 2,
+        "topics": [
+            "python",
+            "gameoflife",
+            "graphics",
+            "pygame",
+            "oriented-object-programming"
+        ],
+        "watchers": 2
+    },
+    {
+        "description": "\u26bd A small project that consists in animating balls with physics.",
+        "forks": 0,
+        "language": "Python",
+        "name": "GravityBalls",
+        "open_issues": [],
+        "releases": [],
+        "stars": 1,
+        "topics": [
+            "python",
+            "pygame",
+            "physics"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\ud83d\udcda An easy to use 2D game engine powered by JavaFX13",
+        "forks": 0,
+        "language": "Java",
+        "name": "javafx-nero-engine",
+        "open_issues": [
+            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/World.java",
+            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/entity/Entity.java",
+            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/graphics/Animation.java",
+            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/hud/components/TextHud.java"
+        ],
+        "releases": [],
+        "stars": 0,
+        "topics": [
+            "javafx",
+            "game-engine",
+            "2d",
+            "university-of-bordeaux",
+            "openjfx",
+            "java13",
+            "javafx13"
+        ],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83c\udfae Lightbot is an educational video game to learn software programming concepts. Made for the Introduction to OOP & OOP design course at the Bordeaux Institute of Technology",
+        "forks": 0,
+        "language": "C++",
+        "name": "LightBot",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "The changelog is too long. Here are the [details](https://github.com/N3ROO/LightBot/blob/master/CHANGELOG.md).",
+                "published_at": "2019-05-28 13:49:47",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "lightbot",
+            "educational-game",
+            "bordeaux-university",
+            "bordeaux-institude-of-technology",
+            "iut-bordeaux"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\ud83c\udfae A game made made for the Introduction to programming course at the Bordeaux Institute of Technology",
+        "forks": 0,
+        "language": "C++",
+        "name": "Monster",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "## Version 1.0 - 4/03/17\r\n- \u2714\ufe0f The game",
+                "published_at": "2019-05-28 13:31:59",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "bordeaux-university",
+            "bordeaux-institude-of-technology",
+            "iut-bordeaux"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\ud83d\udd0e How to find the genre of a music without using AI? Without a huge dataset? This project is about having a better genre classification than the AI-based ones",
+        "forks": 0,
+        "language": "Python",
+        "name": "music-genre-finder",
+        "open_issues": [],
+        "releases": [],
+        "stars": 1,
+        "topics": [
+            "genre",
+            "music",
+            "playlist",
+            "genre-classification",
+            "song",
+            "python",
+            "youtube-api"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\ud83d\udcda A java 2D game engine powered by OpenGL (discontinued, working on a clone using OpenJFX)",
+        "forks": 0,
+        "language": "Java",
+        "name": "opengl-nero-engine",
+        "open_issues": [],
+        "releases": [],
+        "stars": 4,
+        "topics": [
+            "opengl",
+            "java",
+            "2d-game-engine",
+            "game-engine"
+        ],
+        "watchers": 4
+    },
+    {
+        "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
+        "forks": 0,
+        "language": "Python",
+        "name": "pacman",
+        "open_issues": [],
+        "releases": [],
+        "stars": 1,
+        "topics": [
+            "artificial-intelligence",
+            "astar-algorithm",
+            "pacman",
+            "berkeley"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "language": "Python",
+        "name": "pacman-ctf",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "watchers": 0
+    },
+    {
+        "description": "\u2728 An easy way to make your website look sexy.",
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "particles.js",
+        "open_issues": [
+            "It does not work properly if the parent container is rounded"
+        ],
+        "releases": [
+            {
+                "body": "**This update is backward compatible**\r\n\r\n- Enhancement #25: Added a security to prevent users from calling start() multiple times\r\n- Fix #23: Cos & sin were inverted in setSpeed and setDirection methods\r\n- Fix #24: Particles are not cut anymore when they bounce with an updated size\r\n- Fix #26: The canvas size is now adjusted correctly if an other unit than \"px\" is used to define its height and its width",
+                "published_at": "2019-09-26 01:46:33",
+                "tag_name": "1.5",
+                "title": "Version 1.5"
+            },
+            {
+                "body": "**This update is not backward compatible if you used:**\r\n- The method `setMultiplierIn` *(it has been removed)*\r\n- The method `setMultiplierOut` *(it has been removed)*\r\n- Any attribute except `settings` *(they are now private)*\r\n\r\nOtherwise, you don't have to change anything, it will be working.\r\n\r\n**Changes:**\r\n\r\n- setMultiplierIn and setMultiplierOut were removed. Now, you can update in real time any setting:\r\n```javascript\r\n// Retrieve the settings\r\nlet settings = particleHandler.settings;\r\n// Update the settings\r\nsettings.multiplierIn = 123;\r\nsettings.multiplierOut = 456;\r\n// Apply changes\r\nparticleHandler.settings = settings;\r\n```\r\n- All the attributes are now private (except settings)\r\n- Add #16: Ability to change the springs color (thanks @ElRacoon)\r\n  - New settings: springColorR, springColorG, springColorB\r\n- Add #18: Ability to change & update settings at any time\r\n- Add #19: Ability to set a min and a max amount of particles (useful when using dynamic amount)\r\n- Fix #20: Some methods needed to be private, now they are private following ECMA6\r\n- Decreased default amount of particles",
+                "published_at": "2019-07-16 16:06:01",
+                "tag_name": "1.4",
+                "title": "Version 1.4"
+            },
+            {
+                "body": "**Some settings were added. You need to update the settings variable if you used an older version.** More information on [README](https://github.com/N3ROO/particles.js).\r\n\r\n- Add #12 : Dynamic particles amount (when resizing the window)\r\n- Add #13 : Mobile detection (you can disable the script if the user is using a phone)\r\n- Fix #14 : Particles are not black anymore for users with Microsoft Edge",
+                "published_at": "2019-03-01 10:19:41",
+                "tag_name": "1.3",
+                "title": "Version 1.3"
+            },
+            {
+                "body": "- Fix #6 : The mouse event now listen to the parent container, and not the canvas\r\n- Fix #9 : The spawning position automatically adjusts with the new canvas size if the size changed\r\n- Add : Troubleshoot guide if the canvas is not initially sized correctly",
+                "published_at": "2019-02-03 10:42:24",
+                "tag_name": "1.2",
+                "title": "Version 1.2"
+            },
+            {
+                "body": "- Fix #5 : The canvas does tear anymore when resizing the window\r\n- Fix #4 : The canvas now fits perfectly the parent container & resizes automatically\r\n- Fix #2 : The default particle amount has been lowered\r\n- Small fix : mouse events are now not added to event list if an error occurred during initialization",
+                "published_at": "2019-02-02 14:10:28",
+                "tag_name": "1.1",
+                "title": "Version 1.1"
+            },
+            {
+                "body": "- Huge refactoring,\r\n- Algorithms optimization,\r\n- Removed JQuery,\r\n- Improved compatibility,\r\n- Add ability to customize the particles,\r\n- Detailed verbose to troubelshoot,\r\n- Easier to install,\r\n- Lightweight",
+                "published_at": "2019-02-01 16:43:27",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 2,
+        "topics": [
+            "javascript",
+            "particles",
+            "atoms",
+            "animated",
+            "js",
+            "website",
+            "animated-particles",
+            "graph"
+        ],
+        "watchers": 2
+    },
+    {
+        "description": "\u231b A basic windows shutdown planner.",
+        "forks": 0,
+        "language": "C#",
+        "name": "ShutdownPlanner",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "Fixed wrong calculations",
+                "published_at": "2018-06-25 17:09:55",
+                "tag_name": "5.1",
+                "title": "Version 5.1"
+            },
+            {
+                "body": "Added English\r\nFixed crash when planning a shutdown with an hour lower than the current time\r\nFixed reason message\r\nImproved interface\r\nRemoved French",
+                "published_at": "2018-06-24 17:35:48",
+                "tag_name": "5.0",
+                "title": "Version 5.0"
+            },
+            {
+                "body": "",
+                "published_at": "2018-03-29 13:17:43",
+                "tag_name": "4.0",
+                "title": "Version 4.0"
+            },
+            {
+                "body": "",
+                "published_at": "2018-03-29 13:17:11",
+                "tag_name": "3.0",
+                "title": "Version 3.0"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "shutdown-timer",
+            "csharp",
+            "windows-forms",
+            "shutdown"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": "\"Techniques algorithmiques et programmation\" ~ Licence 3 Informatique Bordeaux ~ Ann\u00e9es 2018-2019",
+        "forks": 0,
+        "language": "C",
+        "name": "TAP",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [
+            "bordeaux-university",
+            "tap",
+            "francais",
+            "2019"
+        ],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83c\udf93 List of my programming projects that I have written during my studies.",
+        "forks": 0,
+        "language": null,
+        "name": "university-projects",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [
+            "bordeaux-university",
+            "pape-clement",
+            "bordeaux-institude-of-technology",
+            "iut",
+            "iut-bordeaux",
+            "santa-cruz",
+            "ucsc"
+        ],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83d\udd79\ufe0f Jeu arcade d\u00e9velopp\u00e9 \u00e0 la nuit de l'informatique 2018 \u00e0 l'Universit\u00e9 de Bordeaux",
+        "forks": 1,
+        "language": "HTML",
+        "name": "Vipi",
+        "open_issues": [],
+        "releases": [],
+        "stars": 2,
+        "topics": [],
+        "watchers": 2
+    },
+    {
+        "description": "WebGL - CSE160 at UCSC during Winter 2020",
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "webgl-cse160",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "watchers": 0
+    },
+    {
+        "description": "\ud83c\udfae A tiny javascript Yahtzee game.",
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "Yahtzee",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "## Version 1.0 - 20/04/18\r\n- \u2714\ufe0f Basic Yahtzee with a joker given when the user does a Yahtzee",
+                "published_at": "2019-05-28 10:57:53",
+                "tag_name": "1.0",
+                "title": "Version 1.0"
+            }
+        ],
+        "stars": 1,
+        "topics": [
+            "yahtzee-game",
+            "javascript",
+            "iut-bordeaux",
+            "bordeaux-university",
+            "bordeaux-institude-of-technology"
+        ],
+        "watchers": 1
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "cse115a",
+        "open_issues": [
+            "[Register] If a user registers with an already used username, it should send an error",
+            "[Images] If a user does not have an avatar, it does not show a question mark",
+            "[Reputation] \"Rate this user\" is showing up on your own profile",
+            "[Reputation] Buttons to rate a profile are showing up even if the user is not logged in",
+            "[Authentication] Error 500, if the auth cookie refers to a non-existent user"
+        ],
+        "releases": [
+            {
+                "body": "Release for RentMyJunk website hosted on AWS. Successfully fulfills goal as a platform for users to meet and find bargain deals through trying, renting, then buying. Release contains the story criteria to create an account to find renters for various objects, as well as rate others to reduce the amount of scammers to generate a secure and positive community.",
+                "published_at": "2019-12-03 20:50:56",
+                "tag_name": "v1.0.0",
+                "title": "Release 1.0"
+            }
+        ],
+        "stars": 0,
+        "topics": [],
+        "watchers": 0
+    }
+]

@@ -19,18 +19,19 @@ def main():
     ]
 
     print('[-] Looking for repos...')
-    data = []
+    repos = []
     for repo in g.get_user().get_repos():
         if repo.name in exceptions:
             continue
-        print('[+] Found {}'.format(repo.name))
-        data.append({
+        print(' |  [+] Found {}'.format(repo.name))
+        repos.append({
             'name': repo.name,
             'description': repo.description,
             'topics': repo.get_topics(),
             'stars': repo.stargazers_count,
             'forks': repo.forks_count,
             'watchers': repo.watchers_count,
+            'language': repo.language,
             'open_issues': [i.title for i in repo.get_issues(state='open')],
             'releases': [(
                 {
@@ -41,12 +42,16 @@ def main():
                 }) for r in repo.get_releases()
             ]
         })
+    print('[-] Success')
 
-    print('[-] Saving data...')
-    with open('data.json', 'w') as f:
-        json.dump(data, f, indent=4, sort_keys=True, default=str)
+    print('[-] Saving repos\' data...')
+    repos_file = 'repos.json'
+    with open(repos_file, 'w') as f:
+        json.dump(repos, f, indent=4, sort_keys=True, default=str)
 
-    print('[+] Data saved in data.json!')
+    print('[+] Repos\' data saved in {}!'.format(repos_file))
+
+
 
 if __name__ == '__main__':
     main()
