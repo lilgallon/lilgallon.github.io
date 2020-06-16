@@ -4,6 +4,7 @@ let vue = new Vue({
     data: {
         /* GENERAL */
         version: "2020.2.0",
+        theme: 'dark',
 
         /* SIDEBAR */
         specialProjects: [
@@ -41,6 +42,17 @@ let vue = new Vue({
             }
 
             return a;
+        },
+
+        setTheme(theme) {
+            this.theme = theme;
+            localStorage.setItem('theme', this.theme);
+            document.getElementById('theme').href = '/style/' + this.theme + '.css';
+        },
+
+        toggleTheme() {
+            if (this.theme === 'dark') this.setTheme('light');
+            else this.setTheme('dark');
         },
 
         /* SIDEBAR */
@@ -121,7 +133,11 @@ let vue = new Vue({
     },
     mounted() {
         /* GENERAL */
-        // ...
+        if (localStorage.getItem('theme') === 'dark') {
+            this.setTheme('dark');
+         } else {
+            this.setTheme('light');
+         }
 
         /* SIDEBAR */
         this.updateProjects();
@@ -129,7 +145,6 @@ let vue = new Vue({
 
         /* MIDDLE CONTENT */
         this.updateRecentStackOverflowActivity(5);
-        this.updateTwitterStyle();
 
         /* RIGHT CONTENT */
         // ...

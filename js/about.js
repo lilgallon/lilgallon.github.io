@@ -17,7 +17,16 @@ let vue = new Vue({
     },
     methods: {
         /* GENERAL */
-        // ...
+        setTheme(theme) {
+            this.theme = theme;
+            localStorage.setItem('theme', this.theme);
+            document.getElementById('theme').href = '/style/' + this.theme + '.css';
+        },
+
+        toggleTheme() {
+            if (this.theme === 'dark') this.setTheme('light');
+            else this.setTheme('dark');
+        }
 
         /* SIDEBAR */
         //...

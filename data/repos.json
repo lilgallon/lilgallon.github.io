@@ -19,6 +19,7 @@
             "python",
             "api"
         ],
+        "updated_at": "2019-05-28 14:30:46",
         "watchers": 0
     },
     {
@@ -42,7 +43,8 @@
             "web-scraping",
             "authentification"
         ],
-        "watchers": 3
+        "updated_at": "2020-04-11 20:40:49",
+        "watchers": 0
     },
     {
         "description": null,
@@ -66,7 +68,8 @@
         ],
         "stars": 4,
         "topics": [],
-        "watchers": 4
+        "updated_at": "2019-05-02 20:12:35",
+        "watchers": 1
     },
     {
         "description": "\ud83c\udfae A tiny javascript game.",
@@ -89,7 +92,8 @@
             "bordeaux-institude-of-technology",
             "bordeaux-university"
         ],
-        "watchers": 1
+        "updated_at": "2019-05-28 11:06:01",
+        "watchers": 0
     },
     {
         "description": "\ud83d\udcc8 A simple python bandwidth monitor to track your upload, your download, and the data consumed.",
@@ -112,7 +116,8 @@
             "network",
             "tracker"
         ],
-        "watchers": 4
+        "updated_at": "2020-04-13 08:51:28",
+        "watchers": 0
     },
     {
         "description": "\u2694\ufe0f  Minecraft assistance (hack) mod built over the forge API easy to understand & well documented. Working with Labymod 1.8.9, Forge 1.8.9, 1.12.2, 1.13.2, 1.14.4 & 1.15.2 :)",
@@ -311,7 +316,8 @@
             "cheat",
             "labymod"
         ],
-        "watchers": 7
+        "updated_at": "2020-06-13 15:43:47",
+        "watchers": 1
     },
     {
         "description": "\ud83c\udfeb Projet ISN BAC S 2015-2016 (19.5/20)",
@@ -322,7 +328,8 @@
         "releases": [],
         "stars": 1,
         "topics": [],
-        "watchers": 1
+        "updated_at": "2019-05-28 15:08:59",
+        "watchers": 0
     },
     {
         "description": "[PROJECT PAUSED] Bleach is an anti-cheat plugin for minecraft servers",
@@ -344,7 +351,8 @@
             "spigot",
             "bukkit"
         ],
-        "watchers": 2
+        "updated_at": "2019-03-28 09:18:15",
+        "watchers": 1
     },
     {
         "description": "A racing game created using the Karting Microgame of Unity.",
@@ -360,7 +368,8 @@
             "webgl",
             "csharp"
         ],
-        "watchers": 0
+        "updated_at": "2020-06-13 09:51:31",
+        "watchers": 1
     },
     {
         "description": "\ud83d\udcf1 An android game for the Introduction to Mobile programming at the Bordeaux Institute of Technology.",
@@ -394,6 +403,7 @@
             "bordeaux-institude-of-technology",
             "iut-bordeaux"
         ],
+        "updated_at": "2019-05-28 15:01:18",
         "watchers": 0
     },
     {
@@ -414,7 +424,8 @@
             "jquery",
             "jquery-ui"
         ],
-        "watchers": 1
+        "updated_at": "2019-08-26 17:01:04",
+        "watchers": 0
     },
     {
         "description": "Un outil pour g\u00e9rer la qu\u00eate du Dofus Ocre cr\u00e9\u00e9 par Mopolo, l\u00e9g\u00e8rement am\u00e9lior\u00e9",
@@ -428,6 +439,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
+        "updated_at": "2020-05-26 16:10:04",
         "watchers": 0
     },
     {
@@ -454,7 +466,8 @@
             "web-scraping",
             "http-requests"
         ],
-        "watchers": 2
+        "updated_at": "2019-04-08 20:22:48",
+        "watchers": 1
     },
     {
         "description": "\ud83d\udcc5 Un script python qui permet de r\u00e9cup\u00e9rer les informations de l'almanax du jour en un clic.",
@@ -475,6 +488,7 @@
             "dofus",
             "alamanx"
         ],
+        "updated_at": "2019-05-29 15:29:26",
         "watchers": 1
     },
     {
@@ -502,7 +516,8 @@
             "bordeaux-institude-of-technology",
             "bordeaux-university"
         ],
-        "watchers": 1
+        "updated_at": "2019-07-23 16:46:34",
+        "watchers": 0
     },
     {
         "description": "\ud83d\udd79\ufe0f Simple Game of life implementation in Python.",
@@ -519,7 +534,8 @@
             "pygame",
             "oriented-object-programming"
         ],
-        "watchers": 2
+        "updated_at": "2019-05-28 14:27:58",
+        "watchers": 0
     },
     {
         "description": "\u26bd A small project that consists in animating balls with physics.",
@@ -534,7 +550,8 @@
             "pygame",
             "physics"
         ],
-        "watchers": 1
+        "updated_at": "2019-05-28 17:00:42",
+        "watchers": 0
     },
     {
         "description": "\ud83d\udcda An easy to use 2D game engine powered by JavaFX13",
@@ -558,6 +575,7 @@
             "java13",
             "javafx13"
         ],
+        "updated_at": "2019-11-06 07:47:45",
         "watchers": 0
     },
     {
@@ -582,7 +600,8 @@
             "bordeaux-institude-of-technology",
             "iut-bordeaux"
         ],
-        "watchers": 1
+        "updated_at": "2019-05-28 13:51:05",
+        "watchers": 0
     },
     {
         "description": "\ud83c\udfae A game made made for the Introduction to programming course at the Bordeaux Institute of Technology",
@@ -604,7 +623,8 @@
             "bordeaux-institude-of-technology",
             "iut-bordeaux"
         ],
-        "watchers": 1
+        "updated_at": "2019-05-28 13:33:16",
+        "watchers": 0
     },
     {
         "description": "\ud83d\udd0e How to find the genre of a music without using AI? Without a huge dataset? This project is about having a better genre classification than the AI-based ones",
@@ -623,7 +643,8 @@
             "python",
             "youtube-api"
         ],
-        "watchers": 1
+        "updated_at": "2019-10-15 02:40:28",
+        "watchers": 0
     },
     {
         "description": "\ud83d\udcda A java 2D game engine powered by OpenGL (discontinued, working on a clone using OpenJFX)",
@@ -639,7 +660,8 @@
             "2d-game-engine",
             "game-engine"
         ],
-        "watchers": 4
+        "updated_at": "2019-10-19 19:18:06",
+        "watchers": 0
     },
     {
         "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
@@ -655,6 +677,7 @@
             "pacman",
             "berkeley"
         ],
+        "updated_at": "2020-01-18 08:22:04",
         "watchers": 1
     },
     {
@@ -666,7 +689,8 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "watchers": 0
+        "updated_at": "2019-12-06 21:58:45",
+        "watchers": 1
     },
     {
         "description": "\u2728 An easy way to make your website look sexy.",
@@ -725,7 +749,8 @@
             "animated-particles",
             "graph"
         ],
-        "watchers": 2
+        "updated_at": "2019-10-23 01:51:07",
+        "watchers": 0
     },
     {
         "description": "\u231b A basic windows shutdown planner.",
@@ -766,7 +791,8 @@
             "windows-forms",
             "shutdown"
         ],
-        "watchers": 1
+        "updated_at": "2019-05-28 14:24:22",
+        "watchers": 0
     },
     {
         "description": "\"Techniques algorithmiques et programmation\" ~ Licence 3 Informatique Bordeaux ~ Ann\u00e9es 2018-2019",
@@ -782,6 +808,7 @@
             "francais",
             "2019"
         ],
+        "updated_at": "2019-11-26 19:11:02",
         "watchers": 0
     },
     {
@@ -801,6 +828,7 @@
             "santa-cruz",
             "ucsc"
         ],
+        "updated_at": "2020-01-31 05:07:16",
         "watchers": 0
     },
     {
@@ -812,7 +840,8 @@
         "releases": [],
         "stars": 2,
         "topics": [],
-        "watchers": 2
+        "updated_at": "2019-05-28 15:13:42",
+        "watchers": 1
     },
     {
         "description": "WebGL - CSE160 at UCSC during Winter 2020",
@@ -823,7 +852,8 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "watchers": 0
+        "updated_at": "2020-03-09 02:00:36",
+        "watchers": 1
     },
     {
         "description": "\ud83c\udfae A tiny javascript Yahtzee game.",
@@ -847,7 +877,8 @@
             "bordeaux-university",
             "bordeaux-institude-of-technology"
         ],
-        "watchers": 1
+        "updated_at": "2019-05-28 11:05:30",
+        "watchers": 0
     },
     {
         "description": null,
@@ -871,6 +902,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "watchers": 0
+        "updated_at": "2019-12-02 23:19:16",
+        "watchers": 1
     }
 ]

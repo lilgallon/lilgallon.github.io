@@ -1,6 +1,3 @@
-@import url("dark.css");
-
-
 /* It fixes the top margin of the input when the navbar is collapsed */
 nav .show,.collapsing .form {
     margin-top: 10px;
