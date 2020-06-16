@@ -1,11 +1,24 @@
-@import url("theme.css");
+@import url("dark.css");
 
 html {
     overflow-x: hidden;
 }
 
+a {
+    color: var(--main-palette1);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-palette2);
+}
+
+.main-palette {
+    color: var(--main-palette1);
+}
+
 .bg-black {
-    background: rgb(45, 50, 55);
+    background: var(--black1);
 }
 
 .form-control {
@@ -18,20 +31,21 @@ html {
 }
 
 .fake-link {
+    color: var(--white1);
     font-size: x-small;
 }
 
 .fake-link:hover {
-    color: grey;
+    color: var(--white3);
     cursor: pointer;
 }
 
 .discret-link {
-    color: rgb(33, 37, 41);
+    color: var(--white1);
 }
 
 .discret-link:hover {
-    color: grey;
+    color: var(--white3);
     text-decoration: none;
 }
 
@@ -54,15 +68,78 @@ html {
 .bottom-gradient {
     border-style: solid;
     border-width: 0px 0px 2px 0px;
-    -moz-border-image: var(--main-gradient);
-    -webkit-border-image: var(--main-gradient);
-    -o-border-image: var(--main-gradient);
-    border-image: var(--main-gradient);
+    -moz-border-image: var(--gradient1);
+    -webkit-border-image: var(--gradient1);
+    -o-border-image: var(--gradient1);
+    border-image: var(--gradient1);
 }
 
 .focus {
-    background: rgb(252, 248, 228) !important;
-    border: 1px solid gold !important;
+    background: var(--main-palette3) !important;
+    border: 1px solid var(--main-palette4) !important;
+}
+
+/* button */
+
+.button {
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--black2);
+    background: var(--black2);
+    color: var(--white1);
+    text-decoration: none;
+}
+
+.button:hover{
+    transition: ease-in 0.05s;
+    background: var(--black3);
+}
+
+.button:active {
+    border: 1px solid var(--main-palette1);
+}
+
+.button:focus {
+    outline: none;
+    outline-color: var(--main-palette1);
+}
+
+/* Bootstrap input fix */
+
+.form-control {
+    background: var(--black2);
+    border-color: var(--black2);
+    color: var(--white1);
+}
+
+.form-control:focus {
+    background: var(--black1);
+    border-color: var(--main-palette1);
+    box-shadow: 0.1 0.1 0.1 0.2rem var(--main-palette1);
+    color: var(--white1);
+}
+
+.form-control::placeholder {
+    color: var(--white1);
+}
+
+
+/* Github calendar fix */
+
+.calendar {
+    border: 1px solid var(--black3);
+}
+
+.calendar .contrib-number {
+    color: var(--white1);
+}
+
+.calendar .contrib-column {
+    border: 1px solid var(--black3) !important;
+}
+
+.calendar .border {
+    border: 1px solid var(--black3) !important;
 }
 
 /* callouts */
@@ -70,7 +147,7 @@ html {
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid var(--white1);
     border-left-width: 5px;
     border-radius: 3px;
 }
@@ -93,49 +170,49 @@ html {
 }
 
 .bs-callout-default {
-    border-left-color: #777;
+    border-left-color: var(--black4);
 }
 
 .bs-callout-default h4 {
-    color: #777;
+    color: var(--black4);
 }
 
 .bs-callout-primary {
-    border-left-color: #428bca;
+    border-left-color: var(--main-palette1);
 }
 
 .bs-callout-primary h4 {
-    color: #428bca;
+    color: var(--main-palette1);
 }
 
 .bs-callout-success {
-    border-left-color: #5cb85c;
+    border-left-color: var(--sec-palette4);
 }
 
 .bs-callout-success h4 {
-    color: #5cb85c;
+    color: var(--sec-palette4);
 }
 
 .bs-callout-danger {
-    border-left-color: #d9534f;
+    border-left-color: var(--sec-palette1);
 }
 
 .bs-callout-danger h4 {
-    color: #d9534f;
+    color: var(--sec-palette1);
 }
 
 .bs-callout-warning {
-    border-left-color: #f0ad4e;
+    border-left-color: var(--sec-palette3);
 }
 
 .bs-callout-warning h4 {
-    color: #f0ad4e;
+    color: var(--sec-palette3);
 }
 
 .bs-callout-info {
-    border-left-color: #5bc0de;
+    border-left-color: var(--main-palette4);
 }
 
 .bs-callout-info h4 {
-    color: #5bc0de;
+    color: var(--main-palette4);
 }

@@ -1,7 +1,9 @@
+@import url("dark.css");
+
 .footer {
     text-align: center;
-    color: grey;
-    border-top: 1px solid rgb(216, 216, 216);
+    color: var(--white1);
+    border-top: 1px solid var(--white1);
     margin-top: 50px;
     padding-top: 10px;
     padding-left: 15px;
@@ -19,9 +21,9 @@
 
 .footer a {
     text-decoration: none;
-    color: grey;
+    color: var(--white3);
 }
 
 .footer a:hover {
-    color: rgb(83, 83, 83);
+    color: var(--white1);
 }

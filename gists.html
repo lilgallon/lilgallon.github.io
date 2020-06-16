@@ -52,7 +52,9 @@
     <!-- Vue.js -->
     <script src="/vendors/vuejs/vue.min.js"></script>
 
-
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="/vendors/highlightjs/styles/nord.css">
+    <script src="vendors/highlightjs/highlight.pack.js"></script>
 
     <!-- Website CSS -->
     <link rel="stylesheet" href="/style/utility.css">
@@ -70,7 +72,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
             <a class="navbar-brand" href="/">
-                <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
+                <img src="resources/images/logo/nero_dev.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -126,7 +128,7 @@
                         <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <span class="text-success"><small><i>new!</i></small></span></a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <<span class="main-palette"><small><i>new!</i></small></span></a>
                     </li>
                 </ul>
             </div>
@@ -155,7 +157,15 @@
                     </div>
 
 
-                    <br><br>Websites of friends:<br>
+                    <a href="https://github.com/N3ROO" target="_blank">
+                        <button class="button" type="button">
+                            <i class="fa-fw fab fa-github"></i> Follow @N3ROO
+                        </button>
+                    </a>
+
+                    <br><br>
+                    
+                    Websites of friends:<br>
                     - <a href="https://ljolliet.github.io/" target="_blank">Louis</a>
                 </div>
             </div>
@@ -173,21 +183,197 @@
                     </div>
                     <hr>
                     <div>
-                        This functions converts a java.awt.event.KeyEvent Virtual Key (VK) code to a GLFW key code.
+                        This functions converts a java.awt.event.KeyEvent Virtual Key (VK) code to a GLFW key code. <a class="discret-link" href="https://gist.github.com/N3ROO/eb0cc2fc38920fb5081aba2c542eda55"><i class="fab fa-github"></i> Link</a>
                     </div>
-                    <br>
-                    <script src="https://gist.github.com/N3ROO/8f3bc1574f9fee318b3b7a879d1b26b4.js"></script>
+                    <pre>
+                        <code class="java">
+/**
+* All the keys listed in java.awt.event are listed here. If there
+* is no GLFW equivalent the function returns -2. Otherwise it returns
+* the GLFW code. -1 is reserved for the GLFW's unknown code.
+*
+* /!\ 1. java.awt.event.KeyEvent does not make any difference between left and right keys for:
+* - shift,
+* - control,
+* - alt.
+* So we had to decide, and this function return the code of the right one.
+*
+* /!\ 2. java.awt.event.KeyEvent takes into account your keyboard layout.
+* So if your keyboard is french, and you type "A", GLFW will say that it's Q,
+* whereas KeyEvent's VKs will say that it's "A". You have to keep that in mind
+* when you convert a KeyEvent's VK to a GLFW key.
+* This function will return GLFW_KEY_A with the KeyEvent's key is VK_A.
+*
+* Version 1.0
+* Future updates here: https://gist.github.com/N3ROO/8f3bc1574f9fee318b3b7a879d1b26b4
+*
+* @param code java.awt.event.KeyEvent VK code
+* @return -2 not supported, otherwise it returns the GLFW code.
+*/
+public static int convertVKSwingtoGLFW(int code) {
+    switch (code) {
+        case KeyEvent.CHAR_UNDEFINED: return GLFW.GLFW_KEY_UNKNOWN;
+        case KeyEvent.VK_SPACE: return GLFW.GLFW_KEY_SPACE;
+        // no apostrophe
+        case KeyEvent.VK_COMMA: return GLFW.GLFW_KEY_COMMA;
+        case KeyEvent.VK_MINUS: return GLFW.GLFW_KEY_MINUS;
+        case KeyEvent.VK_PERIOD: return GLFW.GLFW_KEY_PERIOD;
+        case KeyEvent.VK_SLASH: return GLFW.GLFW_KEY_SLASH;
+        case KeyEvent.VK_0: return GLFW.GLFW_KEY_0;
+        case KeyEvent.VK_1: return GLFW.GLFW_KEY_1;
+        case KeyEvent.VK_2: return GLFW.GLFW_KEY_2;
+        case KeyEvent.VK_3: return GLFW.GLFW_KEY_3;
+        case KeyEvent.VK_4: return GLFW.GLFW_KEY_4;
+        case KeyEvent.VK_5: return GLFW.GLFW_KEY_5;
+        case KeyEvent.VK_6: return GLFW.GLFW_KEY_6;
+        case KeyEvent.VK_7: return GLFW.GLFW_KEY_7;
+        case KeyEvent.VK_8: return GLFW.GLFW_KEY_8;
+        case KeyEvent.VK_9: return GLFW.GLFW_KEY_9;
+        case KeyEvent.VK_SEMICOLON: return GLFW.GLFW_KEY_SEMICOLON;
+        case KeyEvent.VK_EQUALS: return GLFW.GLFW_KEY_EQUAL;
+        case KeyEvent.VK_A: return GLFW.GLFW_KEY_A;
+        case KeyEvent.VK_B: return GLFW.GLFW_KEY_B;
+        case KeyEvent.VK_C: return GLFW.GLFW_KEY_C;
+        case KeyEvent.VK_D: return GLFW.GLFW_KEY_D;
+        case KeyEvent.VK_E: return GLFW.GLFW_KEY_E;
+        case KeyEvent.VK_F: return GLFW.GLFW_KEY_F;
+        case KeyEvent.VK_G: return GLFW.GLFW_KEY_G;
+        case KeyEvent.VK_H: return GLFW.GLFW_KEY_H;
+        case KeyEvent.VK_I: return GLFW.GLFW_KEY_I;
+        case KeyEvent.VK_J: return GLFW.GLFW_KEY_J;
+        case KeyEvent.VK_K: return GLFW.GLFW_KEY_K;
+        case KeyEvent.VK_L: return GLFW.GLFW_KEY_L;
+        case KeyEvent.VK_M: return GLFW.GLFW_KEY_M;
+        case KeyEvent.VK_N: return GLFW.GLFW_KEY_N;
+        case KeyEvent.VK_O: return GLFW.GLFW_KEY_O;
+        case KeyEvent.VK_P: return GLFW.GLFW_KEY_P;
+        case KeyEvent.VK_Q: return GLFW.GLFW_KEY_Q;
+        case KeyEvent.VK_R: return GLFW.GLFW_KEY_R;
+        case KeyEvent.VK_S: return GLFW.GLFW_KEY_S;
+        case KeyEvent.VK_T: return GLFW.GLFW_KEY_T;
+        case KeyEvent.VK_U: return GLFW.GLFW_KEY_U;
+        case KeyEvent.VK_V: return GLFW.GLFW_KEY_V;
+        case KeyEvent.VK_W: return GLFW.GLFW_KEY_W;
+        case KeyEvent.VK_X: return GLFW.GLFW_KEY_X;
+        case KeyEvent.VK_Y: return GLFW.GLFW_KEY_Y;
+        case KeyEvent.VK_Z: return GLFW.GLFW_KEY_Z;
+        case KeyEvent.VK_OPEN_BRACKET: return GLFW.GLFW_KEY_LEFT_BRACKET;
+        case KeyEvent.VK_BACK_SLASH: return GLFW.GLFW_KEY_BACKSLASH;
+        case KeyEvent.VK_CLOSE_BRACKET: return GLFW.GLFW_KEY_RIGHT_BRACKET;
+        // no grave accent with VK
+        // world 1?
+        // world 2?
+        case KeyEvent.VK_ESCAPE: return GLFW.GLFW_KEY_ESCAPE;
+        case KeyEvent.VK_ENTER: return GLFW.GLFW_KEY_ENTER;
+        case KeyEvent.VK_TAB: return GLFW.GLFW_KEY_TAB;
+        case KeyEvent.VK_BACK_SPACE: return GLFW.GLFW_KEY_BACKSPACE;
+        case KeyEvent.VK_INSERT: return GLFW.GLFW_KEY_INSERT;
+        case KeyEvent.VK_DELETE: return GLFW.GLFW_KEY_DELETE;
+        case KeyEvent.VK_RIGHT: return GLFW.GLFW_KEY_RIGHT;
+        case KeyEvent.VK_LEFT: return GLFW.GLFW_KEY_LEFT;
+        case KeyEvent.VK_DOWN: return GLFW.GLFW_KEY_DOWN;
+        case KeyEvent.VK_UP: return GLFW.GLFW_KEY_UP;
+        case KeyEvent.VK_PAGE_UP: return GLFW.GLFW_KEY_PAGE_UP;
+        case KeyEvent.VK_PAGE_DOWN: return GLFW.GLFW_KEY_PAGE_DOWN;
+        case KeyEvent.VK_HOME: return GLFW.GLFW_KEY_HOME;
+        case KeyEvent.VK_END: return GLFW.GLFW_KEY_END;
+        case KeyEvent.VK_CAPS_LOCK: return GLFW.GLFW_KEY_CAPS_LOCK;
+        case KeyEvent.VK_SCROLL_LOCK: return GLFW.GLFW_KEY_SCROLL_LOCK;
+        case KeyEvent.VK_NUM_LOCK: return GLFW.GLFW_KEY_NUM_LOCK;
+        case KeyEvent.VK_PRINTSCREEN: return GLFW.GLFW_KEY_PRINT_SCREEN;
+        case KeyEvent.VK_PAUSE: return GLFW.GLFW_KEY_PAUSE;
+        case KeyEvent.VK_F1: return GLFW.GLFW_KEY_F1;
+        case KeyEvent.VK_F2: return GLFW.GLFW_KEY_F2;
+        case KeyEvent.VK_F3: return GLFW.GLFW_KEY_F3;
+        case KeyEvent.VK_F4: return GLFW.GLFW_KEY_F4;
+        case KeyEvent.VK_F5: return GLFW.GLFW_KEY_F5;
+        case KeyEvent.VK_F6: return GLFW.GLFW_KEY_F6;
+        case KeyEvent.VK_F7: return GLFW.GLFW_KEY_F7;
+        case KeyEvent.VK_F8: return GLFW.GLFW_KEY_F8;
+        case KeyEvent.VK_F9: return GLFW.GLFW_KEY_F9;
+        case KeyEvent.VK_F10: return GLFW.GLFW_KEY_F10;
+        case KeyEvent.VK_F11: return GLFW.GLFW_KEY_F11;
+        case KeyEvent.VK_F12: return GLFW.GLFW_KEY_F12;
+        case KeyEvent.VK_F13: return GLFW.GLFW_KEY_F13;
+        case KeyEvent.VK_F14: return GLFW.GLFW_KEY_F14;
+        case KeyEvent.VK_F15: return GLFW.GLFW_KEY_F15;
+        case KeyEvent.VK_F16: return GLFW.GLFW_KEY_F16;
+        case KeyEvent.VK_F17: return GLFW.GLFW_KEY_F17;
+        case KeyEvent.VK_F18: return GLFW.GLFW_KEY_F18;
+        case KeyEvent.VK_F19: return GLFW.GLFW_KEY_F19;
+        case KeyEvent.VK_F20: return GLFW.GLFW_KEY_F20;
+        case KeyEvent.VK_F21: return GLFW.GLFW_KEY_F21;
+        case KeyEvent.VK_F22: return GLFW.GLFW_KEY_F22;
+        case KeyEvent.VK_F23: return GLFW.GLFW_KEY_F23;
+        case KeyEvent.VK_F24: return GLFW.GLFW_KEY_F24;
+        // no F25
+        case KeyEvent.VK_NUMPAD0: return GLFW.GLFW_KEY_KP_0;
+        case KeyEvent.VK_NUMPAD1: return GLFW.GLFW_KEY_KP_1;
+        case KeyEvent.VK_NUMPAD2: return GLFW.GLFW_KEY_KP_2;
+        case KeyEvent.VK_NUMPAD3: return GLFW.GLFW_KEY_KP_3;
+        case KeyEvent.VK_NUMPAD4: return GLFW.GLFW_KEY_KP_4;
+        case KeyEvent.VK_NUMPAD5: return GLFW.GLFW_KEY_KP_5;
+        case KeyEvent.VK_NUMPAD6: return GLFW.GLFW_KEY_KP_6;
+        case KeyEvent.VK_NUMPAD7: return GLFW.GLFW_KEY_KP_7;
+        case KeyEvent.VK_NUMPAD8: return GLFW.GLFW_KEY_KP_8;
+        case KeyEvent.VK_NUMPAD9: return GLFW.GLFW_KEY_KP_9;
+        case KeyEvent.VK_DECIMAL: return GLFW.GLFW_KEY_KP_DECIMAL;
+        case KeyEvent.VK_DIVIDE: return GLFW.GLFW_KEY_KP_DIVIDE;
+        case KeyEvent.VK_MULTIPLY: return GLFW.GLFW_KEY_KP_MULTIPLY;
+        case KeyEvent.VK_SUBTRACT: return GLFW.GLFW_KEY_KP_SUBTRACT;
+        case KeyEvent.VK_ADD: return GLFW.GLFW_KEY_KP_ADD;
+        // no kp enter
+        // no kp equals
+        case KeyEvent.VK_SHIFT: return GLFW.GLFW_KEY_RIGHT_SHIFT;  // !! No difference between L and R
+        case KeyEvent.VK_CONTROL: return GLFW.GLFW_KEY_RIGHT_CONTROL;  // !! No difference between L and R
+        case KeyEvent.VK_ALT: return GLFW.GLFW_KEY_RIGHT_ALT;  // !! No difference between L and R
+        // no super
+        case KeyEvent.VK_CONTEXT_MENU: return GLFW.GLFW_KEY_MENU;
+        default: return -2;
+    }
+}
+                        </code>
+                    </pre>
 
                     <div class="title2">
                         <i class="fa-fw icon"></i> Progress bar in a terminal using python
                     </div>
                     <hr>
                     <div>
-                        This gist is forked from <a href="https://gist.github.com/aubricus/f91fb55dc6ba5557fbab06119420dd6a">aubricus/print_progress.py</a>.
-                        I updated the code to Python 3, I fixed PEP8 issues and I added the import at the top.
+                        This gist is forked from <a class="discret-link" href="https://gist.github.com/aubricus/f91fb55dc6ba5557fbab06119420dd6a">aubricus/print_progress.py</a>.
+                        I updated the code to Python 3, I fixed PEP8 issues and I added the import at the top. <a class="discret-link" href="https://gist.github.com/N3ROO/0f6a96373d3d65b70cacef2216488ac0"><i class="fab fa-github"></i> Link</a>
                     </div>
-                    <br>
-                    <script src="https://gist.github.com/N3ROO/0f6a96373d3d65b70cacef2216488ac0.js"></script>
+                    <pre>
+                        <code class="python">
+import sys
+
+
+# Print iterations progress
+def print_progress(iteration, total,
+                    prefix='', suffix='', decimals=1, bar_length=100):
+    """
+    Call in a loop to create terminal progress bar
+    @params:
+        iteration   - Required: current iteration (Int)
+        total       - Required: total iterations (Int)
+        prefix      - Optional: prefix string (Str)
+        suffix      - Optional: suffix string (Str)
+        decimals    - Optional: >0 number of decimals in percent complete (Int)
+        bar_length  - Optional: character length of bar (Int)
+    """
+
+    percents = f'{100 * (iteration / float(total)):.2f}'
+
+    filled_length = int(round(bar_length * iteration / float(total)))
+    bar = f'{"█" * filled_length}{"-" * (bar_length - filled_length)}'
+
+    sys.stdout.write(f'\r{prefix} |{bar}| {percents}% {suffix}'),
+
+    if iteration == total:
+        sys.stdout.write('\n')
+        sys.stdout.flush()
+                        </code>
+                    </pre>
                 </div>
 
                 <!-- Footer -->
@@ -237,10 +423,10 @@
                                     Design inspired by Github
                                 </li>
                                 <li>
-                                    <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a>
+                                    <a href="/about.html">About</a> • <a href="/about.html#sitemap">Sitemap</a>
                                 </li>
                                 <li>
-                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version {{ version }}</a>
+                                    <a href="/about.html#changelog">© Lilian Gallon, version {{ version }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -255,13 +441,15 @@
         </div>
     </div>
 
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
 
     <!-- Bootstrap (JQuery, Popper & Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
 
     <!-- Utilities -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

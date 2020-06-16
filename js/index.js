@@ -129,6 +129,7 @@ let vue = new Vue({
 
         /* MIDDLE CONTENT */
         this.updateRecentStackOverflowActivity(5);
+        this.updateTwitterStyle();
 
         /* RIGHT CONTENT */
         // ...

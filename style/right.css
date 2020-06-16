@@ -1,3 +1,5 @@
+@import url("dark.css");
+
 .right-panel {
-    background: #e1e4e8;
+    background: var(--black3);
 }

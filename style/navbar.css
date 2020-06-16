@@ -1,4 +1,5 @@
-@import url("theme.css");
+@import url("dark.css");
+
 
 /* It fixes the top margin of the input when the navbar is collapsed */
 nav .show,.collapsing .form {
@@ -7,16 +8,50 @@ nav .show,.collapsing .form {
 
 /* It changes the detault bootstrap input with a dark one */
 nav .form-control {
-    background: rgb(62, 71, 78);
+    background: var(--black1);
     border: 0;
     border-radius: 5px;
     padding-left: 5px;
-    color: grey;
+    color: var(--black4);
     max-width: 300px;
 }
 
 nav .form-control:focus {
-    border-color:  var(--theme-color);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.025) inset, 0 0 5px var(--theme-color);
+    border-color: var(--main-palette1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.025) inset, 0 0 5px var(--main-palette1);
     outline: 0 none;
+}
+
+/* items */
+
+nav .nav-link{
+    color: var(--white1) !important;
+}
+
+nav .nav-link:hover {
+    color: var(--main-palette1) !important;
+}
+
+nav .nav-item.active a{
+    color: var(--main-palette1) !important;
+}
+
+/* dropdown */
+
+nav .dropdown-menu {
+    background: var(--black1);
+}
+
+nav .dropdown-item {
+    color: var(--white1);
+}
+
+nav .dropdown-item.active {
+    color: var(--white1);
+    background: var(--main-palette1);
+}
+
+nav .dropdown-item:hover {
+    color: var(--white1);
+    background: var(--main-palette1);
 }
