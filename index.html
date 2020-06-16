@@ -52,13 +52,9 @@
     <!-- Vue.js -->
     <script src="/vendors/vuejs/vue.min.js"></script>
 
-    <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
     <!-- Github calendar -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
 
     <!-- Website CSS -->
     <link rel="stylesheet" href="/style/utility.css">
@@ -175,7 +171,6 @@
                         </ul>
                     </div>
 
-                    <a class="github-button" href="https://github.com/N3ROO" data-size="large" data-show-count="true" aria-label="Follow @N3ROO on GitHub">Follow @N3ROO</a>
 
                     <br><br>Websites of friends:<br>
                     - <a href="https://ljolliet.github.io/" target="_blank">Louis</a>
@@ -227,15 +222,6 @@
                     <!-- Recent github activity -->
                     <div class="title2"><i class="fa-fw fab fa-github"></i> Recent activity</div>
                     <div class="activity">
-                        <div class="content">
-                            <div v-for="activity in activitiesGH" style="text-align: left;">
-                                {{ activity.date }}: {{ activity.type }} on <a :href="activity.repo_url">{{ activity.repo_name }}</a>
-                                <br>
-                            </div>
-                            <em class="fake-link" @click="updateRecentGithubActivity(-5)" v-if="activitiesGHcount > 5">See less... •</em>
-                            <em class="fake-link" @click="updateRecentGithubActivity(5)">See more...</em>
-                        </div>
-
                         <div class="calendar">
                             <!-- Loading stuff -->
                             Loading the data just for you.
