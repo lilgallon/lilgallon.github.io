@@ -39,7 +39,11 @@ let vue = new Vue({
     },
     mounted() {
         /* GENERAL */
-        // ...
+        if (localStorage.getItem('theme') === 'dark') {
+            this.setTheme('dark');
+        } else {
+            this.setTheme('light');
+        }
 
         /* SIDEBAR */
         //...
