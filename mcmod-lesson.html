@@ -67,7 +67,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
             <a class="navbar-brand" href="/">
                 <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
@@ -124,10 +124,7 @@
                         <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled text-danger" href="#" tabindex="-1" aria-disabled="true">Currently updating website (API rate limit exceeded)</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <span class="text-success"><small><i>new!</i></small></span></a>
                     </li>
                 </ul>
             </div>
