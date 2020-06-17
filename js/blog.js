@@ -3,7 +3,7 @@ let vue = new Vue({
     el: '#app',
     data: {
         /* GENERAL */
-        version: "2020.1.0",
+        version: "2020.2.0",
 
         /* SIDEBAR */
         // ...
@@ -16,7 +16,7 @@ let vue = new Vue({
     },
     methods: {
         /* GENERAL */
-        // ...
+        // ...,
 
         /* SIDEBAR */
         //...

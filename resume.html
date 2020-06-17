@@ -50,12 +50,10 @@
     <link rel="stylesheet" href="/vendors/fontawesome-free-5.11.2-web/css/all.min.css">
 
     <!-- Vue.js -->
-    <script src="/vendors/vuejs/vue.min.js"></script>
-
-    <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="/vendors/vuejs-2.6.10/vue.min.js"></script>
 
     <!-- Website CSS -->
+    <link rel="stylesheet" href="/style/dark.css" id="theme"> <!-- default theme -->
     <link rel="stylesheet" href="/style/utility.css">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/sidebar.css">
@@ -63,14 +61,13 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
-
     <title>Resume - nero.dev</title>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
             <a class="navbar-brand" href="/">
-                <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
+                <img id="logo" src="resources/images/logo/nero_dev_light.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -83,7 +80,7 @@
 
                 <!-- <input class="form-control mr-sm-2" placeholder="Coming soon..."> -->
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
@@ -125,11 +122,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about.html">About</a>
                     </li>
+                </ul>
+
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
+                        <a id="theme-changer" class="nav-link" href="" onclick="toggleTheme()">
+                            <i class="fa-fw fas fa-sun"></i> Light theme
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-danger" href="#" tabindex="-1" aria-disabled="true">Currently updating website (API rate limit exceeded)</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <span class="main-palette"><small><i>new!</i></small></span></a>
                     </li>
                 </ul>
             </div>
@@ -141,7 +143,7 @@
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
                     <div class="image">
-                        <img src="/resources/images/resume/profile.png" width="200px"/>
+                        <img id="profile" src="/resources/images/resume/profile_light.png" width="200px"/>
                         <!-- <i class="fas fa-map-marker-alt"></i> San Francisco, California -->
                     </div>
                     <div class="title">
@@ -157,12 +159,56 @@
                         <i class="fa-fw fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/8811838/nero" target="_blank" class="discret-link">StackOverflow profile</a>
                     </div>
 
-                    <a class="github-button" href="https://github.com/N3ROO" data-size="large" data-show-count="true" aria-label="Follow @N3ROO on GitHub">Follow @N3ROO</a>
 
-                    <br><br>Websites of friends:<br>
+                    <a href="https://github.com/N3ROO" target="_blank">
+                        <button class="button" type="button">
+                            <i class="fa-fw fab fa-github"></i> Follow @N3ROO
+                        </button>
+                    </a>
+
+                    <br><br>
+
+                    Websites of friends:<br>
                     - <a href="https://ljolliet.github.io/" target="_blank">Louis</a>
                 </div>
             </div>
+
+            <script>
+                // If the theme is not the default one, we need to load it while rendering the page
+                // Otherwise it would load the default theme, and the load the selected theme which
+                // will decrease the user experience
+                function setTheme(themeName) {
+                    localStorage.setItem('theme', themeName);
+                    document.getElementById('theme').href = '/style/' + themeName + '.css';
+
+                    if (themeName === 'light') {
+                        document.getElementById('logo').src = '/resources/images/logo/nero_dev_dark.png';
+                        document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-moon"></i> Dark theme';
+                        document.getElementById('profile').src = '/resources/images/resume/profile_dark.png'
+                    } else {
+                        document.getElementById('logo').src = '/resources/images/logo/nero_dev_light.png';
+                        document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-sun"></i> Light theme';
+                        document.getElementById('profile').src = '/resources/images/resume/profile_light.png'
+                    }
+                }
+
+                function toggleTheme() {
+                    console.log(localStorage.getItem('theme'));
+                    if (localStorage.getItem('theme') === 'dark') {
+                        setTheme('light');
+                    } else {
+                        setTheme('dark');
+                    }
+                }
+
+                (function () {
+                if (localStorage.getItem('theme') === 'dark') {
+                    setTheme('dark');
+                } else {
+                    setTheme('light');
+                }
+                })();
+            </script>
 
             <!-- Middle content -->
             <div class="col-xl-8 col-md-8 middle-panel">
@@ -219,7 +265,10 @@
                             <small>January 2020 - June 2020</small>
                             <ul>
                                 <li>
-                                    Working on a topic around networking (can't say more atm because of the NDA).
+                                    Internet service providers and massive corporations compete to get their information across faster than the rest.
+                                    In the process gamers often experience connection issues. Our goal is to find a way to remedy this problem and
+                                    provide a better online experience, not just for gamers, but for everyone. Alan Vasilkovsky, Collyn Noda, Howard Ng,
+                                    Jasleen Kaur, Lilian Gallon, Xudong Guo, and Cody Hartsook.
                                     <em>- Python / C++ </em>
                                 </li>
                             </ul>
@@ -280,17 +329,17 @@
                         <div>
                             <b>Languages</b>
                             <ul>
-                                <li>+++: Python, Java, Javascript, HTML5/CSS</li>
-                                <li>++: C++, C</li>
-                                <li>+: SQL, C#, PHP</li>
+                                <li>Softwares: C++, Python, Java, Javascript, C, C#</li>
+                                <li>Websites: HTML5/CSS, Javascript, PHP</li>
+                                <li>Databases: SQL</li>
                             </ul>
                             <b>Technologies</b>
                             <ul>
-                                <li>Web: React, Vue.js, Flask, Bootstrap, JQuery</li>
+                                <li>Web frameworks / libs: React, Vue.js, Flask, JQuery, Bootstrap, Bulma, Py4Web</li>
+                                <li>Other libraries: OpenGL, JavaFX, SFML, SDL, OpenCV, TensorFlow, Keras</li>
                                 <li>Tools: Gradle, Maven</li>
                                 <li>CI: Github Actions, TravisCI</li>
-                                <li>Libraries: OpenGL, JavaFX, SFML, SDL, OpenCV</li>
-                                <li>Miscellaneous: Android development, Unity, Game modding</li>
+                                <li>Miscellaneous: Android development, Unity, Game modding, Reverse Engineering</li>
                             </ul>
                             <b>Miscellaneous</b>
                             <ul>
@@ -299,6 +348,18 @@
                                 <li>Experience with Agile management</li>
                             </ul>
                         </div>
+
+                        <!-- What I like to do -->
+                        <div class="section-title">
+                            INTERESTS
+                        </div>
+                        <div>
+                            I love game development, especially what I would call the "back-end" game development. For some reason I like providing tools
+                            for other developers to use that are simple and powerful. It's satisfying to make complex tasks easy. It's as if you were a
+                            wizard because you know what happens in the backstage, <b>you</b> know the <b>magic</b>.
+                        </div>
+
+                        <br>
 
                         <!-- Skills -->
                         <div class="section-title">
@@ -357,10 +418,10 @@
                                     Design inspired by Github
                                 </li>
                                 <li>
-                                    <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a>
+                                    <a href="/about.html">About</a> • <a href="/about.html#sitemap">Sitemap</a>
                                 </li>
                                 <li>
-                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version {{ version }}</a>
+                                    <a href="/about.html#changelog">© Lilian Gallon, version {{ version }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -382,7 +443,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Utilities -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="vendors/axios-0.19.2/axios.min.js"></script>
 
     <!-- Bootstrap init -->
     <script>

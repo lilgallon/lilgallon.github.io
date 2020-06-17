@@ -1,8 +1,9 @@
 .left-panel {
     font-size: small;
-    background: white;
-    border-right: 1px solid rgb(216, 216, 216);
+    background: var(--black1);
+    border-right: 1px solid var(--black2);
     padding-top: 10px;
+    color: var(--white1);
 }
 
 .left-panel input {
@@ -28,7 +29,7 @@
 }
 
 .left-panel .image {
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid var(--black2);
     border-radius: 5px;
     padding: 5px;
     font-size: small;

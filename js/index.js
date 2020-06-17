@@ -3,7 +3,7 @@ let vue = new Vue({
     el: '#app',
     data: {
         /* GENERAL */
-        version: "2020.1.0",
+        version: "2020.2.0",
 
         /* SIDEBAR */
         specialProjects: [
@@ -45,10 +45,11 @@ let vue = new Vue({
 
         /* SIDEBAR */
         updateProjects() {
-            axios.get("https://api.github.com/users/N3ROO/repos")
-            .then((response) => {
-                this.projects = response.data;
-                this.projectsSearched = response.data;
+            fetch("/data/repos.json")
+            .then(async (response) => {
+                let repos = await response.json();
+                this.projects = repos;
+                this.projectsSearched = repos;
             });
         },
         updateBlogPosts() {
@@ -94,27 +95,6 @@ let vue = new Vue({
         },
 
         /* MIDDLE CONTENT */
-        updateRecentGithubActivity(increment) {
-            this.activitiesGHcount += increment;
-            axios.get("https://api.github.com/users/N3ROO/events/public")
-            .then((response) => {
-                this.activitiesGH = [];
-                for(let i = 0; i < this.activitiesGHcount; i ++) {
-                    let d = response.data[i];
-
-                    if (d === undefined) break;
-
-                    let activity = {
-                        repo_url: d.repo.url.replace("api.github.com/repos/", "github.com/"),
-                        repo_name: d.repo.name,
-                        type: d.type.replace("Event", ""),
-                        date: new Date(d.created_at).toLocaleDateString("en-US")
-                    }
-
-                    this.activitiesGH.push(activity);
-                }
-            });
-        },
         updateRecentStackOverflowActivity(increment) {
             this.activitiesSOcount += increment;
             axios.get("https://api.stackexchange.com/2.2/users/8811838/answers?order=desc&sort=activity&site=stackoverflow")
@@ -148,7 +128,6 @@ let vue = new Vue({
         this.updateBlogPosts();
 
         /* MIDDLE CONTENT */
-        this.updateRecentGithubActivity(5);
         this.updateRecentStackOverflowActivity(5);
 
         /* RIGHT CONTENT */

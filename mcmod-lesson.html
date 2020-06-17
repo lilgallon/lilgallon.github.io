@@ -47,15 +47,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Font Awesome 5 -->
-    <script src="https://kit.fontawesome.com/6eb9895a2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/vendors/fontawesome-free-5.11.2-web/css/all.min.css">
 
     <!-- Vue.js -->
-    <script src="/vendors/vuejs/vue.min.js"></script>
-
-    <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="/vendors/vuejs-2.6.10/vue.min.js"></script>
 
     <!-- Website CSS -->
+    <link rel="stylesheet" href="/style/dark.css" id="theme"> <!-- default theme -->
     <link rel="stylesheet" href="/style/utility.css">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/sidebar.css">
@@ -68,9 +66,9 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
             <a class="navbar-brand" href="/">
-                <img src="resources/images/logo/nero_dev_round_cut.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
+                <img id="logo" src="resources/images/logo/nero_dev_light.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -81,7 +79,7 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
@@ -115,8 +113,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Utility
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/musics.html">Musics</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/gists.html">Gists</a>
                             <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
@@ -124,15 +121,55 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about.html">About</a>
                     </li>
+                </ul>
+
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }}</a>
+                        <a id="theme-changer" class="nav-link" href="" onclick="toggleTheme()">
+                            <i class="fa-fw fas fa-sun"></i> Light theme
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-danger" href="#" tabindex="-1" aria-disabled="true">Currently updating website (API rate limit exceeded)</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <span class="main-palette"><small><i>new!</i></small></span></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <script>
+            // If the theme is not the default one, we need to load it while rendering the page
+            // Otherwise it would load the default theme, and the load the selected theme which
+            // will decrease the user experience
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.getElementById('theme').href = '/style/' + themeName + '.css';
+
+                if (themeName === 'light') {
+                                        document.getElementById('logo').src = '/resources/images/logo/nero_dev_dark.png';
+                    document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-moon"></i> Dark theme';
+                } else {
+                    document.getElementById('logo').src = '/resources/images/logo/nero_dev_light.png';
+                    document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-sun"></i> Light theme';
+                }
+            }
+
+            function toggleTheme() {
+                console.log(localStorage.getItem('theme'));
+                if (localStorage.getItem('theme') === 'dark') {
+                    setTheme('light');
+                } else {
+                    setTheme('dark');
+                }
+            }
+
+            (function () {
+            if (localStorage.getItem('theme') === 'dark') {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+            })();
+        </script>
 
         <div class="row">
 
@@ -153,7 +190,6 @@
                         <i class="fa-fw fab fa-github"></i> <a href="https://github.com/shorebre4k/nickel-mod" target="_blank" class="discret-link">Github repo</a> <br>
                     </div>
 
-                    <a class="github-button" href="https://github.com/N3ROO" data-size="large" data-show-count="true" aria-label="Follow @N3ROO on GitHub">Follow @N3ROO</a>
                 </div>
             </div>
 
@@ -306,10 +342,10 @@
                                     Design inspired by Github
                                 </li>
                                 <li>
-                                    <a href="/about.html" class="text-muted">About</a> • <a href="/about.html#sitemap" class="text-muted">Sitemap</a>
+                                    <a href="/about.html">About</a> • <a href="/about.html#sitemap">Sitemap</a>
                                 </li>
                                 <li>
-                                    <a href="/about.html#changelog" class="text-muted">© Lilian Gallon, version {{ version }}</a>
+                                    <a href="/about.html#changelog">© Lilian Gallon, version {{ version }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -334,7 +370,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 
     <!-- Utilities -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="vendors/axios-0.19.2/axios.min.js"></script>
 
     <!-- Javascript using vue -->
     <script src="js/tutorial.js"></script>

@@ -3,7 +3,7 @@ let vue = new Vue({
     el: '#app',
     data: {
         /* GENERAL */
-        version: "2020.1.0",
+        version: "2020.2.0",
 
         /* SIDEBAR */
         specialProjects: [
@@ -90,6 +90,7 @@ let vue = new Vue({
 
             return a;
         },
+        // ...,
         moveAndFocusProject(delay=0) {
 
             setTimeout(function() {
@@ -104,7 +105,6 @@ let vue = new Vue({
                 enchor = enchor.replace("%20", "_");
                 let project_dom = document.getElementById(enchor);
 
-                console.log(enchor);
                 if (project_dom !== null) {
                     let project_y = project_dom.getBoundingClientRect().top + window.pageYOffset - 50;
                     window.scrollTo({top: project_y, behavior: 'smooth'});
@@ -117,10 +117,11 @@ let vue = new Vue({
 
         /* SIDEBAR */
         updateProjects() {
-            axios.get("https://api.github.com/users/N3ROO/repos")
-            .then((response) => {
-                this.projects = response.data;
-                this.projectsSearched = response.data;
+            fetch("/data/repos.json")
+            .then(async (response) => {
+                let repos = await response.json();
+                this.projects = repos;
+                this.projectsSearched = repos;
             });
         },
         onProjectsSearch(event) {
@@ -141,9 +142,10 @@ let vue = new Vue({
 
         /* MIDDLE CONTENT */
         updateRepos() {
-            axios.get("https://api.github.com/users/N3ROO/repos")
-            .then((response) => {
-                for(let repo of response.data) {
+            fetch("/data/repos.json")
+            .then(async (response) => {
+                let repos = await response.json();
+                for(let repo of repos) {
                     let result = this.isMainRepo(repo.name);
                     let is_main_repo = result[0];
                     let repo_details = result[1];
@@ -195,6 +197,8 @@ let vue = new Vue({
         window.addEventListener('load', () => {
             this.moveAndFocusProject();
         });
+
+        // ...
 
         /* SIDEBAR */
         this.updateProjects();

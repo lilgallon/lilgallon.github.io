@@ -1,0 +1,29 @@
+:root {
+    --gradient1: linear-gradient(
+        to right,
+        #8FBCBB 0%,
+        #88C0D0 50%,
+        #5E81AC 100%
+    ) 1;
+
+    /* From https://www.nordtheme.com/ */
+    --black1: #2E3440;
+    --black2: #3B4252;
+    --black3: #434C5E;
+    --black4: #4C566A;
+
+    --white1: #D8DEE9;
+    --white2: #E5E9F0;
+    --white3: #ECEFF4;
+
+    --main1: #8FBCBB;
+    --main2: #88C0D0;
+    --main3: #81A1C1;
+    --main4: #5E81AC;
+
+    --secondary1: #BF616A;
+    --secondary2: #D08770;
+    --secondary3: #EBCB8B;
+    --secondary4: #A3BE8C;
+    --secondary5: #B48EAD;
+}
