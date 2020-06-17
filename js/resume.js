@@ -53,8 +53,8 @@ let vue = new Vue({
                         description: "Continuation of course CSE115B. Students work in teams to develop, test, document, and deploy a substantial software project. Teams give a formal presentation and demonstration of each project."
                     },
                     {
-                        title: "CSE104: Computability",
-                        description: "Turing machines, general phase-structure grammars, the Chomsky hierarchy, recursive functions, diagonalization, the Halting problem, computability and unsolvability, computational complexity, time and space bounds, NP-completeness with emphasis on reductions between problems from various areas."
+                        title: "CSE183: Web Applications",
+                        description: "The World-Wde Web is one of the main mechanisms by which computer applications are delivered to users. This course introduces the design of Web applications. Students learn the main technologies involved, and build web applications as part of homework assignments and group class projects."
                     },
                     {
                         title: "CSE142: Introduction to Machine Learning",
