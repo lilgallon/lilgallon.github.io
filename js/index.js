@@ -21,6 +21,7 @@ let vue = new Vue({
         /* MIDDLE CONTENT */
         activitiesGH: [],
         activitiesGHcount: 0,
+        reqSucceededSO: true,
         activitiesSO: [],
         activitiesSOcount: 0
 
@@ -113,6 +114,10 @@ let vue = new Vue({
 
                     this.activitiesSO.push(activity)
                 }
+            }).catch((error) => {
+                console.warn("[StackExchange]: Too munch requests for that IP");
+                console.warn("[StackExchange]: Stack Overflow data won't be shown");
+                this.reqSucceededSO = false;
             });
         }
 

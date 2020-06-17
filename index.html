@@ -318,12 +318,18 @@
                     <!-- Stackoverflow activity -->
                     <div class="title2"><i class="fa-fw fab fa-stack-overflow"></i> Recent answers</div>
                     <div class="activity">
-                        <div v-for="activity in activitiesSO" style="text-align: left;">
-                            {{ activity.date }}: {{ activity.score }} point(s) for <a :href="activity.url">this answer</a>
-                            <br>
+                        <div v-if="reqSucceededSO">
+                            <div v-for="activity in activitiesSO" style="text-align: left;">
+                                {{ activity.date }}: {{ activity.score }} point(s) for <a :href="activity.url">this answer</a>
+                                <br>
+                            </div>
+
+                            <em class="fake-link" @click="updateRecentStackOverflowActivity(-5)" v-if="activitiesSOcount > 5">See less... •</em>
+                            <em class="fake-link" @click="updateRecentStackOverflowActivity(5)">See more...</em>
                         </div>
-                        <em class="fake-link" @click="updateRecentStackOverflowActivity(-5)" v-if="activitiesSOcount > 5">See less... •</em>
-                        <em class="fake-link" @click="updateRecentStackOverflowActivity(5)">See more...</em>
+                        <div v-else>
+                            Could not retrieve Stack Overflow data (probably too munch requests from this IP)
+                        </div>
                         <div class="details">
                             from StackExchange API
                         </div>
