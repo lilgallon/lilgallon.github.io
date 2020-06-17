@@ -52,8 +52,6 @@
     <!-- Vue.js -->
     <script src="/vendors/vuejs/vue.min.js"></script>
 
-
-
     <!-- Website CSS -->
     <link rel="stylesheet" href="/style/dark.css" id="theme"> <!-- default theme -->
     <link rel="stylesheet" href="/style/utility.css">
@@ -63,39 +61,13 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
-    <script>
-        // Must be just after css import so that the website won't flash
-        function setTheme(themeName) {
-            localStorage.setItem('theme', themeName);
-            document.getElementById('theme').href = '/style/' + themeName + '.css';
-        }
-
-        function toggleTheme() {
-            console.log(localStorage.getItem('theme'));
-            if (localStorage.getItem('theme') === 'dark') {
-                setTheme('light');
-            } else {
-                setTheme('dark');
-            }
-        }
-
-        (function () {
-        if (localStorage.getItem('theme') === 'dark') {
-            setTheme('dark');
-        } else {
-            setTheme('light');
-        }
-        })();
-    </script>
-
-
     <title>Resume - nero.dev</title>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
             <a class="navbar-brand" href="/">
-                <img src="resources/images/logo/nero_dev.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
+                <img id="logo" src="resources/images/logo/nero_dev_light.png" alt="logo" height="30px" class="d-inline-block align-top" alt="">
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -154,7 +126,7 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="" onclick="toggleTheme()">
+                        <a id="theme-changer" class="nav-link" href="" onclick="toggleTheme()">
                             <i class="fa-fw fas fa-sun"></i> Light theme
                         </a>
                     </li>
@@ -171,7 +143,7 @@
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
                     <div class="image">
-                        <img src="/resources/images/resume/profile.png" width="200px"/>
+                        <img id="profile" src="/resources/images/resume/profile_light.png" width="200px"/>
                         <!-- <i class="fas fa-map-marker-alt"></i> San Francisco, California -->
                     </div>
                     <div class="title">
@@ -195,11 +167,48 @@
                     </a>
 
                     <br><br>
-                    
+
                     Websites of friends:<br>
                     - <a href="https://ljolliet.github.io/" target="_blank">Louis</a>
                 </div>
             </div>
+
+            <script>
+                // If the theme is not the default one, we need to load it while rendering the page
+                // Otherwise it would load the default theme, and the load the selected theme which
+                // will decrease the user experience
+                function setTheme(themeName) {
+                    localStorage.setItem('theme', themeName);
+                    document.getElementById('theme').href = '/style/' + themeName + '.css';
+
+                    if (themeName === 'light') {
+                        document.getElementById('logo').src = '/resources/images/logo/nero_dev_dark.png';
+                        document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-moon"></i> Dark theme';
+                        document.getElementById('profile').src = '/resources/images/resume/profile_dark.png'
+                    } else {
+                        document.getElementById('logo').src = '/resources/images/logo/nero_dev_light.png';
+                        document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-sun"></i> Light theme';
+                        document.getElementById('profile').src = '/resources/images/resume/profile_light.png'
+                    }
+                }
+
+                function toggleTheme() {
+                    console.log(localStorage.getItem('theme'));
+                    if (localStorage.getItem('theme') === 'dark') {
+                        setTheme('light');
+                    } else {
+                        setTheme('dark');
+                    }
+                }
+
+                (function () {
+                if (localStorage.getItem('theme') === 'dark') {
+                    setTheme('dark');
+                } else {
+                    setTheme('light');
+                }
+                })();
+            </script>
 
             <!-- Middle content -->
             <div class="col-xl-8 col-md-8 middle-panel">

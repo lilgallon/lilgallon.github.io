@@ -7,14 +7,14 @@
     ) 1;
 
     /* From https://www.nordtheme.com/ */
-    --black1: #2E3440;
-    --black2: #3B4252;
-    --black3: #434C5E;
-    --black4: #4C566A;
+    --black1: #F0F2F5;
+    --black2: #ECEFF4;
+    --black3: #E5E9F0;
+    --black4: #D8DEE9; /* added for light theme */
 
-    --white1: #D8DEE9;
-    --white2: #E5E9F0;
-    --white3: #ECEFF4;
+    --white1: #2E3440;
+    --white2: #3B4252;
+    --white3: #434C5E;
 
     --main1: #8FBCBB;
     --main2: #88C0D0;

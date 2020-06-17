@@ -3,16 +3,16 @@ html {
 }
 
 a {
-    color: var(--main-palette1);
+    color: var(--main1);
 }
 
 a:hover {
     text-decoration: none;
-    color: var(--main-palette2);
+    color: var(--main2);
 }
 
 .main-palette {
-    color: var(--main-palette1);
+    color: var(--main1);
 }
 
 .bg-black {
@@ -73,8 +73,8 @@ a:hover {
 }
 
 .focus {
-    background: var(--main-palette3) !important;
-    border: 1px solid var(--main-palette4) !important;
+    background: var(--main3) !important;
+    border: 1px solid var(--main4) !important;
 }
 
 /* button */
@@ -82,38 +82,38 @@ a:hover {
 .button {
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
-    border: 1px solid var(--black2);
-    background: var(--black2);
+    border: 1px solid var(--black3);
+    background: var(--black3);
     color: var(--white1);
     text-decoration: none;
 }
 
 .button:hover{
     transition: ease-in 0.05s;
-    background: var(--black3);
+    background: var(--black2);
 }
 
 .button:active {
-    border: 1px solid var(--main-palette1);
+    border: 1px solid var(--main1);
 }
 
 .button:focus {
     outline: none;
-    outline-color: var(--main-palette1);
+    outline-color: var(--main1);
 }
 
 /* Bootstrap input fix */
 
 .form-control {
-    background: var(--black2);
-    border-color: var(--black2);
+    background: var(--black3);
+    border-color: var(--black3);
     color: var(--white1);
 }
 
 .form-control:focus {
-    background: var(--black1);
-    border-color: var(--main-palette1);
-    box-shadow: 0.1 0.1 0.1 0.2rem var(--main-palette1);
+    background: var(--black2);
+    border-color: var(--main1);
+    box-shadow: 0.1 0.1 0.1 0.2rem var(--main1);
     color: var(--white1);
 }
 
@@ -176,41 +176,41 @@ a:hover {
 }
 
 .bs-callout-primary {
-    border-left-color: var(--main-palette1);
+    border-left-color: var(--main1);
 }
 
 .bs-callout-primary h4 {
-    color: var(--main-palette1);
+    color: var(--main1);
 }
 
 .bs-callout-success {
-    border-left-color: var(--sec-palette4);
+    border-left-color: var(--secondary4);
 }
 
 .bs-callout-success h4 {
-    color: var(--sec-palette4);
+    color: var(--secondary4);
 }
 
 .bs-callout-danger {
-    border-left-color: var(--sec-palette1);
+    border-left-color: var(--secondary1);
 }
 
 .bs-callout-danger h4 {
-    color: var(--sec-palette1);
+    color: var(--secondary1);
 }
 
 .bs-callout-warning {
-    border-left-color: var(--sec-palette3);
+    border-left-color: var(--secondary3);
 }
 
 .bs-callout-warning h4 {
-    color: var(--sec-palette3);
+    color: var(--secondary3);
 }
 
 .bs-callout-info {
-    border-left-color: var(--main-palette4);
+    border-left-color: var(--main4);
 }
 
 .bs-callout-info h4 {
-    color: var(--main-palette4);
+    color: var(--main4);
 }
