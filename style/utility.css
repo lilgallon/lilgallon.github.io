@@ -145,7 +145,7 @@ a:hover {
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid var(--white1);
+    border: 1px solid var(--black4);
     border-left-width: 5px;
     border-radius: 3px;
 }
