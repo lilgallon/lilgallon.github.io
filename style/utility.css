@@ -77,6 +77,20 @@ a:hover {
     border: 1px solid var(--main4) !important;
 }
 
+/* toggler */
+
+.navbar-toggler i {
+    color: var(--white3);
+}
+
+.navbar-toggler:focus,.navbar-toggler:active {
+    outline-color: var(--white3);
+}
+
+.navbar-toggler:hover {
+    cursor: pointer;
+}
+
 /* button */
 
 .button {
