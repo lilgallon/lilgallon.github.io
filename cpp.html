@@ -52,6 +52,10 @@
     <!-- Vue.js -->
     <script src="/vendors/vuejs-2.6.10/vue.min.js"></script>
 
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="/vendors/highlightjs-10.1.1/styles/nord.css" id="code-theme">
+    <script src="/vendors/highlightjs-10.1.1/highlight.pack.js"></script>
+
     <!-- Website CSS -->
     <link rel="stylesheet" href="/style/dark.css" id="theme"> <!-- default theme -->
     <link rel="stylesheet" href="/style/utility.css">
@@ -61,7 +65,7 @@
     <link rel="stylesheet" href="/style/right.css">
     <link rel="stylesheet" href="/style/footer.css">
 
-    <title>Machine Learning Cheatsheet - nero.dev</title>
+    <title>C++ Cheatsheet - nero.dev</title>
 </head>
 
 <body>
@@ -114,7 +118,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Utility
                         </a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/gists.html">Gists</a>
                             <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
                         </div>
@@ -146,16 +150,17 @@
                 document.getElementById('theme').href = '/style/' + themeName + '.css';
 
                 if (themeName === 'light') {
-                                        document.getElementById('logo').src = '/resources/images/logo/nero_dev_dark.png';
+                    document.getElementById('logo').src = '/resources/images/logo/nero_dev_dark.png';
+                    document.getElementById('code-theme').href = '/vendors/highlightjs-10.1.1/styles/github.css';
                     document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-moon"></i> Dark theme';
                 } else {
                     document.getElementById('logo').src = '/resources/images/logo/nero_dev_light.png';
+                    document.getElementById('code-theme').href = '/vendors/highlightjs-10.1.1/styles/nord.css';
                     document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-sun"></i> Light theme';
                 }
             }
 
             function toggleTheme() {
-                console.log(localStorage.getItem('theme'));
                 if (localStorage.getItem('theme') === 'dark') {
                     setTheme('light');
                 } else {
@@ -178,16 +183,28 @@
             <div class="col-xl-2 col-md-4 left-panel">
                 <div class="container sticky">
                     <div class="image">
-                        <img src="/resources/images/logo/ml.jpg" width="200px"/>
+                        <img src="/resources/images/logo/cpp_logo.png" width="200px"/>
                         <a href="/download/todo" download><i class="fas fa-file-pdf"></i> Download the raw notes</a>
                     </div>
                     <div class="title">
-                        Machine Learning Lesson
+                        C++ Cheatsheet
                     </div>
                     <div class="description">
-                        Redacted by Lilian Gallon for the CSE142 class at UCSC (because I could not quite understand the lectures).
+                        Redacted by Lilian Gallon
                         <br/><br/>
-                        Difficulty: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br>
+                        Difficulty: <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <br>
+                        <br/><br/>
+                        Topic list:
+                        <div>
+                            <ul>
+                                <li>0. Things to know</li>
+                                <li>1. Linker & Compiler</li>
+                                <li>2. Declarations, definitions, ...</li>
+                                <li>3. Debugging</li>
+                                <li>4. Pointers & references</li>
+                                <li>N. Credits</li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -198,73 +215,155 @@
                 <div class="container">
                     <div class="section">
                         <div class="title1">
-                            Machine Learning Lesson
+                            C++ Cheatsheet
                         </div>
                         <div class="subtitle">
-                            Keywords: Lesson, University of California, Santa Cruz, Machine Learning
+                            Keywords: Cheatsheet, C++
+                            <br>
+                        </div>
+                        <div>
+                            <i>Optimized for the <a href="" onclick="setTheme('dark')"><i class="fa-fw fas fa-moon"></i> dark theme</a>.</i>
                         </div>
 
                         <br>
 
-                        <div class="section-title">
-                            Topic list
+                        <div id="cpp0" class="section-title">
+                            <i class="fas fa-heart"></i> Things to know
                         </div>
-                        <div>
+                        <p>
+                            <i>(or that you should not forget)</i>
                             <ul>
-                                <li>Features, labels and instances</li>
-                                <li>3 Steps of Machine Learning</li>
+                                <li>
+                                    0 is evaluated as <span class="text-danger">false</span>, the rest is <span class="text-success">true</span>.
+                                </li>
+                                <li>
+                                    In <code class="text-primary">int* a,b;</code> b is an integer, use <code class="text-primary">int *a, *b;</code>
+                                    to declare both a and b as pointers to integers.
+                                </li>
                             </ul>
+                        </p>
+
+                        <div id="cpp1" class="section-title">
+                            <i class="fas fa-spinner"></i> Linker & Compiler
+                        </div>
+                        <p>
+                            <i>todo</i>
+                        </p>
+
+                        <div id="cpp2" class="section-title">
+                            <i class="fab fa-alipay"></i> Declarations, definitions and so on
                         </div>
 
-                        <div class="section-title">
-                            Features, labels and instances
-                        </div>
-                        <div>
-                            Let's take the example of a cat. Its features can be its tail and its ears for example.
-                            The features are the caracteristic of the object that you are studying.
-                            The label is the name that you associate with the combination of several features (= an instance).
-                            In this case it would be "cat".
-                            <ul></ul>
+                        <p>
+                            <span class="text-primary"><b>Pre-processed statements</b></span>: They start with # and are evaluated before the compilation. There
+                            are several preprocessor directives, let's see what they do:
+                            <ul>
+                                <li>
+                                    <span class="text-primary">#define</span><span class="text-info"> NAME VALUE</span>: It will replace all the occurences of
+                                    <span class="text-info">NAME</span> by the given <span class="text-info">VALUE</span>
+                                    <pre>
+<code class="cpp">#define INTEGER int
+
+INTEGER a = 0; // It will be replaced by "int a = 0;" before compilation
+</code>
+                                    </pre>
+                                </li>
+
+                                <li>
+                                    <span class="text-primary">#include</span>: It copies and pastes the content of the included file to the current file. That's
+                                    as simple as that. For example, you can include a closing curly bracket, and it will work:
+                                    <pre>
+<code class="cpp">// file1.cpp
+}
+
+// file2.cpp
+int Main()
+{
+    return 0;
+#include &#60;file1.cpp&#62;
+</code>
+                                    </pre>
+                                </li>
+                                The difference between <code class="text-primary">#include &#60;...&#62;</code> and <code class="text-primary">#include "..."</code> is that
+                                when you use <code class="text-primary">&#60;&#62;</code> it will search for the file in the include file while <code class="text-primary">""</code>
+                                will look for the file in the include path but also relatively to the current file.
+                                </code>
+
+                                <li>
+                                    <span class="text-primary">#pragma once</span>: It means "only include this file once". It prevents having duplicate declarations.
+                                    Here is what you probably already saw. It has the exact same effect.
+                                    <pre>
+<code class="cpp">// file.h
+#ifndef _FILE_H
+#define _FILE_H
+// code ...
+#endif
+</code>
+                                    </pre>
+                                    What it does is that when the code is copied for the first time, <code class="text-info">#ifndef _FILE_H</code> is evaluated as <span class="text-success">true</span>
+                                    because _FILE_H has not been defined yet. Then, <code class="text-info">#define _FILE_H</code> defines it. So when the code is copied a second time in the
+                                    same file, <code class="text-info">#ifndef _FILE_H</code> will be evaluated as <span class="text-danger">false</span>, and the code won't be copied.
+                                </li>
+
+                                <li>
+                                    <span class="text-primary">#if, #elif, #else and #endif</span>: Those are the conditional pre-processed statements. As long as you know how to use if, else if,
+                                    and else you should be good.
+                                </li>
+
+                                <li>
+                                    <span class="text-primary">##</span>: Used to concat two tokens: <code class="text-primary">x ## y -> xy</code>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            <span class="text-primary"><b>Declaration</b></span>: It tells the compiler that the declared variable / function (whatever) exists.
+                            It is a sort of promise that you make to the compiler. So if the declaration does not refer to anything, then there will be an
+                            issue during runtime saying <code class="text-danger">unable to resolve symbol</code> which is a linker error.
+                        </p>
+                        <pre>
+<code class="cpp">// We said that GetAbsoluteFilePath exists, but we did not defined what it does.
+// -> So this is a declaration.
+std::string GetAbsoluteFilePath(std::string filename);</code>
+                        </pre>
+                        <p>
+                            <span class="text-primary"><b>Definition</b></span>: It basically defines what the declaration <i>declared</i>.
+                        </p>
+                        <pre>
+<code class="cpp">// We defined what GetAbsoluteFilePath does.
+// -> So this is a definition.
+std::string GetAbsoluteFilePath(std::string filename)
+{
+	std::string path = "";
+
+	for (const auto& entry : std::filesystem::directory_iterator("."))
+	{
+		if (entry.path().filename().string() == dllName)
+		{
+			path = std::filesystem::absolute(entry.path()).string();
+			break;
+		}
+	}
+
+	return path;
+}</code>
+                        </pre>
+
+                        <div id="cppN" class="section-title">
+                            <i class="fas fa-user-friends"></i> Credits
                         </div>
 
-                        <div class="section-title">
-                            3 steps of Machine Learning
-                        </div>
-                        <div>
-                            Step 1: <span class="text-danger">feature extraction / representation</span>:
-                        </div>
-                        <div>
-                            You identify useful properties of instances (reminder: an instance is a vector of features).
-                            The features, also called attributes can be nominal, ordinal or numeric.
-                        </div>
-                        <div class="bs-callout bs-callout-info">
-                            Designing good features is complicated! There is a job called feature engineering.
-                        </div>
-
-                        <div>
-                            Step 2: <span class="text-danger">training</span>:
-                        </div>
-                        <div>
-                            Choose a hypothesis space (also called hypothesis class) that maps an instance to a specific class / label.
-                            The hypothesis is defined by parameters and learned by a classifier / model.
-                            <code>g(x) = y</code> with y being the label and x the instance.
-                        </div>
-                        <div class="bs-callout bs-callout-info">
-                            Machine learning is used when <code>g(x)</code> is unknown.
-                        </div>
-
-                        <div>
-                            Step 3: <span class="text-danger">testing</span>:
-                        </div>
-                        <div>
-                            Given a new instance <code>x</code>, use the classifier to predict a label inference. That way you can test the ability of
-                            your model to perform a task in a situation which has never been encountered before. Note that test instances should come from
-                            the same population.
-                        </div>
-                        <div class="bs-callout bs-callout-danger">
+                        <p>
+                            <ul>
+                                <li><a href="https://www.youtube.com/user/TheChernoProject">The Cherno on YouTube</a></li>
+                                <li><a href="https://www.tutorialspoint.com/cplusplus/index.htm">Tutorials point on C++</a></li>
+                                <li>The University of Bordeaux, Bordeaux, France</li>
+                                <li>The University of California, Santa Cruz, USA</li>
+                            </ul>
+                        </p>
+                        <!-- <div class="bs-callout bs-callout-danger">
                             Assumption in ML: all training as well as test instances (and their labels) are independent and identically distributed (iid).
                             A collection of random variables is iid if they all have the same probability distribution, and all are mutually independent.
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -332,6 +431,10 @@
             </div>
         </div>
     </div>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 
 
     <!-- Bootstrap (JQuery, Popper & Bootstrap) -->

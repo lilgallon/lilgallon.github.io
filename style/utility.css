@@ -1,6 +1,46 @@
+
+
 html {
     overflow-x: hidden;
 }
+
+/* bootstrap */
+
+.text-danger {
+    color: var(--secondary1) !important;
+}
+
+.text-warning {
+    color: var(--secondary2) !important;
+}
+
+.text-success {
+    color: var(--secondary4) !important;
+}
+
+.text-primary {
+    color: var(--main1) !important;
+}
+
+.text-info {
+    color: var(--main2) !important;
+}
+
+/* code block improvements */
+
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+pre {
+    margin-top: 10px;
+}
+
+pre > code {
+    margin-bottom: -3.00em;
+}
+
+/* - */
 
 a {
     color: var(--main1);
