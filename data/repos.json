@@ -120,20 +120,36 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft assistance (hack) mod built over the forge API easy to understand & well documented. Working with Labymod 1.8.9, Forge 1.8.9, 1.12.2, 1.13.2, 1.14.4 & 1.15.2 :)",
-        "forks": 1,
+        "description": "\u2694\ufe0f  Minecraft hack built over the forge API, easy to understand & well documented. 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2 & 1.16.1 :)",
+        "forks": 2,
         "language": "Java",
         "name": "Bettercolors",
         "open_issues": [
             "Aim assistance's max range is 10",
-            "Version 6.1.1 for MC_1.15.2",
             "Reach",
-            "Add the ability to specify the entities that modules will target",
             "Add friend list",
             "Add a \"reset to default\" button",
             "Add an option to toggle & customize random shift calculation"
         ],
         "releases": [
+            {
+                "body": "It works with forge **beta 32.0.25**. It should work with future versions.\r\n~~The official version will be released as soon as the stable forge version gets released.~~\r\nIt works with forge > 32.0.25. Use the latest forge version. If a crash occurs and you're using a forge beta version, then it's most likely forge that has an issue and not the mod.\r\n\r\n- Same features as Bettercolors 6.1.1 for MC1.15.2\r\n- Fixed aim assistance (#55)\r\n\r\nedit:\r\nChanged 6.1.2 from ~~pre-release~~ to stable release",
+                "published_at": "2020-06-29 19:01:50",
+                "tag_name": "6.1.2-MC1.16.1",
+                "title": "Version 6.1.2 for MC 1.16.1"
+            },
+            {
+                "body": "**Important update!**\r\n\r\n- Fixed aim assistance",
+                "published_at": "2020-06-29 18:57:27",
+                "tag_name": "6.1.2-MC1.15.2",
+                "title": "Version 6.1.2 for Minecraft 1.15.2"
+            },
+            {
+                "body": "*This update won't be ported to the other versions. The goal was to find and fix design flaws to make the mod easier to understand for any developer*\r\n\r\n**Sum up:** The code has been entirely reviewed. Some parts have been re-designed, and the mod should be even more stable.\r\n\r\n**User notes:**\r\n- Improved overall stability\r\n- Gui:\r\n    - Changed the font from Cascadia to CascadiaCode 2005.15\r\n- Aim Assistance:\r\n    - Fixed range (was maxed at 10)\r\n\r\n**Developer notes:**\r\n- Reformatted every single java file\r\n- Gui:\r\n    - Improved stability (small changes to code design)\r\n    - Improved font loading (console)\r\n- Miscellaneous:\r\n    - Added the ability to run tests with JUnit 5 (see VersionTest for an example)\r\n    - Re-coded the version checker\r\n- Aim Assistance:\r\n    - Re-written some functions to be easier to understand",
+                "published_at": "2020-06-25 17:10:21",
+                "tag_name": "6.1.1-MC1.15.2",
+                "title": "Version 6.1.1 for MC 1.15.2"
+            },
             {
                 "body": "It contains the same features as the 6.1.0 version for MC1.14.4, but it works with Minecraft 1.15.2.",
                 "published_at": "2020-03-09 01:49:51",
@@ -303,7 +319,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 7,
+        "stars": 12,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -316,7 +332,32 @@
             "cheat",
             "labymod"
         ],
-        "updated_at": "2020-06-13 15:43:47",
+        "updated_at": "2020-07-16 16:39:21",
+        "watchers": 1
+    },
+    {
+        "description": "The hacking engine used by the mod Bettercolors",
+        "forks": 0,
+        "language": "Java",
+        "name": "BettercolorsEngine",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "The engine takes into account the forge design change in 1.13 and above, and works with all versions of Forge (at least from 1.8.9 to 1.16.1)",
+                "published_at": "2020-07-22 18:00:36",
+                "tag_name": "0.2.0",
+                "title": "Version 0.2.0"
+            },
+            {
+                "body": "The engine is designed to work with any forge version: at least from 1.8.9 to 1.16, but it should work with the rest (not tested yet).\r\n\r\nSince it's the first version, here is what you need to do to make a hack mod:\r\n\r\n1. Create the main class to register your mod with forge\r\n2. Start the engine by giving some information about your mod and the modules that you created\r\n3. Write some modules by extending the Module class\r\n4. That's it. The engine is designed to work for any forge version from 1.8.9 to 1.16.2\r\n\r\nYou can see some examples on [Forge 1.8.9 here](https://github.com/N3ROO/Bettercolors/tree/MC_1.8.9), and on [Forge 1.16.1 here](https://github.com/N3ROO/Bettercolors/tree/MC_1.16.1) (once that the new bettercolors mod is released)\r\n\r\n**OF VERSION**: This is for the Old Forge (OF) design (MC < 1.13)\r\n**NF VERSION**: This is for the New Forge (NF) design (MC >= 1.13)",
+                "published_at": "2020-07-22 16:14:17",
+                "tag_name": "0.1.0",
+                "title": "Version 0.1.0 "
+            }
+        ],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-07-22 18:19:22",
         "watchers": 1
     },
     {
@@ -559,6 +600,7 @@
         "language": "Java",
         "name": "javafx-nero-engine",
         "open_issues": [
+            "build(deps): bump log4j-core from 2.11.1 to 2.13.2",
             "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/World.java",
             "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/entity/Entity.java",
             "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/graphics/Animation.java",
@@ -577,6 +619,25 @@
         ],
         "updated_at": "2019-11-06 07:47:45",
         "watchers": 0
+    },
+    {
+        "description": "A simple mod that shows the latency (ping) of your minecraft client to the server you're currently playing on",
+        "forks": 0,
+        "language": "Java",
+        "name": "LatencyMod",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "Basic text showing the latency at a fixed position (top left)",
+                "published_at": "2020-07-26 13:44:21",
+                "tag_name": "0.1.0-MC1.16.1",
+                "title": "Version 0.1.0 (Minecraft 1.16.1)"
+            }
+        ],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-07-26 13:42:13",
+        "watchers": 1
     },
     {
         "description": "\ud83c\udfae Lightbot is an educational video game to learn software programming concepts. Made for the Introduction to OOP & OOP design course at the Bordeaux Institute of Technology",
@@ -651,7 +712,9 @@
         "forks": 0,
         "language": "Java",
         "name": "opengl-nero-engine",
-        "open_issues": [],
+        "open_issues": [
+            "build(deps): bump log4j-core from 2.11.1 to 2.13.2"
+        ],
         "releases": [],
         "stars": 4,
         "topics": [
