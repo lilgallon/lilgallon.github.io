@@ -8,6 +8,10 @@
     padding-top: 15px;
 }
 
+.middle-panel hr {
+    background: var(--white2);
+}
+
 .middle-panel .activity {
     background: var(--black2);
     border-radius: 5px;

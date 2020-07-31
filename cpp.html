@@ -101,6 +101,7 @@
                         Cheatsheets
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="/cpp.html">Advanced C++</a>
                             <a class="dropdown-item" href="/ai-cheatsheet.html">Artificial Intelligence</a>
                             <a class="dropdown-item" href="/ml-cheatsheet.html">Machine Learning</a>
                         </div>
@@ -197,14 +198,16 @@
                         Topic list:
                         <div>
                             <ul>
-                                <li>0. Things to know</li>
-                                <li>1. Linker & Compiler</li>
-                                <li>2. Declarations, definitions, ...</li>
-                                <li>3. Debugging</li>
-                                <li>4. Pointers & references</li>
-                                <li>N. Credits</li>
+                                <li><a href="#cpp0">0. Things to know</a></li>
+                                <li><a href="#cpp1">1. Linker & Compiler</a></li>
+                                <li><a href="#cpp2">2. Declarations, definitions, ...</a></li>
+                                <li><a href="#cpp3">3. Debugging</a></li>
+                                <li><a href="#cpp4">4. Pointers & references</a></li>
+                                <li><a href="#cppN">N. Credits</a></li>
                             </ul>
                         </div>
+                        <br/>
+                        <b>WORK IN PROGRESS (LAST UPDATE JULY, 31 2020)</b>
                     </div>
 
                 </div>
@@ -228,7 +231,8 @@
                         <br>
 
                         <div id="cpp0" class="section-title">
-                            <i class="fas fa-heart"></i> Things to know
+                            <i class="fas fa-heart"></i> 0. Things to know
+                            <hr>
                         </div>
                         <p>
                             <i>(or that you should not forget)</i>
@@ -243,15 +247,21 @@
                             </ul>
                         </p>
 
+                        <br>
+
                         <div id="cpp1" class="section-title">
-                            <i class="fas fa-spinner"></i> Linker & Compiler
+                            <i class="fas fa-spinner"></i> 1. Linker & Compiler
+                            <hr>
                         </div>
                         <p>
                             <i>todo</i>
                         </p>
 
+                        <br>
+
                         <div id="cpp2" class="section-title">
-                            <i class="fab fa-alipay"></i> Declarations, definitions and so on
+                            <i class="fab fa-alipay"></i> 2. Declarations & definitions
+                            <hr>
                         </div>
 
                         <p>
@@ -348,8 +358,82 @@ std::string GetAbsoluteFilePath(std::string filename)
 }</code>
                         </pre>
 
+                        <br>
+
+                        <div id="cpp3" class="section-title">
+                            <i class="fas fa-user-friends"></i> 3. Debugging
+                            <hr>
+                        </div>
+
+                        <p>
+                            <i>Todo with explanations about the memory viewer (Visual Studio)</i>
+                        </p>
+
+                        <br>
+
+                        <div id="cpp3" class="section-title">
+                            <i class="fas fa-user-friends"></i> 4. Pointers & references <span class="text-danger">(WIP)</span>
+                            <hr>
+                        </div>
+
+                        <p>
+                            <ul>
+                                <li>
+                                    <code class="text-info">&var</code> means "where is the memory address of var". It will return the address of var.
+                                </li>
+                                <li>
+                                    <code class="text-info">type* var</code> means that <code class="text-info">var</code> is an address that points to a <code class="text-info">type</code>.
+                                    Example: <code class="text-info">int* counter</code> counter is an address, and at this address, there is an integer (or at least, it is supposed to be an integer).
+                                    var = 0x???? (4 bytes on x32 arch) or 0x???????? (8 bytes on x64 arch).
+
+                                </li>
+                                <li>
+                                    <code class="text-info">*var</code> deferences the pointer. It reads what is at the address pointed by var by taking into account its pointer type (type*).
+                                </li>
+                            </ul>
+
+                            We can also use & to create aliases.
+                            <pre>
+<code class="cpp">int var = 5;
+int &ref = var;
+
+ref ++;
+// var = 6
+// ref = 6</code>
+                            </pre>
+                            Here, ref is a reference to var. ref only exists in the source code, it is an alias. We can use references when passing arguments to a function:
+
+                            <pre>
+<code class="cpp">void funct(int var) {
+    ++ var;
+}
+
+int var = 0;
+funct(var);
+// var = 0
+funct(&var);
+// var = 1</code>
+                            </pre>
+
+                            In the first call of funct, a copy of var will be passed. So it's an other variable that will be updated, and not var itself.
+                            However, in the second call of funct, a is not copied, it is passed as reference. This ref will be updated, and as effect, var will also get updated.
+                            It is actually the <b></b>exact same thing</b> as:
+
+                            <pre>
+<code class="cpp">void funct(int* var) {
+    var = (*var);
+    ++ var;
+}</code>
+                            </pre>
+
+                            It is just <b>syntax sugar</b>.
+                        </p>
+
+                        <br>
+
                         <div id="cppN" class="section-title">
-                            <i class="fas fa-user-friends"></i> Credits
+                            <i class="fas fa-user-friends"></i> N. Credits
+                            <hr>
                         </div>
 
                         <p>
