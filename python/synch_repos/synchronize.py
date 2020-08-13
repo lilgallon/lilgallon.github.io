@@ -46,7 +46,7 @@ def main():
     print('[-] Success')
 
     print('[-] Saving repos\' data...')
-    repos_file = '../data/repos.json'
+    repos_file = '../../data/repos.json'
     with open(repos_file, 'w') as f:
         json.dump(repos, f, indent=4, sort_keys=True, default=str)
 
