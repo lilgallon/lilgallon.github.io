@@ -72,6 +72,31 @@
         "watchers": 1
     },
     {
+        "description": "A minecraft mod that helps aiming (at mods, blocks, but not players). Made for newbies or disabled players with difficulties to aim in general (also working with controllers).",
+        "forks": 0,
+        "language": "Java",
+        "name": "AimAssistanceMod",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "**Config:**\r\n\r\n**Forge has still not implemented the HUD to customize mod's settings, so for now, you need to update the settings by hand.** \r\nYou can change the settings of the mod in the .minecraft/config folder. Then, open aimassistancemod-client.toml and update the values.\r\n\r\n**Core:**\r\n- Improved aim assistance on mobs\r\n\r\n![before](https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_before_1.0.1.gif)\r\n\r\n![after](https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_1.0.1.gif)\r\n\r\nClick \"[aimassistance-1.0.1-MC1.16.1.jar](https://github.com/N3ROO/AimAssistanceMod/releases/download/1.0.1/aimassistance-1.0.1-MC1.16.1.jar)\" to download the mod (under assets)",
+                "published_at": "2020-08-01 10:04:46",
+                "tag_name": "1.0.1",
+                "title": "Version 1.0.1 for Minecraft 1.16.1"
+            },
+            {
+                "body": "The config menu is yet not available as of today (forge 32.0.98). So if you want to change the settings, you need to go to your minecraft directory (\".minecraft\"), then go to the \"config\" folder, and edit aimassistancemod-client.toml\r\n\r\nForge developers will probably finish coding the config UI for the stable 1.16.1 forge release.\r\n\r\n**Core:**\r\n- Aim assistance for mobs (while fighting)\r\n- Aim assistance for blocks (while mining)\r\n\r\n**Settings:**\r\n- Aim force customizable (0.1 -> 10.0)\r\n- Assistance on mobs (on/off)\r\n- Assistance on blocks (on/off)\r\n\r\n**Click \"[aimassistance-1.0.0-MC1.16.1.jar](https://github.com/N3ROO/AimAssistanceMod/releases/download/1.0.0/aimassistance-1.0.0-MC1.16.1.jar)\" to download the mod (under assets)**",
+                "published_at": "2020-07-31 12:34:54",
+                "tag_name": "1.0.0",
+                "title": "Version 1.0.0 for Minecraft 1.16.1"
+            }
+        ],
+        "stars": 1,
+        "topics": [],
+        "updated_at": "2020-08-03 12:05:50",
+        "watchers": 1
+    },
+    {
         "description": "\ud83c\udfae A tiny javascript game.",
         "forks": 0,
         "language": "JavaScript",
@@ -120,18 +145,50 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft hack built over the forge API, easy to understand & well documented. 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2 & 1.16.1 :)",
+        "description": "\u2694\ufe0f  Minecraft ghost hack built with Forge AND Fabric, well documented. Reach, Autoclick, AimAssistance, ClickAssistance, and so on... for MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2 & 1.16.1 :)",
         "forks": 2,
         "language": "Java",
         "name": "Bettercolors",
         "open_issues": [
-            "Aim assistance's max range is 10",
-            "Reach",
-            "Add friend list",
-            "Add a \"reset to default\" button",
-            "Add an option to toggle & customize random shift calculation"
+            "hotkey toggle for triggerbot"
         ],
         "releases": [
+            {
+                "body": "Built with forge 32.0.108. You can use the same settings file as before.\r\n\r\n- Added an option for the triggerbot to attack when it's fully charged (\"auto cps\") (#61)\r\n- Modules are now paused when using GUIs (it wasn't working sometimes)\r\n- Optimized click assistance & triggerbot",
+                "published_at": "2020-08-11 17:58:06",
+                "tag_name": "7.2.0-MC1.16.1",
+                "title": "Version 7.2.0 for Minecraft 1.16.1 (forge)"
+            },
+            {
+                "body": "*Edit August, 13, 11:00am utc+2: fixed .jar*\r\n\r\nIt is the same version as 7.2.0 for Minecraft 1.16.1 (forge) *will be released soon if not released*. The same settings file can be used.\r\n\r\n7.2.0 additions:\r\n- Added an option for the triggerbot to attack when it's fully charged (\"auto cps\")\r\n- Modules are now paused when using GUIs (it wasn't working sometimes)\r\n- Optimized click assistance & triggerbot\r\n\r\nHow to install:\r\n1. Get the [Fabric installer](https://fabricmc.net/use/)\r\n2. Select Minecraft 1.16.2\r\n3. Select loader version >= 0.9.0 (take the latest one)\r\n\r\n![image](https://user-images.githubusercontent.com/26824108/89927135-28c2f000-dc06-11ea-8d97-43d4fa098928.png)\r\n\r\n4. Download the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) for Minecraft 1.16.2, needs to be >= 0.17.0 and put it in the mods folder\r\n5. Download Bettercolors by clicking the link below \"assets\", and put it in the mods folder",
+                "published_at": "2020-08-11 17:18:54",
+                "tag_name": "7.2.0-MC1.16.2fa",
+                "title": "Version 7.2.0 for Minecraft 1.16.2 (fabric)"
+            },
+            {
+                "body": "**Important update for MC1.16.1!**\r\nBuilt with forge 32.0.107. You can use the same settings file as before.\r\n\r\n- Added **triggerbot** (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS)\r\n    - It can't be used along with click assistance\r\n- Fixed a weird bug where all the modules would stop working (isShowingDeathScene is always true for some reason. Is that an issue with forge?)\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
+                "published_at": "2020-08-09 18:39:38",
+                "tag_name": "7.1.0-MC1.16.1",
+                "title": "Version 7.1.0 for Minecraft 1.16.1"
+            },
+            {
+                "body": "**V7.1.0 MC_1.8.9**\r\n\r\nBuilt with forge 15.1.1722. You can use the same settings file as before.\r\n\r\n- Added triggerbot (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS) It can't be used along with click assistance\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
+                "published_at": "2020-08-09 18:38:14",
+                "tag_name": "7.1.0-MC1.8.9",
+                "title": "Version 7.1.0 for Minecraft 1.8.9"
+            },
+            {
+                "body": "You can use the same settings file as before.\r\n- Added **Reach** (#52)\r\n- Added a **Friendlist** (#14)\r\n- Added a button to reset the settings to default (#8)\r\n- Added warnings when turning on some modules\r\n- Added a \"debug\" option (false by default)\r\n- Updated themes (oceanic, dark and light)\r\n- Improved console messages\r\n- Improved config loader (config files are backwards compatible now)\r\n- Improved window's layout\r\n\r\nHave fun :)",
+                "published_at": "2020-07-30 21:24:07",
+                "tag_name": "7.0.0-MC1.16.1",
+                "title": "Version 7.0.0 for Minecraft 1.16.1"
+            },
+            {
+                "body": "You can use the same settings file as before.\r\n- Added **Reach** (#52)\r\n- Added a **Friendlist** (#14)\r\n- Added a button to reset the settings to default (#8)\r\n- Added warnings when turning on some modules\r\n- Added a \"debug\" option (false by default)\r\n- Updated themes (oceanic, dark and light)\r\n- Improved console messages\r\n- Improved config loader (config files are backwards compatible now)\r\n- Improved window's layout\r\n- Fixed aim assistance range that was limited at 10 blocks (#54)\r\n\r\nHave fun :)",
+                "published_at": "2020-07-30 19:47:18",
+                "tag_name": "7.0.0-MC1.8.9",
+                "title": "Version 7.0.0 for Minecraft 1.8.9"
+            },
             {
                 "body": "It works with forge **beta 32.0.25**. It should work with future versions.\r\n~~The official version will be released as soon as the stable forge version gets released.~~\r\nIt works with forge > 32.0.25. Use the latest forge version. If a crash occurs and you're using a forge beta version, then it's most likely forge that has an issue and not the mod.\r\n\r\n- Same features as Bettercolors 6.1.1 for MC1.15.2\r\n- Fixed aim assistance (#55)\r\n\r\nedit:\r\nChanged 6.1.2 from ~~pre-release~~ to stable release",
                 "published_at": "2020-06-29 19:01:50",
@@ -319,7 +376,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 12,
+        "stars": 19,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -330,9 +387,14 @@
             "minecraft",
             "hack",
             "cheat",
-            "labymod"
+            "labymod",
+            "reach",
+            "autoclicker",
+            "aimbot",
+            "fabric",
+            "triggerbot"
         ],
-        "updated_at": "2020-07-16 16:39:21",
+        "updated_at": "2020-08-11 17:58:03",
         "watchers": 1
     },
     {
@@ -340,8 +402,22 @@
         "forks": 0,
         "language": "Java",
         "name": "BettercolorsEngine",
-        "open_issues": [],
+        "open_issues": [
+            "Version 1.0.0"
+        ],
         "releases": [
+            {
+                "body": "**Version 0.3.1**\r\n- Fixed a crash when the friends file does not exist\r\n- Removed error message when a file does not exist if debug = false\r\n- Fix error messages with getDefaultOptions\r\n- Added onToggle listener to Module class",
+                "published_at": "2020-07-30 21:40:46",
+                "tag_name": "0.3.1",
+                "title": "Version 0.3.1"
+            },
+            {
+                "body": "- Added a friend list fully integrated with the GUI (you can use the Friends utility class)\r\n- Updated material UI from 1.1.1-beta to 1.1.1-rc4 (5 big updates). Fixes a lot of alignment issues.\r\n- Added accessors to the main engine class\r\n- Added a ValueFloatOption class that defines a floating point slider (same as ValueOption, but for decimal numbers)\r\n- Added a lot of logging message during engine's startup. Also improved the way to log messages to the console\r\n- Better config file loader: it automatically updates the config file with the missing fields if there're any. It will prevent weird crashes that are complicated to understand for the user\r\n- Added an utility function to Window class to show a dialog window (Window#dialog)\r\n- Added a reset to default button to reset the settings to default\r\n- Options classes are now cloneable\r\n- Improved window's layout\r\n- Improved versions' compatibility. No need to change the config file when updating the mod. It will automatically add the missing settings in the file if needed.",
+                "published_at": "2020-07-30 13:25:05",
+                "tag_name": "0.3.0",
+                "title": "Version 0.3.0"
+            },
             {
                 "body": "The engine takes into account the forge design change in 1.13 and above, and works with all versions of Forge (at least from 1.8.9 to 1.16.1)",
                 "published_at": "2020-07-22 18:00:36",
@@ -357,7 +433,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-07-22 18:19:22",
+        "updated_at": "2020-07-30 21:44:08",
         "watchers": 1
     },
     {
@@ -445,6 +521,22 @@
             "iut-bordeaux"
         ],
         "updated_at": "2019-05-28 15:01:18",
+        "watchers": 0
+    },
+    {
+        "description": "Image generation using a DCGAN (machine learning)",
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "name": "CSE142-Project",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [
+            "tensorflow",
+            "dcgan",
+            "machine-learning"
+        ],
+        "updated_at": "2020-07-27 19:44:15",
         "watchers": 0
     },
     {
@@ -706,6 +798,18 @@
         ],
         "updated_at": "2019-10-15 02:40:28",
         "watchers": 0
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "language": null,
+        "name": "N3ROO",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-08-11 18:27:34",
+        "watchers": 1
     },
     {
         "description": "\ud83d\udcda A java 2D game engine powered by OpenGL (discontinued, working on a clone using OpenJFX)",
