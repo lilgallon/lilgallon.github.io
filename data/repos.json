@@ -79,6 +79,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "*Way more satisfying to use than 1.0.1*\r\n\r\n- Built for forge 1.16.2 (also works with forge 1.16.1)\r\n- Split aimForce into:\r\n    - aimForceBlocks: the force of the aim assistance on blocks\r\n    - aimForceMobs: the force of the aim assistance on mobs\r\n- Changed default force values:\r\n    - 4.0 for mobs\r\n    - 2.5 for blocks\r\n- When you're fighting a mob, the mod understands it and won't help you mining while you're fighting. Same thing if you're mining. It will help you to mine and not to fight.\r\n- Mining assistance now turns off as soon as the player stops mining\r\n- Added a version checker\r\n- Fixed an issue where the assistance would shake\r\n\r\nClick \"aimassistance-1.1.0-MC1.16.2.jar\" to download the mod (under assets)",
+                "published_at": "2020-08-25 20:18:13",
+                "tag_name": "1.1.0",
+                "title": "Version 1.1.0 for Minecraft 1.16.2 (forge)"
+            },
+            {
                 "body": "**Config:**\r\n\r\n**Forge has still not implemented the HUD to customize mod's settings, so for now, you need to update the settings by hand.** \r\nYou can change the settings of the mod in the .minecraft/config folder. Then, open aimassistancemod-client.toml and update the values.\r\n\r\n**Core:**\r\n- Improved aim assistance on mobs\r\n\r\n![before](https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_before_1.0.1.gif)\r\n\r\n![after](https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_1.0.1.gif)\r\n\r\nClick \"[aimassistance-1.0.1-MC1.16.1.jar](https://github.com/N3ROO/AimAssistanceMod/releases/download/1.0.1/aimassistance-1.0.1-MC1.16.1.jar)\" to download the mod (under assets)",
                 "published_at": "2020-08-01 10:04:46",
                 "tag_name": "1.0.1",
@@ -93,7 +99,7 @@
         ],
         "stars": 1,
         "topics": [],
-        "updated_at": "2020-08-03 12:05:50",
+        "updated_at": "2020-08-25 20:17:47",
         "watchers": 1
     },
     {
@@ -145,14 +151,40 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft ghost hack built with Forge AND Fabric, well documented. Reach, Autoclick, AimAssistance, ClickAssistance, and so on... for MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2 & 1.16.1 :)",
-        "forks": 2,
-        "language": "Java",
+        "description": "\u2694\ufe0f  Minecraft ghost hack built with Forge AND Fabric, well documented. Reach, Autoclick, AimAssistance, ClickAssistance, and so on... for MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.1 & 1.16.2 :)",
+        "forks": 3,
+        "language": null,
         "name": "Bettercolors",
         "open_issues": [
-            "hotkey toggle for triggerbot"
+            "Auto block hit",
+            "Auto head in hypixel 1v1s and uhc and so on",
+            "Click sound",
+            "Panic hotkey",
+            "Auto clicker (right click)",
+            "Bow aimbot and esp",
+            "Auto rod",
+            "Speed bridging mod",
+            "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "**Huge update!** You can use the same settings file as before, but it is recommended to reset it to default since some settings changed,\r\nand some were renamed (see below).\r\n\r\n**Bettercolors engine 1.1.0:**\r\n- Added a new tab to change the toggle key of each module\r\n- Updated the theme: new icons and better layout\r\n- Support for linux\r\n- Support for fabric\r\n- Better events system **Modules can be now optimized a lot**\r\n- Options now use spaces instead of \"_\"'s\r\n\r\n**Core:**\r\n- Reach:\r\n    - Improved reach\r\n    - Removed reach_increment: replaced by \"combat_reach\" and \"block_reach\"\r\n    - Changed max attack reach from 1.5 to 3.0 (you can go up to 6.0 reach which is not recommended lol)\r\n- Aim Assistance (has been re-coded):\r\n    - Added \"Sticky\": assist if aiming an entity\r\n    - Modified \"Stop when reached\": assist if not aiming an entity\r\n    - Removed \"time_to_activate\" & \"clicks_to_activate\": (replaced by \"cps_to_activate\")\r\n    - Removed \"refresh_rate\"\r\n    - Renamed \"step X\" and \"step Y\" to \"force X\" and \"force Y\"\r\n    - Renamed \"radius X\" and \"radius Y\" to \"fov X\" and \"fov Y\"\r\n    - **A lot of improvements**\r\n    - **A lot optimizations**\r\n- Click Assistance (has been re-coded):\r\n    - Renamed \"additional_clicks\" to \"additional_cps\"\r\n    - **A lot of improvements**\r\n    - **A lot of optimizations**\r\n- TeamFilter: removed \"teamfilter\" option from every module. It is now a module, so when turned on, it works on every other module.\r\n- Added Antibot:\r\n    - If the entity is not a player -> bot\r\n    - \"Tab_check\": If the entity is not in the tab -> bot\r\n    - \"Ping_check\": If the entity ping is 0 ms -> bot\r\n    - \"Ticks_lived_check\": If the entity has lived less than \"Ticks_lived_min\" -> bot\r\n- Miscellaneous:\r\n    - You can now use greater values than the ones given by the UI. To do so, you need to update the config file manually.\r\n    It's not recommended, but I'm sure that some of you will like that.\r\n    - Debug mode now shows the GUI on startup\r\n    - You can put your cursor over an option to get a description of it\r\n    - You can put your cursor over a module to get a description of it\r\n    - Improved modules messages in the console\r\n\r\n**To download it, click on \"assets\" below this text, then click on the .jar file**",
+                "published_at": "2020-08-25 16:37:31",
+                "tag_name": "7.3.0-MC1.8.9",
+                "title": "Version 7.3.0 for Minecraft 1.8.9"
+            },
+            {
+                "body": "- **Requires fabric loader > 0.9.0**. Download the installer here: https://fabricmc.net/use/\r\n- Designed to be compatible with any other mod\r\n- Does not require the fabric api\r\n\r\n**Huge update!** You can use the same settings file as before, but it is recommended to reset it to default since some settings changed,\r\nand some were renamed (see below).\r\n\r\n**Bettercolors engine 1.1.0:**\r\n- Added a new tab to change the toggle key of each module\r\n- Updated the theme: new icons and better layout\r\n- Support for linux\r\n- Support for fabric\r\n- Better events system **Modules can be now optimized a lot**\r\n- Options now use spaces instead of \"_\"'s\r\n\r\n**Core:**\r\n- Reach:\r\n    - Improved reach\r\n    - Removed reach_increment: replaced by \"combat_reach\" and \"block_reach\"\r\n    - Changed max attack reach from 1.5 to 3.0 (you can go up to 6.0 reach which is not recommended lol)\r\n- Triggerbot:\r\n    - If the item has no attack cooldown (ex: hand), auto CPS will be 6 instead of 10\r\n- Aim Assistance (has been re-coded):\r\n    - Added \"Sticky\": assist if aiming an entity\r\n    - Modified \"Stop when reached\": assist if not aiming an entity\r\n    - Removed \"time_to_activate\" & \"clicks_to_activate\": (replaced by \"cps_to_activate\")\r\n    - Removed \"refresh_rate\"\r\n    - Renamed \"step X\" and \"step Y\" to \"force X\" and \"force Y\"\r\n    - Renamed \"radius X\" and \"radius Y\" to \"fov X\" and \"fov Y\"\r\n    - **A lot of improvements**\r\n    - **A lot optimizations**\r\n- Click Assistance (has been re-coded):\r\n    - Renamed \"additional_clicks\" to \"additional_cps\"\r\n    - **A lot of improvements**\r\n    - **A lot of optimizations**\r\n- TeamFilter: removed \"teamfilter\" option from every module. It is now a module, so when turned on, it works on every other module.\r\n- Added Antibot:\r\n    - If the entity is not a player -> bot\r\n    - \"Tab_check\": If the entity is not in the tab -> bot\r\n    - \"Ping_check\": If the entity ping is 0 ms -> bot\r\n    - \"Ticks_lived_check\": If the entity has lived less than \"Ticks_lived_min\" -> bot\r\n- Miscellaneous:\r\n    - You can now use greater values than the ones given by the UI. To do so, you need to update the config file manually.\r\n    It's not recommended, but I'm sure that some of you will like that.\r\n    - Debug mode now shows the GUI on startup\r\n    - You can put your cursor over an option to get a description of it\r\n    - You can put your cursor over a module to get a description of it\r\n    - Improved modules messages in the console\r\n\r\n**To download it, click on \"assets\" below this text, then click on the .jar file**",
+                "published_at": "2020-08-25 16:01:24",
+                "tag_name": "7.3.0-MC1.16.2fa",
+                "title": "Version 7.3.0 for Minecraft 1.16.2 (fabric)"
+            },
+            {
+                "body": "*Big update!** You can use the same settings file as before, but it is recommended to reset it to default since some settings changed,\r\nand some were renamed (see below). The settings file is in the \"config\" folder of your minecraft directory. The default settings file is \"bc_default.properties\".\r\n\r\n**Bettercolors engine 1.1.0:**\r\n- Added a new tab to change the toggle key of each module\r\n- Updated the theme: new icons and better layout\r\n- Support for linux\r\n- Support for fabric\r\n- Better events system **Modules can be now optimized a lot**\r\n- Options now use spaces instead of \"_\"'s\r\n- You can now see the description of each option and modules by putting your cursor over them\r\n- Better logging system\r\n\r\n**Core:**\r\n- Reach:\r\n    - Improved reach\r\n    - Removed reach_increment: replaced by \"combat_reach\" and \"block_reach\"\r\n    - Changed max attack reach from 1.5 to 3.0 (you can go up to 6.0 reach which is not recommended lol)\r\n- Triggerbot:\r\n    - If the item has no attack cooldown (ex: hand), auto CPS will be 6 instead of 10\r\n- Aim Assistance (has been re-coded):\r\n    - Added \"Sticky\": assist if aiming an entity\r\n    - Modified \"Stop when reached\": assist if not aiming an entity\r\n    - Removed \"time_to_activate\" & \"clicks_to_activate\": (replaced by \"cps_to_activate\")\r\n    - Removed \"refresh_rate\"\r\n    - Renamed \"step X\" and \"step Y\" to \"force X\" and \"force Y\"\r\n    - Renamed \"radius X\" and \"radius Y\" to \"fov X\" and \"fov Y\"\r\n    - **A lot of improvements**\r\n    - **A lot optimizations**\r\n- Click Assistance (has been re-coded):\r\n    - Renamed \"additional_clicks\" to \"additional_cps\"\r\n    - **A lot of improvements**\r\n    - **A lot of optimizations**\r\n- TeamFilter: \r\n     - Removed \"teamfilter\" option from every module. It is now a module, so when turned on, it works on every other module.\r\n     - It is now working properly\r\n- Added Antibot:\r\n    - If the entity is not a player -> bot\r\n    - \"Tab_check\": If the entity is not in the tab -> bot\r\n    - \"Ping_check\": If the entity ping is 0 ms -> bot\r\n    - \"Ticks_lived_check\": If the entity has lived less than \"Ticks_lived_min\" -> bot\r\n    - \"Has_been_hit_check\": If the entity has not been hit (did not receive damage yet) -> bot\r\n- Miscellaneous:\r\n    - You can now use greater values than the ones given by the UI. To do so, you need to update the config file manually.\r\n    It's not recommended, but I'm sure that some of you will like that.\r\n    - Debug mode now shows the GUI on startup\r\n    - You can put your cursor over an option to get a description of it\r\n    - You can put your cursor over a module to get a description of it\r\n    - Improved modules messages in the console\r\n\r\n**To download it, click on \"assets\" below this text, then click on the .jar file**",
+                "published_at": "2020-08-24 19:09:04",
+                "tag_name": "7.3.0-MC1.16.2",
+                "title": "Version 7.3.0 for Minecraft 1.16.2 (forge)"
+            },
             {
                 "body": "Built with forge 32.0.108. You can use the same settings file as before.\r\n\r\n- Added an option for the triggerbot to attack when it's fully charged (\"auto cps\") (#61)\r\n- Modules are now paused when using GUIs (it wasn't working sometimes)\r\n- Optimized click assistance & triggerbot",
                 "published_at": "2020-08-11 17:58:06",
@@ -172,7 +204,7 @@
                 "title": "Version 7.1.0 for Minecraft 1.16.1"
             },
             {
-                "body": "**V7.1.0 MC_1.8.9**\r\n\r\nBuilt with forge 15.1.1722. You can use the same settings file as before.\r\n\r\n- Added triggerbot (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS) It can't be used along with click assistance\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
+                "body": "*Update August, 17 at 12:15PM UTC+2: the .jar should now support linux* \r\n\r\n**V7.1.0 MC_1.8.9**\r\n\r\nBuilt with forge 15.1.1722. You can use the same settings file as before.\r\n\r\n- Added triggerbot (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS) It can't be used along with click assistance\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
                 "published_at": "2020-08-09 18:38:14",
                 "tag_name": "7.1.0-MC1.8.9",
                 "title": "Version 7.1.0 for Minecraft 1.8.9"
@@ -376,7 +408,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 19,
+        "stars": 26,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -394,18 +426,28 @@
             "fabric",
             "triggerbot"
         ],
-        "updated_at": "2020-08-11 17:58:03",
-        "watchers": 1
+        "updated_at": "2020-09-02 15:26:15",
+        "watchers": 4
     },
     {
-        "description": "The hacking engine used by the mod Bettercolors",
+        "description": "The engine used by the mod Bettercolors. Works with any modding API and every Minecraft version",
         "forks": 0,
         "language": "Java",
         "name": "BettercolorsEngine",
-        "open_issues": [
-            "Version 1.0.0"
-        ],
+        "open_issues": [],
         "releases": [
+            {
+                "body": "Backwards compatible. *Will be uploaded to maven central. For now, read the README.md to know how to use it.*\r\n\r\n**Big changes:**\r\n- Change module's event system. You can define your own events now. onUpdate is now depreciated.\r\n- The engine does not crash when an option is out of bounds. It shows a warning message in the console instead.\r\n- Added Module#loadOptionsAccordingTo() which will prevent having redundant code\r\n- Added Module#onOptionChange(option, oldValue) which is triggered when an option is updated\r\n- Added a description field in options and modules. The window will show a tooltip containing the description when overing the option/module.\r\n\r\n**Small changes:**\r\n- Added TimeHelper#getTimeElapsed()\r\n- Window toggle key name now uses the keyName lambda function. BettercolorsEngine#init is now depreciated\r\n- Added Module#getOptionI(idx), Module#getOptionF(idx) & Module#getOptionB(idx)\r\n- Options are using spaces instead of \"_\"\r\n- Debug option now opens the window by default\r\n- Improved modules' logging and added a logWarn() method\r\n- Added Window#IMAGES_DIR and Window#FONTS_DIR to change the directory where the resources will be loaded\r\n\r\n**How to use it**\r\n\r\nMaven:\r\n```xml\r\n<dependency>\r\n  <groupId>dev.nero</groupId>\r\n  <artifactId>bettercolors-engine</artifactId>\r\n  <version>1.1.0</version>\r\n</dependency>\r\n```\r\n\r\nGradle:\r\n```gradle\r\nimplementation 'dev.nero:bettercolors-engine:1.1.0'\r\n```\r\n\r\nIf you are building a minecraft mod, then add those lines to your build.gradle:\r\n```gradle\r\nconfigurations {\r\n    // ... your stuff if you have something already\r\n\r\n    // It defines a new configurration called inJar that we will use later on\r\n    // compile is needed so that the library is recognized by the IDE\r\n    inJar\r\n    compile.extendsFrom inJar\r\n}\r\n\r\ndependencies {\r\n    // ... your stuff if you have something already\r\n\r\n    // The library with the inJar configuration that we created previously\r\n    inJar \"io.github.vincenzopalazzo:material-ui-swing:1.1.1\"\r\n}\r\n\r\njar {\r\n    // ... your stuff if you have something already\r\n\r\n    // It will extract all the libraries needed for the inJar configuration to be working in the root of the .jar\r\n    // Basically, it will extract the bettercolorsengine jar file to your mod.jar\r\n    from {\r\n        configurations.inJar.collect {\r\n            it.isDirectory() ? it : zipTree(it)\r\n        }\r\n    }\r\n}\r\n```\r\n",
+                "published_at": "2020-08-26 12:47:16",
+                "tag_name": "1.1.0",
+                "title": "Version 1.1.0"
+            },
+            {
+                "body": "![illustration](https://raw.githubusercontent.com/N3ROO/BettercolorsEngine/master/.github/engine_features.png)\r\n\r\n*Works with both Fabric and Forge*.\r\n\r\nIt is clearly not backwards compatible. However, the next\r\nversions (1.x.x) will be backwards compatible with this one.\r\n\r\n\ud83d\udca5: you **need** to update your mod | \ud83d\udca2 you **may need** to update your mod\r\n\r\n**Big changes:**\r\n- \ud83d\udca5 It is now possible to change the keybind for each module\r\n- Works with fabric\r\n- \ud83d\udca5 Removed `KEY_HANDLER` from Module class since it was dependent of Minecraft. You need to code it yourself\r\n\r\n**Small changes:**\r\n- Added instructions on how to get and build the material UI library automatically\r\n- \ud83d\udca5 Added a suffix for the mod version (could be useful to separate forge and fabric versions for example)\r\n- \ud83d\udca5 Added a way to customize the window title and changed footer to \"Powered by Bettercolors Engine x.x.x\"\r\n- Added toggleModule utility function to BettercolorsEngine class\r\n- \ud83d\udca5 Added a way to change the release page API\r\n- \ud83d\udca5 Added `isTriggeredByKeybind` to onToggle function to know if a module has been toggled using key events\r\n- \ud83d\udca5 Changed icons & added new ones\r\n- Linux menu fix\r\n- Version class now uses the given releases page URL (instead of the hardcoded one)\r\n- Refactored FORGE_API to MC_INPUTS_VERSION\r\n- You don't need to call `System.setProperty(\"java.awt.headless\", \"false\");` anymore\r\n- Removed error messages when verbose = false\r\n- \ud83d\udca2 Removed depreciated endpoints",
+                "published_at": "2020-08-17 19:23:02",
+                "tag_name": "1.0.0",
+                "title": "Version 1.0.0"
+            },
             {
                 "body": "**Version 0.3.1**\r\n- Fixed a crash when the friends file does not exist\r\n- Removed error message when a file does not exist if debug = false\r\n- Fix error messages with getDefaultOptions\r\n- Added onToggle listener to Module class",
                 "published_at": "2020-07-30 21:40:46",
@@ -433,7 +475,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-07-30 21:44:08",
+        "updated_at": "2020-08-26 13:10:57",
         "watchers": 1
     },
     {
@@ -524,6 +566,18 @@
         "watchers": 0
     },
     {
+        "description": "Some cheatsheets that I use regularly and keep updating over time",
+        "forks": 0,
+        "language": null,
+        "name": "Cheatsheets",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-08-18 21:18:43",
+        "watchers": 1
+    },
+    {
         "description": "Image generation using a DCGAN (machine learning)",
         "forks": 0,
         "language": "Jupyter Notebook",
@@ -537,6 +591,29 @@
             "machine-learning"
         ],
         "updated_at": "2020-07-27 19:44:15",
+        "watchers": 0
+    },
+    {
+        "description": "Changes your wallpaper daily by picking an image from wallhaven.cc according to your preferences",
+        "forks": 0,
+        "language": "Python",
+        "name": "Daily-Wallhaven-Wallpaper",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "*updated release file with commit 6b46661e58f4f3534798e19e50cc7b85f572db5a*\r\n\r\n**Customization:**\r\n- Api key\r\n- Categories\r\n- Purity\r\n- Sorting\r\n- Order\r\n- Toprange\r\n- Atleast\r\n- Ratio\r\n\r\n**Misc:**\r\n- Logging\r\n\r\n**Changes from main repository:**\r\n- Replaced script to grab a reddit image by a script that uses the Wallhaven API to retrieve an image\r\n- Improved config file loading / saving (it was not working on the main branch)\r\n- Improved output dir (it was relative to the home directory ~)\r\n- Improved logging (to know what goes wrong)\r\n- It does not download the wallpaper if it already exists\r\n\r\n**Parameters:**\r\n```\r\nDaily Wallhaven Wallpaper\r\n\r\noptional arguments:\r\n  -h, --help            show this help message and exit\r\n  -api APIKEY, --apikey APIKEY\r\n                        Values: your api key, see: https://wallhaven.cc/settings/account\r\n  -s SORTING, --sorting SORTING\r\n                        Values: date_added, relevance, random, views, favorites, toplist\r\n  -t TOPRANGE, --toprange TOPRANGE\r\n                        Values: 1d, 3d, 1w, 1M, 3M, 6M, 1y\r\n  -or ORDER, --order ORDER\r\n                        Values: desc, asc\r\n  -al ATLEAST, --atleast ATLEAST\r\n                        Values: 1920x1080 (anything x anything)\r\n  -c CATEGORIES, --categories CATEGORIES\r\n                        Values: 100, 110, 111 (general|anime|people), on(1) off(0)\r\n  -p PURITY, --purity PURITY\r\n                        Values: 100, 110, 111 (sfw|sketchy|nsfw), on(1) off(0)\r\n  -d DISPLAY, --display DISPLAY\r\n                        Desktop display number on OS X (0: all displays, 1: main display, etc\r\n  -o OUTPUT, --output OUTPUT\r\n                        Set the output directory to save the Wallpapers to.\r\n```\r\n\r\n**Config file:**\r\n```\r\n[DEFAULT]\r\napikey = \r\nsorting = toplist\r\ntoprange = 1d\r\norder = desc\r\natleast = 1920x1080\r\nratio = \r\ncategories = 100\r\npurity = 100\r\ndisplay = 0\r\noutput = ~/Pictures/Wallpapers\r\n```",
+                "published_at": "2020-08-21 09:54:11",
+                "tag_name": "1.0.0",
+                "title": "Version 1.0.0"
+            }
+        ],
+        "stars": 0,
+        "topics": [
+            "wallhaven",
+            "daily",
+            "wallpaper"
+        ],
+        "updated_at": "2020-08-21 10:24:09",
         "watchers": 0
     },
     {
@@ -804,12 +881,14 @@
         "forks": 0,
         "language": null,
         "name": "N3ROO",
-        "open_issues": [],
+        "open_issues": [
+            "A fortnite cheat "
+        ],
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-08-11 18:27:34",
-        "watchers": 1
+        "updated_at": "2020-09-02 10:13:39",
+        "watchers": 0
     },
     {
         "description": "\ud83d\udcda A java 2D game engine powered by OpenGL (discontinued, working on a clone using OpenJFX)",
