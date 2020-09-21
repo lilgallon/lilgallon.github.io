@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="/vendors/fontawesome-free-5.11.2-web/css/all.min.css" media="print" onload="this.media='all'">
 
     <!-- Vue.js -->
-    <script src="/vendors/vuejs-2.6.10/vue.min.js" defer></script>
+    <script src="/vendors/vuejs-2.6.10/vue.min.js"></script>
 
     <!-- Github calendar -->
     <script src="/vendors/github-calendar-2.2.1/github-calendar.min.js" defer></script>
@@ -416,7 +416,9 @@
     <script>
         //GitHubCalendar(".calendar", "N3ROO");
         // or enable responsive functionality:
-        GitHubCalendar(".calendar", "N3ROO", { responsive: true });
+        window.addEventListener('load', event => {
+            GitHubCalendar(".calendar", "N3ROO", { responsive: true });
+        });
     </script>
 
 </body>
