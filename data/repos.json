@@ -79,6 +79,24 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "Same as 1.2.0 for MC1.16.2, but built for forge 1.16.3 (also works with 1.16.2 and 1.16.1).\r\n",
+                "published_at": "2020-09-11 10:36:04",
+                "tag_name": "1.2.0-MC1.16.3",
+                "title": "Version 1.2.0 for Minecraft 1.16.3"
+            },
+            {
+                "body": "Same stuff as 1.2.0 for MC1.16.2",
+                "published_at": "2020-09-05 12:44:53",
+                "tag_name": "1.2.0-MC1.15.2",
+                "title": "Version 1.2.0 (Minecraft 1.15.2)"
+            },
+            {
+                "body": "- Smart block aim assistance\r\n\r\n**BEFORE:**\r\n\r\n<img src=\"https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_before_update.gif\" width=\"500\"/>\r\n\r\n**AFTER:**\r\n\r\nIt will recognize the block that you're trying to break.\r\n<img src=\"https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_smart_aim.gif\" width=\"500\"/>\r\n\r\nBut, if you want to change the block that you're breaking, just move your mouse.\r\n<img src=\"https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_smart_aim_captions.gif\" width=\"500\"/>\r\n\r\n- Improved attack assistance (it puts your crosshair higher than before)\r\n- Increased attack assistance duration (1 sec -> 1.7 sec)\r\n- The assistance won't be running while you're in GUIs\r\n\r\nClick \"aimassistance-1.2.0-MC1.16.2.jar\" to download the mod (under assets)",
+                "published_at": "2020-09-05 12:25:46",
+                "tag_name": "1.2.0",
+                "title": "Version 1.2.0 for Minecraft 1.16.2"
+            },
+            {
                 "body": "*Way more satisfying to use than 1.0.1*\r\n\r\n- Built for forge 1.16.2 (also works with forge 1.16.1)\r\n- Split aimForce into:\r\n    - aimForceBlocks: the force of the aim assistance on blocks\r\n    - aimForceMobs: the force of the aim assistance on mobs\r\n- Changed default force values:\r\n    - 4.0 for mobs\r\n    - 2.5 for blocks\r\n- When you're fighting a mob, the mod understands it and won't help you mining while you're fighting. Same thing if you're mining. It will help you to mine and not to fight.\r\n- Mining assistance now turns off as soon as the player stops mining\r\n- Added a version checker\r\n- Fixed an issue where the assistance would shake\r\n\r\nClick \"aimassistance-1.1.0-MC1.16.2.jar\" to download the mod (under assets)",
                 "published_at": "2020-08-25 20:18:13",
                 "tag_name": "1.1.0",
@@ -99,7 +117,26 @@
         ],
         "stars": 1,
         "topics": [],
-        "updated_at": "2020-08-25 20:17:47",
+        "updated_at": "2020-09-20 18:44:26",
+        "watchers": 1
+    },
+    {
+        "description": "A lightweight minecraft forge mod that displays the number of anvil uses of an item",
+        "forks": 0,
+        "language": "Java",
+        "name": "AnvilTooltipMod",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "**Should work with Forge 1.16.1 and later**\r\n\r\n- Shows the number of anvil uses\r\n- Shows the base repair cost\r\n- Works with any minecraft-supported language (english, russian, japanese, ...)",
+                "published_at": "2020-09-21 16:44:02",
+                "tag_name": "1.0.0-MC1.16.3",
+                "title": "Version 1.0.0 for MC 1.16.3"
+            }
+        ],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-09-21 16:44:18",
         "watchers": 1
     },
     {
@@ -156,7 +193,6 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
-            "Auto block hit",
             "Auto head in hypixel 1v1s and uhc and so on",
             "Click sound",
             "Panic hotkey",
@@ -408,7 +444,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 26,
+        "stars": 29,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -426,7 +462,7 @@
             "fabric",
             "triggerbot"
         ],
-        "updated_at": "2020-09-02 15:26:15",
+        "updated_at": "2020-09-19 07:52:53",
         "watchers": 4
     },
     {
@@ -572,9 +608,9 @@
         "name": "Cheatsheets",
         "open_issues": [],
         "releases": [],
-        "stars": 0,
+        "stars": 1,
         "topics": [],
-        "updated_at": "2020-08-18 21:18:43",
+        "updated_at": "2020-09-16 10:41:13",
         "watchers": 1
     },
     {
@@ -764,6 +800,25 @@
         "watchers": 0
     },
     {
+        "description": "A lightweight forge mod that shows the hidden horses' stats (jump height and speed)",
+        "forks": 0,
+        "language": "Java",
+        "name": "HorseStatsMod",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n",
+                "published_at": "2020-09-20 18:30:47",
+                "tag_name": "1.0.0",
+                "title": "Version 1.0.0 for MC 1.16.3"
+            }
+        ],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-09-20 18:38:16",
+        "watchers": 1
+    },
+    {
         "description": "\ud83d\udcda An easy to use 2D game engine powered by JavaFX13",
         "forks": 0,
         "language": "Java",
@@ -834,6 +889,18 @@
         "watchers": 0
     },
     {
+        "description": "Mes cours!",
+        "forks": 0,
+        "language": "HTML",
+        "name": "M2_Genie_Logiciel",
+        "open_issues": [],
+        "releases": [],
+        "stars": 2,
+        "topics": [],
+        "updated_at": "2020-09-21 13:58:50",
+        "watchers": 1
+    },
+    {
         "description": "\ud83c\udfae A game made made for the Introduction to programming course at the Bordeaux Institute of Technology",
         "forks": 0,
         "language": "C++",
@@ -881,13 +948,11 @@
         "forks": 0,
         "language": null,
         "name": "N3ROO",
-        "open_issues": [
-            "A fortnite cheat "
-        ],
+        "open_issues": [],
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-09-02 10:13:39",
+        "updated_at": "2020-09-21 16:46:35",
         "watchers": 0
     },
     {
@@ -997,6 +1062,31 @@
         ],
         "updated_at": "2019-10-23 01:51:07",
         "watchers": 0
+    },
+    {
+        "description": "A lightweight minecraft forge mod to search for items in containers. Works with mods that introduce their own containers",
+        "forks": 0,
+        "language": "Java",
+        "name": "QuickSearchMod",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "Should work with Forge 1.16.1 and later\r\n\r\n- Works with other mods that add new containers\r\n- Focus key configurable\r\n\r\n*To Download it, click on assets, then on the .jar file. You can also download it from [curse forge](https://www.curseforge.com/minecraft/mc-mods/quick-search).*",
+                "published_at": "2020-09-20 15:00:13",
+                "tag_name": "1.0.0-MC1.16.3",
+                "title": "Version 1.0.0 for MC 1.16.3"
+            }
+        ],
+        "stars": 0,
+        "topics": [
+            "minecraft",
+            "forge",
+            "mod",
+            "quick",
+            "search"
+        ],
+        "updated_at": "2020-09-20 19:18:24",
+        "watchers": 1
     },
     {
         "description": "\u231b A basic windows shutdown planner.",
@@ -1149,6 +1239,6 @@
         "stars": 0,
         "topics": [],
         "updated_at": "2019-12-02 23:19:16",
-        "watchers": 1
+        "watchers": 2
     }
 ]
