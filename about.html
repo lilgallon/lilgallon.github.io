@@ -200,10 +200,10 @@
                 }
 
                 (function () {
-                if (localStorage.getItem('theme') === 'dark') {
-                    setTheme('dark');
-                } else {
+                if (localStorage.getItem('theme') === 'light') {
                     setTheme('light');
+                } else {
+                    setTheme('dark');
                 }
                 })();
             </script>
@@ -317,6 +317,11 @@
                                     <ul>
                                         <li>Optimized images (gained 1 to 5 seconds to load the website)</li>
                                         <li>Deferred non-critical CSS and JS files</li>
+                                    </ul>
+
+                                    <i class="fas fa-paint-brush"></i> Theme:
+                                    <ul>
+                                        <li>Changed default theme to dark (and removed useless css reload)</li>
                                     </ul>
 
                                     <i class="fa-fw fas fa-wrench"></i> Misceallenous:
