@@ -167,7 +167,7 @@ a:hover {
 .form-control:focus {
     background: var(--black2);
     border-color: var(--main1);
-    box-shadow: 0.1 0.1 0.1 0.2rem var(--main1);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.2rem var(--main1);
     color: var(--white1);
 }
 

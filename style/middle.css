@@ -88,12 +88,12 @@
 }
 
 .middle-panel li em {
-    color: --var(--white1);
+    color: var(--white1);
 }
 
 .middle-panel .info:hover {
     cursor: pointer;
-    color: --var(--white1) !important;
+    color: var(--white1) !important;
 }
 
 .middle-panel .repo {
