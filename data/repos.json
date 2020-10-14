@@ -79,6 +79,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "- The mod configuration is now automatically refreshed when the config file is edited\r\n\r\nClick \"aimassistance-1.2.1-MC1.16.x.jar\" to download the mod (under assets)",
+                "published_at": "2020-10-02 16:33:08",
+                "tag_name": "1.2.1-MC1.16.3",
+                "title": "Version 1.2.1 for Minecraft 1.16.x"
+            },
+            {
                 "body": "Same as 1.2.0 for MC1.16.2, but built for forge 1.16.3 (also works with 1.16.2 and 1.16.1).\r\n",
                 "published_at": "2020-09-11 10:36:04",
                 "tag_name": "1.2.0-MC1.16.3",
@@ -117,7 +123,7 @@
         ],
         "stars": 1,
         "topics": [],
-        "updated_at": "2020-09-20 18:44:26",
+        "updated_at": "2020-10-02 16:32:21",
         "watchers": 1
     },
     {
@@ -136,7 +142,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-09-21 16:44:18",
+        "updated_at": "2020-09-22 18:55:00",
         "watchers": 1
     },
     {
@@ -188,13 +194,12 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft ghost hack built with Forge AND Fabric, well documented. Reach, Autoclick, AimAssistance, ClickAssistance, and so on... for MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.1 & 1.16.2 :)",
+        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.1 & 1.16.2",
         "forks": 3,
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
             "Auto head in hypixel 1v1s and uhc and so on",
-            "Click sound",
             "Panic hotkey",
             "Auto clicker (right click)",
             "Bow aimbot and esp",
@@ -444,7 +449,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 29,
+        "stars": 32,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -462,7 +467,7 @@
             "fabric",
             "triggerbot"
         ],
-        "updated_at": "2020-09-19 07:52:53",
+        "updated_at": "2020-10-13 10:39:11",
         "watchers": 4
     },
     {
@@ -470,7 +475,10 @@
         "forks": 0,
         "language": "Java",
         "name": "BettercolorsEngine",
-        "open_issues": [],
+        "open_issues": [
+            "SynchronizeComponents does not work on some sliders",
+            "Call to the key mapping lambda function even if the argument is invalid"
+        ],
         "releases": [
             {
                 "body": "Backwards compatible. *Will be uploaded to maven central. For now, read the README.md to know how to use it.*\r\n\r\n**Big changes:**\r\n- Change module's event system. You can define your own events now. onUpdate is now depreciated.\r\n- The engine does not crash when an option is out of bounds. It shows a warning message in the console instead.\r\n- Added Module#loadOptionsAccordingTo() which will prevent having redundant code\r\n- Added Module#onOptionChange(option, oldValue) which is triggered when an option is updated\r\n- Added a description field in options and modules. The window will show a tooltip containing the description when overing the option/module.\r\n\r\n**Small changes:**\r\n- Added TimeHelper#getTimeElapsed()\r\n- Window toggle key name now uses the keyName lambda function. BettercolorsEngine#init is now depreciated\r\n- Added Module#getOptionI(idx), Module#getOptionF(idx) & Module#getOptionB(idx)\r\n- Options are using spaces instead of \"_\"\r\n- Debug option now opens the window by default\r\n- Improved modules' logging and added a logWarn() method\r\n- Added Window#IMAGES_DIR and Window#FONTS_DIR to change the directory where the resources will be loaded\r\n\r\n**How to use it**\r\n\r\nMaven:\r\n```xml\r\n<dependency>\r\n  <groupId>dev.nero</groupId>\r\n  <artifactId>bettercolors-engine</artifactId>\r\n  <version>1.1.0</version>\r\n</dependency>\r\n```\r\n\r\nGradle:\r\n```gradle\r\nimplementation 'dev.nero:bettercolors-engine:1.1.0'\r\n```\r\n\r\nIf you are building a minecraft mod, then add those lines to your build.gradle:\r\n```gradle\r\nconfigurations {\r\n    // ... your stuff if you have something already\r\n\r\n    // It defines a new configurration called inJar that we will use later on\r\n    // compile is needed so that the library is recognized by the IDE\r\n    inJar\r\n    compile.extendsFrom inJar\r\n}\r\n\r\ndependencies {\r\n    // ... your stuff if you have something already\r\n\r\n    // The library with the inJar configuration that we created previously\r\n    inJar \"io.github.vincenzopalazzo:material-ui-swing:1.1.1\"\r\n}\r\n\r\njar {\r\n    // ... your stuff if you have something already\r\n\r\n    // It will extract all the libraries needed for the inJar configuration to be working in the root of the .jar\r\n    // Basically, it will extract the bettercolorsengine jar file to your mod.jar\r\n    from {\r\n        configurations.inJar.collect {\r\n            it.isDirectory() ? it : zipTree(it)\r\n        }\r\n    }\r\n}\r\n```\r\n",
@@ -509,10 +517,22 @@
                 "title": "Version 0.1.0 "
             }
         ],
+        "stars": 1,
+        "topics": [],
+        "updated_at": "2020-09-23 18:55:32",
+        "watchers": 1
+    },
+    {
+        "description": "Minecraft mod that adds over 50 new biomes to the game.",
+        "forks": 0,
+        "language": null,
+        "name": "BiomesOPlenty",
+        "open_issues": [],
+        "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-08-26 13:10:57",
-        "watchers": 1
+        "updated_at": "2020-10-03 13:29:22",
+        "watchers": 0
     },
     {
         "description": "\ud83c\udfeb Projet ISN BAC S 2015-2016 (19.5/20)",
@@ -602,19 +622,35 @@
         "watchers": 0
     },
     {
-        "description": "Some cheatsheets that I use regularly and keep updating over time",
+        "description": "Advanced programming cheatsheets (C++, Java, ...)",
         "forks": 0,
         "language": null,
         "name": "Cheatsheets",
         "open_issues": [],
         "releases": [],
         "stars": 1,
-        "topics": [],
-        "updated_at": "2020-09-16 10:41:13",
+        "topics": [
+            "cpp",
+            "cheatsheets",
+            "java"
+        ],
+        "updated_at": "2020-10-13 17:13:02",
         "watchers": 1
     },
     {
-        "description": "Image generation using a DCGAN (machine learning)",
+        "description": "Parce que M\u00e9t\u00e9o France c'est nul",
+        "forks": 0,
+        "language": "JavaScript",
+        "name": "CoolMeteo",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-10-11 15:53:48",
+        "watchers": 1
+    },
+    {
+        "description": "Generate images with Deep Convolutional GAN",
         "forks": 0,
         "language": "Jupyter Notebook",
         "name": "CSE142-Project",
@@ -626,7 +662,7 @@
             "dcgan",
             "machine-learning"
         ],
-        "updated_at": "2020-07-27 19:44:15",
+        "updated_at": "2020-10-13 10:49:13",
         "watchers": 0
     },
     {
@@ -742,7 +778,9 @@
         "forks": 0,
         "language": "Java",
         "name": "Fractals_explorer",
-        "open_issues": [],
+        "open_issues": [
+            "Bump junit from 4.12 to 4.13.1"
+        ],
         "releases": [
             {
                 "body": "",
@@ -800,14 +838,38 @@
         "watchers": 0
     },
     {
-        "description": "A lightweight forge mod that shows the hidden horses' stats (jump height and speed)",
+        "description": "A lightweight forge mod that shows the hidden horses' stats (jump height, speed, and slots for Llamas)",
         "forks": 0,
         "language": "Java",
         "name": "HorseStatsMod",
         "open_issues": [],
         "releases": [
             {
-                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n",
+                "body": "- Added \"displayMinMax\" option. When turned off, it won't display the min and max statistics\r\n    - Set to false by default\r\n- Added a \"slots\" statistics for llamas\r\n\r\n![image](https://user-images.githubusercontent.com/26824108/95675600-c7dd7700-0bb8-11eb-83d4-7d5e2416bca8.png)\r\n",
+                "published_at": "2020-10-11 09:56:50",
+                "tag_name": "1.3.0",
+                "title": "Version 1.3.0 for Minecraft 1.16.x"
+            },
+            {
+                "body": "**Important fix**\r\n\r\n- Fixed issue where right clicking a non tamed horse would show the stats of the latest ridden horse, and not the targeted one",
+                "published_at": "2020-09-24 08:28:22",
+                "tag_name": "1.2.1",
+                "title": "Version 1.2.1 for Minecraft 1.16.x"
+            },
+            {
+                "body": "- Fixed the stats not showing when crouching and right clicking a horse\r\n- It is now possible to get a horse's stats by crouching and right clicking it. **It only works if the horse is not tamed yet**",
+                "published_at": "2020-09-23 17:44:10",
+                "tag_name": "1.2.0",
+                "title": "Version 1.2.0 for Minecraft 1.16.x"
+            },
+            {
+                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.1.0.png)\r\n",
+                "published_at": "2020-09-22 18:30:38",
+                "tag_name": "1.1.0",
+                "title": "Version 1.1.0 for MC 1.16.x"
+            },
+            {
+                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.0.0.gif)\r\n\r\n",
                 "published_at": "2020-09-20 18:30:47",
                 "tag_name": "1.0.0",
                 "title": "Version 1.0.0 for MC 1.16.3"
@@ -815,7 +877,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-09-20 18:38:16",
+        "updated_at": "2020-10-11 10:04:00",
         "watchers": 1
     },
     {
@@ -889,16 +951,16 @@
         "watchers": 0
     },
     {
-        "description": "Mes cours!",
+        "description": null,
         "forks": 0,
-        "language": "HTML",
-        "name": "M2_Genie_Logiciel",
+        "language": "JavaScript",
+        "name": "M2-Workshops",
         "open_issues": [],
         "releases": [],
-        "stars": 2,
+        "stars": 0,
         "topics": [],
-        "updated_at": "2020-09-21 13:58:50",
-        "watchers": 1
+        "updated_at": "2020-10-08 19:17:41",
+        "watchers": 0
     },
     {
         "description": "\ud83c\udfae A game made made for the Introduction to programming course at the Bordeaux Institute of Technology",
@@ -952,7 +1014,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-09-21 16:46:35",
+        "updated_at": "2020-10-14 16:30:12",
         "watchers": 0
     },
     {
@@ -1071,6 +1133,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "*Should work with Forge 1.16.1 and later*\r\n\r\nChanges:\r\n- Search results are now cleared when closing a container\r\n- Search results are now computed when turning search field on (before it waited for the first input)\r\n- Changed default keybind to `F`\r\n\r\n*To Download it, click on assets, then on the .jar file. You can also download it from [curse forge](https://www.curseforge.com/minecraft/mc-mods/quick-search).*",
+                "published_at": "2020-10-02 16:46:40",
+                "tag_name": "1.0.1-MC1.16.3",
+                "title": "Version 1.0.1 for MC 1.16.3"
+            },
+            {
                 "body": "Should work with Forge 1.16.1 and later\r\n\r\n- Works with other mods that add new containers\r\n- Focus key configurable\r\n\r\n*To Download it, click on assets, then on the .jar file. You can also download it from [curse forge](https://www.curseforge.com/minecraft/mc-mods/quick-search).*",
                 "published_at": "2020-09-20 15:00:13",
                 "tag_name": "1.0.0-MC1.16.3",
@@ -1085,7 +1153,7 @@
             "quick",
             "search"
         ],
-        "updated_at": "2020-09-20 19:18:24",
+        "updated_at": "2020-10-02 16:51:19",
         "watchers": 1
     },
     {
@@ -1240,5 +1308,162 @@
         "topics": [],
         "updated_at": "2019-12-02 23:19:16",
         "watchers": 2
+    },
+    {
+        "description": "A modular destruction SDK designed for performance and flexibility, replacing APEX destruction",
+        "forks": 0,
+        "language": "C++",
+        "name": "Blast",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.5 (16-Sep-2019)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* Extensions API refactored to eliminate use of Px types.\r\n* Numerous API changes to meet new coding conventions.\r\n* Packman package manager updated to v. 5.7.2, cleaned up dependency files.\r\n* Chunks created from islands use padded bounds to determine connectivity.\r\n* FractureTool::deleteAllChildrenOfChunk renamed FractureTool::deleteChunkSubhierarchy, added ability to delete chunks.\r\n* NvBlastAsset::testForValidChunkOrder (used when creating an NvBlastAsset) is now more strict, requiring parent chunk descriptors to come before their children.  It is still less strict than the order created by NvBlastBuildAssetDescChunkReorderMap.\r\n\r\nNew Features\r\n------------\r\n* Authoring tools:\r\n  * Ability to pass chunk connectivity info to uniteChunks function, enabling chunks split by island detection to  be united.\r\n  * Option to remove original merged chunks in uniteChunks function.\r\n  * The function uniteChunks allows the user to specify a chunk set to merge.  Chunks from that set, and all descendants, are considered for merging.\r\n  * Ability to delete chunks (see note about FractureTool::deleteChunkSubhierarchy in Changes section, above).\r\n  * Added FractureTool::setApproximateBonding function.  Signals the tool to create bonds by proximity instead of just using cut plane data.\r\n\r\nBug fixes\r\n---------\r\n* Authoring tools:\r\n  * Fixed chunk reordering bug in BlastTool.\r\n  * Chunks which have been merged using the uniteChunks function may be merged again\r\n  * Restored chunk volume calculation\r\n* NvBlastBuildAssetDescChunkReorderMap failure cases fixed.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
+                "published_at": "2020-01-13 18:11:12",
+                "tag_name": "v1.1.5_release",
+                "title": "Blast 1.1.5"
+            },
+            {
+                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.4 (24-Oct-2018)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* Unity plugin example updated to work with latest Blast SDK.\r\n\r\nNew Features\r\n------------\r\n* Authoring tools:\r\n  * Island detection function islandDetectionAndRemoving has a new parameter, createAtNewDepth.\r\n  * Bonds created between island-based chunks.\r\n  * Added \"agg\" (aggregate) commandline switch to AuthoringTool.  This allows multiple convex hulls per chunk to be generated.\r\n  * Damage pattern authoring interface.\r\n\r\nBug fixes\r\n---------\r\n* Build working on later C++ versions (e.g. deprecated UINT32_MAX removed).\r\n* Authoring tools:\r\n  * Fixed .obj material loading when obj folder is same as working directory.\r\n  * Degenerate face generation fix. \r\n  * Fixed memory leak in FractureTool.\r\n* Proper memory releasing in samples.\r\n* Single-actor serialization bugfix when actor has world bonds.\r\n* Updated PhysX package for Win64 (vc14 and vc15) and Linux64 to 3.4.24990349, improving GRB behavior and fixing GRB crash/failure on Volta and Turing.\r\n* Documented JSON collision export option introduced in previous version.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
+                "published_at": "2018-11-26 16:12:46",
+                "tag_name": "v1.1.4_release",
+                "title": "Blast 1.1.4"
+            },
+            {
+                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.3 (30-May-2018)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* No longer testing Win32 project scripts.  Note generate_projects_vc14win32.bat has been renamed generate_projects_vc14win32_untested.bat.\r\n* Using a PhysX Packman package that no longer includes APEX.\r\n* Updated documentation:\r\n  * Authoring documentation mentions restrictions for meshes to be fractured.\r\n  * Added BlastTool reference to README.md.\r\n  * Updated documentation paths in README.md.\r\n* Using Packman5 for external packages.\r\n* Authoring tools:\r\n  * In NoiseConfiguration, surfaceResolution changed to samplingInterval.  The latter is reciprocal of resolution and defined for all 3 axes.\r\n  * Improved cutout robustness.\r\n* Exporter (used by both authoring tools and ApexImporter) has a JSON collision export option.\r\n\r\nNew Features\r\n------------\r\n* VC15 Win64 project scripts.  Run generate_projects_vc15win64.bat.\r\n* Authoring tools:\r\n  * Noisy cutout fracture.\r\n  * Conic cutout option (tapers cut planes relative to central point).\r\n  * Cutout option \"useSmoothing.\"  Add generatad faces to the same smoothing group as original face without noise.\r\n  * Periodic cutout boundary conditions.\r\n\r\nBug fixes\r\n---------\r\n* Packman target platform dependencies no longer pulling windows packages into other platforms.\r\n* Fixed bond generation for cutout fracture.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
+                "published_at": "2018-06-22 20:38:46",
+                "tag_name": "v1.1.3_release",
+                "title": "Blast 1.1.3"
+            },
+            {
+                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.2 (26-Jan-2018)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* Improvements to uniteChunks for hierarchy optimization.\r\n* NvBlastExtAuthoringFindAssetConnectingBonds optimized.\r\n* APEX dependency has been removed (ExtImport used it).  Now ExtImport has a built-in NvParameterized read that can load an APEX Destructible asset.\r\n\r\nNew Features\r\n------------\r\n* FractureTool::setChunkMesh method.\r\n* Distance threshold added to NvBlastExtAuthoringFindAssetConnectingBonds.\r\n* NvBlastExtExporter: IMeshFileWriter::setInteriorIndex function, for control of interior material.\r\n* Cutout and cut fracture methods: NvBlastExtAuthoringCreateCutoutSet and Nv::Blast::CutoutSet API, FractureTool::cut and FractureTool::cutout APIs.\r\n* NvBlastExtAuthoring:\r\n  * NvBlastExtAuthoringCreateMeshFromFacets function.\r\n  * NvBlastExtUpdateGraphicsMesh function.\r\n  * NvBlastExtAuthoringBuildCollisionMeshes function.\r\n* UV fitting on interior materials using new FractureTool::fitUvToRect and FractureTool::fitAllUvToRect functions.\r\n* Multi-material support in OBJ file format.\r\n\r\nBug fixes\r\n---------\r\n* Fixed bug causing normals on every other depth level to be flipped when exporting Blast meshes.\r\n* Fixed bug where faces are missed after hierarchy optimization on a sliced mesh.\r\n* Fixed subtree chunk count generated in Nv::Blast::Asset::Create (led to a crash in authoring tools, fracturing a pre-fractured mesh).\r\n* Fixed a crash when loading an obj with bad material indices.\r\n* Fixed Actor::split so that visibility lists are correctly updated even when the number of split actors exceeds newActorsMaxCount.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
+                "published_at": "2018-02-12 16:31:43",
+                "tag_name": "v1.1.2_release",
+                "title": "Blast 1.1.2"
+            },
+            {
+                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.1 (10-Oct-2017)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* NvBlastProgramParams moved to NvBlastExtDamageShaders\r\n* Materials removed from NvBlastTk\r\n\r\nNew Features\r\n------------\r\n* Damage shader acceleration structure\r\n* Extended support structures via new asset merge functions in NvBlastExtAssetUtils\r\n* Ability to scale asset components when merging assets with NvBlastExtAssetUtilsMergeAssets\r\n* NvBlastExtAuthoring\r\n  * Option to fit multiple convex hulls to a chunk (uses VHACD)\r\n  * deleteAllChildrenOfChunk and uniteChunks APIs\r\n* Triangle damage shader for swept segments\r\n* Impact damage spread shaders\r\n\r\nBug fixes\r\n---------\r\n* Linux build fixes\r\n* NvBlastExtAuthoring\r\n  * Fracturing tools chunk index fix\r\n  * VoronoiSitesGeneratorImpl::generateInSphere fix\r\n  * More consistent use of NVBLAST_ALLOC and NVBLAST_FREE\r\n  * Boolean tool bug fix\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
+                "published_at": "2018-02-12 16:30:44",
+                "tag_name": "v1.1.1",
+                "title": "Blast 1.1.1"
+            },
+            {
+                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1 (28-Aug-2017)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* VC12 is no longer supported.\r\n* New license header, consistent with PhysX license header.\r\n* New serialization extension.  NvBlastExtSerialization is now a modular serialization manager.  It loads serializers sets for low-level, Tk, and ExtPx.  Each serializer handles a particular file format and object type.  Currently the universally available format for all object types is Cap'n Proto binary.  The file format is universal, as it uses a header to inform the serialization manager which serializer is needed to deserialize the contained data.  All authoring and import tools write using this format to files with a \".blast\" filename extension.\r\n* Corresponding to the new serialization, the old formats have been deprecated.  In particular, the DataConverter tool has been removed.  Instead see LegacyConverter in the New Features section.\r\n* TkSerializable virtual base class has been removed.  TkAsset and TkFamily are now derived directly from TkIdentifiable.  Serialization functions have been removed, replaced by the new serialization extension.\r\n* ExtPxAsset serialization functions have been removed, replaced by the new serialization extension.\r\n* World bonds.  A bond descriptor can now take the invalid index for one of its chunkIndices.  This will cause an additional support graph node to be created within an asset being created with this descriptor.  This node will not correspond to any chunk (it maps to the invalid index in the graph's chunkIndices array).  Actors that contain this new \"world node\" may be kept static by the user, emulating world attachment.  This is easily tested using the new low-level function NvBlastActorIsBoundToWorld.\r\n* With the addition of world bonds (see above), the NvBlastExtImport extension no longer creates an extra \"earth chunk\" to bind chunks to the world.  Instead, it creates world bonds.\r\n* ExtPxAsset now contains an NvBlastActorDesc, which is used as the default actor descriptor when creating an ExtPxFamily from the asset.\r\n* TkFramework no longer has its own allocator and message handler.  Instead, this is part of a new NvBlastGlobals API.  This way, extensions and TkFramework may share the same allocator.\r\n* SampleAssetViewer\r\n  * Physics simulation now runs concurrently with graphics and some of the sample/blast logic.\r\n  * New Damage tool added: line segment damage\r\n  * Damage tool radius can be set individually for each tool (radial, cutter, line segment, hierarchical).\r\n  * Cubes now removed when a scene is reloaded.\r\n  * Cube throw velocity can be \"charged\" by holding down the 'F' key.\r\n* New damage system built around \"health,\" see API changes in NvBlastExtShaders and changes in NvBlastExtImpactDamageManager.\r\n* NvBlastExtShearGraphShader uses a chunk-based method to find the closest graph node, improving performance.\r\n* TkGroup no longer uses physx::PxTaskManager interface for task management.  Instead, a TkGroupWorker interface has been added.  The NvBlastExtPhysX extension uses the physx::PxTaskManager to implement this interface.\r\n* Better error handling in AuthoringTool (stderr and user error handler).\r\n* More consistent commandline switches in AuthoringTool and ApexImporter (--ll, --tk, --px flags).\r\n* Various small clean-ups.\r\n\r\nNew Features\r\n------------\r\n* NvBlastExtAssetUtils extension\r\n  * Merge multiple assets into one.\r\n  * Add \"world bonds\" to an asset (see \"World bonds\" in the Changes section).\r\n  * Transform an NvBlastAsset's geometric data in-place.\r\n* NvBlastExtAuthoring\r\n  * Open edge detection.\r\n  * Rotation of voronoi cells used for fracturing.\r\n* \"Globals\" code (under sdk/globals).  Includes a global allocator, message handler, and profiler API used by TkFramework and extensions.\r\n* NvBlastExtStress extension, a PhysX-independent API for performing stress calculations with low-level Blast actors.\r\n* NvBlastActorIsSplitRequired() function for low-level actors.  If this function returns false, NvBlastActorSplit() may be skipped as it will have no effect.\r\n* NvBlastExtShaders\r\n  * New \"Segment Radial Damage\" shader.  Damages everything within a given distance of a line segment.\r\n* New NvBlastExtExporter extension, used commonly by import and authoring tools.  Allows collision data to be stored in one of three ways:\r\n  * JSON format.\r\n  * FBX mesh format (seprate file).\r\n  * FBX mesh format in a second \"collision\" layer, alongside the graphics mesh nodes corresponding to Blast chunks.\r\n* LegacyConverter tool has been added, which converts .llasset, .tkasset, .bpxa, .pllasset, .ptkasset, and .pbpxa asset files to the new .blast format using the universal serialization scheme in the new NvBlastExtSerialization extension.\r\n* NvBlastExtAuthoring\r\n  * Mesh cleaner, tries to remove self intersections and open edges in the interior of a mesh.\r\n  * Ability to set interior material to existing (external) material, or a new material id.\r\n  * Material ID remapping API.\r\n\r\nBug fixes\r\n---------\r\n* NvBlastExtAuthoring\r\n  * Slicing normals fix.\r\n* Various instances of &array[0] to get the data buffer from a std::vector now use data() member function.  This had led to some crashes with empty vectors.\r\n* SampleAssetViewer\r\n  * Fixed dragging kinematic actor.\r\n  * Now loads the commandline-defined asset also when sample resources were not downloaded yet.\r\n* Serialization documented.\r\n* Fixed smoothing groups in FBX exporter code.\r\n* Impulse passing from parent to child chunks fixed.\r\n* Reading unskinned fbx meshes correctly.\r\n* Collision hull generation from fbx meshes fixed.\r\n* Win32/64 PerfTest crash fix.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring extension does not perform convex decomposition to fit chunks with multiple collision hulls.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
+                "published_at": "2018-02-12 16:22:08",
+                "tag_name": "v1.1.0",
+                "title": "Blast 1.1"
+            },
+            {
+                "body": "",
+                "published_at": "2017-02-27 03:45:55",
+                "tag_name": "v1.0.0",
+                "title": "Blast 1.0 Release"
+            },
+            {
+                "body": "",
+                "published_at": "2017-02-22 16:46:33",
+                "tag_name": "v1.0.0-beta",
+                "title": "Blast 1.0 Beta Release"
+            }
+        ],
+        "stars": 117,
+        "topics": [],
+        "updated_at": "2020-10-14 13:53:21",
+        "watchers": 46
+    },
+    {
+        "description": null,
+        "forks": 3,
+        "language": "C++",
+        "name": "FleX",
+        "open_issues": [
+            "Creating a func named CreateInflatableMesh",
+            "Request: Split out index of shape - w component of velocities in NvFlexGetContact",
+            "Unity FleX Get/SetSprings functions",
+            "How to increase weight of cloth without getting this weird simulation behaviors?",
+            "Flex On Unity",
+            "Flex on PS4 and XboxOne",
+            "How was irregular_plane.obj mesh generated?",
+            "Which license is the core Flex library under?",
+            "Retrieve de contact positions on SDF collision",
+            "This can give negatives wait time correct ? Why not (endTime - beginTime) in this case ?",
+            "Request for support for Cuda10 or docker",
+            "Particle position NaN",
+            "FleX smoke",
+            "Is there multi-gpu support for the solver?  Also, how do I apply for access to the CUDA source?",
+            "Mesh import coordinate system",
+            "How to load animation on collision shape? ",
+            "How to render objects with texture?",
+            "Use cases for eFlexMemoryDevice in FleX",
+            "Compiling for Oculus Quest (android)",
+            "Stack Smashing error at NvFlexInit",
+            "Multiple callbacks for same stage",
+            "tetrahedral mesh spring Based Softbody",
+            "Flex with spring based Constraints",
+            "Collision inside an NvFlexCollisionGeometry",
+            "Add Visual Studio 2019 project files",
+            "Cloth simulation: Flex vs NvCloth",
+            "Possible memory leak - allocating soft bodies to assets",
+            "Flex Performance",
+            "Fix Random Seed",
+            "Cuda buffer memory allocation control",
+            "Combine soft FleX body with kinematic tree consisting of capsules with defined mass",
+            "felx for 3dsmax plz",
+            "Can't create more sdfs.",
+            "Trying to \"pin\" particles to a rigged object in Unity, don't see any documentation on controlling the pins' position in engine.",
+            "iOS Integration",
+            "Determine maximum stretch of particle",
+            "Python Bindings for FleX - Open Source Release",
+            "Issue with SDL 2.0.4 with creating Python bindings for FleX",
+            "Friction and Adhesion per geometry",
+            "Cuda 10 support",
+            "CUDA and OpenGL ComputeBuffer",
+            "Missing feature: send gpu data (e.g. SDF to SDF) to Flex in D3D (or OpenGL)",
+            "NVIDIA FleX for Unity (1.0 BETA)   How to stop FLuid Emision?",
+            "[FLEX Cloth] can we set iteration and steps for local cloth piece?",
+            "Build / run demo on Linux",
+            "Unity 28.7.2018 Unfortunately, NVIDIA FleX for Unity (1.0 BETA) is no longer available.",
+            "Unity plugin 1.0 (Beta) fluid rendering has display problems with OpenVR",
+            "Unity Plugin 1.0 (Beta): Cloth Deformation and Cloth Actor Scenes Cause Unity to Crash",
+            "Cuda 9.2 support",
+            "Any planned support for iOS (Metal)?",
+            "Compile success, run failure in flex1.2",
+            "Atomic operations on float4",
+            "Could not initialize GL extensions",
+            "FleX compiling errors",
+            "Vulkan support for cross vendor Linux support like Flow 1.1 planned?",
+            "Update index.html",
+            "flexExtContainer.cpp data missing",
+            "Running on Ubuntu 17.10",
+            "Unresolved external NvFlexGetSprings with CUDA",
+            "Can't create double sided flag",
+            "Fresh build fails on Ubuntu 16.04 due to linker error",
+            "Missing linking on NvFlexRegisterOGLBuffer",
+            "ForceField issues (Debug v/s Release)",
+            "Python bindings for FleX",
+            "Fluid leaves rigid constraint objects on higher speed through material",
+            "About the buoyancy Scene",
+            "Missing file named \"d3d12.dll\"",
+            "Disabling Sleep Threshold",
+            "Composite Draw Issue",
+            "Unexpected Rigid body behavior",
+            "Hoowwwww!!!???",
+            "Cannot run Flex after compilation: libGLEW.so.1.10 is missing and ",
+            "Fluid sticking to triangle edges",
+            "Manual Quickstart has numerous typos and does not compile",
+            "[Ubuntu 14.04] libpthread.so.0: error adding symbols: DSO missing from command line",
+            "Cloth visual not updating"
+        ],
+        "releases": [
+            {
+                "body": "",
+                "published_at": "2017-04-10 02:40:45",
+                "tag_name": "1.1.0",
+                "title": ""
+            }
+        ],
+        "stars": 228,
+        "topics": [],
+        "updated_at": "2020-10-14 15:29:57",
+        "watchers": 70
     }
 ]
