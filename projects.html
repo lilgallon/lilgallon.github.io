@@ -202,16 +202,74 @@
             <div class="col-xl-8 col-md-8 middle-panel">
                 <div class="container">
 
-                    <p>
-                        <i>To get an overview of what I'm currently working on, visit my personal <a href="https://github.com/N3ROO">Github page</a>.</i>
-                    </p>
-
+                    <div class="title1"><i class="fa-fw far fa-chart-bar"></i> Some statistics</div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-1">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-star"></i> Total stars: {{ totalStars }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-2">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-eye"></i> Total watchers: {{ totalWatchers }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-3">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-code-branch"></i> Total forks: {{ totalForks }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-4">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-bug"></i> Total issues: {{ totalIssues }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-2">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-user-friends"></i> Followers: {{ userData.followers }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-3">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-user"></i> Following: {{ userData.following }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-4">
+                                    <div class="title">
+                                        <i class="fa-fw fas fa-box-open"></i> Public repos: {{ userData.public_repos }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="big-button bg-main-1">
+                                    <div class="title">
+                                        <i class="fa-fw fas far fa-folder"></i> Private repos: {{ userData.total_private_repos }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="title1"> <i class="fas fa-cube"></i> Simple Minecraft Mods Series</div>
                     <hr>
 
                     <p>
-                        All these mods are published on curseforge.com. They have been downloaded more than 2500 times.
+                        All these mods are published on curseforge.com.
                     </p>
 
                     <p>
@@ -221,10 +279,30 @@
                         <a class="discret-link" target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/anvil-tooltip-mod"> <img src="https://github.com/N3ROO/AnvilTooltipMod/raw/MC_1.16.3/.github/resources/anviltooltipmod.png"> </a>
                     </p>
 
+                    <img src="https://img.shields.io/badge/Total%20downlods-3k%2B-brightgreen?style=for-the-badge&logo=java&labelColor=2E3440" alt="">
+
+                    <div class="title1"> <i class="fas fas fa-lightbulb"></i> Dynamic LED Strips</div>
+                    <hr>
+
+                    A C# software that connects LED Strips to your computer using Bluetooth LE. The color and brightness then change according to your activity.
+                    Coming out soon (end of November 2020)! Okay, here is an overview:
+<pre>
+<code class="text-white">
+______  _      _____
+|  _  \| |    /  ___|
+| | | || |    \ `--.
+| | | || |     `--. \  Dynamic LED Strips
+| |/ / | |____/\__/ /  Version 0.1.0
+|___/  \_____/\____/   MIT License, (c) Lilian Gallon 2020
+</code>
+</pre>
+
                     <div class="title1"> <i class="fas fas fa-arrow-up"></i> Recent updates</div>
                     <hr>
 
-                    <div class="repo" v-for="mrepo in mrepos_details" v-if="mrepo.last_update < 60">
+                    <em>Only the repositories that have been updated in the last {{days}} days are shown here</em>
+
+                    <div class="repo" v-for="mrepo in mrepos_details" v-if="mrepo.last_update < days">
                         <div :id="mrepo.api.name" class="container">
                             <div class="row">
                                 <div class="col-md-2 col-lg-1 repo-image center">
@@ -275,12 +353,12 @@
                             </span>
                             <br>
                             <b>Details:</b>
-                            {{ mrepo.api.language}}, updated {{ mrepo.last_update }} days ago on <a href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                            {{ mrepo.api.language }} updated {{ mrepo.last_update }} days ago on <a :href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
                         </div>
                     </div>
 
                     <div class="row mx-auto">
-                        <div class="col-lg-12 repo" v-for="nrepo in nrepos_details"v-if="nrepo.last_update < 60">
+                        <div class="col-lg-12 repo" v-for="nrepo in nrepos_details"v-if="nrepo.last_update < days">
                             <div :id="nrepo.api.name">
                                 <div class="repo-content">
                                     <div class="repo-title">
@@ -300,12 +378,11 @@
 
                                 <div class="repo-details">
                                     <b>Details:</b>
-                                    {{ nrepo.api.language}}, updated {{ nrepo.last_update }} days ago on <a href="nrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                                    {{ nrepo.api.language}} updated {{ nrepo.last_update }} days ago on <a :href="nrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
 
                     <!-- Manual repos
@@ -399,6 +476,18 @@
             <div class="col-lg-2 right-panel d-none d-xl-block">
                 <!-- ... -->
             </div>
+
+            <div class="message" style="display: none;" id="project-alert">
+                <div class="alert bg-secondary-3 alert-dismissible fade show">
+                    <span id="project-alert-message">
+                        <strong>If you can see this, there is a bug</strong>
+                    </span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
         </div>
     </div>
 

@@ -26,6 +26,23 @@ html {
     color: var(--main2) !important;
 }
 
+.text-white {
+    color: var(--white1) !important;
+}
+
+.text-black {
+    color: var(--black3) !important;
+}
+
+/* alert */
+
+.message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 /* */
 
 .bg-secondary-1 {
@@ -42,6 +59,22 @@ html {
 
 .bg-secondary-4 {
     background-color: var(--secondary4);
+}
+
+.bg-main-1 {
+    background-color: var(--main1);
+}
+
+.bg-main-2 {
+    background-color: var(--main2);
+}
+
+.bg-main-3 {
+    background-color: var(--main3);
+}
+
+.bg-main-4 {
+    background-color: var(--main4);
 }
 
 /* code block improvements */

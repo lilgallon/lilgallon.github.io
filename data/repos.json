@@ -1,7 +1,21 @@
 [
     {
+        "description": null,
+        "forks": 0,
+        "html_url": "https://github.com/cdp-g2-eq6/CdP-Release",
+        "language": null,
+        "name": "CdP-Release",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-10-15 19:50:34",
+        "watchers": 3
+    },
+    {
         "description": "\ud83d\udca4 A minimalist way to display a progress bar while running code.",
         "forks": 0,
+        "html_url": "https://github.com/ez-apis/ez-progress-bar",
         "language": "Python",
         "name": "ez-progress-bar",
         "open_issues": [],
@@ -25,6 +39,7 @@
     {
         "description": "\ud83d\udd10 A minimalist way to retrieve data from websites that require login",
         "forks": 0,
+        "html_url": "https://github.com/ez-apis/ez-web-scraping",
         "language": "Python",
         "name": "ez-web-scraping",
         "open_issues": [],
@@ -49,6 +64,7 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/ljolliet/Terminus",
         "language": "JavaScript",
         "name": "Terminus",
         "open_issues": [],
@@ -72,12 +88,25 @@
         "watchers": 1
     },
     {
-        "description": "A minecraft mod that helps aiming (at mods, blocks, but not players). Made for newbies or disabled players with difficulties to aim in general (also working with controllers).",
+        "description": "A minecraft mod that helps aiming. Works great with controllers.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/AimAssistanceMod",
         "language": "Java",
         "name": "AimAssistanceMod",
         "open_issues": [],
         "releases": [
+            {
+                "body": "This update should improve the aim assistance for mob farms.\r\n\r\nSmart aim assistance: it will aim the closest part of a mob (instead of its neck) - (it's optimized)\r\n\"Stop when reached\" option for mobs: if turned on, the mob aim assistance stops when you are looking at a mob - (turned off by default)",
+                "published_at": "2020-10-27 10:55:24",
+                "tag_name": "1.4.0-MC1.16.3",
+                "title": "Version 1.4.0"
+            },
+            {
+                "body": "[![controllable](https://i.imgur.com/oXtjfgs.png)](https://www.curseforge.com/minecraft/mc-mods/controllable)\r\n\r\nIt supports the [Controllable](https://www.curseforge.com/minecraft/mc-mods/controllable) mod!",
+                "published_at": "2020-10-23 13:10:42",
+                "tag_name": "1.3.0-MC1.16.3",
+                "title": "Version 1.3.0 for Minecraft 1.16.x"
+            },
             {
                 "body": "- The mod configuration is now automatically refreshed when the config file is edited\r\n\r\nClick \"aimassistance-1.2.1-MC1.16.x.jar\" to download the mod (under assets)",
                 "published_at": "2020-10-02 16:33:08",
@@ -123,16 +152,23 @@
         ],
         "stars": 1,
         "topics": [],
-        "updated_at": "2020-10-02 16:32:21",
+        "updated_at": "2020-10-27 10:54:00",
         "watchers": 1
     },
     {
         "description": "A lightweight minecraft forge mod that displays the number of anvil uses of an item",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/AnvilTooltipMod",
         "language": "Java",
         "name": "AnvilTooltipMod",
         "open_issues": [],
         "releases": [
+            {
+                "body": "- Ported 1.0.0-MC1.16.3 to MC1.12.2\r\n- Removed enchantment cost which isn't relevant\r\n",
+                "published_at": "2020-10-31 17:52:49",
+                "tag_name": "1.0.0-MC1.12.2",
+                "title": "Version 1.0.0 for MC 1.12.2"
+            },
             {
                 "body": "**Should work with Forge 1.16.1 and later**\r\n\r\n- Shows the number of anvil uses\r\n- Shows the base repair cost\r\n- Works with any minecraft-supported language (english, russian, japanese, ...)",
                 "published_at": "2020-09-21 16:44:02",
@@ -148,6 +184,7 @@
     {
         "description": "\ud83c\udfae A tiny javascript game.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Atoms",
         "language": "JavaScript",
         "name": "Atoms",
         "open_issues": [],
@@ -172,6 +209,7 @@
     {
         "description": "\ud83d\udcc8 A simple python bandwidth monitor to track your upload, your download, and the data consumed.",
         "forks": 1,
+        "html_url": "https://github.com/N3ROO/BandwidthMonitor",
         "language": "Python",
         "name": "BandwidthMonitor",
         "open_issues": [],
@@ -196,6 +234,7 @@
     {
         "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.1 & 1.16.2",
         "forks": 3,
+        "html_url": "https://github.com/N3ROO/Bettercolors",
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
@@ -449,30 +488,24 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 32,
+        "stars": 34,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
-            "minecraft-hacking",
-            "game-hacking",
             "game-modding",
             "forge",
             "minecraft",
             "hack",
-            "cheat",
-            "labymod",
-            "reach",
-            "autoclicker",
-            "aimbot",
             "fabric",
-            "triggerbot"
+            "assistance-mod"
         ],
-        "updated_at": "2020-10-13 10:39:11",
+        "updated_at": "2020-11-07 13:54:56",
         "watchers": 4
     },
     {
         "description": "The engine used by the mod Bettercolors. Works with any modding API and every Minecraft version",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/BettercolorsEngine",
         "language": "Java",
         "name": "BettercolorsEngine",
         "open_issues": [
@@ -517,14 +550,15 @@
                 "title": "Version 0.1.0 "
             }
         ],
-        "stars": 1,
+        "stars": 2,
         "topics": [],
-        "updated_at": "2020-09-23 18:55:32",
+        "updated_at": "2020-10-15 01:22:17",
         "watchers": 1
     },
     {
         "description": "Minecraft mod that adds over 50 new biomes to the game.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/BiomesOPlenty",
         "language": null,
         "name": "BiomesOPlenty",
         "open_issues": [],
@@ -537,6 +571,7 @@
     {
         "description": "\ud83c\udfeb Projet ISN BAC S 2015-2016 (19.5/20)",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Blackjack",
         "language": "Processing",
         "name": "Blackjack",
         "open_issues": [],
@@ -549,6 +584,7 @@
     {
         "description": "[PROJECT PAUSED] Bleach is an anti-cheat plugin for minecraft servers",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Bleach",
         "language": "Java",
         "name": "Bleach",
         "open_issues": [],
@@ -572,6 +608,7 @@
     {
         "description": "A racing game created using the Karting Microgame of Unity.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Bolides",
         "language": "C#",
         "name": "Bolides",
         "open_issues": [],
@@ -589,6 +626,7 @@
     {
         "description": "\ud83d\udcf1 An android game for the Introduction to Mobile programming at the Bordeaux Institute of Technology.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Cascade",
         "language": "Java",
         "name": "Cascade",
         "open_issues": [
@@ -624,6 +662,7 @@
     {
         "description": "Advanced programming cheatsheets (C++, Java, ...)",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Cheatsheets",
         "language": null,
         "name": "Cheatsheets",
         "open_issues": [],
@@ -634,12 +673,13 @@
             "cheatsheets",
             "java"
         ],
-        "updated_at": "2020-10-13 17:13:02",
+        "updated_at": "2020-10-21 14:03:35",
         "watchers": 1
     },
     {
         "description": "Parce que M\u00e9t\u00e9o France c'est nul",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/CoolMeteo",
         "language": "JavaScript",
         "name": "CoolMeteo",
         "open_issues": [],
@@ -652,6 +692,7 @@
     {
         "description": "Generate images with Deep Convolutional GAN",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/CSE142-Project",
         "language": "Jupyter Notebook",
         "name": "CSE142-Project",
         "open_issues": [],
@@ -668,6 +709,7 @@
     {
         "description": "Changes your wallpaper daily by picking an image from wallhaven.cc according to your preferences",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Daily-Wallhaven-Wallpaper",
         "language": "Python",
         "name": "Daily-Wallhaven-Wallpaper",
         "open_issues": [],
@@ -691,6 +733,7 @@
     {
         "description": "\ud83d\ude0e Un site proposant divers outils pour se simplifier la vie sur Dofus.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/dofus-tools",
         "language": "HTML",
         "name": "dofus-tools",
         "open_issues": [],
@@ -712,6 +755,7 @@
     {
         "description": "Un outil pour g\u00e9rer la qu\u00eate du Dofus Ocre cr\u00e9\u00e9 par Mopolo, l\u00e9g\u00e8rement am\u00e9lior\u00e9",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Eternelle-Moisson",
         "language": "HTML",
         "name": "Eternelle-Moisson",
         "open_issues": [
@@ -727,6 +771,7 @@
     {
         "description": "A compilation of useful and simple python APIs : Progress bar, Web scraping, and more to come ...",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/EzAPI",
         "language": "Python",
         "name": "EzAPI",
         "open_issues": [],
@@ -754,6 +799,7 @@
     {
         "description": "\ud83d\udcc5 Un script python qui permet de r\u00e9cup\u00e9rer les informations de l'almanax du jour en un clic.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/FastDofusAlmanax",
         "language": "Python",
         "name": "FastDofusAlmanax",
         "open_issues": [],
@@ -776,6 +822,7 @@
     {
         "description": "\u2744 A java fractals explorer.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Fractals_explorer",
         "language": "Java",
         "name": "Fractals_explorer",
         "open_issues": [
@@ -806,6 +853,7 @@
     {
         "description": "\ud83d\udd79\ufe0f Simple Game of life implementation in Python.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/GameOfLife",
         "language": "Python",
         "name": "GameOfLife",
         "open_issues": [],
@@ -824,6 +872,7 @@
     {
         "description": "\u26bd A small project that consists in animating balls with physics.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/GravityBalls",
         "language": "Python",
         "name": "GravityBalls",
         "open_issues": [],
@@ -840,6 +889,7 @@
     {
         "description": "A lightweight forge mod that shows the hidden horses' stats (jump height, speed, and slots for Llamas)",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/HorseStatsMod",
         "language": "Java",
         "name": "HorseStatsMod",
         "open_issues": [],
@@ -883,6 +933,7 @@
     {
         "description": "\ud83d\udcda An easy to use 2D game engine powered by JavaFX13",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/javafx-nero-engine",
         "language": "Java",
         "name": "javafx-nero-engine",
         "open_issues": [
@@ -909,6 +960,7 @@
     {
         "description": "A simple mod that shows the latency (ping) of your minecraft client to the server you're currently playing on",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/LatencyMod",
         "language": "Java",
         "name": "LatencyMod",
         "open_issues": [],
@@ -928,6 +980,7 @@
     {
         "description": "\ud83c\udfae Lightbot is an educational video game to learn software programming concepts. Made for the Introduction to OOP & OOP design course at the Bordeaux Institute of Technology",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/LightBot",
         "language": "C++",
         "name": "LightBot",
         "open_issues": [],
@@ -953,6 +1006,7 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/M2-Workshops",
         "language": "JavaScript",
         "name": "M2-Workshops",
         "open_issues": [],
@@ -965,6 +1019,7 @@
     {
         "description": "\ud83c\udfae A game made made for the Introduction to programming course at the Bordeaux Institute of Technology",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Monster",
         "language": "C++",
         "name": "Monster",
         "open_issues": [],
@@ -988,6 +1043,7 @@
     {
         "description": "\ud83d\udd0e How to find the genre of a music without using AI? Without a huge dataset? This project is about having a better genre classification than the AI-based ones",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/music-genre-finder",
         "language": "Python",
         "name": "music-genre-finder",
         "open_issues": [],
@@ -1008,18 +1064,20 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/N3ROO",
         "language": null,
         "name": "N3ROO",
         "open_issues": [],
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-10-14 16:30:12",
+        "updated_at": "2020-11-04 09:46:37",
         "watchers": 0
     },
     {
         "description": "\ud83d\udcda A java 2D game engine powered by OpenGL (discontinued, working on a clone using OpenJFX)",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/opengl-nero-engine",
         "language": "Java",
         "name": "opengl-nero-engine",
         "open_issues": [
@@ -1039,6 +1097,7 @@
     {
         "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/pacman",
         "language": "Python",
         "name": "pacman",
         "open_issues": [],
@@ -1056,6 +1115,7 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/pacman-ctf",
         "language": "Python",
         "name": "pacman-ctf",
         "open_issues": [],
@@ -1068,6 +1128,7 @@
     {
         "description": "\u2728 An easy way to make your website look sexy.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/particles.js",
         "language": "JavaScript",
         "name": "particles.js",
         "open_issues": [
@@ -1128,6 +1189,7 @@
     {
         "description": "A lightweight minecraft forge mod to search for items in containers. Works with mods that introduce their own containers",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/QuickSearchMod",
         "language": "Java",
         "name": "QuickSearchMod",
         "open_issues": [],
@@ -1159,6 +1221,7 @@
     {
         "description": "\u231b A basic windows shutdown planner.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/ShutdownPlanner",
         "language": "C#",
         "name": "ShutdownPlanner",
         "open_issues": [],
@@ -1201,6 +1264,7 @@
     {
         "description": "\"Techniques algorithmiques et programmation\" ~ Licence 3 Informatique Bordeaux ~ Ann\u00e9es 2018-2019",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/TAP",
         "language": "C",
         "name": "TAP",
         "open_issues": [],
@@ -1218,6 +1282,7 @@
     {
         "description": "\ud83c\udf93 List of my programming projects that I have written during my studies.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/university-projects",
         "language": null,
         "name": "university-projects",
         "open_issues": [],
@@ -1238,6 +1303,7 @@
     {
         "description": "\ud83d\udd79\ufe0f Jeu arcade d\u00e9velopp\u00e9 \u00e0 la nuit de l'informatique 2018 \u00e0 l'Universit\u00e9 de Bordeaux",
         "forks": 1,
+        "html_url": "https://github.com/N3ROO/Vipi",
         "language": "HTML",
         "name": "Vipi",
         "open_issues": [],
@@ -1250,6 +1316,7 @@
     {
         "description": "WebGL - CSE160 at UCSC during Winter 2020",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/webgl-cse160",
         "language": "JavaScript",
         "name": "webgl-cse160",
         "open_issues": [],
@@ -1262,6 +1329,7 @@
     {
         "description": "\ud83c\udfae A tiny javascript Yahtzee game.",
         "forks": 0,
+        "html_url": "https://github.com/N3ROO/Yahtzee",
         "language": "JavaScript",
         "name": "Yahtzee",
         "open_issues": [],
@@ -1287,6 +1355,7 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/ntjandra/cse115a",
         "language": "JavaScript",
         "name": "cse115a",
         "open_issues": [
@@ -1308,162 +1377,5 @@
         "topics": [],
         "updated_at": "2019-12-02 23:19:16",
         "watchers": 2
-    },
-    {
-        "description": "A modular destruction SDK designed for performance and flexibility, replacing APEX destruction",
-        "forks": 0,
-        "language": "C++",
-        "name": "Blast",
-        "open_issues": [],
-        "releases": [
-            {
-                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.5 (16-Sep-2019)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* Extensions API refactored to eliminate use of Px types.\r\n* Numerous API changes to meet new coding conventions.\r\n* Packman package manager updated to v. 5.7.2, cleaned up dependency files.\r\n* Chunks created from islands use padded bounds to determine connectivity.\r\n* FractureTool::deleteAllChildrenOfChunk renamed FractureTool::deleteChunkSubhierarchy, added ability to delete chunks.\r\n* NvBlastAsset::testForValidChunkOrder (used when creating an NvBlastAsset) is now more strict, requiring parent chunk descriptors to come before their children.  It is still less strict than the order created by NvBlastBuildAssetDescChunkReorderMap.\r\n\r\nNew Features\r\n------------\r\n* Authoring tools:\r\n  * Ability to pass chunk connectivity info to uniteChunks function, enabling chunks split by island detection to  be united.\r\n  * Option to remove original merged chunks in uniteChunks function.\r\n  * The function uniteChunks allows the user to specify a chunk set to merge.  Chunks from that set, and all descendants, are considered for merging.\r\n  * Ability to delete chunks (see note about FractureTool::deleteChunkSubhierarchy in Changes section, above).\r\n  * Added FractureTool::setApproximateBonding function.  Signals the tool to create bonds by proximity instead of just using cut plane data.\r\n\r\nBug fixes\r\n---------\r\n* Authoring tools:\r\n  * Fixed chunk reordering bug in BlastTool.\r\n  * Chunks which have been merged using the uniteChunks function may be merged again\r\n  * Restored chunk volume calculation\r\n* NvBlastBuildAssetDescChunkReorderMap failure cases fixed.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
-                "published_at": "2020-01-13 18:11:12",
-                "tag_name": "v1.1.5_release",
-                "title": "Blast 1.1.5"
-            },
-            {
-                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.4 (24-Oct-2018)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* Unity plugin example updated to work with latest Blast SDK.\r\n\r\nNew Features\r\n------------\r\n* Authoring tools:\r\n  * Island detection function islandDetectionAndRemoving has a new parameter, createAtNewDepth.\r\n  * Bonds created between island-based chunks.\r\n  * Added \"agg\" (aggregate) commandline switch to AuthoringTool.  This allows multiple convex hulls per chunk to be generated.\r\n  * Damage pattern authoring interface.\r\n\r\nBug fixes\r\n---------\r\n* Build working on later C++ versions (e.g. deprecated UINT32_MAX removed).\r\n* Authoring tools:\r\n  * Fixed .obj material loading when obj folder is same as working directory.\r\n  * Degenerate face generation fix. \r\n  * Fixed memory leak in FractureTool.\r\n* Proper memory releasing in samples.\r\n* Single-actor serialization bugfix when actor has world bonds.\r\n* Updated PhysX package for Win64 (vc14 and vc15) and Linux64 to 3.4.24990349, improving GRB behavior and fixing GRB crash/failure on Volta and Turing.\r\n* Documented JSON collision export option introduced in previous version.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
-                "published_at": "2018-11-26 16:12:46",
-                "tag_name": "v1.1.4_release",
-                "title": "Blast 1.1.4"
-            },
-            {
-                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.3 (30-May-2018)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* No longer testing Win32 project scripts.  Note generate_projects_vc14win32.bat has been renamed generate_projects_vc14win32_untested.bat.\r\n* Using a PhysX Packman package that no longer includes APEX.\r\n* Updated documentation:\r\n  * Authoring documentation mentions restrictions for meshes to be fractured.\r\n  * Added BlastTool reference to README.md.\r\n  * Updated documentation paths in README.md.\r\n* Using Packman5 for external packages.\r\n* Authoring tools:\r\n  * In NoiseConfiguration, surfaceResolution changed to samplingInterval.  The latter is reciprocal of resolution and defined for all 3 axes.\r\n  * Improved cutout robustness.\r\n* Exporter (used by both authoring tools and ApexImporter) has a JSON collision export option.\r\n\r\nNew Features\r\n------------\r\n* VC15 Win64 project scripts.  Run generate_projects_vc15win64.bat.\r\n* Authoring tools:\r\n  * Noisy cutout fracture.\r\n  * Conic cutout option (tapers cut planes relative to central point).\r\n  * Cutout option \"useSmoothing.\"  Add generatad faces to the same smoothing group as original face without noise.\r\n  * Periodic cutout boundary conditions.\r\n\r\nBug fixes\r\n---------\r\n* Packman target platform dependencies no longer pulling windows packages into other platforms.\r\n* Fixed bond generation for cutout fracture.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
-                "published_at": "2018-06-22 20:38:46",
-                "tag_name": "v1.1.3_release",
-                "title": "Blast 1.1.3"
-            },
-            {
-                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.2 (26-Jan-2018)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* Improvements to uniteChunks for hierarchy optimization.\r\n* NvBlastExtAuthoringFindAssetConnectingBonds optimized.\r\n* APEX dependency has been removed (ExtImport used it).  Now ExtImport has a built-in NvParameterized read that can load an APEX Destructible asset.\r\n\r\nNew Features\r\n------------\r\n* FractureTool::setChunkMesh method.\r\n* Distance threshold added to NvBlastExtAuthoringFindAssetConnectingBonds.\r\n* NvBlastExtExporter: IMeshFileWriter::setInteriorIndex function, for control of interior material.\r\n* Cutout and cut fracture methods: NvBlastExtAuthoringCreateCutoutSet and Nv::Blast::CutoutSet API, FractureTool::cut and FractureTool::cutout APIs.\r\n* NvBlastExtAuthoring:\r\n  * NvBlastExtAuthoringCreateMeshFromFacets function.\r\n  * NvBlastExtUpdateGraphicsMesh function.\r\n  * NvBlastExtAuthoringBuildCollisionMeshes function.\r\n* UV fitting on interior materials using new FractureTool::fitUvToRect and FractureTool::fitAllUvToRect functions.\r\n* Multi-material support in OBJ file format.\r\n\r\nBug fixes\r\n---------\r\n* Fixed bug causing normals on every other depth level to be flipped when exporting Blast meshes.\r\n* Fixed bug where faces are missed after hierarchy optimization on a sliced mesh.\r\n* Fixed subtree chunk count generated in Nv::Blast::Asset::Create (led to a crash in authoring tools, fracturing a pre-fractured mesh).\r\n* Fixed a crash when loading an obj with bad material indices.\r\n* Fixed Actor::split so that visibility lists are correctly updated even when the number of split actors exceeds newActorsMaxCount.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
-                "published_at": "2018-02-12 16:31:43",
-                "tag_name": "v1.1.2_release",
-                "title": "Blast 1.1.2"
-            },
-            {
-                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1.1 (10-Oct-2017)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* NvBlastProgramParams moved to NvBlastExtDamageShaders\r\n* Materials removed from NvBlastTk\r\n\r\nNew Features\r\n------------\r\n* Damage shader acceleration structure\r\n* Extended support structures via new asset merge functions in NvBlastExtAssetUtils\r\n* Ability to scale asset components when merging assets with NvBlastExtAssetUtilsMergeAssets\r\n* NvBlastExtAuthoring\r\n  * Option to fit multiple convex hulls to a chunk (uses VHACD)\r\n  * deleteAllChildrenOfChunk and uniteChunks APIs\r\n* Triangle damage shader for swept segments\r\n* Impact damage spread shaders\r\n\r\nBug fixes\r\n---------\r\n* Linux build fixes\r\n* NvBlastExtAuthoring\r\n  * Fracturing tools chunk index fix\r\n  * VoronoiSitesGeneratorImpl::generateInSphere fix\r\n  * More consistent use of NVBLAST_ALLOC and NVBLAST_FREE\r\n  * Boolean tool bug fix\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
-                "published_at": "2018-02-12 16:30:44",
-                "tag_name": "v1.1.1",
-                "title": "Blast 1.1.1"
-            },
-            {
-                "body": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\nBlast(tm) SDK 1.1 (28-Aug-2017)\r\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\nChanges\r\n-------\r\n* VC12 is no longer supported.\r\n* New license header, consistent with PhysX license header.\r\n* New serialization extension.  NvBlastExtSerialization is now a modular serialization manager.  It loads serializers sets for low-level, Tk, and ExtPx.  Each serializer handles a particular file format and object type.  Currently the universally available format for all object types is Cap'n Proto binary.  The file format is universal, as it uses a header to inform the serialization manager which serializer is needed to deserialize the contained data.  All authoring and import tools write using this format to files with a \".blast\" filename extension.\r\n* Corresponding to the new serialization, the old formats have been deprecated.  In particular, the DataConverter tool has been removed.  Instead see LegacyConverter in the New Features section.\r\n* TkSerializable virtual base class has been removed.  TkAsset and TkFamily are now derived directly from TkIdentifiable.  Serialization functions have been removed, replaced by the new serialization extension.\r\n* ExtPxAsset serialization functions have been removed, replaced by the new serialization extension.\r\n* World bonds.  A bond descriptor can now take the invalid index for one of its chunkIndices.  This will cause an additional support graph node to be created within an asset being created with this descriptor.  This node will not correspond to any chunk (it maps to the invalid index in the graph's chunkIndices array).  Actors that contain this new \"world node\" may be kept static by the user, emulating world attachment.  This is easily tested using the new low-level function NvBlastActorIsBoundToWorld.\r\n* With the addition of world bonds (see above), the NvBlastExtImport extension no longer creates an extra \"earth chunk\" to bind chunks to the world.  Instead, it creates world bonds.\r\n* ExtPxAsset now contains an NvBlastActorDesc, which is used as the default actor descriptor when creating an ExtPxFamily from the asset.\r\n* TkFramework no longer has its own allocator and message handler.  Instead, this is part of a new NvBlastGlobals API.  This way, extensions and TkFramework may share the same allocator.\r\n* SampleAssetViewer\r\n  * Physics simulation now runs concurrently with graphics and some of the sample/blast logic.\r\n  * New Damage tool added: line segment damage\r\n  * Damage tool radius can be set individually for each tool (radial, cutter, line segment, hierarchical).\r\n  * Cubes now removed when a scene is reloaded.\r\n  * Cube throw velocity can be \"charged\" by holding down the 'F' key.\r\n* New damage system built around \"health,\" see API changes in NvBlastExtShaders and changes in NvBlastExtImpactDamageManager.\r\n* NvBlastExtShearGraphShader uses a chunk-based method to find the closest graph node, improving performance.\r\n* TkGroup no longer uses physx::PxTaskManager interface for task management.  Instead, a TkGroupWorker interface has been added.  The NvBlastExtPhysX extension uses the physx::PxTaskManager to implement this interface.\r\n* Better error handling in AuthoringTool (stderr and user error handler).\r\n* More consistent commandline switches in AuthoringTool and ApexImporter (--ll, --tk, --px flags).\r\n* Various small clean-ups.\r\n\r\nNew Features\r\n------------\r\n* NvBlastExtAssetUtils extension\r\n  * Merge multiple assets into one.\r\n  * Add \"world bonds\" to an asset (see \"World bonds\" in the Changes section).\r\n  * Transform an NvBlastAsset's geometric data in-place.\r\n* NvBlastExtAuthoring\r\n  * Open edge detection.\r\n  * Rotation of voronoi cells used for fracturing.\r\n* \"Globals\" code (under sdk/globals).  Includes a global allocator, message handler, and profiler API used by TkFramework and extensions.\r\n* NvBlastExtStress extension, a PhysX-independent API for performing stress calculations with low-level Blast actors.\r\n* NvBlastActorIsSplitRequired() function for low-level actors.  If this function returns false, NvBlastActorSplit() may be skipped as it will have no effect.\r\n* NvBlastExtShaders\r\n  * New \"Segment Radial Damage\" shader.  Damages everything within a given distance of a line segment.\r\n* New NvBlastExtExporter extension, used commonly by import and authoring tools.  Allows collision data to be stored in one of three ways:\r\n  * JSON format.\r\n  * FBX mesh format (seprate file).\r\n  * FBX mesh format in a second \"collision\" layer, alongside the graphics mesh nodes corresponding to Blast chunks.\r\n* LegacyConverter tool has been added, which converts .llasset, .tkasset, .bpxa, .pllasset, .ptkasset, and .pbpxa asset files to the new .blast format using the universal serialization scheme in the new NvBlastExtSerialization extension.\r\n* NvBlastExtAuthoring\r\n  * Mesh cleaner, tries to remove self intersections and open edges in the interior of a mesh.\r\n  * Ability to set interior material to existing (external) material, or a new material id.\r\n  * Material ID remapping API.\r\n\r\nBug fixes\r\n---------\r\n* NvBlastExtAuthoring\r\n  * Slicing normals fix.\r\n* Various instances of &array[0] to get the data buffer from a std::vector now use data() member function.  This had led to some crashes with empty vectors.\r\n* SampleAssetViewer\r\n  * Fixed dragging kinematic actor.\r\n  * Now loads the commandline-defined asset also when sample resources were not downloaded yet.\r\n* Serialization documented.\r\n* Fixed smoothing groups in FBX exporter code.\r\n* Impulse passing from parent to child chunks fixed.\r\n* Reading unskinned fbx meshes correctly.\r\n* Collision hull generation from fbx meshes fixed.\r\n* Win32/64 PerfTest crash fix.\r\n\r\nKnown Issues\r\n------------\r\n* Damage shaders in extensions can miss bonds if the damage volume is too small.\r\n* Authoring extension does not perform convex decomposition to fit chunks with multiple collision hulls.\r\n* Authoring code does not use the user-defined allocator (NvBlastGlobals) exclusively.\r\n",
-                "published_at": "2018-02-12 16:22:08",
-                "tag_name": "v1.1.0",
-                "title": "Blast 1.1"
-            },
-            {
-                "body": "",
-                "published_at": "2017-02-27 03:45:55",
-                "tag_name": "v1.0.0",
-                "title": "Blast 1.0 Release"
-            },
-            {
-                "body": "",
-                "published_at": "2017-02-22 16:46:33",
-                "tag_name": "v1.0.0-beta",
-                "title": "Blast 1.0 Beta Release"
-            }
-        ],
-        "stars": 117,
-        "topics": [],
-        "updated_at": "2020-10-14 13:53:21",
-        "watchers": 46
-    },
-    {
-        "description": null,
-        "forks": 3,
-        "language": "C++",
-        "name": "FleX",
-        "open_issues": [
-            "Creating a func named CreateInflatableMesh",
-            "Request: Split out index of shape - w component of velocities in NvFlexGetContact",
-            "Unity FleX Get/SetSprings functions",
-            "How to increase weight of cloth without getting this weird simulation behaviors?",
-            "Flex On Unity",
-            "Flex on PS4 and XboxOne",
-            "How was irregular_plane.obj mesh generated?",
-            "Which license is the core Flex library under?",
-            "Retrieve de contact positions on SDF collision",
-            "This can give negatives wait time correct ? Why not (endTime - beginTime) in this case ?",
-            "Request for support for Cuda10 or docker",
-            "Particle position NaN",
-            "FleX smoke",
-            "Is there multi-gpu support for the solver?  Also, how do I apply for access to the CUDA source?",
-            "Mesh import coordinate system",
-            "How to load animation on collision shape? ",
-            "How to render objects with texture?",
-            "Use cases for eFlexMemoryDevice in FleX",
-            "Compiling for Oculus Quest (android)",
-            "Stack Smashing error at NvFlexInit",
-            "Multiple callbacks for same stage",
-            "tetrahedral mesh spring Based Softbody",
-            "Flex with spring based Constraints",
-            "Collision inside an NvFlexCollisionGeometry",
-            "Add Visual Studio 2019 project files",
-            "Cloth simulation: Flex vs NvCloth",
-            "Possible memory leak - allocating soft bodies to assets",
-            "Flex Performance",
-            "Fix Random Seed",
-            "Cuda buffer memory allocation control",
-            "Combine soft FleX body with kinematic tree consisting of capsules with defined mass",
-            "felx for 3dsmax plz",
-            "Can't create more sdfs.",
-            "Trying to \"pin\" particles to a rigged object in Unity, don't see any documentation on controlling the pins' position in engine.",
-            "iOS Integration",
-            "Determine maximum stretch of particle",
-            "Python Bindings for FleX - Open Source Release",
-            "Issue with SDL 2.0.4 with creating Python bindings for FleX",
-            "Friction and Adhesion per geometry",
-            "Cuda 10 support",
-            "CUDA and OpenGL ComputeBuffer",
-            "Missing feature: send gpu data (e.g. SDF to SDF) to Flex in D3D (or OpenGL)",
-            "NVIDIA FleX for Unity (1.0 BETA)   How to stop FLuid Emision?",
-            "[FLEX Cloth] can we set iteration and steps for local cloth piece?",
-            "Build / run demo on Linux",
-            "Unity 28.7.2018 Unfortunately, NVIDIA FleX for Unity (1.0 BETA) is no longer available.",
-            "Unity plugin 1.0 (Beta) fluid rendering has display problems with OpenVR",
-            "Unity Plugin 1.0 (Beta): Cloth Deformation and Cloth Actor Scenes Cause Unity to Crash",
-            "Cuda 9.2 support",
-            "Any planned support for iOS (Metal)?",
-            "Compile success, run failure in flex1.2",
-            "Atomic operations on float4",
-            "Could not initialize GL extensions",
-            "FleX compiling errors",
-            "Vulkan support for cross vendor Linux support like Flow 1.1 planned?",
-            "Update index.html",
-            "flexExtContainer.cpp data missing",
-            "Running on Ubuntu 17.10",
-            "Unresolved external NvFlexGetSprings with CUDA",
-            "Can't create double sided flag",
-            "Fresh build fails on Ubuntu 16.04 due to linker error",
-            "Missing linking on NvFlexRegisterOGLBuffer",
-            "ForceField issues (Debug v/s Release)",
-            "Python bindings for FleX",
-            "Fluid leaves rigid constraint objects on higher speed through material",
-            "About the buoyancy Scene",
-            "Missing file named \"d3d12.dll\"",
-            "Disabling Sleep Threshold",
-            "Composite Draw Issue",
-            "Unexpected Rigid body behavior",
-            "Hoowwwww!!!???",
-            "Cannot run Flex after compilation: libGLEW.so.1.10 is missing and ",
-            "Fluid sticking to triangle edges",
-            "Manual Quickstart has numerous typos and does not compile",
-            "[Ubuntu 14.04] libpthread.so.0: error adding symbols: DSO missing from command line",
-            "Cloth visual not updating"
-        ],
-        "releases": [
-            {
-                "body": "",
-                "published_at": "2017-04-10 02:40:45",
-                "tag_name": "1.1.0",
-                "title": ""
-            }
-        ],
-        "stars": 228,
-        "topics": [],
-        "updated_at": "2020-10-14 15:29:57",
-        "watchers": 70
     }
 ]

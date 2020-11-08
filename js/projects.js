@@ -4,6 +4,12 @@ let vue = new Vue({
     data: {
         /* GENERAL */
         version: "2020.3.1",
+        days: 30,
+        totalStars: 0,
+        totalWatchers: 0,
+        totalForks: 0,
+        totalIssues: 0,
+        userData: {},
 
         /* SIDEBAR */
         specialProjects: [
@@ -93,7 +99,7 @@ let vue = new Vue({
         // ...,
         moveAndFocusProject(delay=0) {
 
-            setTimeout(function() {
+            setTimeout(() => {
                 let focusedProjects = document.getElementsByClassName("focus");
                 if (focusedProjects.length > 0) {
                     let focusedProject = focusedProjects[0];
@@ -111,6 +117,29 @@ let vue = new Vue({
 
                     // Change backgroundof focused project
                     project_dom.parentElement.classList.add("focus");
+                }
+                else if (enchor != "")
+                {
+                    let msg = '<strong>The project ' + enchor + ' is not on this page</strong>';
+
+                    let project = null;
+                    for (let repos of [this.nrepos_details, this.mrepos_details])
+                        for (let repo of repos)
+                            if (repo.api.name === enchor) {project = repo; break; }
+
+                    if (project != null)
+                    {
+                        msg += ' <a target="_blank" href="' + project.api.html_url + '" class="text-black" style="text-decoration:underline">Click here</a> to go to the project\'s page'
+                    }
+                    else
+                    {
+                        msg += ' The project does not exist, did you write the url by yourself?'
+                    }
+
+                    document.querySelector("#project-alert").style.display = 'block';
+                    document.querySelector("#project-alert-message").innerHTML = msg;
+
+                    console.log("The project " + enchor + " has not been updated recently");
                 }
             }, delay);
         },
@@ -155,6 +184,11 @@ let vue = new Vue({
                     let diff = Math.abs(currentDate.getTime() - creationDate.getTime());
                     let days = Math.ceil(diff / (1000 * 3600 * 24)) + 1;
 
+                    this.totalStars += repo.stars;
+                    this.totalForks += repo.forks;
+                    this.totalWatchers += repo.watchers;
+                    this.totalIssues += repo.open_issues.length;
+
                     if(is_main_repo) {
                         this.mrepos_details.push({
                             api: repo,
@@ -168,6 +202,14 @@ let vue = new Vue({
                         })
                     }
                 }
+
+                this.moveAndFocusProject();
+            });
+
+            fetch("/data/user.json")
+            .then(async (response) =>
+            {
+                this.userData = await response.json();
             });
         },
         isMainRepo(repo_name) {
@@ -194,10 +236,6 @@ let vue = new Vue({
     },
     mounted() {
         /* GENERAL */
-        window.addEventListener('load', () => {
-            this.moveAndFocusProject();
-        });
-
         // ...
 
         /* SIDEBAR */
