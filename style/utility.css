@@ -26,6 +26,24 @@ html {
     color: var(--main2) !important;
 }
 
+/* */
+
+.bg-secondary-1 {
+    background-color: var(--secondary1);
+}
+
+.bg-secondary-2 {
+    background-color: var(--secondary2);
+}
+
+.bg-secondary-3 {
+    background-color: var(--secondary3);
+}
+
+.bg-secondary-4 {
+    background-color: var(--secondary4);
+}
+
 /* code block improvements */
 
 code {

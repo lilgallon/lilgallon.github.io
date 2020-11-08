@@ -12,6 +12,30 @@
     background: var(--white2);
 }
 
+.middle-panel .big-button
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 0px solid var(--white2);
+    width: 100%;
+}
+
+.middle-panel .big-button:hover
+{
+    cursor: pointer;
+    border-width: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.middle-panel .big-button .title
+{
+    font-size: large;
+}
+
 .middle-panel .activity {
     background: var(--black2);
     border-radius: 5px;
