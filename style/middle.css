@@ -121,13 +121,15 @@
 }
 
 .middle-panel .repo {
-    border-bottom: 1px solid var(--white1);
+    border-bottom: 1px solid var(--main1);
     margin: 10px;
     padding-bottom: 20px;
     background: var(--black2);
     color: var(--white1);
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
+
+    width: 500;
 }
 
 .middle-panel .repo-image {

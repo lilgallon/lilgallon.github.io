@@ -207,44 +207,24 @@
                     </p>
 
 
-                    <h2>Special projects</h2>
+                    <div class="title1"> <i class="fas fa-cube"></i> Simple Minecraft Mods Series</div>
                     <hr>
 
-                    <!-- Manual repos -->
-                    <div class="repo">
-                        <div id="EzAPIs_(organization)" class="container">
-                            <div class="row">
-                                <div class="col-md-2 col-lg-1 repo-image center" >
-                                    <img src="/resources/images/showcase/showcase_ezapi.gif" style="background:rgb(62, 71, 78); border-radius:75px; padding: 4px;">
-                                </div>
-                                <div class="col-md-9 col-lg-10 repo-content">
-                                    <div class="repo-title">
-                                        EzAPIs
-                                    </div>
-                                    <div class="repo-description">
-                                        Github organization containing a compilation of useful and minimalist python APIs. Composed of:<br>
-                                        - <a href="https://github.com/ez-apis/ez-web-scraping">ez-web-scraping</a>: 🔐 A minimalist way to retrieve data from websites that require login <br>
-                                        - <a href="https://github.com/ez-apis/ez-progress-bar">ez-progress-bar</a>: 💤 A minimalist way to display a progress bar while running code.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <p>
+                        All these mods are published on curseforge.com. They have been downloaded more than 2500 times.
+                    </p>
 
-                        <div class="repo-details">
-                            <b>Status:</b> Released and no future update planned at the moment. <i class="fas fa-pause"></i>
-                            <br>
-                            <b>Details:</b>
-                            Python, updated 04/08/2019 on <a href="https://github.com/ez-apis"><i class="fab fa-github"></i> github</a>.
-                        </div>
-                    </div>
+                    <p>
+                        <a class="discret-link" target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/aim-assistance"> <img src="https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.3/.github/images/aimassistancemod.png"> </a>
+                        <a class="discret-link" target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/horse-statistics"> <img src="https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/horsestatsmod.png"> </a>
+                        <a class="discret-link" target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/quick-search"> <img src="https://github.com/N3ROO/QuickSearchMod/raw/MC_1.16.3/.github/resources/quicksearch.png"> </a>
+                        <a class="discret-link" target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/anvil-tooltip-mod"> <img src="https://github.com/N3ROO/AnvilTooltipMod/raw/MC_1.16.3/.github/resources/anviltooltipmod.png"> </a>
+                    </p>
 
-                    <h2>Main projects</h2>
+                    <div class="title1"> <i class="fas fas fa-arrow-up"></i> Recent updates</div>
                     <hr>
 
-                    <!-- Main projects -->
-                    <div class="repo" v-for="mrepo in mrepos_details">
-
-                        <!-- Auto repos -->
+                    <div class="repo" v-for="mrepo in mrepos_details" v-if="mrepo.last_update < 60">
                         <div :id="mrepo.api.name" class="container">
                             <div class="row">
                                 <div class="col-md-2 col-lg-1 repo-image center">
@@ -295,17 +275,12 @@
                             </span>
                             <br>
                             <b>Details:</b>
-                            {{ mrepo.api.language}}, updated {{ mrepo.last_update }} days ago on <a :href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                            {{ mrepo.api.language}}, updated {{ mrepo.last_update }} days ago on <a href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
                         </div>
                     </div>
 
-                    <br>
-                    <h2>Minor projects</h2>
-                    <hr>
-
-                    <!-- Normal projects -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5 col-xl-3 repo" v-for="nrepo in nrepos_details">
+                    <div class="row mx-auto">
+                        <div class="col-lg-12 repo" v-for="nrepo in nrepos_details"v-if="nrepo.last_update < 60">
                             <div :id="nrepo.api.name">
                                 <div class="repo-content">
                                     <div class="repo-title">
@@ -325,11 +300,41 @@
 
                                 <div class="repo-details">
                                     <b>Details:</b>
-                                    {{ nrepo.api.language}}, updated {{ nrepo.last_update }} days ago on <a :href="nrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                                    {{ nrepo.api.language}}, updated {{ nrepo.last_update }} days ago on <a href="nrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
+                    <!-- Manual repos
+                    <div class="repo">
+                        <div id="EzAPIs_(organization)" class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-1 repo-image center" >
+                                    <img src="/resources/images/showcase/showcase_ezapi.gif" style="background:rgb(62, 71, 78); border-radius:75px; padding: 4px;">
+                                </div>
+                                <div class="col-md-9 col-lg-10 repo-content">
+                                    <div class="repo-title">
+                                        EzAPIs
+                                    </div>
+                                    <div class="repo-description">
+                                        Github organization containing a compilation of useful and minimalist python APIs. Composed of:<br>
+                                        - <a href="https://github.com/ez-apis/ez-web-scraping">ez-web-scraping</a>: 🔐 A minimalist way to retrieve data from websites that require login <br>
+                                        - <a href="https://github.com/ez-apis/ez-progress-bar">ez-progress-bar</a>: 💤 A minimalist way to display a progress bar while running code.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="repo-details">
+                            <b>Status:</b> Released and no future update planned at the moment. <i class="fas fa-pause"></i>
+                            <br>
+                            <b>Details:</b>
+                            Python, updated 04/08/2019 on <a href="https://github.com/ez-apis"><i class="fab fa-github"></i> github</a>.
+                        </div>
+                    </div> -->
                 </div>
 
                 <!-- Footer -->
