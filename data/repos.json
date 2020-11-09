@@ -88,7 +88,7 @@
         "watchers": 1
     },
     {
-        "description": "A minecraft mod that helps aiming. Works great with controllers.",
+        "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on player (no PvP advantage)",
         "forks": 0,
         "html_url": "https://github.com/N3ROO/AimAssistanceMod",
         "language": "Java",
@@ -152,7 +152,7 @@
         ],
         "stars": 1,
         "topics": [],
-        "updated_at": "2020-10-27 10:54:00",
+        "updated_at": "2020-11-09 09:09:06",
         "watchers": 1
     },
     {
@@ -887,7 +887,7 @@
         "watchers": 0
     },
     {
-        "description": "A lightweight forge mod that shows the hidden horses' stats (jump height, speed, and slots for Llamas)",
+        "description": "A lightweight forge mod that shows the hidden horses' stats (health, jump height, speed, and slots for Llamas)",
         "forks": 0,
         "html_url": "https://github.com/N3ROO/HorseStatsMod",
         "language": "Java",
@@ -927,7 +927,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-10-11 10:04:00",
+        "updated_at": "2020-11-09 09:09:25",
         "watchers": 1
     },
     {
@@ -1187,7 +1187,7 @@
         "watchers": 0
     },
     {
-        "description": "A lightweight minecraft forge mod to search for items in containers. Works with mods that introduce their own containers",
+        "description": "A lightweight Minecraft forge mod to search for items in containers. Works with mods that introduce their own containers",
         "forks": 0,
         "html_url": "https://github.com/N3ROO/QuickSearchMod",
         "language": "Java",
@@ -1215,7 +1215,7 @@
             "quick",
             "search"
         ],
-        "updated_at": "2020-10-02 16:51:19",
+        "updated_at": "2020-11-09 09:09:46",
         "watchers": 1
     },
     {
