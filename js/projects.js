@@ -72,6 +72,34 @@ let vue = new Vue({
                 university: false,
                 released: false,
                 indev: false
+            },
+            {
+                name: "AimAssistanceMod",
+                image: "https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.3/.github/images/aimassistancemod.png",
+                university: false,
+                released: true,
+                indev: false
+            },
+            {
+                name: "QuickSearchMod",
+                image: "https://github.com/N3ROO/QuickSearchMod/raw/MC_1.16.3/.github/resources/quicksearch.png",
+                university: false,
+                released: true,
+                indev: false
+            },
+            {
+                name: "HorseStatsMod",
+                image: "https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/horsestatsmod.png",
+                university: false,
+                released: true,
+                indev: false
+            },
+            {
+                name: "AnvilTooltipMod",
+                image: "https://github.com/N3ROO/AnvilTooltipMod/raw/MC_1.16.3/.github/resources/anviltooltipmod.png",
+                university: false,
+                released: true,
+                indev: false
             }
         ],
 
