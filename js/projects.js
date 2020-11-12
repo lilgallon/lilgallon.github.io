@@ -100,6 +100,13 @@ let vue = new Vue({
                 university: false,
                 released: true,
                 indev: false
+            },
+            {
+                name: "DynamicLedStrips",
+                image: "https://github.com/N3ROO/DynamicLedStrips/raw/main/.github/bls_icon.png",
+                university: false,
+                released: true,
+                indev: true
             }
         ],
 

@@ -753,6 +753,34 @@
         "watchers": 0
     },
     {
+        "description": "Improve your immersion by taking control of your LED strips. Works with anything: games, movies, and so on! You need a Bluetooth LED Controller (comes with most LED strips on Amazon).",
+        "forks": 0,
+        "html_url": "https://github.com/N3ROO/DynamicLedStrips",
+        "language": "C#",
+        "name": "DynamicLedStrips",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "**Windows-only release for the moment. It should work with MacOS and Linux, but you have to build it by yourself. I may code a CI to push releases automatically for windows / linux / macos, but for now, you need to build it on your own.**\r\n\r\n**How to use it**:\r\n- Download the .zip below\r\n- Extract its content to a folder\r\n- Run the .exe that is inside\r\n\r\n**Configuration**\r\n- The brightness changes according to the audio:\r\n\t- BASS_LEVEL (default): the brightness changes according to the bass currently played\r\n\t- SOUND_LEVEL: the brightness changes according to the sound level currently played (volume)\r\n\t- NONE: the brightness does not change\r\n- The brightness variation can be smoothened:\r\n\t- NONE (default): no smoothing\r\n\t- DYNAMIC: dynamic smooth (the smoothing value changes according to the level difference)\r\n\t- VALUE: you specify the value to smoothen the brightness variation. Instead of going from 10% to 50% brightness intensity if the sound volume goes from 10% to 50%, it goes to 10% + {smoothingValue}.\r\n- The color changes according to the color of your screen:\r\n\t- COLOR_AVG (default): takes the average of the colors of your screen (in the center)\r\n\t- NONE: the color won't change\r\n- You can configure everything by hand, or you can use the default config\r\n- You can run the program with a command line that contains all the information needed to connect to the device and to set the configuration\r\n\r\n**Device detection**\r\n- You can scan for compatible devices, then you have to select the one that you want\r\n\r\n**Details**\r\n- You can still use your gaming controller while using the program, it won't interact with it\r\n- It works with full screen apps\r\n\r\n**Disclaimer**\r\n- If the color variable is not set to NONE, you may get banned by intrusive anti-cheats (like Riot Vanguard). I did not test it though. The program acts like it's taking screenshots. Works great for Survival Games. Rocket League is safe as well. If you get banned, don't blame me!",
+                "published_at": "2020-11-11 11:21:51",
+                "tag_name": "0.1.0",
+                "title": "Version 0.1.0"
+            }
+        ],
+        "stars": 0,
+        "topics": [
+            "bluetooth-low-energy",
+            "led-controller",
+            "bluetooth-le",
+            "ledstrips",
+            "audio-visualizer",
+            "csharp",
+            "color-changer"
+        ],
+        "updated_at": "2020-11-11 11:26:31",
+        "watchers": 1
+    },
+    {
         "description": "Un outil pour g\u00e9rer la qu\u00eate du Dofus Ocre cr\u00e9\u00e9 par Mopolo, l\u00e9g\u00e8rement am\u00e9lior\u00e9",
         "forks": 0,
         "html_url": "https://github.com/N3ROO/Eternelle-Moisson",
@@ -895,6 +923,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "*Built with forge 1.16.4 35.0.4, compatible with 1.16.1 - 1.16.4*\r\n- Used an access modifier to get the Horse you're interacting with. It should fix all the issues that you had.\r\n",
+                "published_at": "2020-11-11 10:06:14",
+                "tag_name": "1.3.1",
+                "title": "Version 1.3.1 for Minecraft 1.16.x"
+            },
+            {
                 "body": "- Added \"displayMinMax\" option. When turned off, it won't display the min and max statistics\r\n    - Set to false by default\r\n- Added a \"slots\" statistics for llamas\r\n\r\n![image](https://user-images.githubusercontent.com/26824108/95675600-c7dd7700-0bb8-11eb-83d4-7d5e2416bca8.png)\r\n",
                 "published_at": "2020-10-11 09:56:50",
                 "tag_name": "1.3.0",
@@ -927,7 +961,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-09 09:09:25",
+        "updated_at": "2020-11-11 10:05:38",
         "watchers": 1
     },
     {
@@ -1071,7 +1105,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-04 09:46:37",
+        "updated_at": "2020-11-11 12:10:14",
         "watchers": 0
     },
     {

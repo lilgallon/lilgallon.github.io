@@ -284,25 +284,69 @@
                     <div class="title1"> <i class="fas fas fa-lightbulb"></i> Dynamic LED Strips</div>
                     <hr>
 
-                    A C# software that connects LED Strips to your computer using Bluetooth LE. The color and brightness then change according to your activity.
-                    Coming out soon (end of November 2020)! Okay, here is an overview:
-<pre>
-<code class="text-white">
-______  _      _____
-|  _  \| |    /  ___|
-| | | || |    \ `--.
-| | | || |     `--. \  Dynamic LED Strips
-| |/ / | |____/\__/ /  Version 0.1.0
-|___/  \_____/\____/   MIT License, (c) Lilian Gallon 2020
-</code>
-</pre>
+                    My latest work, a C# software that connects LED Strips to your computer using Bluetooth LE. The color and brightness then change according to your activity.
+
+                    <div class="repo" v-for="mrepo in mrepos_details" v-if="mrepo.last_update < days && mrepo.api.name === 'DynamicLedStrips'">
+                        <div :id="mrepo.api.name" class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-lg-1 repo-image center">
+                                    <img :src="mrepo.details.image">
+                                </div>
+                                <div class="col-md-9 col-lg-10 repo-content">
+                                    <div class="repo-title">
+                                        {{ mrepo.api.name }}
+                                        <span class="repo-subtitle">
+                                            <i class="fa-fw fas fa-star"></i> {{ mrepo.api.stars }}
+                                            <i class="fa-fw fas fa-eye"></i> {{ mrepo.api.watchers }}
+                                            <i class="fa-fw fas fa-code-branch"></i> {{ mrepo.api.forks }}
+                                            <i class="fa-fw fas fa-bug"></i> {{ mrepo.api.open_issues.length }}
+                                        </span>
+                                    </div>
+                                    <div class="repo-description">
+                                        {{ mrepo.api.description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="repo-details">
+                            <b>Status:</b>
+                            <span v-if="mrepo.details.university">
+                                <i class="fas fa-university"></i> University project.
+                            </span>
+                            <span v-if="mrepo.details.released">
+                                Released
+                                <span v-if="mrepo.details.indev">
+                                    and currently maintained. <i class="fas fa-code"></i>
+                                </span>
+                                <span v-else>
+                                    and no future update planned at the moment. <i class="fas fa-pause"></i>
+                                </span>
+                                <br>
+                                <b>Latest release:</b>
+                                {{mrepo.api.releases[0].title}} ({{mrepo.api.releases[0].tag_name}})
+                            </span>
+                            <span v-else>
+                                Not released
+                                <span v-if="mrepo.details.indev">
+                                    but in development. <i class="fas fa-code"></i>
+                                </span>
+                                <span v-else>
+                                    and development paused. <i class="fas fa-times"></i>
+                                </span>
+                            </span>
+                            <br>
+                            <b>Details:</b>
+                            {{ mrepo.api.language }} updated {{ mrepo.last_update }} days ago on <a :href="mrepo.api.html_url"><i class="fab fa-github"></i> github</a>.
+                        </div>
+                    </div>
 
                     <div class="title1"> <i class="fas fas fa-arrow-up"></i> Recent updates</div>
                     <hr>
 
                     <em>Only the repositories that have been updated in the last {{days}} days are shown here</em>
 
-                    <div class="repo" v-for="mrepo in mrepos_details" v-if="mrepo.last_update < days">
+                    <div class="repo" v-for="mrepo in mrepos_details" v-if="mrepo.last_update < days && mrepo.api.name !== 'DynamicLedStrips'">
                         <div :id="mrepo.api.name" class="container">
                             <div class="row">
                                 <div class="col-md-2 col-lg-1 repo-image center">
