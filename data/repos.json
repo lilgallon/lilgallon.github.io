@@ -3,13 +3,13 @@
         "description": null,
         "forks": 0,
         "html_url": "https://github.com/cdp-g2-eq6/CdP-Release",
-        "language": null,
+        "language": "Vue",
         "name": "CdP-Release",
         "open_issues": [],
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-10-15 19:50:34",
+        "updated_at": "2020-11-12 16:05:33",
         "watchers": 3
     },
     {
@@ -488,7 +488,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 34,
+        "stars": 35,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -499,7 +499,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2020-11-07 13:54:56",
+        "updated_at": "2020-11-12 14:15:37",
         "watchers": 4
     },
     {
@@ -767,7 +767,7 @@
                 "title": "Version 0.1.0"
             }
         ],
-        "stars": 0,
+        "stars": 2,
         "topics": [
             "bluetooth-low-energy",
             "led-controller",
@@ -777,7 +777,7 @@
             "csharp",
             "color-changer"
         ],
-        "updated_at": "2020-11-11 11:26:31",
+        "updated_at": "2020-11-12 11:12:17",
         "watchers": 1
     },
     {
@@ -923,6 +923,18 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "*Note: you won't be able to see the statistics in the horse's GUI with Realistic Horse Genetics loaded. I sent a request for them to improve their compatibility ([see that message]()https://github.com/sekelsta/horse-colors/issues/11). However, there is an overlay message showing the stats even if that mod is loaded :)*\r\n\r\n- Fixed server compatibility issue\r\n- Stats are now displayed instead of the \"press {key} to dismount\" message",
+                "published_at": "2020-11-13 13:11:08",
+                "tag_name": "1.3.3",
+                "title": "Version 1.3.3 for Minecraft 1.16.x"
+            },
+            {
+                "body": "- Fixed a crash happening when the player opens the horse screen without being riding a horse - Thanks @ManDeJan\r\n",
+                "published_at": "2020-11-12 15:07:28",
+                "tag_name": "1.3.2",
+                "title": "Version 1.3.2 for Minecraft 1.16.x"
+            },
+            {
                 "body": "*Built with forge 1.16.4 35.0.4, compatible with 1.16.1 - 1.16.4*\r\n- Used an access modifier to get the Horse you're interacting with. It should fix all the issues that you had.\r\n",
                 "published_at": "2020-11-11 10:06:14",
                 "tag_name": "1.3.1",
@@ -961,7 +973,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-11 10:05:38",
+        "updated_at": "2020-11-13 13:10:37",
         "watchers": 1
     },
     {
@@ -1105,7 +1117,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-11 12:10:14",
+        "updated_at": "2020-11-13 13:15:28",
         "watchers": 0
     },
     {
