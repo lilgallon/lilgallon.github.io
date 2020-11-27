@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO -->
+    <meta name="description" content="Website of Lilian Gallon, French CS student from Bordeaux curently studying at the University of California - Santa Cruz."/>
+    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California"/>
+    <meta name="author" content="Lilian Gallon"/>
+    <meta name="copyright" content="Lilian Gallon"/>
+    <meta name="robots" content="follow"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Website preview -->
+    <meta property="og:image" content="https://gallon.dev/resources/images/logo/website_preview.jpg" />
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="/vendors/fontawesome-free-5.11.2-web/css/all.min.css">
+
+    <!-- Vue.js -->
+    <script src="/vendors/vuejs-2.6.10/vue.min.js"></script>
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="/vendors/highlightjs-10.1.1/styles/nord.css" id="code-theme">
+    <script src="/vendors/highlightjs-10.1.1/highlight.pack.js"></script>
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="/style/dark.css" id="theme"> <!-- default theme -->
+    <link rel="stylesheet" href="/style/utility.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/sidebar.css">
+    <link rel="stylesheet" href="/style/middle.css">
+    <link rel="stylesheet" href="/style/right.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
+    <title>ChromaGAN Analysis - gallon.dev</title>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
+            <a class="navbar-brand" href="/">
+                <img id="logo" src="resources/images/logo/gallon_dev_light.png" alt="logo" height="30" class="d-inline-block align-top">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Misc
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/cpp.html">Advanced C++</a>
+                            <a class="dropdown-item" href="/mcmod-lesson.html">How to create a Minecraft mod</a>
+                            <a class="dropdown-item active" href="/chromagan.html">ChromaGAN analysis</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Utility
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/gists.html">Gists</a>
+                            <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="theme-changer" class="nav-link" href="" onclick="toggleTheme()">
+                            <i class="fa-fw fas fa-sun"></i> Light theme
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <span class="main-palette"><small><i>new!</i></small></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            // If the theme is not the default one, we need to load it while rendering the page
+            // Otherwise it would load the default theme, and the load the selected theme which
+            // will decrease the user experience
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.getElementById('theme').href = '/style/' + themeName + '.css';
+
+                if (themeName === 'light') {
+                    document.getElementById('logo').src = '/resources/images/logo/gallon_dev_dark.png';
+                    document.getElementById('code-theme').href = '/vendors/highlightjs-10.1.1/styles/github.css';
+                    document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-moon"></i> Dark theme';
+                } else {
+                    document.getElementById('logo').src = '/resources/images/logo/gallon_dev_light.png';
+                    document.getElementById('code-theme').href = '/vendors/highlightjs-10.1.1/styles/nord.css';
+                    document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-sun"></i> Light theme';
+                }
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'dark') {
+                    setTheme('light');
+                } else {
+                    setTheme('dark');
+                }
+            }
+
+            (function () {
+            if (localStorage.getItem('theme') === 'light') {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+            })();
+        </script>
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-xl-2 col-md-4 left-panel">
+                <div class="container sticky">
+                    <div class="title">
+                        ChromaGAN paper analysis
+                    </div>
+                    <div class="description">
+                        by Lilian Gallon & Louis Sicardon
+                        <br/><br/>
+                        <i class="fas fa-university"></i> Made for a senior class, University of Bordeaux: Computer Science - Software engineering degree
+                        <br/><br/>
+                        <i class="fas fa-file-pdf"></i> Analysis:
+                        <a href="public/chromagan_analysis.pdf">pdf file</a>
+                        <br/><br/>
+                        <span class="text-warning">the .pdf file is not yet available (work in progress)</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Middle content -->
+            <div class="col-xl-8 col-md-8 middle-panel">
+                <div class="container">
+                    <div class="section">
+                        <div class="title1">
+                            ChromaGAN paper analysis
+                        </div>
+                        <div class="subtitle">
+                            Keywords: ChromaGAN, Image colorization
+                            <br>
+                        </div>
+
+                        <br>
+
+                        The .pdf file is availible <a href="public/chromagan_analysis.pdf">here</a>. All the raw data shown here is availible:
+                        <ul>
+                            <li><i class="fas fa-video"></i> <a href="public/surf_chromagan_original.gif" target="_blank">Original gif</a></li>
+                            <li><i class="fas fa-video"></i> <a href="public/surf_chromagan_colorized.gif" target="_blank">Colorized gif</a></li>
+                            <li><i class="fas fa-images"></i> <a href="public/surf_chromagan_original/" target="_blank">All the original frames</a></li>
+                            <li><i class="fas fa-images"></i> <a href="public/surf_chromagan_reconstructed/" target="_blank">All the colorize frames</a></li>
+                            <li><i class="fas fa-database"></i> <a href="public/" target="_blank">All the data</a></li>
+                        </ul>
+
+                        <div class="section-title">
+                            <i class="fas fa-video"></i> Test on a video
+                            <hr>
+                        </div>
+
+                        <p>
+                            In the <a href="https://arxiv.org/abs/1907.09837" target="_blank">ChromaGAN paper</a> published in WACV 2020 by
+                            Patricia Vitoria and Lara Raad and Coloma Ballester, we saw that they pointed out that <em>"ChromaGAN shows variability
+                            by colorizing differently some objects belonging to the same category that may have several real colors"</em>. While it
+                            could be one of its strenght, it is actually a downside for colorizing videos. In a video, some images belong to the
+                            same class, and so may have different colorations. We applied ChromaGAN on a short surfing video, and here are the
+                            results:
+                        </p>
+
+                        <div class="row">
+                            <div class="col-lg-6 text-center" style="font-size:small">
+                                <img src="public/surf_chromagan_original.gif" alt="original" width="100%">
+                                <i>
+                                    Original video from <a href="https://www.youtube.com/watch?v=wQRCyuc0cPc" target="_blank">CoastlineTobi</a>
+                                    produced by <a href="https://www.tobiasilsankerphoto.com/" target="_blank">Tobias Ilsanker</a>,
+                                    featuring <a href="https://www.worldsurfleague.com/athletes/1317/dane-hall" target="_blank">Dane Hall</a>
+                                </i>
+                            </div>
+                            <div class="col-lg-6 text-center" style="font-size:small">
+                                <img src="public/surf_chromagan_colorized.gif" alt="colorized" width="100%">
+                                <i>Same clip colorized by ChromaGAN</i>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <p>
+                            We can see that the colorized video hesitates between a blue-ish and a more yellow-ish coloration.
+                        </p>
+
+                        <div class="row">
+                            <div class="col-lg-6 text-center" style="font-size:small">
+                                <img src="public/surf_chromagan_reconstructed/surf_12_reconstructed.jpg" alt="yellow-ish coloration" width="100%">
+                                <i>Frame 12, a yellow-ish coloration</i>
+                            </div>
+                            <div class="col-lg-6 text-center" style="font-size:small">
+                                <img src="public/surf_chromagan_reconstructed/surf_13_reconstructed.jpg" alt="colorized" width="100%">
+                                <i>Frame 13, a blue-ish coloration</i>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <p>
+                            Here are all the colorized frames:
+                        </p>
+
+                        <div class="text-center">
+                            <img v-for="index in 30"
+                                :src="'public/surf_chromagan_reconstructed/surf_' + (index<10?'0':'')+ index + '_reconstructed.jpg'"
+                                alt="frame 0"
+                                width="200px">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="row">
+
+                        <!-- Left column -->
+                        <div class="col-md-4 col-6">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/N3ROO" target="_blank">
+                                        <i class="fa-fw fab fa-github"></i> Github profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank">
+                                        <i class="fa-fw fab fa-linkedin"></i> LinkedIn profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://stackoverflow.com/users/8811838/nero" target="_blank">
+                                        <i class="fa-fw fab fa-stack-overflow"></i> StackOverflow profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Middle column -->
+                        <div class="col-md-4 col-6">
+                            <ul>
+                                <li>
+                                    <a href="https://pages.github.com/" target="_blank">Hosted by Github pages</a>
+                                </li>
+                                <li>
+                                    <a href="https://domains.google/" target="_blank">Domain provided by Google</a>
+                                </li>
+                                <li>
+                                    Powered by <a href="https://vuejs.org/">Vue.js</a> & <a href="https://getbootstrap.com/">Bootstrap</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right column -->
+                        <div class="col-md-4 col-6">
+                            <ul>
+                                <li>
+                                    Design inspired by Github
+                                </li>
+                                <li>
+                                    <a href="/about.html">About</a> • <a href="/about.html#sitemap">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a href="/about.html#changelog">© Lilian Gallon, version {{ version }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right content (hidden if < lg) -->
+            <div class="col-lg-2 right-panel d-none d-xl-block">
+                <!-- ... -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+
+    <!-- Bootstrap (JQuery, Popper & Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Vue library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+
+    <!-- Utilities -->
+    <script src="vendors/axios-0.19.2/axios.min.js"></script>
+
+    <!-- Javascript using vue -->
+    <script src="js/tutorial.js"></script>
+
+</body>
+</html>
