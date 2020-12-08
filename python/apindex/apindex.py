@@ -148,9 +148,6 @@ class File:
 
 class IndexWriter:
 
-    STATIC_FOOTER = ResourceManager.readFile("footer.template.html") \
-        .replace("#VERSION", VERSION)
-
     @staticmethod
     def writeIndex(startPath, title = None, footer=None):
         filesRead = []
@@ -158,13 +155,16 @@ class IndexWriter:
         root = File(startPath)
         html = ResourceManager.readFile("index.template.html")
 
-        if title is None: title = root.getPathFromRoot()
-        if footer is None: footer = IndexWriter.STATIC_FOOTER
+        if title is None: title = 'gallon.dev/public'
+
+        path = root.getPathFromRoot().replace('..\\\\..\\\\', '')
+        path = path.replace('\\\\', '/')
 
         # fill the details
         html = html.replace("#TITLE", title)
-        html = html.replace("#FOOTER", footer)
-        html = html.replace("#DIR", root.getPathFromRoot())
+        html = html.replace("#DIR", 'gallon.dev' + path)
+        html = html.replace("#LAST_UPDATE",
+            time.strftime("%d/%m/%y %H:%M:%S", time.localtime()))
 
         # add the back dir
         dirsRead.append(File("..").toHTML())

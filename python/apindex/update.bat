@@ -1,0 +1,1 @@
+python .\apindex.py ..\\..\\public\\.
