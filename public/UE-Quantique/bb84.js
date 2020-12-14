@@ -106,94 +106,7 @@ class Network {
     }
 }
 
-function createNetworkWithoutAttacker() {
-    return new Network(
-        [
-            {
-                id: 1,
-                label: "Alice",
-                func: (input) => {
-                    const n = 10000;
-                    let qbits = [];
-                    for(let i = 0; i<n; i++)
-                        qbits.push(new QBit(0, 'A'));
-                    if (DEBUG) console.log(`|  Generated ${n} qbits`);
-                    return qbits
-                }
-            },
-            {
-                id: 2,
-                label: "Bob",
-                func: (input) => {
-                    const measurements = [];
-                    for (qbit of input) {
-                        measurements.push(qbit.measure(randomPolarization(2)));
-                    }
-                    if (DEBUG) console.log(`|  Measured all qbits`);
-                    return measurements;
-                }
-            },
-        ],
-        [
-            { from: 1, to: 2 },
-        ]
-    );
-}
-
-function createNetworkWithAttacker() {
-    return new Network(
-        [
-            {
-                id: 1,
-                label: "Alice",
-                func: (input) => {
-                    const n = 10000;
-                    let qbits = [];
-                    for(let i = 0; i<n; i++)
-                        qbits.push(new QBit(0, 'A'));
-                    if (DEBUG) console.log(`|  Generated ${n} qbits`);
-                    return qbits
-                }
-            },
-            {
-                id: 2,
-                label: "Attacker",
-                func: (input) => {
-                    const newQBits = []
-                    for (qbit of input) {
-                        newQBits.push(
-                            new QBit(
-                                qbit.measure(randomPolarization(2)),
-                                'A'
-                            )
-                        );
-                    }
-                    if (DEBUG) console.log(`|  Measured all qbits, and created new ones`);
-                    return newQBits;
-                }
-            },
-            {
-                id: 3,
-                label: "Bob",
-                func: (input) => {
-                    const measurements = [];
-
-                    for (qbit of input) {
-                        measurements.push(qbit.measure(randomPolarization(2)));
-                    }
-                    if (DEBUG) console.log(`|  Measured all qbits`);
-                    return measurements;
-                }
-            },
-        ],
-        [
-            { from: 1, to: 2 },
-            { from: 2, to: 3 },
-        ]
-    );
-}
-
-function createNetworkWithNAttackers(nAttackers) {
+function createNetwork(nAttackers, nPolarizations) {
     const edges = [];
 
     const nodes = [
@@ -221,7 +134,7 @@ function createNetworkWithNAttackers(nAttackers) {
                     for (qbit of input) {
                         newQBits.push(
                             new QBit(
-                                qbit.measure(randomPolarization(2)),
+                                qbit.measure(randomPolarization(nPolarizations)),
                                 'A'
                             )
                         );
@@ -243,70 +156,7 @@ function createNetworkWithNAttackers(nAttackers) {
                 const measurements = [];
 
                 for (qbit of input) {
-                    measurements.push(qbit.measure(randomPolarization(2)));
-                }
-                if (DEBUG) console.log(`|  Measured all qbits`);
-                return measurements;
-            }
-        }
-    );
-
-    edges.push({ from: nAttackers, to: nAttackers+1 })
-
-    return new Network(nodes, edges);
-}
-
-function createNetworkWithNAttackersAndThreePolarizations(nAttackers) {
-    const edges = [];
-
-    const nodes = [
-        {
-            id: 0,
-            label: "Alice",
-            func: (input) => {
-                const n = 10000;
-                let qbits = [];
-                for(let i = 0; i<n; i++)
-                    qbits.push(new QBit(0, 'A'));
-                if (DEBUG) console.log(`|  Generated ${n} qbits`);
-                return qbits
-            }
-        }
-    ]
-
-    for (let attacker = 1; attacker <= nAttackers; attacker++) {
-        nodes.push(
-            {
-                id: attacker,
-                label: `Attacker ${attacker}`,
-                func: (input) => {
-                    const newQBits = []
-                    for (qbit of input) {
-                        newQBits.push(
-                            new QBit(
-                                qbit.measure(randomPolarization(3)),
-                                'A'
-                            )
-                        );
-                    }
-                    if (DEBUG) console.log(`|  Measured all qbits, and created new ones`);
-                    return newQBits;
-                }
-            }
-        );
-
-        edges.push({ from: attacker-1, to: attacker });
-    }
-
-    nodes.push(
-        {
-            id: nAttackers+1,
-            label: "Bob",
-            func: (input) => {
-                const measurements = [];
-
-                for (qbit of input) {
-                    measurements.push(qbit.measure(randomPolarization(3)));
+                    measurements.push(qbit.measure(randomPolarization(nPolarizations)));
                 }
                 if (DEBUG) console.log(`|  Measured all qbits`);
                 return measurements;
@@ -321,38 +171,40 @@ function createNetworkWithNAttackersAndThreePolarizations(nAttackers) {
 
 const main = () => {
     let measurements, goodMeasurements;
+    let nAttackers = 0;
 
     console.log();
-    console.log('ALICE -> BOB (2 polarizations)');
 
     // 3b (w/o attacker)
-    measurements = createNetworkWithoutAttacker().communicate(1, 2, null);
+    console.log(`ALICE -> ${nAttackers} ATTACKER -> BOB (2 polarizations)`);
+    measurements = createNetwork(nAttackers, 2).communicate(0, nAttackers+1, null);
     goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
     console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
 
     console.log();
-    console.log('ALICE -> ATTACKER -> BOB (2 polarizations)');
 
     // 3b (with attacker)
-    measurements = createNetworkWithAttacker().communicate(1, 3, null);
+    nAttackers = 1;
+    console.log(`ALICE -> ${nAttackers} ATTACKER -> BOB (2 polarizations)`);
+    measurements = createNetwork(nAttackers, 2).communicate(0, nAttackers+1, null);
     goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
     console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
 
     console.log();
-    let n = 5;
-    console.log(`ALICE -> ${n} ATTACKERS -> BOB (2 polarizations)`);
 
     // 4a (with n attackers)
-    measurements = createNetworkWithNAttackers(n).communicate(0, n+1, null);
+    nAttackers = 100;
+    console.log(`ALICE -> ${nAttackers} ATTACKERS -> BOB (2 polarizations)`);
+    measurements = createNetwork(nAttackers, 2).communicate(0, nAttackers+1, null);
     goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
     console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
 
     console.log('');
-    n = 0;
-    console.log(`ALICE -> ${n} ATTACKERS -> BOB (3 polarizations)`);
 
     // 4b
-    measurements = createNetworkWithNAttackersAndThreePolarizations(n).communicate(0, n+1, null);
+    nAttackers = 0;
+    console.log(`ALICE -> ${nAttackers} ATTACKERS -> BOB (3 polarizations)`);
+    measurements = createNetwork(nAttackers, 3).communicate(0, nAttackers+1, null);
     goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
     console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
 }
