@@ -8,6 +8,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "- D\u00e9but: Jeud 26 Novembre \u00e0 17:00\r\n- Fin: Jeudi 10 D\u00e9cembre \u00e0 14:00\r\n\r\n**Choses \u00e0 faire (ce ne sont pas des US):**\r\n- [x] Tests serveur\r\n- [x] Tests gherkin E2E avec int\u00e9gration continue\r\n- [x] Release automatique\r\n\r\n**US Compl\u00e9t\u00e9es**:\r\n\r\n- Projet:\r\n  - [x] US 6 (6 dec)\r\n  - [x] US 7 (6 dec)\r\n  - [x] US 8 (6 dec)\r\n  - [x] US 9 (6 dec)\r\n  - [x] US 10 (7 dec)\r\n  - [x] US 41 (5 dec)\r\n- Page resum\u00e9:\r\n  - [x] US 42 (9 dec)\r\n  - [ ] US 43\r\n\r\n\r\n**Burn up chart:**\r\n\r\n- https://docs.google.com/spreadsheets/d/1UmQ-D53fGd9j2ioxKSDYI13lKVnAxQRwSkfLeSnIyl0/edit?usp=sharing",
+                "published_at": "2020-12-10 10:53:07",
+                "tag_name": "3.0.4",
+                "title": "Sprint 3"
+            },
+            {
                 "body": "See release.md for deployment instructions\r\n\r\n- End of Sprint 1:\r\n- User stories done :  13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30,31, 32, 33, 34, 36\r\n- Expected : 82\r\n- Done : 82",
                 "published_at": "2020-11-26 15:20:18",
                 "tag_name": "Sprint_2",
@@ -16,7 +22,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-26 15:18:17",
+        "updated_at": "2020-12-10 10:41:59",
         "watchers": 3
     },
     {
@@ -157,9 +163,9 @@
                 "title": "Version 1.0.0 for Minecraft 1.16.1"
             }
         ],
-        "stars": 1,
+        "stars": 2,
         "topics": [],
-        "updated_at": "2020-11-09 09:09:06",
+        "updated_at": "2020-12-02 05:20:48",
         "watchers": 1
     },
     {
@@ -183,9 +189,9 @@
                 "title": "Version 1.0.0 for MC 1.16.3"
             }
         ],
-        "stars": 0,
+        "stars": 1,
         "topics": [],
-        "updated_at": "2020-09-22 18:55:00",
+        "updated_at": "2020-12-05 12:44:40",
         "watchers": 1
     },
     {
@@ -254,6 +260,12 @@
             "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "**Modules:**\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding\r\n\r\n**Bettercolors engine 1.1.1:**\r\n- Added experimental support for modules\r\n- Fixed synchronization issue with sliders\r\n- Fixed toggle key display issue when a module's toggle key is not set",
+                "published_at": "2020-12-14 12:49:07",
+                "tag_name": "7.4.0-MC1.16.4",
+                "title": "Version 7.4.0 for MC 1.16.4 (forge)"
+            },
             {
                 "body": "**Huge update!** You can use the same settings file as before, but it is recommended to reset it to default since some settings changed,\r\nand some were renamed (see below).\r\n\r\n**Bettercolors engine 1.1.0:**\r\n- Added a new tab to change the toggle key of each module\r\n- Updated the theme: new icons and better layout\r\n- Support for linux\r\n- Support for fabric\r\n- Better events system **Modules can be now optimized a lot**\r\n- Options now use spaces instead of \"_\"'s\r\n\r\n**Core:**\r\n- Reach:\r\n    - Improved reach\r\n    - Removed reach_increment: replaced by \"combat_reach\" and \"block_reach\"\r\n    - Changed max attack reach from 1.5 to 3.0 (you can go up to 6.0 reach which is not recommended lol)\r\n- Aim Assistance (has been re-coded):\r\n    - Added \"Sticky\": assist if aiming an entity\r\n    - Modified \"Stop when reached\": assist if not aiming an entity\r\n    - Removed \"time_to_activate\" & \"clicks_to_activate\": (replaced by \"cps_to_activate\")\r\n    - Removed \"refresh_rate\"\r\n    - Renamed \"step X\" and \"step Y\" to \"force X\" and \"force Y\"\r\n    - Renamed \"radius X\" and \"radius Y\" to \"fov X\" and \"fov Y\"\r\n    - **A lot of improvements**\r\n    - **A lot optimizations**\r\n- Click Assistance (has been re-coded):\r\n    - Renamed \"additional_clicks\" to \"additional_cps\"\r\n    - **A lot of improvements**\r\n    - **A lot of optimizations**\r\n- TeamFilter: removed \"teamfilter\" option from every module. It is now a module, so when turned on, it works on every other module.\r\n- Added Antibot:\r\n    - If the entity is not a player -> bot\r\n    - \"Tab_check\": If the entity is not in the tab -> bot\r\n    - \"Ping_check\": If the entity ping is 0 ms -> bot\r\n    - \"Ticks_lived_check\": If the entity has lived less than \"Ticks_lived_min\" -> bot\r\n- Miscellaneous:\r\n    - You can now use greater values than the ones given by the UI. To do so, you need to update the config file manually.\r\n    It's not recommended, but I'm sure that some of you will like that.\r\n    - Debug mode now shows the GUI on startup\r\n    - You can put your cursor over an option to get a description of it\r\n    - You can put your cursor over a module to get a description of it\r\n    - Improved modules messages in the console\r\n\r\n**To download it, click on \"assets\" below this text, then click on the .jar file**",
                 "published_at": "2020-08-25 16:37:31",
@@ -495,7 +507,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 35,
+        "stars": 36,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -506,7 +518,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2020-11-25 22:07:55",
+        "updated_at": "2020-12-14 12:05:52",
         "watchers": 5
     },
     {
@@ -515,11 +527,14 @@
         "html_url": "https://github.com/N3ROO/BettercolorsEngine",
         "language": "Java",
         "name": "BettercolorsEngine",
-        "open_issues": [
-            "SynchronizeComponents does not work on some sliders",
-            "Call to the key mapping lambda function even if the argument is invalid"
-        ],
+        "open_issues": [],
         "releases": [
+            {
+                "body": "*Backwards compatible.*\r\n\r\n**Additions:**\r\n- Added a bridge icon\r\n- Added an experimental option for modules\r\n\r\n**Fixes:**\r\n- Fixed #11: Fixed toggle key display when a module does not have any toggle key set\r\n- Fixed #12: Fixed synchronization issues with sliders",
+                "published_at": "2020-12-14 11:53:56",
+                "tag_name": "1.1.1",
+                "title": "Version 1.1.1"
+            },
             {
                 "body": "Backwards compatible. *Will be uploaded to maven central. For now, read the README.md to know how to use it.*\r\n\r\n**Big changes:**\r\n- Change module's event system. You can define your own events now. onUpdate is now depreciated.\r\n- The engine does not crash when an option is out of bounds. It shows a warning message in the console instead.\r\n- Added Module#loadOptionsAccordingTo() which will prevent having redundant code\r\n- Added Module#onOptionChange(option, oldValue) which is triggered when an option is updated\r\n- Added a description field in options and modules. The window will show a tooltip containing the description when overing the option/module.\r\n\r\n**Small changes:**\r\n- Added TimeHelper#getTimeElapsed()\r\n- Window toggle key name now uses the keyName lambda function. BettercolorsEngine#init is now depreciated\r\n- Added Module#getOptionI(idx), Module#getOptionF(idx) & Module#getOptionB(idx)\r\n- Options are using spaces instead of \"_\"\r\n- Debug option now opens the window by default\r\n- Improved modules' logging and added a logWarn() method\r\n- Added Window#IMAGES_DIR and Window#FONTS_DIR to change the directory where the resources will be loaded\r\n\r\n**How to use it**\r\n\r\nMaven:\r\n```xml\r\n<dependency>\r\n  <groupId>dev.nero</groupId>\r\n  <artifactId>bettercolors-engine</artifactId>\r\n  <version>1.1.0</version>\r\n</dependency>\r\n```\r\n\r\nGradle:\r\n```gradle\r\nimplementation 'dev.nero:bettercolors-engine:1.1.0'\r\n```\r\n\r\nIf you are building a minecraft mod, then add those lines to your build.gradle:\r\n```gradle\r\nconfigurations {\r\n    // ... your stuff if you have something already\r\n\r\n    // It defines a new configurration called inJar that we will use later on\r\n    // compile is needed so that the library is recognized by the IDE\r\n    inJar\r\n    compile.extendsFrom inJar\r\n}\r\n\r\ndependencies {\r\n    // ... your stuff if you have something already\r\n\r\n    // The library with the inJar configuration that we created previously\r\n    inJar \"io.github.vincenzopalazzo:material-ui-swing:1.1.1\"\r\n}\r\n\r\njar {\r\n    // ... your stuff if you have something already\r\n\r\n    // It will extract all the libraries needed for the inJar configuration to be working in the root of the .jar\r\n    // Basically, it will extract the bettercolorsengine jar file to your mod.jar\r\n    from {\r\n        configurations.inJar.collect {\r\n            it.isDirectory() ? it : zipTree(it)\r\n        }\r\n    }\r\n}\r\n```\r\n",
                 "published_at": "2020-08-26 12:47:16",
@@ -559,7 +574,7 @@
         ],
         "stars": 2,
         "topics": [],
-        "updated_at": "2020-10-15 01:22:17",
+        "updated_at": "2020-12-14 11:35:30",
         "watchers": 1
     },
     {
@@ -930,6 +945,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "*It is a fix for the 1.16.4 version of Minecraft. For 1.16.3 and less, use the 1.3.3 version if this one doesn't work*\r\n- Fixed a crash with the 35.1.0-MC1.16.4 Forge version (something was wrong with mappings, forge may have made some breaking changes): see #5 \r\n",
+                "published_at": "2020-11-30 09:13:58",
+                "tag_name": "1.3.4",
+                "title": "Version 1.3.4 for MC 1.16.x"
+            },
+            {
                 "body": "Same as 1.16.x but for MC1.15.x",
                 "published_at": "2020-11-14 16:15:32",
                 "tag_name": "1.15-1.3.3",
@@ -1130,7 +1151,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-26 13:07:53",
+        "updated_at": "2020-12-14 13:01:22",
         "watchers": 0
     },
     {
