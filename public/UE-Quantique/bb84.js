@@ -1,15 +1,54 @@
+const DEBUG = false;
+
+function fiftyFifty() {
+    return Math.random() < 0.5;
+}
+
+// 'A' | 'B' | 'C'
+function randomPolarization(nbPolarizations) {
+    const rand = Math.random();
+    if (nbPolarizations === 2) {
+        return fiftyFifty() ? 'A' : 'B';
+    } else if (nbPolarizations === 3) {
+        if (rand < 0.333333) {
+            return 'A';
+        } else if (rand >= 0.333333 && rand < 0.66666) {
+            return 'B';
+        } else {
+            return 'C;'
+        }
+    } else {
+        throw new Error('Invalid polarization number');
+    }
+}
+
+
 class QBit {
-    constructor() {
-        this.value = null;
+    /**
+     * @param {0 | 1} value
+     * @param {'A' | 'B' | 'C'} polarization
+     */
+    constructor(value, polarization) {
+        this.stable = false;
+        this.value = value;
+        this.polarization = polarization;
     }
 
-    measure() {
-        if (this.value) return this.value
-        else return this.value = Math.random() < 0.5 ? 0 : 1;
+    measure(polarization) {
+        if (!this.stable) {
+            this.stable = true;
+            if (polarization === this.polarization) {
+                return this.value;
+            } else {
+                return this.value = fiftyFifty() ? 0 : 1;
+            }
+        } else {
+            return this.value;
+        }
     }
 
     toString() {
-        return this.value ? 'qbit non mesuré' : 'qbit mesuré';
+        return this.value ? 'qbit mesuré' : 'qbit non mesuré';
     }
 }
 
@@ -55,50 +94,269 @@ class Network {
         for (const edge of path) {
             const node = this.nodes.find((node) => node.id === edge.to);
             data = this.compute(node, data);
-            console.log(`Node "${node.label}" (id: ${node.id})`);
         }
         return data;
     }
 
     compute(node, data) {
-        console.log(`${node.label} {`);
+        if (DEBUG) console.log(`${node.label}:`);
         data = node.func(data);
-        console.log('}');
+        if (DEBUG) console.log('-');
         return data;
     }
 }
 
-const main = () => {
-    const network = new Network(
+function createNetworkWithoutAttacker() {
+    return new Network(
         [
             {
                 id: 1,
                 label: "Alice",
-                func: (data) => {
-                    console.log('  ' + data);
-                    return data;
+                func: (input) => {
+                    const n = 10000;
+                    let qbits = [];
+                    for(let i = 0; i<n; i++)
+                        qbits.push(new QBit(0, 'A'));
+                    if (DEBUG) console.log(`|  Generated ${n} qbits`);
+                    return qbits
                 }
             },
             {
                 id: 2,
                 label: "Bob",
-                func: (data) => {
-                    console.log('  ' + data);
-                    return data;
+                func: (input) => {
+                    const measurements = [];
+                    for (qbit of input) {
+                        measurements.push(qbit.measure(randomPolarization(2)));
+                    }
+                    if (DEBUG) console.log(`|  Measured all qbits`);
+                    return measurements;
                 }
             },
         ],
         [
             { from: 1, to: 2 },
-            { from: 2, to: 1 },
         ]
     );
-
-    network.communicate(1, 2, [
-        new QBit(),
-        new QBit(),
-        new QBit(),
-    ]);
 }
 
+function createNetworkWithAttacker() {
+    return new Network(
+        [
+            {
+                id: 1,
+                label: "Alice",
+                func: (input) => {
+                    const n = 10000;
+                    let qbits = [];
+                    for(let i = 0; i<n; i++)
+                        qbits.push(new QBit(0, 'A'));
+                    if (DEBUG) console.log(`|  Generated ${n} qbits`);
+                    return qbits
+                }
+            },
+            {
+                id: 2,
+                label: "Attacker",
+                func: (input) => {
+                    const newQBits = []
+                    for (qbit of input) {
+                        newQBits.push(
+                            new QBit(
+                                qbit.measure(randomPolarization(2)),
+                                'A'
+                            )
+                        );
+                    }
+                    if (DEBUG) console.log(`|  Measured all qbits, and created new ones`);
+                    return newQBits;
+                }
+            },
+            {
+                id: 3,
+                label: "Bob",
+                func: (input) => {
+                    const measurements = [];
+
+                    for (qbit of input) {
+                        measurements.push(qbit.measure(randomPolarization(2)));
+                    }
+                    if (DEBUG) console.log(`|  Measured all qbits`);
+                    return measurements;
+                }
+            },
+        ],
+        [
+            { from: 1, to: 2 },
+            { from: 2, to: 3 },
+        ]
+    );
+}
+
+function createNetworkWithNAttackers(nAttackers) {
+    const edges = [];
+
+    const nodes = [
+        {
+            id: 0,
+            label: "Alice",
+            func: (input) => {
+                const n = 10000;
+                let qbits = [];
+                for(let i = 0; i<n; i++)
+                    qbits.push(new QBit(0, 'A'));
+                if (DEBUG) console.log(`|  Generated ${n} qbits`);
+                return qbits
+            }
+        }
+    ]
+
+    for (let attacker = 1; attacker <= nAttackers; attacker++) {
+        nodes.push(
+            {
+                id: attacker,
+                label: `Attacker ${attacker}`,
+                func: (input) => {
+                    const newQBits = []
+                    for (qbit of input) {
+                        newQBits.push(
+                            new QBit(
+                                qbit.measure(randomPolarization(2)),
+                                'A'
+                            )
+                        );
+                    }
+                    if (DEBUG) console.log(`|  Measured all qbits, and created new ones`);
+                    return newQBits;
+                }
+            }
+        );
+
+        edges.push({ from: attacker-1, to: attacker });
+    }
+
+    nodes.push(
+        {
+            id: nAttackers+1,
+            label: "Bob",
+            func: (input) => {
+                const measurements = [];
+
+                for (qbit of input) {
+                    measurements.push(qbit.measure(randomPolarization(2)));
+                }
+                if (DEBUG) console.log(`|  Measured all qbits`);
+                return measurements;
+            }
+        }
+    );
+
+    edges.push({ from: nAttackers, to: nAttackers+1 })
+
+    return new Network(nodes, edges);
+}
+
+function createNetworkWithNAttackersAndThreePolarizations(nAttackers) {
+    const edges = [];
+
+    const nodes = [
+        {
+            id: 0,
+            label: "Alice",
+            func: (input) => {
+                const n = 10000;
+                let qbits = [];
+                for(let i = 0; i<n; i++)
+                    qbits.push(new QBit(0, 'A'));
+                if (DEBUG) console.log(`|  Generated ${n} qbits`);
+                return qbits
+            }
+        }
+    ]
+
+    for (let attacker = 1; attacker <= nAttackers; attacker++) {
+        nodes.push(
+            {
+                id: attacker,
+                label: `Attacker ${attacker}`,
+                func: (input) => {
+                    const newQBits = []
+                    for (qbit of input) {
+                        newQBits.push(
+                            new QBit(
+                                qbit.measure(randomPolarization(3)),
+                                'A'
+                            )
+                        );
+                    }
+                    if (DEBUG) console.log(`|  Measured all qbits, and created new ones`);
+                    return newQBits;
+                }
+            }
+        );
+
+        edges.push({ from: attacker-1, to: attacker });
+    }
+
+    nodes.push(
+        {
+            id: nAttackers+1,
+            label: "Bob",
+            func: (input) => {
+                const measurements = [];
+
+                for (qbit of input) {
+                    measurements.push(qbit.measure(randomPolarization(3)));
+                }
+                if (DEBUG) console.log(`|  Measured all qbits`);
+                return measurements;
+            }
+        }
+    );
+
+    edges.push({ from: nAttackers, to: nAttackers+1 })
+
+    return new Network(nodes, edges);
+}
+
+const main = () => {
+    let measurements, goodMeasurements;
+
+    console.log();
+    console.log('ALICE -> BOB (2 polarizations)');
+
+    // 3b (w/o attacker)
+    measurements = createNetworkWithoutAttacker().communicate(1, 2, null);
+    goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
+    console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
+
+    console.log();
+    console.log('ALICE -> ATTACKER -> BOB (2 polarizations)');
+
+    // 3b (with attacker)
+    measurements = createNetworkWithAttacker().communicate(1, 3, null);
+    goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
+    console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
+
+    console.log();
+    let n = 5;
+    console.log(`ALICE -> ${n} ATTACKERS -> BOB (2 polarizations)`);
+
+    // 4a (with n attackers)
+    measurements = createNetworkWithNAttackers(n).communicate(0, n+1, null);
+    goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
+    console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
+
+    console.log('');
+    n = 0;
+    console.log(`ALICE -> ${n} ATTACKERS -> BOB (3 polarizations)`);
+
+    // 4b
+    measurements = createNetworkWithNAttackersAndThreePolarizations(n).communicate(0, n+1, null);
+    goodMeasurements = measurements.filter((measurement) => measurement === 0).length;
+    console.log('Successful measurements: ' + (goodMeasurements * 100 / measurements.length) + '%');
+}
+
+console.log();
 main();
+console.log();
