@@ -2,6 +2,38 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/cdp-g2-eq6/CdP-Dev",
+        "language": "Vue",
+        "name": "CdP-Dev",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "- D\u00e9but: Jeud 26 Novembre \u00e0 17:00\r\n- Fin: Jeudi 10 D\u00e9cembre \u00e0 14:00\r\n\r\n**Choses \u00e0 faire (ce ne sont pas des US):**\r\n- [x] Tests serveur\r\n- [x] Tests gherkin E2E avec int\u00e9gration continue\r\n- [x] Release automatique\r\n\r\n**US Compl\u00e9t\u00e9es**:\r\n\r\n- Projet:\r\n  - [x] US 6 (6 dec)\r\n  - [x] US 7 (6 dec)\r\n  - [x] US 8 (6 dec)\r\n  - [x] US 9 (6 dec)\r\n  - [x] US 10 (7 dec)\r\n  - [x] US 41 (5 dec)\r\n- Page resum\u00e9:\r\n  - [x] US 42 (9 dec)\r\n  - [ ] US 43\r\n\r\n\r\n**Burn up chart:**\r\n\r\n- https://docs.google.com/spreadsheets/d/1UmQ-D53fGd9j2ioxKSDYI13lKVnAxQRwSkfLeSnIyl0/edit?usp=sharing",
+                "published_at": "2020-12-10 10:43:53",
+                "tag_name": "3.0.3",
+                "title": "Sprint 3"
+            },
+            {
+                "body": "See release.md for deployment instructions\r\n\r\nEnd of Sprint 1:\r\nUser stories done : 13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30,31, 32, 33, 34, 36\r\nExpected : 82\r\nDone : 82",
+                "published_at": "2020-11-26 15:20:55",
+                "tag_name": "Sprint_2",
+                "title": "Sprint 2"
+            },
+            {
+                "body": "End of Sprint 1:\r\nUser stories done : US1, US2 US11, US12, US37\r\nExpected :  53\r\nDone : 19",
+                "published_at": "2020-11-12 15:59:57",
+                "tag_name": "Sprint_1",
+                "title": "Sprint 1"
+            }
+        ],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-12-15 20:39:16",
+        "watchers": 2
+    },
+    {
+        "description": null,
+        "forks": 0,
         "html_url": "https://github.com/cdp-g2-eq6/CdP-Release",
         "language": "Vue",
         "name": "CdP-Release",
@@ -245,7 +277,7 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.1 & 1.16.2",
+        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x",
         "forks": 4,
         "html_url": "https://github.com/N3ROO/Bettercolors",
         "language": null,
@@ -260,6 +292,24 @@
             "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "*You need fabricloader >= 0.9.0*\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding",
+                "published_at": "2020-12-17 16:40:58",
+                "tag_name": "7.4.0-MC1.16.4fa",
+                "title": "Version 7.4.0 for MC 1.16.4 (fabric)"
+            },
+            {
+                "body": "It is the same version as V7.3.0 MC_1.16.2. The engine has been updated to 1.1.1. You need:\r\n- fabricloader >= 0.9.0\r\n- mc: 1.16.4\r\n\r\nThe 7.4.0 version is coming..",
+                "published_at": "2020-12-17 15:56:55",
+                "tag_name": "7.3.0-MC1.16.4fa",
+                "title": "Version 7.3.0 for Minecraft 1.16.4 (fabric)"
+            },
+            {
+                "body": "- Fixed loading crash for some users (#81)",
+                "published_at": "2020-12-17 11:09:26",
+                "tag_name": "7.4.1-MC1.16.4",
+                "title": "Version 7.4.1 for MC 1.16.4 (forge)"
+            },
             {
                 "body": "**Modules:**\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding\r\n\r\n**Bettercolors engine 1.1.1:**\r\n- Added experimental support for modules\r\n- Fixed synchronization issue with sliders\r\n- Fixed toggle key display issue when a module's toggle key is not set",
                 "published_at": "2020-12-14 12:49:07",
@@ -518,7 +568,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2020-12-14 12:05:52",
+        "updated_at": "2020-12-17 16:41:27",
         "watchers": 5
     },
     {
@@ -574,7 +624,7 @@
         ],
         "stars": 2,
         "topics": [],
-        "updated_at": "2020-12-14 11:35:30",
+        "updated_at": "2020-12-17 15:39:23",
         "watchers": 1
     },
     {
@@ -1151,7 +1201,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-12-14 13:01:22",
+        "updated_at": "2020-12-17 18:12:33",
         "watchers": 0
     },
     {
