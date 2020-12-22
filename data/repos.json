@@ -283,6 +283,7 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
+            "In rare scenarios Aim Assist can sometimes target your own body.",
             "Auto head in hypixel 1v1s and uhc and so on",
             "Panic hotkey",
             "Auto clicker (right click)",
@@ -1201,7 +1202,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-12-17 18:12:33",
+        "updated_at": "2020-12-19 12:15:54",
         "watchers": 0
     },
     {
