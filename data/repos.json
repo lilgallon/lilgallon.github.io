@@ -266,14 +266,14 @@
                 "title": "Version 0.1"
             }
         ],
-        "stars": 4,
+        "stars": 5,
         "topics": [
             "bandwidth-monitor",
             "bandwidth",
             "network",
             "tracker"
         ],
-        "updated_at": "2020-04-13 08:51:28",
+        "updated_at": "2021-01-01 12:12:27",
         "watchers": 0
     },
     {
@@ -558,7 +558,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 36,
+        "stars": 35,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -569,7 +569,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2020-12-28 02:14:03",
+        "updated_at": "2020-12-30 14:47:39",
         "watchers": 5
     },
     {
