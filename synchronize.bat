@@ -1,9 +1,9 @@
 cd .\python\synch_repos\
-python .\synchronize.py
+call python .\synchronize.py
 cd ..\apindex\
-.\update.bat
+call .\update.bat
 cd ..\..
-git add .
-git commit -m "synchronization"
-git push origin master
+call git add .
+call git commit -m "synchronization"
+call git push origin master
 pause

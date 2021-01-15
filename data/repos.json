@@ -283,6 +283,7 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
+            "Don't wanna send you down a rabbit hole, but this server can detect the aim-assistance mod.",
             "In rare scenarios Aim Assist can sometimes target your own body.",
             "Auto head in hypixel 1v1s and uhc and so on",
             "Panic hotkey",
@@ -850,7 +851,7 @@
             "csharp",
             "color-changer"
         ],
-        "updated_at": "2020-11-12 11:12:17",
+        "updated_at": "2021-01-12 04:07:36",
         "watchers": 1
     },
     {
@@ -1202,7 +1203,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-12-24 14:36:39",
+        "updated_at": "2021-01-13 19:48:10",
         "watchers": 0
     },
     {
@@ -1223,11 +1224,11 @@
             "game-engine"
         ],
         "updated_at": "2019-10-19 19:18:06",
-        "watchers": 0
+        "watchers": 1
     },
     {
         "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
-        "forks": 0,
+        "forks": 1,
         "html_url": "https://github.com/N3ROO/pacman",
         "language": "Python",
         "name": "pacman",
@@ -1390,7 +1391,7 @@
             "shutdown"
         ],
         "updated_at": "2019-05-28 14:24:22",
-        "watchers": 0
+        "watchers": 1
     },
     {
         "description": "\"Techniques algorithmiques et programmation\" ~ Licence 3 Informatique Bordeaux ~ Ann\u00e9es 2018-2019",
