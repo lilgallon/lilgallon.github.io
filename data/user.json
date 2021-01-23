@@ -5,7 +5,7 @@
     "collaborators": 2,
     "company": null,
     "created_at": "2017-03-31T18:31:49Z",
-    "disk_usage": 713259,
+    "disk_usage": 713261,
     "email": "lilian@gallon.dev",
     "events_url": "https://api.github.com/users/N3ROO/events{/privacy}",
     "followers": 19,
@@ -41,6 +41,6 @@
     "twitter_username": "liliansurf",
     "two_factor_authentication": true,
     "type": "User",
-    "updated_at": "2021-01-22T05:41:49Z",
+    "updated_at": "2021-01-23T08:42:15Z",
     "url": "https://api.github.com/users/N3ROO"
 }
