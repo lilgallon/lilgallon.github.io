@@ -1074,13 +1074,13 @@
                 "title": "Version 1.2.0 for Minecraft 1.16.x"
             },
             {
-                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.1.0.png)\r\n",
+                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.x/.github/resources/demo-1.1.0.png)\r\n",
                 "published_at": "2020-09-22 18:30:38",
                 "tag_name": "1.1.0",
                 "title": "Version 1.1.0 for MC 1.16.x"
             },
             {
-                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.0.0.gif)\r\n\r\n",
+                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.x/.github/resources/demo-1.0.0.gif)\r\n\r\n",
                 "published_at": "2020-09-20 18:30:47",
                 "tag_name": "1.0.0",
                 "title": "Version 1.0.0 for MC 1.16.3"

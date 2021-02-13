@@ -89,7 +89,7 @@ let vue = new Vue({
             },
             {
                 name: "HorseStatsMod",
-                image: "https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/horsestatsmod.png",
+                image: "https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.x/.github/resources/horsestatsmod.png",
                 university: false,
                 released: true,
                 indev: false
