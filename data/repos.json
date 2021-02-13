@@ -283,17 +283,27 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
+            "Automatically fix the issue when toggle_key is wrong",
             "Don't wanna send you down a rabbit hole, but this server can detect the aim-assistance mod.",
             "In rare scenarios Aim Assist can sometimes target your own body.",
             "Auto head in hypixel 1v1s and uhc and so on",
-            "Panic hotkey",
-            "Auto clicker (right click)",
             "Bow aimbot and esp",
             "Auto rod",
-            "Speed bridging mod",
             "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "*Tested with forge 11.15.1.1722*\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding",
+                "published_at": "2021-02-11 13:38:56",
+                "tag_name": "7.4.0-MC1.8.9",
+                "title": "Version 7.4.0 for Minecraft 1.8.9"
+            },
+            {
+                "body": "*You need fabricloader >= 0.10.8*\r\n\r\n- Same as **V7.4.0 MC_1.16.4**\r\n- Speedbridging, autouse, panic and autorightclick are disabled by default\r\n",
+                "published_at": "2021-02-11 11:24:02",
+                "tag_name": "7.4.0-MC1.16.5fa",
+                "title": "Version 7.4.0 for MC 1.16.5 (fabric)"
+            },
             {
                 "body": "*You need fabricloader >= 0.9.0*\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding",
                 "published_at": "2020-12-17 16:40:58",
@@ -310,7 +320,7 @@
                 "body": "- Fixed loading crash for some users (#81)",
                 "published_at": "2020-12-17 11:09:26",
                 "tag_name": "7.4.1-MC1.16.4",
-                "title": "Version 7.4.1 for MC 1.16.4 (forge)"
+                "title": "Version 7.4.1 for MC 1.16.4 and 1.16.5 (forge)"
             },
             {
                 "body": "**Modules:**\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding\r\n\r\n**Bettercolors engine 1.1.1:**\r\n- Added experimental support for modules\r\n- Fixed synchronization issue with sliders\r\n- Fixed toggle key display issue when a module's toggle key is not set",
@@ -570,7 +580,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2020-12-30 14:47:39",
+        "updated_at": "2021-02-11 13:58:32",
         "watchers": 5
     },
     {
@@ -805,6 +815,19 @@
         "watchers": 0
     },
     {
+        "description": null,
+        "forks": 0,
+        "html_url": "https://github.com/N3ROO/DistributedColorationAlgorithms",
+        "language": "Java",
+        "name": "DistributedColorationAlgorithms",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2021-02-12 12:52:40",
+        "watchers": 1
+    },
+    {
         "description": "\ud83d\ude0e Un site proposant divers outils pour se simplifier la vie sur Dofus.",
         "forks": 0,
         "html_url": "https://github.com/N3ROO/dofus-tools",
@@ -823,7 +846,7 @@
             "jquery",
             "jquery-ui"
         ],
-        "updated_at": "2020-11-27 15:58:55",
+        "updated_at": "2021-02-13 12:00:39",
         "watchers": 0
     },
     {
@@ -990,12 +1013,18 @@
     },
     {
         "description": "A lightweight forge mod that shows the hidden horses' stats (health, jump height, speed, and slots for Llamas)",
-        "forks": 0,
+        "forks": 1,
         "html_url": "https://github.com/N3ROO/HorseStatsMod",
         "language": "Java",
         "name": "HorseStatsMod",
         "open_issues": [],
         "releases": [
+            {
+                "body": "- Added support for localization (only en_US and fr_FR are supported at the moment)\r\n\r\nYou can contribute to the project (and get credited) by adding new lang files in https://github.com/N3ROO/HorseStatsMod/tree/MC_1.16.x/src/main/resources/assets/horsestatsmod/lang\r\n\r\nI may open a https://crowdin.com/ project for you to contribute on, but it is a small project, so I don't think that it would be worth it.",
+                "published_at": "2021-02-13 11:45:54",
+                "tag_name": "1.4.0",
+                "title": "Version 1.4.0 (support for localization)"
+            },
             {
                 "body": "*It is a fix for the 1.16.4 version of Minecraft. For 1.16.3 and less, use the 1.3.3 version if this one doesn't work*\r\n- Fixed a crash with the 35.1.0-MC1.16.4 Forge version (something was wrong with mappings, forge may have made some breaking changes): see #5 \r\n",
                 "published_at": "2020-11-30 09:13:58",
@@ -1059,7 +1088,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2020-11-13 13:10:37",
+        "updated_at": "2021-02-13 15:35:37",
         "watchers": 1
     },
     {
@@ -1203,7 +1232,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-01-28 11:50:56",
+        "updated_at": "2021-02-13 12:14:16",
         "watchers": 0
     },
     {
@@ -1228,7 +1257,7 @@
     },
     {
         "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
-        "forks": 1,
+        "forks": 0,
         "html_url": "https://github.com/N3ROO/pacman",
         "language": "Python",
         "name": "pacman",
