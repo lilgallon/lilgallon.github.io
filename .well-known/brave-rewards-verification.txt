@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: gallon.dev
-Token: e4bdba851a3e3dd5c92eec76cc1be58971e2b10921f0bac5ca8ec4ae14cfa398
+Token: 4f54f77cbb5436960dd5bdcc776bed71c94d51422339c0fed12aafc5191936c6

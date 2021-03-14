@@ -130,7 +130,7 @@
         "stars": 4,
         "topics": [],
         "updated_at": "2019-05-02 20:12:35",
-        "watchers": 1
+        "watchers": 2
     },
     {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on player (no PvP advantage)",
@@ -266,14 +266,14 @@
                 "title": "Version 0.1"
             }
         ],
-        "stars": 5,
+        "stars": 6,
         "topics": [
             "bandwidth-monitor",
             "bandwidth",
             "network",
             "tracker"
         ],
-        "updated_at": "2021-01-01 12:12:27",
+        "updated_at": "2021-03-13 07:00:33",
         "watchers": 0
     },
     {
@@ -569,7 +569,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 35,
+        "stars": 36,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -580,7 +580,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2021-02-11 13:58:32",
+        "updated_at": "2021-02-28 02:51:30",
         "watchers": 5
     },
     {
@@ -1020,6 +1020,12 @@
         "open_issues": [],
         "releases": [
             {
+                "body": "- Added Polish translation (thanks @Greg-21)",
+                "published_at": "2021-02-16 12:23:25",
+                "tag_name": "1.4.1",
+                "title": "Version 1.4.1"
+            },
+            {
                 "body": "- Added support for localization (only en_US and fr_FR are supported at the moment)\r\n\r\nYou can contribute to the project (and get credited) by adding new lang files in https://github.com/N3ROO/HorseStatsMod/tree/MC_1.16.x/src/main/resources/assets/horsestatsmod/lang\r\n\r\nI may open a https://crowdin.com/ project for you to contribute on, but it is a small project, so I don't think that it would be worth it.",
                 "published_at": "2021-02-13 11:45:54",
                 "tag_name": "1.4.0",
@@ -1074,13 +1080,13 @@
                 "title": "Version 1.2.0 for Minecraft 1.16.x"
             },
             {
-                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.x/.github/resources/demo-1.1.0.png)\r\n",
+                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.1.0.png)\r\n",
                 "published_at": "2020-09-22 18:30:38",
                 "tag_name": "1.1.0",
                 "title": "Version 1.1.0 for MC 1.16.x"
             },
             {
-                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.x/.github/resources/demo-1.0.0.gif)\r\n\r\n",
+                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.0.0.gif)\r\n\r\n",
                 "published_at": "2020-09-20 18:30:47",
                 "tag_name": "1.0.0",
                 "title": "Version 1.0.0 for MC 1.16.3"
@@ -1088,7 +1094,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-02-13 15:35:37",
+        "updated_at": "2021-02-16 12:22:20",
         "watchers": 1
     },
     {
@@ -1232,7 +1238,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-02-13 12:14:16",
+        "updated_at": "2021-03-12 23:10:25",
         "watchers": 0
     },
     {
