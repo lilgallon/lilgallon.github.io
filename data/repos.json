@@ -174,7 +174,7 @@
                 "title": "Version 1.2.0 (Minecraft 1.15.2)"
             },
             {
-                "body": "- Smart block aim assistance\r\n\r\n**BEFORE:**\r\n\r\n<img src=\"https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_before_update.gif\" width=\"500\"/>\r\n\r\n**AFTER:**\r\n\r\nIt will recognize the block that you're trying to break.\r\n<img src=\"https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_smart_aim.gif\" width=\"500\"/>\r\n\r\nBut, if you want to change the block that you're breaking, just move your mouse.\r\n<img src=\"https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_smart_aim_captions.gif\" width=\"500\"/>\r\n\r\n- Improved attack assistance (it puts your crosshair higher than before)\r\n- Increased attack assistance duration (1 sec -> 1.7 sec)\r\n- The assistance won't be running while you're in GUIs\r\n\r\nClick \"aimassistance-1.2.0-MC1.16.2.jar\" to download the mod (under assets)",
+                "body": "- Smart block aim assistance\r\n\r\n**BEFORE:**\r\n\r\n<img src=\"https://github.com/lilgallon/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_before_update.gif\" width=\"500\"/>\r\n\r\n**AFTER:**\r\n\r\nIt will recognize the block that you're trying to break.\r\n<img src=\"https://github.com/lilgallon/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_smart_aim.gif\" width=\"500\"/>\r\n\r\nBut, if you want to change the block that you're breaking, just move your mouse.\r\n<img src=\"https://github.com/lilgallon/AimAssistanceMod/raw/MC_1.16.2/.github/images/1_2_0_smart_aim_captions.gif\" width=\"500\"/>\r\n\r\n- Improved attack assistance (it puts your crosshair higher than before)\r\n- Increased attack assistance duration (1 sec -> 1.7 sec)\r\n- The assistance won't be running while you're in GUIs\r\n\r\nClick \"aimassistance-1.2.0-MC1.16.2.jar\" to download the mod (under assets)",
                 "published_at": "2020-09-05 12:25:46",
                 "tag_name": "1.2.0",
                 "title": "Version 1.2.0 for Minecraft 1.16.2"
@@ -186,13 +186,13 @@
                 "title": "Version 1.1.0 for Minecraft 1.16.2 (forge)"
             },
             {
-                "body": "**Config:**\r\n\r\n**Forge has still not implemented the HUD to customize mod's settings, so for now, you need to update the settings by hand.** \r\nYou can change the settings of the mod in the .minecraft/config folder. Then, open aimassistancemod-client.toml and update the values.\r\n\r\n**Core:**\r\n- Improved aim assistance on mobs\r\n\r\n![before](https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_before_1.0.1.gif)\r\n\r\n![after](https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_1.0.1.gif)\r\n\r\nClick \"[aimassistance-1.0.1-MC1.16.1.jar](https://github.com/N3ROO/AimAssistanceMod/releases/download/1.0.1/aimassistance-1.0.1-MC1.16.1.jar)\" to download the mod (under assets)",
+                "body": "**Config:**\r\n\r\n**Forge has still not implemented the HUD to customize mod's settings, so for now, you need to update the settings by hand.** \r\nYou can change the settings of the mod in the .minecraft/config folder. Then, open aimassistancemod-client.toml and update the values.\r\n\r\n**Core:**\r\n- Improved aim assistance on mobs\r\n\r\n![before](https://github.com/lilgallon/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_before_1.0.1.gif)\r\n\r\n![after](https://github.com/lilgallon/AimAssistanceMod/raw/MC_1.16.1/.github/images/demo_1.0.1.gif)\r\n\r\nClick \"[aimassistance-1.0.1-MC1.16.1.jar](https://github.com/lilgallon/AimAssistanceMod/releases/download/1.0.1/aimassistance-1.0.1-MC1.16.1.jar)\" to download the mod (under assets)",
                 "published_at": "2020-08-01 10:04:46",
                 "tag_name": "1.0.1",
                 "title": "Version 1.0.1 for Minecraft 1.16.1"
             },
             {
-                "body": "The config menu is yet not available as of today (forge 32.0.98). So if you want to change the settings, you need to go to your minecraft directory (\".minecraft\"), then go to the \"config\" folder, and edit aimassistancemod-client.toml\r\n\r\nForge developers will probably finish coding the config UI for the stable 1.16.1 forge release.\r\n\r\n**Core:**\r\n- Aim assistance for mobs (while fighting)\r\n- Aim assistance for blocks (while mining)\r\n\r\n**Settings:**\r\n- Aim force customizable (0.1 -> 10.0)\r\n- Assistance on mobs (on/off)\r\n- Assistance on blocks (on/off)\r\n\r\n**Click \"[aimassistance-1.0.0-MC1.16.1.jar](https://github.com/N3ROO/AimAssistanceMod/releases/download/1.0.0/aimassistance-1.0.0-MC1.16.1.jar)\" to download the mod (under assets)**",
+                "body": "The config menu is yet not available as of today (forge 32.0.98). So if you want to change the settings, you need to go to your minecraft directory (\".minecraft\"), then go to the \"config\" folder, and edit aimassistancemod-client.toml\r\n\r\nForge developers will probably finish coding the config UI for the stable 1.16.1 forge release.\r\n\r\n**Core:**\r\n- Aim assistance for mobs (while fighting)\r\n- Aim assistance for blocks (while mining)\r\n\r\n**Settings:**\r\n- Aim force customizable (0.1 -> 10.0)\r\n- Assistance on mobs (on/off)\r\n- Assistance on blocks (on/off)\r\n\r\n**Click \"[aimassistance-1.0.0-MC1.16.1.jar](https://github.com/lilgallon/AimAssistanceMod/releases/download/1.0.0/aimassistance-1.0.0-MC1.16.1.jar)\" to download the mod (under assets)**",
                 "published_at": "2020-07-31 12:34:54",
                 "tag_name": "1.0.0",
                 "title": "Version 1.0.0 for Minecraft 1.16.1"
@@ -410,7 +410,7 @@
                 "title": "Version 6.1.0 for MC 1.15.2"
             },
             {
-                "body": "![themes](https://raw.githubusercontent.com/N3ROO/Bettercolors/MC_1.8.9/.github/new_themes_crop500.png)\r\n\r\nThis update is backwards compatible with V6.1.0-b1 MC_1.14.4. The settings files are compatible with any Minecraft version. -> You can use the same settings file for MC1.8.9 as MC1.14.4 for example.\r\n\r\n- \u2795 Added 3 new themes: Material Light, Material Oceanic, Material Gold (in addition to the Default one)\r\n- \u2795 Added 'report a bug' menu item\r\n- \u2728 Moved update checker to the menu (instead of the footer)\r\n- \u2728 Changed console font to Cascadia (with ligatures & emojis)\r\n- \ud83d\udcab The selected settings file is now saved and loaded during startup\r\n- \ud83d\udcab Fixed window size to match different themes\r\n- \ud83d\udcab Fixed non-bettercolors settings file being shown in the settings tab\r\n- \ud83d\udcab Fixed wrong version difference computation (#39)\r\n- \ud83d\udcab Only bettercolors' settings files are now shown in the settings selector (#40)\r\n- \ud83d\udcab Loading settings now automatically update the toggle key (#41)\r\n- \ud83d\udcab Improved toggle key selector (#41)",
+                "body": "![themes](https://raw.githubusercontent.com/lilgallon/Bettercolors/MC_1.8.9/.github/new_themes_crop500.png)\r\n\r\nThis update is backwards compatible with V6.1.0-b1 MC_1.14.4. The settings files are compatible with any Minecraft version. -> You can use the same settings file for MC1.8.9 as MC1.14.4 for example.\r\n\r\n- \u2795 Added 3 new themes: Material Light, Material Oceanic, Material Gold (in addition to the Default one)\r\n- \u2795 Added 'report a bug' menu item\r\n- \u2728 Moved update checker to the menu (instead of the footer)\r\n- \u2728 Changed console font to Cascadia (with ligatures & emojis)\r\n- \ud83d\udcab The selected settings file is now saved and loaded during startup\r\n- \ud83d\udcab Fixed window size to match different themes\r\n- \ud83d\udcab Fixed non-bettercolors settings file being shown in the settings tab\r\n- \ud83d\udcab Fixed wrong version difference computation (#39)\r\n- \ud83d\udcab Only bettercolors' settings files are now shown in the settings selector (#40)\r\n- \ud83d\udcab Loading settings now automatically update the toggle key (#41)\r\n- \ud83d\udcab Improved toggle key selector (#41)",
                 "published_at": "2020-03-09 00:13:45",
                 "tag_name": "6.1.0-MC1.14.4",
                 "title": "Version 6.1.0 for MC 1.14.4"
@@ -422,7 +422,7 @@
                 "title": "Version 6.1.0 for MC1.12.2"
             },
             {
-                "body": "![themes](https://raw.githubusercontent.com/N3ROO/Bettercolors/MC_1.8.9/.github/new_themes_crop500.png)\r\n\r\nThis update changes the settings directory. So if you want to keep your custom settings,\r\nmove your settings files to the config/ folder instead of the bettercolors/ folder (#23).\r\n\r\n- \u2795 Added an option to change the toggle key (insert by default) (#15)\r\n- \u2795 Added 'write changelog of last version in console if the mod is out dated' (#30)\r\n- \u2795 Added 3 new themes: Material Light, Material Oceanic, Material Gold (in addition to the Default one)\r\n- \u2795 Added 'report a bug' menu item\r\n- \u2728 Moved update checker to the menu (instead of the footer)\r\n- \u2728 Changed console font to Cascadia (with ligatures & emojis)\r\n- \ud83d\udcab The selected settings file is now saved and loaded during startup\r\n- \ud83d\udcab Fixed window size to match different themes\r\n- \ud83d\udcab Fixed non-bettercolors settings file being shown in the settings tab\r\n- \ud83d\udcab Fixed wrong version difference computation (#39)\r\n- \ud83d\udcab Only bettercolors' settings files are now shown in the settings selector (#40)\r\n- \ud83d\udcab Loading settings now automatically update the toggle key (#41)\r\n- \ud83d\udcab Improved toggle key selector (#41)",
+                "body": "![themes](https://raw.githubusercontent.com/lilgallon/Bettercolors/MC_1.8.9/.github/new_themes_crop500.png)\r\n\r\nThis update changes the settings directory. So if you want to keep your custom settings,\r\nmove your settings files to the config/ folder instead of the bettercolors/ folder (#23).\r\n\r\n- \u2795 Added an option to change the toggle key (insert by default) (#15)\r\n- \u2795 Added 'write changelog of last version in console if the mod is out dated' (#30)\r\n- \u2795 Added 3 new themes: Material Light, Material Oceanic, Material Gold (in addition to the Default one)\r\n- \u2795 Added 'report a bug' menu item\r\n- \u2728 Moved update checker to the menu (instead of the footer)\r\n- \u2728 Changed console font to Cascadia (with ligatures & emojis)\r\n- \ud83d\udcab The selected settings file is now saved and loaded during startup\r\n- \ud83d\udcab Fixed window size to match different themes\r\n- \ud83d\udcab Fixed non-bettercolors settings file being shown in the settings tab\r\n- \ud83d\udcab Fixed wrong version difference computation (#39)\r\n- \ud83d\udcab Only bettercolors' settings files are now shown in the settings selector (#40)\r\n- \ud83d\udcab Loading settings now automatically update the toggle key (#41)\r\n- \ud83d\udcab Improved toggle key selector (#41)",
                 "published_at": "2020-02-11 01:05:15",
                 "tag_name": "6.1.0-MC1.8.9",
                 "title": "Version 6.1.0 for MC 1.8.9"
@@ -464,7 +464,7 @@
                 "title": "Version 6.0.0 for MC 1.13.2"
             },
             {
-                "body": "You have to use forge client (installer) 1.13.2 25.0.73 (or above) from the official website : [forge 1.13.2 downloads](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.13.2.html).\r\n\r\n**It uses a beta forge version. Unexpected crashes may occur.** If you want to help the development, [create an issue on github](https://github.com/N3ROO/Bettercolors/issues) with the crashlog.\r\n\r\nMajor things that changed from 1.8 (and that could have some issues):\r\n- Key input listening (to toggle the GUI and some modules)\r\n- Swing support (for the external GUI)\r\n- Resource path (for icons)",
+                "body": "You have to use forge client (installer) 1.13.2 25.0.73 (or above) from the official website : [forge 1.13.2 downloads](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.13.2.html).\r\n\r\n**It uses a beta forge version. Unexpected crashes may occur.** If you want to help the development, [create an issue on github](https://github.com/lilgallon/Bettercolors/issues) with the crashlog.\r\n\r\nMajor things that changed from 1.8 (and that could have some issues):\r\n- Key input listening (to toggle the GUI and some modules)\r\n- Swing support (for the external GUI)\r\n- Resource path (for icons)",
                 "published_at": "2019-03-08 10:25:34",
                 "tag_name": "6.0.0-b3-MC1.13.2",
                 "title": "Version 6.0.0-b3 for MC 1.13.2"
@@ -607,7 +607,7 @@
                 "title": "Version 1.1.0"
             },
             {
-                "body": "![illustration](https://raw.githubusercontent.com/N3ROO/BettercolorsEngine/master/.github/engine_features.png)\r\n\r\n*Works with both Fabric and Forge*.\r\n\r\nIt is clearly not backwards compatible. However, the next\r\nversions (1.x.x) will be backwards compatible with this one.\r\n\r\n\ud83d\udca5: you **need** to update your mod | \ud83d\udca2 you **may need** to update your mod\r\n\r\n**Big changes:**\r\n- \ud83d\udca5 It is now possible to change the keybind for each module\r\n- Works with fabric\r\n- \ud83d\udca5 Removed `KEY_HANDLER` from Module class since it was dependent of Minecraft. You need to code it yourself\r\n\r\n**Small changes:**\r\n- Added instructions on how to get and build the material UI library automatically\r\n- \ud83d\udca5 Added a suffix for the mod version (could be useful to separate forge and fabric versions for example)\r\n- \ud83d\udca5 Added a way to customize the window title and changed footer to \"Powered by Bettercolors Engine x.x.x\"\r\n- Added toggleModule utility function to BettercolorsEngine class\r\n- \ud83d\udca5 Added a way to change the release page API\r\n- \ud83d\udca5 Added `isTriggeredByKeybind` to onToggle function to know if a module has been toggled using key events\r\n- \ud83d\udca5 Changed icons & added new ones\r\n- Linux menu fix\r\n- Version class now uses the given releases page URL (instead of the hardcoded one)\r\n- Refactored FORGE_API to MC_INPUTS_VERSION\r\n- You don't need to call `System.setProperty(\"java.awt.headless\", \"false\");` anymore\r\n- Removed error messages when verbose = false\r\n- \ud83d\udca2 Removed depreciated endpoints",
+                "body": "![illustration](https://raw.githubusercontent.com/lilgallon/BettercolorsEngine/master/.github/engine_features.png)\r\n\r\n*Works with both Fabric and Forge*.\r\n\r\nIt is clearly not backwards compatible. However, the next\r\nversions (1.x.x) will be backwards compatible with this one.\r\n\r\n\ud83d\udca5: you **need** to update your mod | \ud83d\udca2 you **may need** to update your mod\r\n\r\n**Big changes:**\r\n- \ud83d\udca5 It is now possible to change the keybind for each module\r\n- Works with fabric\r\n- \ud83d\udca5 Removed `KEY_HANDLER` from Module class since it was dependent of Minecraft. You need to code it yourself\r\n\r\n**Small changes:**\r\n- Added instructions on how to get and build the material UI library automatically\r\n- \ud83d\udca5 Added a suffix for the mod version (could be useful to separate forge and fabric versions for example)\r\n- \ud83d\udca5 Added a way to customize the window title and changed footer to \"Powered by Bettercolors Engine x.x.x\"\r\n- Added toggleModule utility function to BettercolorsEngine class\r\n- \ud83d\udca5 Added a way to change the release page API\r\n- \ud83d\udca5 Added `isTriggeredByKeybind` to onToggle function to know if a module has been toggled using key events\r\n- \ud83d\udca5 Changed icons & added new ones\r\n- Linux menu fix\r\n- Version class now uses the given releases page URL (instead of the hardcoded one)\r\n- Refactored FORGE_API to MC_INPUTS_VERSION\r\n- You don't need to call `System.setProperty(\"java.awt.headless\", \"false\");` anymore\r\n- Removed error messages when verbose = false\r\n- \ud83d\udca2 Removed depreciated endpoints",
                 "published_at": "2020-08-17 19:23:02",
                 "tag_name": "1.0.0",
                 "title": "Version 1.0.0"
@@ -631,7 +631,7 @@
                 "title": "Version 0.2.0"
             },
             {
-                "body": "The engine is designed to work with any forge version: at least from 1.8.9 to 1.16, but it should work with the rest (not tested yet).\r\n\r\nSince it's the first version, here is what you need to do to make a hack mod:\r\n\r\n1. Create the main class to register your mod with forge\r\n2. Start the engine by giving some information about your mod and the modules that you created\r\n3. Write some modules by extending the Module class\r\n4. That's it. The engine is designed to work for any forge version from 1.8.9 to 1.16.2\r\n\r\nYou can see some examples on [Forge 1.8.9 here](https://github.com/N3ROO/Bettercolors/tree/MC_1.8.9), and on [Forge 1.16.1 here](https://github.com/N3ROO/Bettercolors/tree/MC_1.16.1) (once that the new bettercolors mod is released)\r\n\r\n**OF VERSION**: This is for the Old Forge (OF) design (MC < 1.13)\r\n**NF VERSION**: This is for the New Forge (NF) design (MC >= 1.13)",
+                "body": "The engine is designed to work with any forge version: at least from 1.8.9 to 1.16, but it should work with the rest (not tested yet).\r\n\r\nSince it's the first version, here is what you need to do to make a hack mod:\r\n\r\n1. Create the main class to register your mod with forge\r\n2. Start the engine by giving some information about your mod and the modules that you created\r\n3. Write some modules by extending the Module class\r\n4. That's it. The engine is designed to work for any forge version from 1.8.9 to 1.16.2\r\n\r\nYou can see some examples on [Forge 1.8.9 here](https://github.com/lilgallon/Bettercolors/tree/MC_1.8.9), and on [Forge 1.16.1 here](https://github.com/lilgallon/Bettercolors/tree/MC_1.16.1) (once that the new bettercolors mod is released)\r\n\r\n**OF VERSION**: This is for the Old Forge (OF) design (MC < 1.13)\r\n**NF VERSION**: This is for the New Forge (NF) design (MC >= 1.13)",
                 "published_at": "2020-07-22 16:14:17",
                 "tag_name": "0.1.0",
                 "title": "Version 0.1.0 "
@@ -1031,7 +1031,7 @@
                 "title": "Version 1.4.1"
             },
             {
-                "body": "- Added support for localization (only en_US and fr_FR are supported at the moment)\r\n\r\nYou can contribute to the project (and get credited) by adding new lang files in https://github.com/N3ROO/HorseStatsMod/tree/MC_1.16.x/src/main/resources/assets/horsestatsmod/lang\r\n\r\nI may open a https://crowdin.com/ project for you to contribute on, but it is a small project, so I don't think that it would be worth it.",
+                "body": "- Added support for localization (only en_US and fr_FR are supported at the moment)\r\n\r\nYou can contribute to the project (and get credited) by adding new lang files in https://github.com/lilgallon/HorseStatsMod/tree/MC_1.16.x/src/main/resources/assets/horsestatsmod/lang\r\n\r\nI may open a https://crowdin.com/ project for you to contribute on, but it is a small project, so I don't think that it would be worth it.",
                 "published_at": "2021-02-13 11:45:54",
                 "tag_name": "1.4.0",
                 "title": "Version 1.4.0 (support for localization)"
@@ -1085,13 +1085,13 @@
                 "title": "Version 1.2.0 for Minecraft 1.16.x"
             },
             {
-                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.1.0.png)\r\n",
+                "body": "*The config GUI has not been implemented by the Forge Team yet. To update the mod, you need to edit the config file in config/ folder of your minecraft directory. It will update in real time*\r\n\r\n- Now works with all 1.16 versions (it works with any other mod as well)\r\n- Added a config file:\r\n    - You can disable the stats from showing on the GUI. In that case, it will show the horse's stats when hovering its name (default: disabled)\r\n    - You can disable the stats from showing with colors. In that case, it will use the default color (gray) (default: enabled)\r\n\r\n![demo](https://github.com/lilgallon/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.1.0.png)\r\n",
                 "published_at": "2020-09-22 18:30:38",
                 "tag_name": "1.1.0",
                 "title": "Version 1.1.0 for MC 1.16.x"
             },
             {
-                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.0.0.gif)\r\n\r\n",
+                "body": "**Needs forge >= 34.0.6 (MC1.16.3) because it uses GuiUtils**\r\n\r\n![](https://github.com/lilgallon/HorseStatsMod/raw/MC_1.16.3/.github/resources/demo-1.0.0.gif)\r\n\r\n",
                 "published_at": "2020-09-20 18:30:47",
                 "tag_name": "1.0.0",
                 "title": "Version 1.0.0 for MC 1.16.3"
@@ -1110,10 +1110,10 @@
         "name": "javafx-nero-engine",
         "open_issues": [
             "build(deps): bump log4j-core from 2.11.1 to 2.13.2",
-            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/World.java",
-            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/entity/Entity.java",
-            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/graphics/Animation.java",
-            "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/hud/components/TextHud.java"
+            "Fix \"method_complexity\" issue in src/main/java/io/github/lilgallon/world/World.java",
+            "Fix \"method_complexity\" issue in src/main/java/io/github/lilgallon/world/entity/Entity.java",
+            "Fix \"method_complexity\" issue in src/main/java/io/github/lilgallon/graphics/Animation.java",
+            "Fix \"method_complexity\" issue in src/main/java/io/github/lilgallon/hud/components/TextHud.java"
         ],
         "releases": [],
         "stars": 0,
@@ -1158,7 +1158,7 @@
         "open_issues": [],
         "releases": [
             {
-                "body": "The changelog is too long. Here are the [details](https://github.com/N3ROO/LightBot/blob/master/CHANGELOG.md).",
+                "body": "The changelog is too long. Here are the [details](https://github.com/lilgallon/LightBot/blob/master/CHANGELOG.md).",
                 "published_at": "2019-05-28 13:49:47",
                 "tag_name": "1.0",
                 "title": "Version 1.0"
@@ -1322,7 +1322,7 @@
                 "title": "Version 1.4"
             },
             {
-                "body": "**Some settings were added. You need to update the settings variable if you used an older version.** More information on [README](https://github.com/N3ROO/particles.js).\r\n\r\n- Add #12 : Dynamic particles amount (when resizing the window)\r\n- Add #13 : Mobile detection (you can disable the script if the user is using a phone)\r\n- Fix #14 : Particles are not black anymore for users with Microsoft Edge",
+                "body": "**Some settings were added. You need to update the settings variable if you used an older version.** More information on [README](https://github.com/lilgallon/particles.js).\r\n\r\n- Add #12 : Dynamic particles amount (when resizing the window)\r\n- Add #13 : Mobile detection (you can disable the script if the user is using a phone)\r\n- Fix #14 : Particles are not black anymore for users with Microsoft Edge",
                 "published_at": "2019-03-01 10:19:41",
                 "tag_name": "1.3",
                 "title": "Version 1.3"
