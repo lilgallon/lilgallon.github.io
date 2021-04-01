@@ -3,7 +3,7 @@
  * Current version : 1.4
  * Author(s) : Lilian Gallon (N3ROO)
  * Troubleshooting : Instructions are available on the github page.
- * Contribute here : https://github.com/N3ROO/particles.js
+ * Contribute here : https://github.com/lilgallon/particles.js
  * GPL-3.0 License
  */
 

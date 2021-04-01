@@ -75,35 +75,35 @@ let vue = new Vue({
             },
             {
                 name: "AimAssistanceMod",
-                image: "https://github.com/N3ROO/AimAssistanceMod/raw/MC_1.16.3/.github/images/aimassistancemod.png",
+                image: "https://github.com/lilgallon/AimAssistanceMod/raw/MC_1.16.3/.github/images/aimassistancemod.png",
                 university: false,
                 released: true,
                 indev: false
             },
             {
                 name: "QuickSearchMod",
-                image: "https://github.com/N3ROO/QuickSearchMod/raw/MC_1.16.3/.github/resources/quicksearch.png",
+                image: "https://github.com/lilgallon/QuickSearchMod/raw/MC_1.16.3/.github/resources/quicksearch.png",
                 university: false,
                 released: true,
                 indev: false
             },
             {
                 name: "HorseStatsMod",
-                image: "https://github.com/N3ROO/HorseStatsMod/raw/MC_1.16.x/.github/resources/horsestatsmod.png",
+                image: "https://github.com/lilgallon/HorseStatsMod/raw/MC_1.16.x/.github/resources/horsestatsmod.png",
                 university: false,
                 released: true,
                 indev: false
             },
             {
                 name: "AnvilTooltipMod",
-                image: "https://github.com/N3ROO/AnvilTooltipMod/raw/MC_1.16.3/.github/resources/anviltooltipmod.png",
+                image: "https://github.com/lilgallon/AnvilTooltipMod/raw/MC_1.16.3/.github/resources/anviltooltipmod.png",
                 university: false,
                 released: true,
                 indev: false
             },
             {
                 name: "DynamicLedStrips",
-                image: "https://github.com/N3ROO/DynamicLedStrips/raw/main/.github/bls_icon.png",
+                image: "https://github.com/lilgallon/DynamicLedStrips/raw/main/.github/bls_icon.png",
                 university: false,
                 released: true,
                 indev: true

@@ -2,6 +2,35 @@
     {
         "description": null,
         "forks": 0,
+        "html_url": "https://github.com/4sh/dev-toolbox",
+        "language": "Shell",
+        "name": "dev-toolbox",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2020-10-12 14:45:35",
+        "watchers": 2
+    },
+    {
+        "description": "Kotlin library to work with tabular data files (csv, excel, open document)",
+        "forks": 0,
+        "html_url": "https://github.com/4sh/retable",
+        "language": "Kotlin",
+        "name": "retable",
+        "open_issues": [
+            "Implements Java friendly API",
+            "Unifying Read & Write Interface"
+        ],
+        "releases": [],
+        "stars": 2,
+        "topics": [],
+        "updated_at": "2021-01-13 15:55:43",
+        "watchers": 11
+    },
+    {
+        "description": null,
+        "forks": 0,
         "html_url": "https://github.com/cdp-g2-eq6/CdP-Dev",
         "language": "Vue",
         "name": "CdP-Dev",
@@ -107,35 +136,9 @@
         "watchers": 0
     },
     {
-        "description": null,
-        "forks": 0,
-        "html_url": "https://github.com/ljolliet/Terminus",
-        "language": "JavaScript",
-        "name": "Terminus",
-        "open_issues": [],
-        "releases": [
-            {
-                "body": "### V1.2\r\n\r\n* Script management (!= quests)\r\n* Commands yes, chmod, grep, man, touch\r\n* Pipe management (|) so each command now return a string \r\n* Write and append management (\\>\\> and \\>) \r\n* Rights/permission management (rwx)\r\n* Json file reading\r\n* Json template finished\r\n* Hand json writing of the world\r\n* Hand json writing of the man\r\n* Using #_ tokens in json to add particular word (like login)\r\n* CTRL-C \r\n* Fixing a few bugs about completion, mv command, script arguments\r\n* Secured admin mode\r\n* Yes/no when exiting \r\n* Adding a new quest\r\n* Adding several pnj to explain more the functions available.",
-                "published_at": "2019-05-01 10:11:52",
-                "tag_name": "V1.2",
-                "title": "Version 1.2"
-            },
-            {
-                "body": "* commands mv, tree, jobs, clear\r\n* Up/down arrows\r\n* Tab on a command and Objects\r\n* Hidden place/entity\r\n* Options in commands\r\n* Path after login@terminus\r\n* Quest dependency \r\n* Admin mode\r\n* Simplify command management\r\n* Fr version",
-                "published_at": "2019-03-21 16:10:57",
-                "tag_name": "V1.1",
-                "title": "Version 1.1"
-            }
-        ],
-        "stars": 4,
-        "topics": [],
-        "updated_at": "2019-05-02 20:12:35",
-        "watchers": 2
-    },
-    {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on player (no PvP advantage)",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/AimAssistanceMod",
+        "html_url": "https://github.com/lilgallon/AimAssistanceMod",
         "language": "Java",
         "name": "AimAssistanceMod",
         "open_issues": [],
@@ -203,7 +206,7 @@
     {
         "description": "A lightweight minecraft forge mod that displays the number of anvil uses of an item",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/AnvilTooltipMod",
+        "html_url": "https://github.com/lilgallon/AnvilTooltipMod",
         "language": "Java",
         "name": "AnvilTooltipMod",
         "open_issues": [],
@@ -229,7 +232,7 @@
     {
         "description": "\ud83c\udfae A tiny javascript game.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Atoms",
+        "html_url": "https://github.com/lilgallon/Atoms",
         "language": "JavaScript",
         "name": "Atoms",
         "open_issues": [],
@@ -254,7 +257,7 @@
     {
         "description": "\ud83d\udcc8 A simple python bandwidth monitor to track your upload, your download, and the data consumed.",
         "forks": 1,
-        "html_url": "https://github.com/N3ROO/BandwidthMonitor",
+        "html_url": "https://github.com/lilgallon/BandwidthMonitor",
         "language": "Python",
         "name": "BandwidthMonitor",
         "open_issues": [],
@@ -266,20 +269,20 @@
                 "title": "Version 0.1"
             }
         ],
-        "stars": 6,
+        "stars": 7,
         "topics": [
             "bandwidth-monitor",
             "bandwidth",
             "network",
             "tracker"
         ],
-        "updated_at": "2021-03-13 07:00:33",
+        "updated_at": "2021-03-23 16:52:14",
         "watchers": 0
     },
     {
         "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x",
         "forks": 3,
-        "html_url": "https://github.com/N3ROO/Bettercolors",
+        "html_url": "https://github.com/lilgallon/Bettercolors",
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
@@ -586,7 +589,7 @@
     {
         "description": "The engine used by the mod Bettercolors. Works with any modding API and every Minecraft version",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/BettercolorsEngine",
+        "html_url": "https://github.com/lilgallon/BettercolorsEngine",
         "language": "Java",
         "name": "BettercolorsEngine",
         "open_issues": [],
@@ -642,7 +645,7 @@
     {
         "description": "Minecraft mod that adds over 50 new biomes to the game.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/BiomesOPlenty",
+        "html_url": "https://github.com/lilgallon/BiomesOPlenty",
         "language": null,
         "name": "BiomesOPlenty",
         "open_issues": [],
@@ -655,7 +658,7 @@
     {
         "description": "\ud83c\udfeb Projet ISN BAC S 2015-2016 (19.5/20)",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Blackjack",
+        "html_url": "https://github.com/lilgallon/Blackjack",
         "language": "Processing",
         "name": "Blackjack",
         "open_issues": [],
@@ -668,7 +671,7 @@
     {
         "description": "[PROJECT PAUSED] Bleach is an anti-cheat plugin for minecraft servers",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Bleach",
+        "html_url": "https://github.com/lilgallon/Bleach",
         "language": "Java",
         "name": "Bleach",
         "open_issues": [],
@@ -692,7 +695,7 @@
     {
         "description": "A racing game created using the Karting Microgame of Unity.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Bolides",
+        "html_url": "https://github.com/lilgallon/Bolides",
         "language": "C#",
         "name": "Bolides",
         "open_issues": [],
@@ -710,7 +713,7 @@
     {
         "description": "\ud83d\udcf1 An android game for the Introduction to Mobile programming at the Bordeaux Institute of Technology.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Cascade",
+        "html_url": "https://github.com/lilgallon/Cascade",
         "language": "Java",
         "name": "Cascade",
         "open_issues": [
@@ -746,7 +749,7 @@
     {
         "description": "Advanced programming cheatsheets (C++, Java, ...)",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Cheatsheets",
+        "html_url": "https://github.com/lilgallon/Cheatsheets",
         "language": null,
         "name": "Cheatsheets",
         "open_issues": [],
@@ -763,7 +766,7 @@
     {
         "description": "Parce que M\u00e9t\u00e9o France c'est nul",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/CoolMeteo",
+        "html_url": "https://github.com/lilgallon/CoolMeteo",
         "language": "JavaScript",
         "name": "CoolMeteo",
         "open_issues": [],
@@ -776,7 +779,7 @@
     {
         "description": "Generate images with Deep Convolutional GAN",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/CSE142-Project",
+        "html_url": "https://github.com/lilgallon/CSE142-Project",
         "language": "Jupyter Notebook",
         "name": "CSE142-Project",
         "open_issues": [],
@@ -793,7 +796,7 @@
     {
         "description": "Changes your wallpaper daily by picking an image from wallhaven.cc according to your preferences",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Daily-Wallhaven-Wallpaper",
+        "html_url": "https://github.com/lilgallon/Daily-Wallhaven-Wallpaper",
         "language": "Python",
         "name": "Daily-Wallhaven-Wallpaper",
         "open_issues": [],
@@ -817,7 +820,7 @@
     {
         "description": null,
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/DistributedColorationAlgorithms",
+        "html_url": "https://github.com/lilgallon/DistributedColorationAlgorithms",
         "language": "Java",
         "name": "DistributedColorationAlgorithms",
         "open_issues": [],
@@ -830,7 +833,7 @@
     {
         "description": "\ud83d\ude0e Un site proposant divers outils pour se simplifier la vie sur Dofus.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/dofus-tools",
+        "html_url": "https://github.com/lilgallon/dofus-tools",
         "language": "HTML",
         "name": "dofus-tools",
         "open_issues": [],
@@ -852,7 +855,7 @@
     {
         "description": "Improve your immersion by taking control of your LED strips. Works with anything: games, movies, and so on! You need a Bluetooth LED Controller (comes with most LED strips on Amazon).",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/DynamicLedStrips",
+        "html_url": "https://github.com/lilgallon/DynamicLedStrips",
         "language": "C#",
         "name": "DynamicLedStrips",
         "open_issues": [],
@@ -880,7 +883,7 @@
     {
         "description": "Un outil pour g\u00e9rer la qu\u00eate du Dofus Ocre cr\u00e9\u00e9 par Mopolo, l\u00e9g\u00e8rement am\u00e9lior\u00e9",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Eternelle-Moisson",
+        "html_url": "https://github.com/lilgallon/Eternelle-Moisson",
         "language": "HTML",
         "name": "Eternelle-Moisson",
         "open_issues": [
@@ -896,7 +899,7 @@
     {
         "description": "A compilation of useful and simple python APIs : Progress bar, Web scraping, and more to come ...",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/EzAPI",
+        "html_url": "https://github.com/lilgallon/EzAPI",
         "language": "Python",
         "name": "EzAPI",
         "open_issues": [],
@@ -924,7 +927,7 @@
     {
         "description": "\ud83d\udcc5 Un script python qui permet de r\u00e9cup\u00e9rer les informations de l'almanax du jour en un clic.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/FastDofusAlmanax",
+        "html_url": "https://github.com/lilgallon/FastDofusAlmanax",
         "language": "Python",
         "name": "FastDofusAlmanax",
         "open_issues": [],
@@ -947,7 +950,7 @@
     {
         "description": "\u2744 A java fractals explorer.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Fractals_explorer",
+        "html_url": "https://github.com/lilgallon/Fractals_explorer",
         "language": "Java",
         "name": "Fractals_explorer",
         "open_issues": [
@@ -978,7 +981,7 @@
     {
         "description": "\ud83d\udd79\ufe0f Simple Game of life implementation in Python.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/GameOfLife",
+        "html_url": "https://github.com/lilgallon/GameOfLife",
         "language": "Python",
         "name": "GameOfLife",
         "open_issues": [],
@@ -997,7 +1000,7 @@
     {
         "description": "\u26bd A small project that consists in animating balls with physics.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/GravityBalls",
+        "html_url": "https://github.com/lilgallon/GravityBalls",
         "language": "Python",
         "name": "GravityBalls",
         "open_issues": [],
@@ -1014,10 +1017,12 @@
     {
         "description": "A lightweight forge mod that shows the hidden horses' stats (health, jump height, speed, and slots for Llamas)",
         "forks": 1,
-        "html_url": "https://github.com/N3ROO/HorseStatsMod",
+        "html_url": "https://github.com/lilgallon/HorseStatsMod",
         "language": "Java",
         "name": "HorseStatsMod",
-        "open_issues": [],
+        "open_issues": [
+            "Sometimes the mod shows horses with around 31-32 in health"
+        ],
         "releases": [
             {
                 "body": "- Added Polish translation (thanks @Greg-21)",
@@ -1100,7 +1105,7 @@
     {
         "description": "\ud83d\udcda An easy to use 2D game engine powered by JavaFX13",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/javafx-nero-engine",
+        "html_url": "https://github.com/lilgallon/javafx-nero-engine",
         "language": "Java",
         "name": "javafx-nero-engine",
         "open_issues": [
@@ -1127,7 +1132,7 @@
     {
         "description": "A simple mod that shows the latency (ping) of your minecraft client to the server you're currently playing on",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/LatencyMod",
+        "html_url": "https://github.com/lilgallon/LatencyMod",
         "language": "Java",
         "name": "LatencyMod",
         "open_issues": [],
@@ -1147,7 +1152,7 @@
     {
         "description": "\ud83c\udfae Lightbot is an educational video game to learn software programming concepts. Made for the Introduction to OOP & OOP design course at the Bordeaux Institute of Technology",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/LightBot",
+        "html_url": "https://github.com/lilgallon/LightBot",
         "language": "C++",
         "name": "LightBot",
         "open_issues": [],
@@ -1173,7 +1178,20 @@
     {
         "description": null,
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/M2-Workshops",
+        "html_url": "https://github.com/lilgallon/lilgallon",
+        "language": null,
+        "name": "lilgallon",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2021-04-01 17:35:04",
+        "watchers": 0
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "html_url": "https://github.com/lilgallon/M2-Workshops",
         "language": "JavaScript",
         "name": "M2-Workshops",
         "open_issues": [],
@@ -1186,7 +1204,7 @@
     {
         "description": "\ud83c\udfae A game made made for the Introduction to programming course at the Bordeaux Institute of Technology",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Monster",
+        "html_url": "https://github.com/lilgallon/Monster",
         "language": "C++",
         "name": "Monster",
         "open_issues": [],
@@ -1210,7 +1228,7 @@
     {
         "description": "\ud83d\udd0e How to find the genre of a music without using AI? Without a huge dataset? This project is about having a better genre classification than the AI-based ones",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/music-genre-finder",
+        "html_url": "https://github.com/lilgallon/music-genre-finder",
         "language": "Python",
         "name": "music-genre-finder",
         "open_issues": [],
@@ -1229,22 +1247,9 @@
         "watchers": 0
     },
     {
-        "description": null,
-        "forks": 0,
-        "html_url": "https://github.com/N3ROO/N3ROO",
-        "language": null,
-        "name": "N3ROO",
-        "open_issues": [],
-        "releases": [],
-        "stars": 0,
-        "topics": [],
-        "updated_at": "2021-03-12 23:10:25",
-        "watchers": 0
-    },
-    {
         "description": "\ud83d\udcda A java 2D game engine powered by OpenGL (discontinued, working on a clone using OpenJFX)",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/opengl-nero-engine",
+        "html_url": "https://github.com/lilgallon/opengl-nero-engine",
         "language": "Java",
         "name": "opengl-nero-engine",
         "open_issues": [
@@ -1264,10 +1269,12 @@
     {
         "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/pacman",
+        "html_url": "https://github.com/lilgallon/pacman",
         "language": "Python",
         "name": "pacman",
-        "open_issues": [],
+        "open_issues": [
+            "Bump pillow from 6.2.0 to 8.1.1"
+        ],
         "releases": [],
         "stars": 1,
         "topics": [
@@ -1276,26 +1283,26 @@
             "pacman",
             "berkeley"
         ],
-        "updated_at": "2020-01-18 08:22:04",
+        "updated_at": "2021-03-30 10:03:01",
         "watchers": 1
     },
     {
         "description": null,
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/pacman-ctf",
+        "html_url": "https://github.com/lilgallon/pacman-ctf",
         "language": "Python",
         "name": "pacman-ctf",
         "open_issues": [],
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2019-12-06 21:58:45",
+        "updated_at": "2021-03-30 10:02:53",
         "watchers": 1
     },
     {
         "description": "\u2728 An easy way to make your website look sexy.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/particles.js",
+        "html_url": "https://github.com/lilgallon/particles.js",
         "language": "JavaScript",
         "name": "particles.js",
         "open_issues": [
@@ -1356,7 +1363,7 @@
     {
         "description": "A lightweight Minecraft forge mod to search for items in containers. Works with mods that introduce their own containers",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/QuickSearchMod",
+        "html_url": "https://github.com/lilgallon/QuickSearchMod",
         "language": "Java",
         "name": "QuickSearchMod",
         "open_issues": [],
@@ -1374,7 +1381,7 @@
                 "title": "Version 1.0.0 for MC 1.16.3"
             }
         ],
-        "stars": 0,
+        "stars": 1,
         "topics": [
             "minecraft",
             "forge",
@@ -1382,13 +1389,13 @@
             "quick",
             "search"
         ],
-        "updated_at": "2020-11-09 09:09:46",
+        "updated_at": "2021-03-17 08:12:56",
         "watchers": 1
     },
     {
         "description": "\u231b A basic windows shutdown planner.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/ShutdownPlanner",
+        "html_url": "https://github.com/lilgallon/ShutdownPlanner",
         "language": "C#",
         "name": "ShutdownPlanner",
         "open_issues": [],
@@ -1431,7 +1438,7 @@
     {
         "description": "\"Techniques algorithmiques et programmation\" ~ Licence 3 Informatique Bordeaux ~ Ann\u00e9es 2018-2019",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/TAP",
+        "html_url": "https://github.com/lilgallon/TAP",
         "language": "C",
         "name": "TAP",
         "open_issues": [],
@@ -1449,7 +1456,7 @@
     {
         "description": "\ud83c\udf93 List of my programming projects that I have written during my studies.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/university-projects",
+        "html_url": "https://github.com/lilgallon/university-projects",
         "language": null,
         "name": "university-projects",
         "open_issues": [],
@@ -1470,7 +1477,7 @@
     {
         "description": "\ud83d\udd79\ufe0f Jeu arcade d\u00e9velopp\u00e9 \u00e0 la nuit de l'informatique 2018 \u00e0 l'Universit\u00e9 de Bordeaux",
         "forks": 1,
-        "html_url": "https://github.com/N3ROO/Vipi",
+        "html_url": "https://github.com/lilgallon/Vipi",
         "language": "HTML",
         "name": "Vipi",
         "open_issues": [],
@@ -1483,7 +1490,7 @@
     {
         "description": "WebGL - CSE160 at UCSC during Winter 2020",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/webgl-cse160",
+        "html_url": "https://github.com/lilgallon/webgl-cse160",
         "language": "JavaScript",
         "name": "webgl-cse160",
         "open_issues": [],
@@ -1496,7 +1503,7 @@
     {
         "description": "\ud83c\udfae A tiny javascript Yahtzee game.",
         "forks": 0,
-        "html_url": "https://github.com/N3ROO/Yahtzee",
+        "html_url": "https://github.com/lilgallon/Yahtzee",
         "language": "JavaScript",
         "name": "Yahtzee",
         "open_issues": [],
@@ -1518,6 +1525,32 @@
         ],
         "updated_at": "2019-05-28 11:05:30",
         "watchers": 0
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "html_url": "https://github.com/ljolliet/Terminus",
+        "language": "JavaScript",
+        "name": "Terminus",
+        "open_issues": [],
+        "releases": [
+            {
+                "body": "### V1.2\r\n\r\n* Script management (!= quests)\r\n* Commands yes, chmod, grep, man, touch\r\n* Pipe management (|) so each command now return a string \r\n* Write and append management (\\>\\> and \\>) \r\n* Rights/permission management (rwx)\r\n* Json file reading\r\n* Json template finished\r\n* Hand json writing of the world\r\n* Hand json writing of the man\r\n* Using #_ tokens in json to add particular word (like login)\r\n* CTRL-C \r\n* Fixing a few bugs about completion, mv command, script arguments\r\n* Secured admin mode\r\n* Yes/no when exiting \r\n* Adding a new quest\r\n* Adding several pnj to explain more the functions available.",
+                "published_at": "2019-05-01 10:11:52",
+                "tag_name": "V1.2",
+                "title": "Version 1.2"
+            },
+            {
+                "body": "* commands mv, tree, jobs, clear\r\n* Up/down arrows\r\n* Tab on a command and Objects\r\n* Hidden place/entity\r\n* Options in commands\r\n* Path after login@terminus\r\n* Quest dependency \r\n* Admin mode\r\n* Simplify command management\r\n* Fr version",
+                "published_at": "2019-03-21 16:10:57",
+                "tag_name": "V1.1",
+                "title": "Version 1.1"
+            }
+        ],
+        "stars": 4,
+        "topics": [],
+        "updated_at": "2019-05-02 20:12:35",
+        "watchers": 2
     },
     {
         "description": null,
