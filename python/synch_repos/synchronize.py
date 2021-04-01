@@ -16,7 +16,8 @@ def main():
     user = g.get_user()
 
     exceptions = [
-        'FaceWorks', 'PhysX-3.4', 'Blast', 'FleX', 'NvCloth', 'Flow'
+        'FaceWorks', 'PhysX-3.4', 'Blast', 'FleX', 'NvCloth', 'Flow',
+        'dev-toolbox', 'retable'
     ]
 
     print('[~] Looking for repos...')
