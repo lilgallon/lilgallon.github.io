@@ -5,7 +5,7 @@
     "collaborators": 2,
     "company": "@4SH France",
     "created_at": "2017-03-31T18:31:49Z",
-    "disk_usage": 713576,
+    "disk_usage": 713593,
     "email": "lilian@gallon.dev",
     "events_url": "https://api.github.com/users/lilgallon/events{/privacy}",
     "followers": 23,
@@ -41,6 +41,6 @@
     "twitter_username": "liliansurf",
     "two_factor_authentication": true,
     "type": "User",
-    "updated_at": "2021-04-18T07:51:00Z",
+    "updated_at": "2021-04-28T15:21:06Z",
     "url": "https://api.github.com/users/lilgallon"
 }
