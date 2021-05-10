@@ -229,7 +229,7 @@
     },
     {
         "description": "\ud83d\udcc8 A simple python bandwidth monitor to track your upload, your download, and the data consumed.",
-        "forks": 1,
+        "forks": 2,
         "html_url": "https://github.com/lilgallon/BandwidthMonitor",
         "language": "Python",
         "name": "BandwidthMonitor",
@@ -728,13 +728,13 @@
         "name": "Cheatsheets",
         "open_issues": [],
         "releases": [],
-        "stars": 1,
+        "stars": 2,
         "topics": [
             "cpp",
             "cheatsheets",
             "java"
         ],
-        "updated_at": "2020-10-21 14:03:35",
+        "updated_at": "2021-05-10 13:59:48",
         "watchers": 1
     },
     {
@@ -1554,11 +1554,13 @@
     },
     {
         "description": "HBAO+",
-        "forks": 0,
+        "forks": 2,
         "html_url": "https://github.com/NVIDIAGameWorks/HBAOPlus",
         "language": "C++",
         "name": "HBAOPlus",
-        "open_issues": [],
+        "open_issues": [
+            "Rename vs2015 platform folder to vs2019"
+        ],
         "releases": [
             {
                 "body": "Changelist #21602716\n",
@@ -1567,9 +1569,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 79,
+        "stars": 82,
         "topics": [],
-        "updated_at": "2021-04-23 09:44:47",
+        "updated_at": "2021-05-07 10:52:05",
         "watchers": 31
     }
 ]
