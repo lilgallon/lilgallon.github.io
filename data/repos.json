@@ -173,7 +173,7 @@
         ],
         "stars": 3,
         "topics": [],
-        "updated_at": "2021-04-16 22:57:30",
+        "updated_at": "2021-06-05 19:26:48",
         "watchers": 1
     },
     {
@@ -806,7 +806,7 @@
     },
     {
         "description": "\ud83d\ude0e Un site proposant divers outils pour se simplifier la vie sur Dofus.",
-        "forks": 0,
+        "forks": 1,
         "html_url": "https://github.com/lilgallon/dofus-tools",
         "language": "HTML",
         "name": "dofus-tools",
@@ -1575,9 +1575,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 83,
+        "stars": 87,
         "topics": [],
-        "updated_at": "2021-05-13 07:01:07",
+        "updated_at": "2021-05-30 13:21:26",
         "watchers": 31
     }
 ]
