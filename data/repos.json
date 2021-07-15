@@ -79,7 +79,7 @@
             "api"
         ],
         "updated_at": "2019-05-28 14:30:46",
-        "watchers": 0
+        "watchers": 1
     },
     {
         "description": "\ud83d\udd10 A minimalist way to retrieve data from websites that require login",
@@ -104,7 +104,7 @@
             "authentification"
         ],
         "updated_at": "2020-04-11 20:40:49",
-        "watchers": 0
+        "watchers": 1
     },
     {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on players (no PvP advantage)",
@@ -1165,7 +1165,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-05-13 18:27:43",
+        "updated_at": "2021-07-09 07:59:32",
         "watchers": 0
     },
     {
@@ -1560,7 +1560,7 @@
     },
     {
         "description": "HBAO+",
-        "forks": 2,
+        "forks": 1,
         "html_url": "https://github.com/NVIDIAGameWorks/HBAOPlus",
         "language": "C++",
         "name": "HBAOPlus",
@@ -1575,9 +1575,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 87,
+        "stars": 93,
         "topics": [],
-        "updated_at": "2021-05-30 13:21:26",
+        "updated_at": "2021-07-11 04:54:37",
         "watchers": 31
     }
 ]

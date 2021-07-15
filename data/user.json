@@ -1,14 +1,14 @@
 {
     "avatar_url": "https://avatars.githubusercontent.com/u/26824108?v=4",
-    "bio": "@4sh intern. Co-owner of eznba.co. \r\n\r\nSurfing pretty much every day ;)",
+    "bio": "Software engineer at @4sh. Co-owner of eznba.co.\r\n\r\nSurfing pretty much every day ;)",
     "blog": "https://gallon.dev",
     "collaborators": 2,
     "company": "@4SH France",
     "created_at": "2017-03-31T18:31:49Z",
-    "disk_usage": 713690,
+    "disk_usage": 713702,
     "email": "lilian@gallon.dev",
     "events_url": "https://api.github.com/users/lilgallon/events{/privacy}",
-    "followers": 23,
+    "followers": 24,
     "followers_url": "https://api.github.com/users/lilgallon/followers",
     "following": 11,
     "following_url": "https://api.github.com/users/lilgallon/following{/other_user}",
@@ -41,6 +41,6 @@
     "twitter_username": "liliansurf",
     "two_factor_authentication": true,
     "type": "User",
-    "updated_at": "2021-06-24T15:03:23Z",
+    "updated_at": "2021-07-15T20:15:51Z",
     "url": "https://api.github.com/users/lilgallon"
 }
