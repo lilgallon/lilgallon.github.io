@@ -29,7 +29,7 @@
         "stars": 0,
         "topics": [],
         "updated_at": "2020-12-15 20:39:16",
-        "watchers": 2
+        "watchers": 3
     },
     {
         "description": null,
@@ -55,7 +55,7 @@
         "stars": 0,
         "topics": [],
         "updated_at": "2020-12-10 10:41:59",
-        "watchers": 3
+        "watchers": 4
     },
     {
         "description": "\ud83d\udca4 A minimalist way to display a progress bar while running code.",
@@ -108,7 +108,7 @@
     },
     {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on players (no PvP advantage)",
-        "forks": 2,
+        "forks": 3,
         "html_url": "https://github.com/lilgallon/AimAssistanceMod",
         "language": "Java",
         "name": "AimAssistanceMod",
@@ -259,7 +259,7 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
-            "Crash on startup - the version checker doesn't work anymore (github repo changed)",
+            "1.17.1 fabric support",
             "Automatically fix the issue when toggle_key is wrong",
             "Don't wanna send you down a rabbit hole, but this server can detect the aim-assistance mod.",
             "In rare scenarios Aim Assist can sometimes target your own body.",
@@ -557,7 +557,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2021-05-16 22:36:29",
+        "updated_at": "2021-07-26 12:38:53",
         "watchers": 5
     },
     {
@@ -1165,7 +1165,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-07-09 07:59:32",
+        "updated_at": "2021-07-28 18:14:05",
         "watchers": 0
     },
     {
@@ -1575,9 +1575,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 95,
+        "stars": 97,
         "topics": [],
-        "updated_at": "2021-07-22 12:04:40",
-        "watchers": 31
+        "updated_at": "2021-08-02 03:16:28",
+        "watchers": 32
     }
 ]
