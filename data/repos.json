@@ -108,7 +108,7 @@
     },
     {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on players (no PvP advantage)",
-        "forks": 3,
+        "forks": 2,
         "html_url": "https://github.com/lilgallon/AimAssistanceMod",
         "language": "Java",
         "name": "AimAssistanceMod",
@@ -1575,9 +1575,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 97,
+        "stars": 98,
         "topics": [],
-        "updated_at": "2021-08-02 03:16:28",
+        "updated_at": "2021-08-09 01:46:47",
         "watchers": 32
     }
 ]
