@@ -253,13 +253,12 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x",
+        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x, 1.17.X",
         "forks": 2,
         "html_url": "https://github.com/lilgallon/Bettercolors",
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
-            "1.17.1 fabric support",
             "Automatically fix the issue when toggle_key is wrong",
             "Don't wanna send you down a rabbit hole, but this server can detect the aim-assistance mod.",
             "In rare scenarios Aim Assist can sometimes target your own body.",
@@ -269,6 +268,18 @@
             "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "- Fixed version checker\r\n- Fixed aim assistance crash (#93) thanks @GithubThrowaway69\r\n",
+                "published_at": "2021-08-29 17:24:08",
+                "tag_name": "7.4.1-MC1.17.1fa",
+                "title": "Version 7.4.1 for MC 1.17.1 and above (fabric)"
+            },
+            {
+                "body": "**V7.4.0 MC_1.17.1**\r\n\r\n- Same as **V7.4.0 MC_1.16.5**",
+                "published_at": "2021-08-28 14:32:07",
+                "tag_name": "7.4.0-MC1.17.1fa",
+                "title": "Version 7.4.0 for MC 1.17.1 and above (fabric)"
+            },
             {
                 "body": "*Tested with forge 11.15.1.1722*\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding",
                 "published_at": "2021-02-11 13:38:56",
@@ -546,7 +557,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 37,
+        "stars": 38,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -557,7 +568,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2021-07-26 12:38:53",
+        "updated_at": "2021-09-14 05:00:02",
         "watchers": 5
     },
     {
@@ -999,6 +1010,12 @@
         ],
         "releases": [
             {
+                "body": "## Version 1.4.2 for Minecraft 1.17.x\r\n\r\n- Improved German translation (thanks @Greg-21)\r\n- Updated mod to 1.17",
+                "published_at": "2021-09-02 07:11:44",
+                "tag_name": "1.17-1.4.2",
+                "title": "Version 1.4.2 for Minecraft 1.17.x"
+            },
+            {
                 "body": "- Added German transation (thanks @manuelgrabowski)",
                 "published_at": "2021-05-13 16:33:50",
                 "tag_name": "1.4.2",
@@ -1165,7 +1182,7 @@
         "releases": [],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-07-28 18:14:05",
+        "updated_at": "2021-09-02 16:09:00",
         "watchers": 0
     },
     {
@@ -1560,7 +1577,7 @@
     },
     {
         "description": "HBAO+",
-        "forks": 1,
+        "forks": 2,
         "html_url": "https://github.com/NVIDIAGameWorks/HBAOPlus",
         "language": "C++",
         "name": "HBAOPlus",
@@ -1575,9 +1592,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 98,
+        "stars": 99,
         "topics": [],
-        "updated_at": "2021-08-09 01:46:47",
+        "updated_at": "2021-08-30 02:02:58",
         "watchers": 32
     }
 ]

@@ -5,7 +5,7 @@
     "collaborators": 2,
     "company": "@4SH France",
     "created_at": "2017-03-31T18:31:49Z",
-    "disk_usage": 713737,
+    "disk_usage": 714158,
     "email": "lilian@gallon.dev",
     "events_url": "https://api.github.com/users/lilgallon/events{/privacy}",
     "followers": 24,
@@ -22,7 +22,7 @@
     "name": "Lilian Gallon",
     "node_id": "MDQ6VXNlcjI2ODI0MTA4",
     "organizations_url": "https://api.github.com/users/lilgallon/orgs",
-    "owned_private_repos": 30,
+    "owned_private_repos": 31,
     "plan": {
         "collaborators": 0,
         "name": "pro",
@@ -37,10 +37,10 @@
     "site_admin": false,
     "starred_url": "https://api.github.com/users/lilgallon/starred{/owner}{/repo}",
     "subscriptions_url": "https://api.github.com/users/lilgallon/subscriptions",
-    "total_private_repos": 30,
+    "total_private_repos": 31,
     "twitter_username": "liliansurf",
     "two_factor_authentication": true,
     "type": "User",
-    "updated_at": "2021-08-15T22:08:40Z",
+    "updated_at": "2021-09-21T09:09:24Z",
     "url": "https://api.github.com/users/lilgallon"
 }
