@@ -5,7 +5,7 @@
     "collaborators": 2,
     "company": "@4SH France",
     "created_at": "2017-03-31T18:31:49Z",
-    "disk_usage": 714158,
+    "disk_usage": 714160,
     "email": "lilian@gallon.dev",
     "events_url": "https://api.github.com/users/lilgallon/events{/privacy}",
     "followers": 24,
@@ -25,8 +25,8 @@
     "owned_private_repos": 31,
     "plan": {
         "collaborators": 0,
-        "name": "pro",
-        "private_repos": 9999,
+        "name": "free",
+        "private_repos": 10000,
         "space": 976562499
     },
     "private_gists": 0,
@@ -41,6 +41,6 @@
     "twitter_username": "liliansurf",
     "two_factor_authentication": true,
     "type": "User",
-    "updated_at": "2021-09-21T09:09:24Z",
+    "updated_at": "2021-10-01T20:41:46Z",
     "url": "https://api.github.com/users/lilgallon"
 }
