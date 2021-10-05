@@ -259,6 +259,7 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
+            "\u044f \u0440\u0443\u0441\u0441\u043a\u0438\u0439",
             "Automatically fix the issue when toggle_key is wrong",
             "Don't wanna send you down a rabbit hole, but this server can detect the aim-assistance mod.",
             "In rare scenarios Aim Assist can sometimes target your own body.",
@@ -1592,9 +1593,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 99,
+        "stars": 100,
         "topics": [],
-        "updated_at": "2021-08-30 02:02:58",
+        "updated_at": "2021-10-04 22:50:14",
         "watchers": 32
     }
 ]
