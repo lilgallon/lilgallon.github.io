@@ -1,5 +1,18 @@
 [
     {
+        "description": "A fork of original BrowserSync Plugin for Cordova",
+        "forks": 0,
+        "html_url": "https://github.com/4sh/cordova-plugin-browsersync-gen2",
+        "language": "JavaScript",
+        "name": "cordova-plugin-browsersync-gen2",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2021-02-01 13:24:53",
+        "watchers": 1
+    },
+    {
         "description": null,
         "forks": 0,
         "html_url": "https://github.com/cdp-g2-eq6/CdP-Dev",
@@ -253,7 +266,7 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x, 1.17.X",
+        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x, 1.17.X, 1.18.X",
         "forks": 2,
         "html_url": "https://github.com/lilgallon/Bettercolors",
         "language": null,
@@ -269,6 +282,12 @@
             "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "- Same as V7.4.1 MC_1.17.1 but for MC 1.18.1\r\n\r\nDepends on:\r\n- \"fabricloader\": \">=0.11.3\",\r\n- \"minecraft\": \"1.18.x\",\r\n- \"java\": \">=17\"",
+                "published_at": "2021-12-03 16:46:39",
+                "tag_name": "7.4.1-MC1.18.0fa",
+                "title": "Version 7.4.1 for MC 1.18.1 and above (fabric)"
+            },
             {
                 "body": "- Fixed version checker\r\n- Fixed aim assistance crash (#93) thanks @GithubThrowaway69\r\n",
                 "published_at": "2021-08-29 17:24:08",
@@ -569,7 +588,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2021-11-20 11:06:11",
+        "updated_at": "2022-01-07 17:50:29",
         "watchers": 6
     },
     {
@@ -747,6 +766,19 @@
             "java"
         ],
         "updated_at": "2021-05-10 13:59:48",
+        "watchers": 1
+    },
+    {
+        "description": "typestack/class-transformer benchmark",
+        "forks": 0,
+        "html_url": "https://github.com/lilgallon/class-transformer-benchmark",
+        "language": "TypeScript",
+        "name": "class-transformer-benchmark",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2022-02-09 20:43:52",
         "watchers": 1
     },
     {
@@ -1007,9 +1039,23 @@
         "language": "Java",
         "name": "HorseStatsMod",
         "open_issues": [
+            "java.lang.reflect.InvocationTargetException: null",
+            "Add a way to see the owner of a horse",
             "Sometimes the mod shows horses with around 31-32 in health"
         ],
         "releases": [
+            {
+                "body": "- Fixed issues related to GUI scale (anything other than guiScale=2) - thanks @Braboware",
+                "published_at": "2021-12-14 18:37:39",
+                "tag_name": "1.18-1.4.3",
+                "title": "Version 1.4.3 for MC 1.18.x"
+            },
+            {
+                "body": "- Updated mod to 1.18",
+                "published_at": "2021-12-07 18:18:57",
+                "tag_name": "1.18-1.4.2",
+                "title": "Version 1.4.2 for MC 1.18.x"
+            },
             {
                 "body": "## Version 1.4.2 for Minecraft 1.17.x\r\n\r\n- Improved German translation (thanks @Greg-21)\r\n- Updated mod to 1.17",
                 "published_at": "2021-09-02 07:11:44",
@@ -1097,7 +1143,7 @@
         ],
         "stars": 0,
         "topics": [],
-        "updated_at": "2021-05-13 16:33:47",
+        "updated_at": "2021-12-14 18:34:59",
         "watchers": 1
     },
     {
@@ -1107,7 +1153,8 @@
         "language": "Java",
         "name": "javafx-nero-engine",
         "open_issues": [
-            "build(deps): bump log4j-core from 2.11.1 to 2.13.2",
+            "build(deps): bump log4j-core from 2.11.1 to 2.16.0",
+            "build(deps): bump log4j-api from 2.11.1 to 2.16.0",
             "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/World.java",
             "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/world/entity/Entity.java",
             "Fix \"method_complexity\" issue in src/main/java/io/github/n3roo/graphics/Animation.java",
@@ -1251,7 +1298,8 @@
         "language": "Java",
         "name": "opengl-nero-engine",
         "open_issues": [
-            "build(deps): bump log4j-core from 2.11.1 to 2.13.2"
+            "build(deps): bump log4j-core from 2.11.1 to 2.16.0",
+            "build(deps): bump log4j-api from 2.11.1 to 2.16.0"
         ],
         "releases": [],
         "stars": 4,
@@ -1262,39 +1310,6 @@
             "game-engine"
         ],
         "updated_at": "2019-10-19 19:18:06",
-        "watchers": 1
-    },
-    {
-        "description": "Done for CSE140 - Introduction to AI at University of California: Santa Cruz",
-        "forks": 0,
-        "html_url": "https://github.com/lilgallon/pacman",
-        "language": "Python",
-        "name": "pacman",
-        "open_issues": [
-            "Bump pillow from 6.2.0 to 8.1.1"
-        ],
-        "releases": [],
-        "stars": 1,
-        "topics": [
-            "artificial-intelligence",
-            "astar-algorithm",
-            "pacman",
-            "berkeley"
-        ],
-        "updated_at": "2021-03-30 10:03:01",
-        "watchers": 1
-    },
-    {
-        "description": null,
-        "forks": 0,
-        "html_url": "https://github.com/lilgallon/pacman-ctf",
-        "language": "Python",
-        "name": "pacman-ctf",
-        "open_issues": [],
-        "releases": [],
-        "stars": 0,
-        "topics": [],
-        "updated_at": "2021-03-30 10:02:53",
         "watchers": 1
     },
     {
@@ -1578,7 +1593,7 @@
     },
     {
         "description": "HBAO+",
-        "forks": 2,
+        "forks": 5,
         "html_url": "https://github.com/NVIDIAGameWorks/HBAOPlus",
         "language": "C++",
         "name": "HBAOPlus",
@@ -1593,9 +1608,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 107,
+        "stars": 113,
         "topics": [],
-        "updated_at": "2021-12-02 08:01:44",
-        "watchers": 32
+        "updated_at": "2022-02-06 16:40:13",
+        "watchers": 33
     }
 ]
