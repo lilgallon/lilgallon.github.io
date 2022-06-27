@@ -120,6 +120,34 @@
         "watchers": 1
     },
     {
+        "description": null,
+        "forks": 0,
+        "html_url": "https://github.com/IZIVIA/ocpi-toolkit",
+        "language": "Kotlin",
+        "name": "ocpi-toolkit",
+        "open_issues": [],
+        "releases": [],
+        "stars": 4,
+        "topics": [],
+        "updated_at": "2022-06-21 08:54:11",
+        "watchers": 2
+    },
+    {
+        "description": "a Kotlin library to perform OCPP operations",
+        "forks": 0,
+        "html_url": "https://github.com/IZIVIA/ocpp-toolkit",
+        "language": "Kotlin",
+        "name": "ocpp-toolkit",
+        "open_issues": [
+            "Feat: Api for CSMS side"
+        ],
+        "releases": [],
+        "stars": 4,
+        "topics": [],
+        "updated_at": "2022-06-21 08:54:30",
+        "watchers": 1
+    },
+    {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on players (no PvP advantage)",
         "forks": 2,
         "html_url": "https://github.com/lilgallon/AimAssistanceMod",
@@ -255,14 +283,14 @@
                 "title": "Version 0.1"
             }
         ],
-        "stars": 7,
+        "stars": 8,
         "topics": [
             "bandwidth-monitor",
             "bandwidth",
             "network",
             "tracker"
         ],
-        "updated_at": "2021-03-23 16:52:14",
+        "updated_at": "2022-06-10 15:56:17",
         "watchers": 0
     },
     {
@@ -272,6 +300,9 @@
         "language": null,
         "name": "Bettercolors",
         "open_issues": [
+            "Hitbox",
+            "how i can",
+            "Option to make AimAssistance not target dead entities.",
             "\u044f \u0440\u0443\u0441\u0441\u043a\u0438\u0439",
             "Automatically fix the issue when toggle_key is wrong",
             "Don't wanna send you down a rabbit hole, but this server can detect the aim-assistance mod.",
@@ -313,6 +344,12 @@
                 "title": "Version 7.4.0 for MC 1.16.5 (fabric)"
             },
             {
+                "body": "- Fixed loading crash for some users (#81)",
+                "published_at": "2020-12-17 11:09:26",
+                "tag_name": "7.4.1-MC1.16.4",
+                "title": "Version 7.4.1 for MC 1.16.4 and 1.16.5 (forge)"
+            },
+            {
                 "body": "*You need fabricloader >= 0.9.0*\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding",
                 "published_at": "2020-12-17 16:40:58",
                 "tag_name": "7.4.0-MC1.16.4fa",
@@ -323,12 +360,6 @@
                 "published_at": "2020-12-17 15:56:55",
                 "tag_name": "7.3.0-MC1.16.4fa",
                 "title": "Version 7.3.0 for Minecraft 1.16.4 (fabric)"
-            },
-            {
-                "body": "- Fixed loading crash for some users (#81)",
-                "published_at": "2020-12-17 11:09:26",
-                "tag_name": "7.4.1-MC1.16.4",
-                "title": "Version 7.4.1 for MC 1.16.4 and 1.16.5 (forge)"
             },
             {
                 "body": "**Modules:**\r\n\r\n- Added Auto Right Click (#75): can be used to fast place blocks for speed bridging\r\n- Added Auto Use (#73) experimental: can be used as an auto pot, auto rod, auto soup for example\r\n- Added Panic (#76): it turns all the modules off (it does not write the changes to the config file, you can load the config file to restore)\r\n- Added Speed Bridging (#72) experimental: people usually call this scaffolding\r\n\r\n**Bettercolors engine 1.1.1:**\r\n- Added experimental support for modules\r\n- Fixed synchronization issue with sliders\r\n- Fixed toggle key display issue when a module's toggle key is not set",
@@ -355,22 +386,16 @@
                 "title": "Version 7.3.0 for Minecraft 1.16.2 (forge)"
             },
             {
-                "body": "Built with forge 32.0.108. You can use the same settings file as before.\r\n\r\n- Added an option for the triggerbot to attack when it's fully charged (\"auto cps\") (#61)\r\n- Modules are now paused when using GUIs (it wasn't working sometimes)\r\n- Optimized click assistance & triggerbot",
-                "published_at": "2020-08-11 17:58:06",
-                "tag_name": "7.2.0-MC1.16.1",
-                "title": "Version 7.2.0 for Minecraft 1.16.1 (forge)"
-            },
-            {
                 "body": "*Edit August, 13, 11:00am utc+2: fixed .jar*\r\n\r\nIt is the same version as 7.2.0 for Minecraft 1.16.1 (forge) *will be released soon if not released*. The same settings file can be used.\r\n\r\n7.2.0 additions:\r\n- Added an option for the triggerbot to attack when it's fully charged (\"auto cps\")\r\n- Modules are now paused when using GUIs (it wasn't working sometimes)\r\n- Optimized click assistance & triggerbot\r\n\r\nHow to install:\r\n1. Get the [Fabric installer](https://fabricmc.net/use/)\r\n2. Select Minecraft 1.16.2\r\n3. Select loader version >= 0.9.0 (take the latest one)\r\n\r\n![image](https://user-images.githubusercontent.com/26824108/89927135-28c2f000-dc06-11ea-8d97-43d4fa098928.png)\r\n\r\n4. Download the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) for Minecraft 1.16.2, needs to be >= 0.17.0 and put it in the mods folder\r\n5. Download Bettercolors by clicking the link below \"assets\", and put it in the mods folder",
                 "published_at": "2020-08-11 17:18:54",
                 "tag_name": "7.2.0-MC1.16.2fa",
                 "title": "Version 7.2.0 for Minecraft 1.16.2 (fabric)"
             },
             {
-                "body": "**Important update for MC1.16.1!**\r\nBuilt with forge 32.0.107. You can use the same settings file as before.\r\n\r\n- Added **triggerbot** (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS)\r\n    - It can't be used along with click assistance\r\n- Fixed a weird bug where all the modules would stop working (isShowingDeathScene is always true for some reason. Is that an issue with forge?)\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
-                "published_at": "2020-08-09 18:39:38",
-                "tag_name": "7.1.0-MC1.16.1",
-                "title": "Version 7.1.0 for Minecraft 1.16.1"
+                "body": "Built with forge 32.0.108. You can use the same settings file as before.\r\n\r\n- Added an option for the triggerbot to attack when it's fully charged (\"auto cps\") (#61)\r\n- Modules are now paused when using GUIs (it wasn't working sometimes)\r\n- Optimized click assistance & triggerbot",
+                "published_at": "2020-08-11 17:58:06",
+                "tag_name": "7.2.0-MC1.16.1",
+                "title": "Version 7.2.0 for Minecraft 1.16.1 (forge)"
             },
             {
                 "body": "*Update August, 17 at 12:15PM UTC+2: the .jar should now support linux* \r\n\r\n**V7.1.0 MC_1.8.9**\r\n\r\nBuilt with forge 15.1.1722. You can use the same settings file as before.\r\n\r\n- Added triggerbot (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS) It can't be used along with click assistance\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
@@ -379,16 +404,22 @@
                 "title": "Version 7.1.0 for Minecraft 1.8.9"
             },
             {
-                "body": "You can use the same settings file as before.\r\n- Added **Reach** (#52)\r\n- Added a **Friendlist** (#14)\r\n- Added a button to reset the settings to default (#8)\r\n- Added warnings when turning on some modules\r\n- Added a \"debug\" option (false by default)\r\n- Updated themes (oceanic, dark and light)\r\n- Improved console messages\r\n- Improved config loader (config files are backwards compatible now)\r\n- Improved window's layout\r\n\r\nHave fun :)",
-                "published_at": "2020-07-30 21:24:07",
-                "tag_name": "7.0.0-MC1.16.1",
-                "title": "Version 7.0.0 for Minecraft 1.16.1"
+                "body": "**Important update for MC1.16.1!**\r\nBuilt with forge 32.0.107. You can use the same settings file as before.\r\n\r\n- Added **triggerbot** (#58)\r\n    - \"Use on mobs\" option\r\n    - \"Clicks per seconds (CPS)\" option (it is random, but near the given CPS)\r\n    - It can't be used along with click assistance\r\n- Fixed a weird bug where all the modules would stop working (isShowingDeathScene is always true for some reason. Is that an issue with forge?)\r\n- Updated engine to 0.4.0 (preview). The only things that change for you are the themes",
+                "published_at": "2020-08-09 18:39:38",
+                "tag_name": "7.1.0-MC1.16.1",
+                "title": "Version 7.1.0 for Minecraft 1.16.1"
             },
             {
                 "body": "You can use the same settings file as before.\r\n- Added **Reach** (#52)\r\n- Added a **Friendlist** (#14)\r\n- Added a button to reset the settings to default (#8)\r\n- Added warnings when turning on some modules\r\n- Added a \"debug\" option (false by default)\r\n- Updated themes (oceanic, dark and light)\r\n- Improved console messages\r\n- Improved config loader (config files are backwards compatible now)\r\n- Improved window's layout\r\n- Fixed aim assistance range that was limited at 10 blocks (#54)\r\n\r\nHave fun :)",
                 "published_at": "2020-07-30 19:47:18",
                 "tag_name": "7.0.0-MC1.8.9",
                 "title": "Version 7.0.0 for Minecraft 1.8.9"
+            },
+            {
+                "body": "You can use the same settings file as before.\r\n- Added **Reach** (#52)\r\n- Added a **Friendlist** (#14)\r\n- Added a button to reset the settings to default (#8)\r\n- Added warnings when turning on some modules\r\n- Added a \"debug\" option (false by default)\r\n- Updated themes (oceanic, dark and light)\r\n- Improved console messages\r\n- Improved config loader (config files are backwards compatible now)\r\n- Improved window's layout\r\n\r\nHave fun :)",
+                "published_at": "2020-07-30 21:24:07",
+                "tag_name": "7.0.0-MC1.16.1",
+                "title": "Version 7.0.0 for Minecraft 1.16.1"
             },
             {
                 "body": "It works with forge **beta 32.0.25**. It should work with future versions.\r\n~~The official version will be released as soon as the stable forge version gets released.~~\r\nIt works with forge > 32.0.25. Use the latest forge version. If a crash occurs and you're using a forge beta version, then it's most likely forge that has an issue and not the mod.\r\n\r\n- Same features as Bettercolors 6.1.1 for MC1.15.2\r\n- Fixed aim assistance (#55)\r\n\r\nedit:\r\nChanged 6.1.2 from ~~pre-release~~ to stable release",
@@ -588,7 +619,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2022-01-07 17:50:29",
+        "updated_at": "2022-04-22 20:06:06",
         "watchers": 6
     },
     {
@@ -867,7 +898,7 @@
             "jquery",
             "jquery-ui"
         ],
-        "updated_at": "2021-04-26 18:34:19",
+        "updated_at": "2022-04-27 17:04:17",
         "watchers": 0
     },
     {
@@ -885,7 +916,7 @@
                 "title": "Version 0.1.0"
             }
         ],
-        "stars": 2,
+        "stars": 3,
         "topics": [
             "bluetooth-low-energy",
             "led-controller",
@@ -895,7 +926,7 @@
             "csharp",
             "color-changer"
         ],
-        "updated_at": "2021-01-12 04:07:36",
+        "updated_at": "2022-03-26 20:18:04",
         "watchers": 1
     },
     {
@@ -1034,7 +1065,7 @@
     },
     {
         "description": "A lightweight forge mod that shows the hidden horses' stats (health, jump height, speed, and slots for Llamas)",
-        "forks": 3,
+        "forks": 4,
         "html_url": "https://github.com/lilgallon/HorseStatsMod",
         "language": "Java",
         "name": "HorseStatsMod",
@@ -1057,16 +1088,16 @@
                 "title": "Version 1.4.2 for MC 1.18.x"
             },
             {
-                "body": "## Version 1.4.2 for Minecraft 1.17.x\r\n\r\n- Improved German translation (thanks @Greg-21)\r\n- Updated mod to 1.17",
-                "published_at": "2021-09-02 07:11:44",
-                "tag_name": "1.17-1.4.2",
-                "title": "Version 1.4.2 for Minecraft 1.17.x"
-            },
-            {
                 "body": "- Added German transation (thanks @manuelgrabowski)",
                 "published_at": "2021-05-13 16:33:50",
                 "tag_name": "1.4.2",
                 "title": "Version 1.4.2"
+            },
+            {
+                "body": "## Version 1.4.2 for Minecraft 1.17.x\r\n\r\n- Improved German translation (thanks @Greg-21)\r\n- Updated mod to 1.17",
+                "published_at": "2021-09-02 07:11:44",
+                "tag_name": "1.17-1.4.2",
+                "title": "Version 1.4.2 for Minecraft 1.17.x"
             },
             {
                 "body": "- Added Polish translation (thanks @Greg-21)",
@@ -1087,16 +1118,16 @@
                 "title": "Version 1.3.4 for MC 1.16.x"
             },
             {
-                "body": "Same as 1.16.x but for MC1.15.x",
-                "published_at": "2020-11-14 16:15:32",
-                "tag_name": "1.15-1.3.3",
-                "title": "Version 1.3.3 for MC 1.15.x"
-            },
-            {
                 "body": "*Note: you won't be able to see the statistics in the horse's GUI with Realistic Horse Genetics loaded. I sent a request for them to improve their compatibility ([see that message]()https://github.com/sekelsta/horse-colors/issues/11). However, there is an overlay message showing the stats even if that mod is loaded :)*\r\n\r\n- Fixed server compatibility issue\r\n- Stats are now displayed instead of the \"press {key} to dismount\" message",
                 "published_at": "2020-11-13 13:11:08",
                 "tag_name": "1.3.3",
                 "title": "Version 1.3.3 for Minecraft 1.16.x"
+            },
+            {
+                "body": "Same as 1.16.x but for MC1.15.x",
+                "published_at": "2020-11-14 16:15:32",
+                "tag_name": "1.15-1.3.3",
+                "title": "Version 1.3.3 for MC 1.15.x"
             },
             {
                 "body": "- Fixed a crash happening when the player opens the horse screen without being riding a horse - Thanks @ManDeJan\r\n",
@@ -1141,9 +1172,9 @@
                 "title": "Version 1.0.0 for MC 1.16.3"
             }
         ],
-        "stars": 0,
+        "stars": 1,
         "topics": [],
-        "updated_at": "2021-12-14 18:34:59",
+        "updated_at": "2022-06-07 12:31:01",
         "watchers": 1
     },
     {
@@ -1289,6 +1320,19 @@
             "youtube-api"
         ],
         "updated_at": "2019-10-15 02:40:28",
+        "watchers": 0
+    },
+    {
+        "description": null,
+        "forks": 0,
+        "html_url": "https://github.com/lilgallon/ocpi-toolkit",
+        "language": null,
+        "name": "ocpi-toolkit",
+        "open_issues": [],
+        "releases": [],
+        "stars": 0,
+        "topics": [],
+        "updated_at": "2022-05-30 07:18:53",
         "watchers": 0
     },
     {
@@ -1593,7 +1637,7 @@
     },
     {
         "description": "HBAO+",
-        "forks": 5,
+        "forks": 6,
         "html_url": "https://github.com/NVIDIAGameWorks/HBAOPlus",
         "language": "C++",
         "name": "HBAOPlus",
@@ -1608,9 +1652,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 113,
+        "stars": 131,
         "topics": [],
-        "updated_at": "2022-02-06 16:40:13",
+        "updated_at": "2022-06-23 08:47:50",
         "watchers": 33
     }
 ]
