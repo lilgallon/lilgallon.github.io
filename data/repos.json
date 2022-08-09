@@ -120,36 +120,66 @@
         "watchers": 1
     },
     {
-        "description": null,
+        "description": "a Kotlin library to perform OCPI operations",
         "forks": 0,
         "html_url": "https://github.com/IZIVIA/ocpi-toolkit",
         "language": "Kotlin",
         "name": "ocpi-toolkit",
         "open_issues": [],
-        "releases": [],
+        "releases": [
+            {
+                "body": "All versions:\r\n- Fixed deserialization generating LinkedHashMap instead of generic objects. The issue was happening for SearchResult deserialization, but it could happened in the future for other operations",
+                "published_at": "2022-07-19 14:47:22",
+                "tag_name": "R-0.0.11",
+                "title": "R-0.0.11: Deserialization fix"
+            },
+            {
+                "body": "OCPI 2.1.1:\r\n- Implemented Tokens module\r\n\r\nOCPI 2.1.1 Gireve:\r\n- Implemented Tokens module",
+                "published_at": "2022-07-19 08:10:48",
+                "tag_name": "R-0.0.10",
+                "title": "R-0.0.10: Tokens module"
+            }
+        ],
         "stars": 4,
-        "topics": [],
-        "updated_at": "2022-06-21 08:54:11",
-        "watchers": 2
+        "topics": [
+            "cpo",
+            "e-mobility",
+            "electric-vehicles",
+            "emsp",
+            "ev-charging",
+            "ev-roaming",
+            "evse",
+            "kotlin",
+            "ocpi"
+        ],
+        "updated_at": "2022-07-01 17:49:48",
+        "watchers": 3
     },
     {
         "description": "a Kotlin library to perform OCPP operations",
-        "forks": 0,
+        "forks": 1,
         "html_url": "https://github.com/IZIVIA/ocpp-toolkit",
         "language": "Kotlin",
         "name": "ocpp-toolkit",
         "open_issues": [
-            "Feat: Api for CSMS side"
+            "Build.gradle. When i try to run the application"
         ],
         "releases": [],
-        "stars": 4,
-        "topics": [],
-        "updated_at": "2022-06-21 08:54:30",
+        "stars": 5,
+        "topics": [
+            "charging-station",
+            "electric-vehicles",
+            "ev-charging",
+            "evse",
+            "kotlin",
+            "ocpp"
+        ],
+        "updated_at": "2022-07-01 17:52:23",
         "watchers": 1
     },
     {
         "description": "A Minecraft mod that helps to aim. Works great with controllers. Doesn't work on players (no PvP advantage)",
-        "forks": 2,
+        "forks": 3,
         "html_url": "https://github.com/lilgallon/AimAssistanceMod",
         "language": "Java",
         "name": "AimAssistanceMod",
@@ -212,9 +242,9 @@
                 "title": "Version 1.0.0 for Minecraft 1.16.1"
             }
         ],
-        "stars": 3,
+        "stars": 4,
         "topics": [],
-        "updated_at": "2021-06-05 19:26:48",
+        "updated_at": "2022-07-29 16:04:11",
         "watchers": 1
     },
     {
@@ -294,7 +324,7 @@
         "watchers": 0
     },
     {
-        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x, 1.17.X, 1.18.X",
+        "description": "\u2694\ufe0f  Minecraft assistance mod built with Forge AND Fabric. For MC 1.8.9, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.x, 1.17.X, 1.18.X, 1.19.X",
         "forks": 2,
         "html_url": "https://github.com/lilgallon/Bettercolors",
         "language": null,
@@ -313,6 +343,12 @@
             "MLG Water/Twisting Vines"
         ],
         "releases": [
+            {
+                "body": "- Same as V7.4.1 MC_1.18.1 but for MC 1.19.x\r\n\r\nDepends on:\r\n- \"fabricloader\": \">=0.14.0\",\r\n- \"minecraft\": \"1.19.x\",\r\n- \"java\": \">=17\"",
+                "published_at": "2022-06-29 19:35:22",
+                "tag_name": "7.4.1-MC1.19.0fa",
+                "title": "Version 7.4.1 for MC 1.19.x and above (fabric)"
+            },
             {
                 "body": "- Same as V7.4.1 MC_1.17.1 but for MC 1.18.1\r\n\r\nDepends on:\r\n- \"fabricloader\": \">=0.11.3\",\r\n- \"minecraft\": \"1.18.x\",\r\n- \"java\": \">=17\"",
                 "published_at": "2021-12-03 16:46:39",
@@ -608,7 +644,7 @@
                 "title": "Version 1.0"
             }
         ],
-        "stars": 38,
+        "stars": 40,
         "topics": [
             "minecraft-mod",
             "minecraft-forge",
@@ -619,7 +655,7 @@
             "fabric",
             "assistance-mod"
         ],
-        "updated_at": "2022-04-22 20:06:06",
+        "updated_at": "2022-08-03 18:18:15",
         "watchers": 6
     },
     {
@@ -881,7 +917,7 @@
     },
     {
         "description": "\ud83d\ude0e Un site proposant divers outils pour se simplifier la vie sur Dofus.",
-        "forks": 1,
+        "forks": 2,
         "html_url": "https://github.com/lilgallon/dofus-tools",
         "language": "HTML",
         "name": "dofus-tools",
@@ -916,7 +952,7 @@
                 "title": "Version 0.1.0"
             }
         ],
-        "stars": 3,
+        "stars": 4,
         "topics": [
             "bluetooth-low-energy",
             "led-controller",
@@ -926,7 +962,7 @@
             "csharp",
             "color-changer"
         ],
-        "updated_at": "2022-03-26 20:18:04",
+        "updated_at": "2022-08-07 20:06:07",
         "watchers": 1
     },
     {
@@ -1071,10 +1107,18 @@
         "name": "HorseStatsMod",
         "open_issues": [
             "java.lang.reflect.InvocationTargetException: null",
+            "Add config file option to hide horse stats on shift click horse",
+            "java.lang.reflect.InvocationTargetException: null",
             "Add a way to see the owner of a horse",
             "Sometimes the mod shows horses with around 31-32 in health"
         ],
         "releases": [
+            {
+                "body": "- Added owner (beta)\r\n- Improved German translation (thanks @Greg-21)\r\n- Updated mod to 1.19\r\n\r\nTested with forge 41.0.45",
+                "published_at": "2022-07-18 07:24:21",
+                "tag_name": "1.19-1.4.4",
+                "title": "Version 1.4.4 for MC 1.19.x"
+            },
             {
                 "body": "- Fixed issues related to GUI scale (anything other than guiScale=2) - thanks @Braboware",
                 "published_at": "2021-12-14 18:37:39",
@@ -1172,9 +1216,9 @@
                 "title": "Version 1.0.0 for MC 1.16.3"
             }
         ],
-        "stars": 1,
+        "stars": 2,
         "topics": [],
-        "updated_at": "2022-06-07 12:31:01",
+        "updated_at": "2022-06-29 08:48:45",
         "watchers": 1
     },
     {
@@ -1652,9 +1696,9 @@
                 "title": "HBAO+ 3.1.0 release"
             }
         ],
-        "stars": 131,
+        "stars": 135,
         "topics": [],
-        "updated_at": "2022-06-23 08:47:50",
-        "watchers": 33
+        "updated_at": "2022-07-19 08:13:22",
+        "watchers": 34
     }
 ]
