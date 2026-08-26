@@ -1,450 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- SEO -->
-    <meta name="description" content="Website of Lilian Gallon, French CS student from Bordeaux curently studying at the University of California - Santa Cruz."/>
-    <meta name="keywords" content="Lilian Gallon, nero, N3ROO, N3RO, Lilian, Gallon, Bordeaux, Université de Bordeaux, IUT Bordeaux, Licence Bordeaux, University of California, UCSC, Santa Cruz, nero!"/>
-    <meta name="author" content="Lilian Gallon"/>
-    <meta name="copyright" content="Lilian Gallon"/>
-    <meta name="robots" content="follow"/>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/resources/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Website preview -->
-    <meta property="og:image" content="https://gallon.dev/resources/images/logo/website_preview.jpg" />
-
-    <!-- Boostrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Font Awesome 5 -->
-    <link rel="stylesheet" href="/vendors/fontawesome-free-5.11.2-web/css/all.min.css">
-
-    <!-- Vue.js -->
-    <script src="/vendors/vuejs-2.6.10/vue.min.js"></script>
-
-    <!-- Github calendar -->
-    <script src="/vendors/github-calendar-2.2.7/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="/vendors/github-calendar-2.2.7/github-calendar-responsive.css"/>
-
-    <!-- Website CSS -->
-    <link rel="stylesheet" href="/style/dark.css" id="theme" media="print" onload="this.media='all'"> <!-- default theme -->
-    <link rel="stylesheet" href="/style/utility.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/style/navbar.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/style/sidebar.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/style/middle.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/style/right.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/style/footer.css" media="print" onload="this.media='all'">
-
-    <title>Homepage - gallon.dev</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lilian Gallon is a tech lead, Kotlin backend engineer, and open-source maintainer based in Bordeaux, France.">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Lilian Gallon — Tech lead &amp; open-source maintainer</title>
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black bottom-gradient">
-            <a class="navbar-brand" href="/">
-                <img id="logo" src="resources/images/logo/gallon_dev_light.png" alt="logo" height="30" class="d-inline-block align-top">
-            </a>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="fas fa-bars"></i>
-            </button>
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Lilian Gallon — home">
+        <span class="brand-mark" aria-hidden="true">&lt;</span>lg<span class="brand-mark" aria-hidden="true">/&gt;</span>
+      </a>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-                <!-- <input class="form-control mr-sm-2" placeholder="Coming soon..."> -->
-
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Misc
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/cpp.html">Advanced C++</a>
-                            <a class="dropdown-item" href="/mcmod-lesson.html">How to create a Minecraft mod</a>
-                            <a class="dropdown-item" href="/chromagan.html">ChromaGAN analysis</a>
-                        </div>
-                    </li>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Utility
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/gists.html">Gists</a>
-                            <a class="dropdown-item" href="/about.html#changelog">Changelog</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a id="theme-changer" class="nav-link" href="" onclick="toggleTheme()">
-                            <i class="fa-fw fas fa-sun"></i> Light theme
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">v{{ version }} <span class="main-palette"><small><i>new!</i></small></span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <script>
-            // If the theme is not the default one, we need to load it while rendering the page
-            // Otherwise it would load the default theme, and the load the selected theme which
-            // will decrease the user experience
-            function setTheme(themeName) {
-                localStorage.setItem('theme', themeName);
-                document.getElementById('theme').href = '/style/' + themeName + '.css';
-
-                if (themeName === 'light') {
-                    document.getElementById('logo').src = '/resources/images/logo/gallon_dev_dark.png';
-                    document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-moon"></i> Dark theme';
-                } else {
-                    document.getElementById('logo').src = '/resources/images/logo/gallon_dev_light.png';
-                    document.getElementById('theme-changer').innerHTML = '<i class="fa-fw fas fa-sun"></i> Light theme';
-                }
-            }
-
-            function toggleTheme() {
-                console.log(localStorage.getItem('theme'));
-                if (localStorage.getItem('theme') === 'dark') {
-                    setTheme('light');
-                } else {
-                    setTheme('dark');
-                }
-            }
-
-            (function () {
-            if (localStorage.getItem('theme') === 'light') {
-                setTheme('light');
-            } else {
-                setTheme('dark');
-            }
-            })();
-        </script>
-
-        <div class="row">
-
-            <!-- Sidebar -->
-            <div class="col-xl-2 col-md-4 left-panel">
-                <div class="container sticky">
-
-                    <!-- Projects -->
-                    <div class="title">
-                        Projects
-                    </div>
-                    <input class="form-control" placeholder="Search for projects..." @input="onProjectsSearch">
-                    <div class="project-list">
-                        <ul>
-                            <li v-for="(project, index) in projectsSearched" v-if="index <= 5">
-                                <i class="fa-fw far fa-folder"></i> <a :href="'/projects.html#' + project.name" class="discret-link">{{ project.name }}</a>
-                            </li>
-                            <i v-if="projectsSearched.length - 5 > 0">{{ projectsSearched.length - 5 }} more...</i>
-                        </ul>
-                    </div>
-
-                    <!-- Blog posts -->
-                    <!--
-                    <div class="title">
-                        Blog posts
-                    </div>
-                    <input class="form-control" placeholder="Search for posts..." @input="onPostsSearch">
-                    <div class="project-list">
-                        <ul>
-                            <li v-for="(post, index) in postsSearched" v-if="index <= 5">
-                                <i class="fa-fw far fa-newspaper"></i> <a href="/blog.html" class="discret-link">{{ post.title }} </a>
-                            </li>
-                            <em v-if="postsSearched.length - 5 > 0">{{ postsSearched.length - 5 }} more...</em>
-                        </ul>
-                    </div>
-
-                    <a href="https://github.com/lilgallon" target="_blank">
-                        <button class="button" type="button">
-                            <i class="fa-fw fab fa-github"></i> Follow @lilgallon
-                        </button>
-                    </a>
-
-                    <br><br>
-                    -->
-
-                    Website score of  <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fgallon.dev%2F&tab=desktop" target="_blank">90/100</a>
-                    <br>
-                    Friends:<br>
-                    - <a href="https://ljolliet.github.io/" target="_blank">Louis</a>
-                </div>
-            </div>
-
-            <!-- Middle content -->
-            <div class="col-xl-8 col-md-8 middle-panel">
-                <div class="container">
-
-                    <!-- Directions -->
-                    <div class="title1"><i class="fa-fw fas fa-directions"></i> Welcome! Who are you?</div>
-                    <hr>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <a href="resume.html" class="discret-link">
-                                    <div class="big-button bg-secondary-1">
-                                        <div class="title">
-                                            Recruiter
-                                        </div>
-                                        <div>
-                                            <i class="fa-fw fas fa-book"></i> Check my resume
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="projects.html" class="discret-link">
-                                    <div class="big-button bg-secondary-2">
-                                        <div class="title">
-                                            Student
-                                        </div>
-                                        <div>
-                                            <i class="fa-fw fas fa-code"></i> Check my projects
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="chromagan.html" class="discret-link">
-                                    <div class="big-button bg-secondary-4">
-                                        <div class="title">
-                                            Just curious?
-                                        </div>
-                                        <div>
-                                            <i class="fa-fw fas far fa-image"></i> Check the ChromaGAN analysis
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <!-- Carousel -->
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-slide-to="0" class="active"></li>
-                            <li data-slide-to="1"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="/resources/images/carousel/new_mc_mods.jpg" alt="First slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>I made new lightweight minecraft mods!</h5>
-                                    <p style="text-align: center;">2000+ downloads in less than a month</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="/resources/images/carousel/carousel_ucsc.jpg" alt="Second slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Exchange program at UCSC</h5>
-                                    <p style="text-align: center;">I finished my year at UCSC. It was the best experience of my life. I made a lot of friends, I learned a lot
-                                        of things, and, I grew up.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
-                    <!-- Welcome message
-                    <div class="title2"><i class="fa-fw fas fa-home"></i> Welcome message</div>
-                    <div class="activity">
-                        <div class="content">
-                            You can take a look at my projects and my blog posts by using the sidebar.
-                            If you want to know more about me, check my <a href="/resume.html">resume</a>.
-                            The data is periodically fetched from public APIs, so everything should be more or less up to date.
-                            If you are curious about the history of this website, take a look <a href="/about.html">here</a>.
-                        </div>
-                        <div class="details">
-                            Posted 24/11/19 by Lilian Gallon (manually) - Updated 15/06/20
-                        </div>
-                    </div>-->
-
-                    <!-- Recent github activity -->
-                    <div class="title2"><i class="fa-fw fab fa-github"></i> Recent activity</div>
-                    <div class="activity">
-                        <div class="calendar">
-                            <!-- Loading stuff -->
-                            Loading the data just for you.
-                        </div>
-
-                        <div class="details">
-                            from Github API
-                        </div>
-                    </div>
-
-
-                    <!-- Recent Twitter 
-                    <div class="title2"><i class="fa-fw fab fa-twitter"></i> Recent tweets</div>
-                    <div class="activity">
-                        <div class="content">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-12">
-                                    <a id="twitter" class="twitter-timeline" data-theme="dark"
-                                        href="https://twitter.com/LilianSurf?ref_src=twsrc%5Etfw"
-                                        data-tweet-limit="1">Tweets by LilianSurf</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="details">
-                            from Twitter API
-                        </div>
-                    </div>
-                -->
-
-                    <!-- Stackoverflow activity -->
-                    <div class="title2"><i class="fa-fw fab fa-stack-overflow"></i> Recent answers</div>
-                    <div class="activity">
-                        <div v-if="reqSucceededSO">
-                            <div v-for="activity in activitiesSO" style="text-align: left;">
-                                {{ activity.date }}: {{ activity.score }} point(s) for <a :href="activity.url">this answer</a>
-                                <br>
-                            </div>
-
-                            <em class="fake-link" @click="updateRecentStackOverflowActivity(-5)" v-if="activitiesSOcount > 5">See less... •</em>
-                            <em class="fake-link" @click="updateRecentStackOverflowActivity(5)">See more...</em>
-                        </div>
-                        <div v-else>
-                            Could not retrieve Stack Overflow data (probably too munch requests from this IP)
-                        </div>
-                        <div class="details">
-                            from StackExchange API
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="footer">
-                    <div class="row">
-
-                        <!-- Left column -->
-                        <div class="col-md-4 col-6">
-                            <ul>
-                                <li>
-                                    <a href="https://github.com/lilgallon" target="_blank">
-                                        <i class="fa-fw fab fa-github"></i> Github profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/lilian-gallon/" target="_blank">
-                                        <i class="fa-fw fab fa-linkedin"></i> LinkedIn profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://stackoverflow.com/users/8811838/nero" target="_blank">
-                                        <i class="fa-fw fab fa-stack-overflow"></i> StackOverflow profile
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Middle column -->
-                        <div class="col-md-4 col-6">
-                            <ul>
-                                <li>
-                                    <a href="https://pages.github.com/" target="_blank">Hosted by Github pages</a>
-                                </li>
-                                <li>
-                                    <a href="https://domains.google/" target="_blank">Domain provided by Google</a>
-                                </li>
-                                <li>
-                                    Powered by <a href="https://vuejs.org/">Vue.js</a> & <a href="https://getbootstrap.com/">Bootstrap</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Right column -->
-                        <div class="col-md-4 col-6">
-                            <ul>
-                                <li>
-                                    Design inspired by Github
-                                </li>
-                                <li>
-                                    <a href="/about.html">About</a> • <a href="/about.html#sitemap">Sitemap</a>
-                                </li>
-                                <li>
-                                    <a href="/about.html#changelog">© Lilian Gallon, version {{ version }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right content (hidden if < lg) -->
-            <div class="col-lg-2 right-panel d-none d-xl-block">
-                <!-- ... -->
-            </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <div class="locale-switch" aria-label="Language">
+          <span aria-current="page">EN</span>
+          <span class="locale-separator" aria-hidden="true">/</span>
+          <a href="/fr/" lang="fr" hreflang="fr">FR</a>
         </div>
-    </div>
+        <a class="button-link" href="https://github.com/lilgallon" target="_blank" rel="noreferrer">
+          <span class="button-label-long">GitHub</span><span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
 
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="eyebrow-command">~/lilian/profile</span>
+            <span>Tech lead at 4SH · Kotlin/backend · OSS maintainer</span>
+          </p>
+          <h1 id="hero-title">Reliable systems. <em>Open source</em> that lasts.</h1>
+          <p class="hero-copy">
+            I’m <strong>Lilian Gallon</strong>, a tech lead based in Bordeaux. I build production-grade Kotlin systems and maintain tools that make complex engineering work feel simpler.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/lilgallon" target="_blank" rel="noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="mailto:gallon.lilian@gmail.com">Say hello <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
 
-    <!-- Bootstrap (JQuery, Popper & Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <aside class="code-card" aria-label="Profile as Kotlin code">
+          <div class="code-card-header">
+            <span class="code-label">profile.kt</span>
+            <span class="status-dot" aria-label="Available"></span>
+          </div>
+          <pre><code><span class="syntax-keyword">val</span> lilian = <span class="syntax-type">Engineer</span>(
+  focus = <span class="syntax-string">"reliable systems"</span>,
+  language = <span class="syntax-type">Kotlin</span>,
+  mode = <span class="syntax-type">OpenSource</span>,
+)</code></pre>
+        </aside>
+      </section>
 
-    <!-- Utilities -->
-    <script src="vendors/axios-0.19.2/axios.min.js"></script>
+      <section class="proof-strip" aria-label="At a glance">
+        <div class="proof-item">
+          <p class="proof-label">01 / Role</p>
+          <strong>Tech lead</strong>
+          <span>4SH · Bordeaux, France</span>
+        </div>
+        <div class="proof-item">
+          <p class="proof-label">02 / Focus</p>
+          <strong>Kotlin / backend</strong>
+          <span>Production systems & tooling</span>
+        </div>
+        <div class="proof-item">
+          <p class="proof-label">03 / Community</p>
+          <strong>800k+ downloads</strong>
+          <span>Across Minecraft mods</span>
+        </div>
+      </section>
 
-    <!-- Javascript using vue -->
-    <script src="js/index.js"></script>
+      <section class="section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading-row">
+          <div>
+            <p class="section-index">01 / Selected work</p>
+            <h2 class="section-heading" id="work-title">Projects I keep <em>moving forward.</em></h2>
+          </div>
+          <p class="section-intro">Libraries, developer tools, and community projects I actively build or maintain. Each one removes a little friction from someone’s day.</p>
+        </div>
 
-    <script>
-        //GitHubCalendar(".calendar", "lilgallon");
-        // or enable responsive functionality:
-        window.addEventListener('load', event => {
-            GitHubCalendar(".calendar", "lilgallon", { responsive: true });
-        });
-    </script>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-number" aria-hidden="true">01</span>
+            <p class="project-meta">Maintainer · Kotlin · EV roaming</p>
+            <h3><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">OCPI Toolkit</a></h3>
+            <p class="project-description">The reference Kotlin library for implementing OCPI: production-ready protocol logic, validation, and transport-agnostic foundations.</p>
+            <div class="project-footer">
+              <span class="project-meta">Open source · MIT</span>
+              <div class="project-links"><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <span class="project-number" aria-hidden="true">02</span>
+            <p class="project-meta">Creator · KSP · Kotlin</p>
+            <h3><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Konstruct</a></h3>
+            <p class="project-description">A Kotlin Symbol Processor that generates kotlinx.serialization serializers for domain types you don’t control—without the boilerplate.</p>
+            <div class="project-footer">
+              <span class="project-meta">Open source · MIT</span>
+              <div class="project-links"><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number" aria-hidden="true">03</span>
+            <p class="project-meta">Creator · Java · Multiloader</p>
+            <h3>Minecraft mods</h3>
+            <p class="project-description">Accessible, lightweight quality-of-life mods: controller-friendly aim assistance and clear, hidden horse statistics.</p>
+            <div class="project-footer">
+              <span class="download-count">800k+ downloads</span>
+              <div class="project-links">
+                <a href="https://github.com/lilgallon/AimAssistanceMod" target="_blank" rel="noreferrer">Aim Assistance ↗</a>
+                <a href="https://github.com/lilgallon/HorseStatsMod" target="_blank" rel="noreferrer">Horse Stats ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number" aria-hidden="true">04</span>
+            <p class="project-meta">Contributor · TypeScript · Obsidian</p>
+            <h3><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Obsidian Jira Issue</a></h3>
+            <p class="project-description">A community-led continuation of the Jira integration for Obsidian, keeping issue context readable and useful inside notes.</p>
+            <div class="project-footer">
+              <span class="project-meta">Community fork · AGPL</span>
+              <div class="project-links"><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="about" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div>
+            <p class="section-index">02 / About</p>
+            <h2 class="section-heading" id="about-title">Built with care. <em>Maintained with patience.</em></h2>
+            <p class="about-copy">I like software that stays understandable as it grows: explicit trade-offs, useful abstractions, and tools people can trust in production. <strong>Open source is where I keep that craft visible.</strong></p>
+            <p class="personal-note">Away from the keyboard: surfing whenever the Atlantic cooperates—and negotiating water rights with a 31 kg dog who loves to swim.</p>
+          </div>
+
+          <aside class="contact-card" aria-label="Contact Lilian Gallon">
+            <p class="code-label">contact.init()</p>
+            <a href="mailto:gallon.lilian@gmail.com">gallon.lilian@gmail.com</a>
+            <div class="contact-links">
+              <a href="https://github.com/lilgallon" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/lilian-gallon" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Lilian Gallon · Built as plain HTML & CSS.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
 </body>
 </html>
