@@ -615,7 +615,52 @@ a:focus-visible {
   color: var(--blue);
 }
 
-@media (max-width: 880px) {
+.error-main {
+  display: grid;
+  min-height: calc(100vh - 11.6rem);
+  place-items: center;
+  padding: clamp(4rem, 10vw, 8rem) var(--page-gutter);
+}
+
+.error-panel {
+  width: min(100%, 48rem);
+  padding: clamp(2rem, 6vw, 4.5rem);
+  background: var(--paper-raised);
+  border: 1px solid var(--line-strong);
+  box-shadow: 10px 10px 0 var(--blue);
+}
+
+.error-code {
+  margin: 0;
+  color: var(--blue);
+  font-size: clamp(4.5rem, 16vw, 9rem);
+  font-weight: 650;
+  letter-spacing: -0.09em;
+  line-height: 0.85;
+}
+
+.error-panel h1 {
+  margin: 2rem 0 0;
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  font-weight: 580;
+  letter-spacing: -0.065em;
+  line-height: 1.05;
+}
+
+.error-panel p:not(.error-code) {
+  max-width: 55ch;
+  margin: 1.4rem 0 0;
+  color: var(--muted);
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 960px) {
   .site-header {
     gap: 1rem;
   }
@@ -647,6 +692,12 @@ a:focus-visible {
 
   .section-heading-row {
     gap: 1.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .project-card {
+    min-height: 24rem;
   }
 }
 
@@ -729,6 +780,11 @@ a:focus-visible {
     flex-direction: column;
     justify-content: center;
     gap: 0.6rem;
+  }
+
+  .error-actions {
+    align-items: stretch;
+    flex-direction: column;
   }
 }
 
