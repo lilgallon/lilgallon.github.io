@@ -71,6 +71,16 @@ a:focus-visible {
   outline-offset: 4px;
 }
 
+.company-link {
+  text-decoration-color: rgba(49, 86, 245, 0.48);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.company-link:hover {
+  color: var(--blue);
+}
+
 .skip-link {
   position: fixed;
   z-index: 100;
