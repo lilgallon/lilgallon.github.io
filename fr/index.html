@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lilian Gallon est tech lead, développeur backend Kotlin et mainteneur open source basé à Bordeaux.">
-  <meta name="theme-color" content="#f6f5ef">
-  <meta name="color-scheme" content="light">
+  <meta name="description" content="Lilian Gallon, développeur backend Kotlin et tech lead à Bordeaux. Conception de services backend, architecture, mise en production sur GCP/Kubernetes et accompagnement d’équipes.">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Lilian Gallon - Tech lead &amp; mainteneur open source">
-  <meta property="og:description" content="Des systèmes Kotlin fiables et de l’open source qui dure.">
+  <meta property="og:title" content="Lilian Gallon - Développeur backend Kotlin & tech lead">
+  <meta property="og:description" content="Services backend Kotlin, architecture, mise en production et accompagnement d’équipes techniques. Bordeaux.">
   <meta property="og:url" content="https://gallon.dev/fr/">
   <meta property="og:image" content="https://gallon.dev/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Lilian Gallon - Des systèmes fiables et de l’open source qui dure.">
+  <meta property="og:image:alt" content="Lilian Gallon">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lilian Gallon - Tech lead &amp; mainteneur open source">
-  <meta name="twitter:description" content="Des systèmes Kotlin fiables et de l’open source qui dure.">
+  <meta name="twitter:title" content="Lilian Gallon - Développeur backend Kotlin & tech lead">
+  <meta name="twitter:description" content="Services backend Kotlin, architecture, mise en production et accompagnement d’équipes techniques. Bordeaux.">
   <meta name="twitter:image" content="https://gallon.dev/assets/og.png">
-  <title>Lilian Gallon - Tech lead &amp; mainteneur open source</title>
+  <title>Lilian Gallon - Développeur backend Kotlin & tech lead</title>
   <link rel="canonical" href="https://gallon.dev/fr/">
   <link rel="alternate" hreflang="en" href="https://gallon.dev/">
   <link rel="alternate" hreflang="fr" href="https://gallon.dev/fr/">
@@ -30,161 +31,201 @@
   <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body id="top">
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <div class="site-frame">
-    <header class="site-header">
-      <a class="brand" href="/fr/" aria-label="Lilian Gallon - accueil">
-        <span class="brand-mark" aria-hidden="true">&lt;</span>lg<span class="brand-mark" aria-hidden="true">/&gt;</span>
-      </a>
-
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/fr/">Lilian Gallon</a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="#work">Projets</a>
-        <a class="nav-persistent" href="/fr/cv/">CV</a>
-        <a href="#about">À propos</a>
+        <a class="nav-optional" href="#services">Services</a>
+        <a class="nav-optional" href="#parcours">Parcours</a>
+        <a class="nav-optional" href="#projets">Projets</a>
+        <a href="/fr/cv/">CV</a>
+        <a href="#contact">Contact</a>
         <div class="locale-switch" aria-label="Langue">
           <a href="/" lang="en" hreflang="en">EN</a>
-          <span class="locale-separator" aria-hidden="true">/</span>
           <span aria-current="page">FR</span>
         </div>
-        <a class="button-link" href="https://github.com/lilgallon" target="_blank" rel="noreferrer">
-          <span class="button-label-long">GitHub</span><span aria-hidden="true">↗</span>
-        </a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main id="main-content">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">
-            <span class="eyebrow-command">~/lilian/profil</span>
-            <span>Tech lead chez <a class="company-link" href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a> · Kotlin/backend · Mainteneur OSS</span>
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div>
+          <p class="kicker">Développeur backend Kotlin &amp; tech lead · Bordeaux</p>
+          <h1 id="hero-title">Je conçois, livre et maintiens des services backend en production.</h1>
+          <p class="hero-lead">
+            Je suis <strong>Lilian Gallon</strong>. Depuis 2021, je développe des systèmes backend en Kotlin chez <a href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a>, où je suis aujourd’hui tech lead et formateur. Je maintiens aussi <strong>OCPI Toolkit</strong>, une bibliothèque Kotlin open source pour la recharge de véhicules électriques.
           </p>
-          <h1 id="hero-title">Des systèmes fiables. De l’<em>open source</em> qui dure.</h1>
-          <p class="hero-copy">
-            Je suis <strong>Lilian Gallon</strong>, tech lead basé à Bordeaux. Je construis des systèmes Kotlin prêts pour la production et je maintiens des outils qui rendent l’ingénierie complexe plus simple.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/lilgallon" target="_blank" rel="noreferrer">Explorer GitHub <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="mailto:gallon.lilian@gmail.com">Me contacter <span aria-hidden="true">→</span></a>
+          <div class="actions">
+            <a class="button button-primary" href="#contact">Me contacter</a>
+            <a class="button" href="/fr/cv/">Voir le CV</a>
           </div>
         </div>
 
-        <aside class="code-card" aria-label="Profil sous forme de code Kotlin">
-          <div class="code-card-header">
-            <span class="code-label">profil.kt</span>
-            <span class="status-dot" aria-hidden="true"></span>
+        <dl class="facts" aria-label="En bref">
+          <div><dt>Poste actuel</dt><dd>Tech lead &amp; formateur, 4SH</dd></div>
+          <div><dt>Expérience</dt><dd>Backend en production depuis 2021</dd></div>
+          <div><dt>Stack principale</dt><dd>Kotlin, Spring, gRPC, MongoDB, SQL, GCP, Kubernetes, Terraform</dd></div>
+          <div><dt>Localisation</dt><dd>Bordeaux, France</dd></div>
+          <div><dt>Langues</dt><dd>Français, anglais</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="services-title">Services</h2>
+          <p>Ce sur quoi je peux intervenir, de l’écriture du code à l’organisation de l’équipe.</p>
+        </div>
+        <div>
+          <div class="services">
+            <article class="service">
+              <h3>Développement backend</h3>
+              <p>Conception et développement d’API et de services métier : modélisation du domaine, contrats d’API, persistance, tests.</p>
+              <p class="mono">Kotlin · Java · Spring · gRPC · GraphQL · REST</p>
+            </article>
+            <article class="service">
+              <h3>Architecture &amp; revue technique</h3>
+              <p>Audit d’une base de code existante, choix d’architecture argumentés et documentés, plan de refonte ou de migration progressif.</p>
+              <p class="mono">Modélisation · API design · MongoDB · SQL</p>
+            </article>
+            <article class="service">
+              <h3>Cloud &amp; mise en production</h3>
+              <p>Déploiement et exploitation de services sur GCP : infrastructure as code, Kubernetes, pipelines CI/CD, suivi en production.</p>
+              <p class="mono">GCP · Kubernetes · Terraform · Docker · GitHub Actions</p>
+            </article>
+            <article class="service">
+              <h3>Lead technique &amp; formation</h3>
+              <p>Encadrement technique d’une équipe, revues de code, montée en compétence sur Kotlin et les pratiques backend.</p>
+              <p class="mono">Kotlin · Gradle · Revue de code · Mentorat</p>
+            </article>
           </div>
-          <pre><code><span class="syntax-keyword">val</span> lilian = <span class="syntax-type">Engineer</span>(
-  focus = <span class="syntax-string">"reliable systems"</span>,
-  language = <span class="syntax-type">Kotlin</span>,
-  mode = <span class="syntax-type">OpenSource</span>,
-)</code></pre>
-        </aside>
-      </section>
 
-      <section class="proof-strip" aria-label="En un coup d’œil">
-        <div class="proof-item">
-          <p class="proof-label">01 / Rôle</p>
-          <strong>Tech lead</strong>
-          <span><a class="company-link" href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a> · Bordeaux, France</span>
-        </div>
-        <div class="proof-item">
-          <p class="proof-label">02 / Expertise</p>
-          <strong>Kotlin / backend</strong>
-          <span>Systèmes de production & outils</span>
-        </div>
-        <div class="proof-item">
-          <p class="proof-label">03 / Communauté</p>
-          <strong>800k+ téléchargements</strong>
-          <span>Sur l’ensemble des mods Minecraft</span>
-        </div>
-      </section>
-
-      <section class="section-shell" id="work" aria-labelledby="work-title">
-        <div class="section-heading-row">
-          <div>
-            <p class="section-index">01 / Projets sélectionnés</p>
-            <h2 class="section-heading" id="work-title">Des projets que je fais <em>avancer.</em></h2>
+          <div class="callout">
+            <p class="callout-label">Domaine</p>
+            <p><strong>Mobilité électrique et protocole OCPI.</strong> En tant que mainteneur d’OCPI Toolkit, je connais le protocole d’itinérance de la recharge (échanges CPO / eMSP, sessions, tarifs, points de charge) et son implémentation côté backend.</p>
           </div>
-          <p class="section-intro">Des bibliothèques, des outils pour développeurs et des projets communautaires que je construis ou maintiens activement. Chacun retire un peu de friction du quotidien.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <span class="project-number" aria-hidden="true">01</span>
-            <p class="project-meta">Mainteneur · Kotlin · E-roaming</p>
-            <h3><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">OCPI Toolkit</a></h3>
-            <p class="project-description">La bibliothèque Kotlin de référence pour implémenter OCPI : logique protocolaire, validation prête pour la production et fondations indépendantes du transport.</p>
-            <div class="project-footer">
-              <span class="project-meta">Open source · MIT</span>
-              <div class="project-links"><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">Sources ↗</a></div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <span class="project-number" aria-hidden="true">02</span>
-            <p class="project-meta">Créateur · KSP · Kotlin</p>
-            <h3><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Konstruct</a></h3>
-            <p class="project-description">Un processeur Kotlin Symbol Processing qui génère les serializers kotlinx.serialization pour les types métier hors de votre contrôle, sans code répétitif.</p>
-            <div class="project-footer">
-              <span class="project-meta">Open source · MIT</span>
-              <div class="project-links"><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Sources ↗</a></div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <span class="project-number" aria-hidden="true">03</span>
-            <p class="project-meta">Créateur · Java · Multiloader</p>
-            <h3>Mods Minecraft</h3>
-            <p class="project-description">Des mods d’accessibilité et de confort légers : une assistance à la visée adaptée aux manettes et des statistiques de chevaux enfin visibles.</p>
-            <div class="project-footer">
-              <span class="download-count">800k+ téléchargements</span>
-              <div class="project-links">
-                <a href="https://github.com/lilgallon/AimAssistanceMod" target="_blank" rel="noreferrer">Aim Assistance ↗</a>
-                <a href="https://github.com/lilgallon/HorseStatsMod" target="_blank" rel="noreferrer">Horse Stats ↗</a>
+    <section class="section" id="parcours" aria-labelledby="parcours-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="parcours-title">Parcours</h2>
+          <p>Expérience professionnelle et formation, en résumé.</p>
+        </div>
+        <div>
+          <ol class="timeline">
+            <li class="entry">
+              <p class="entry-date mono">2021 – aujourd’hui</p>
+              <div>
+                <h3>Tech lead &amp; formateur</h3>
+                <p class="entry-org"><a href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a> · Bordeaux</p>
+                <ol class="progression" aria-label="Évolution dans l’entreprise">
+                  <li>Stagiaire</li>
+                  <li>Développeur junior</li>
+                  <li>Développeur senior</li>
+                  <li>Lead developer</li>
+                  <li>Tech lead</li>
+                </ol>
+                <ul>
+                  <li>Direction technique et suivi de la livraison de systèmes web en production.</li>
+                  <li>Services backend en Kotlin et gRPC, avec MongoDB et SQL, déployés sur GCP avec Kubernetes et Terraform.</li>
+                  <li>Formation de développeurs.</li>
+                </ul>
               </div>
-            </div>
-          </article>
+            </li>
+            <li class="entry">
+              <p class="entry-date mono">2020</p>
+              <div>
+                <h3>Projet de conception logicielle</h3>
+                <p class="entry-org">Cisco × UC Santa Cruz · San Jose, États-Unis</p>
+                <ul>
+                  <li>SDK pour développeurs de jeux et prototype de routage cloud entre nœuds AWS et GCP pour réduire la latence.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="entry">
+              <p class="entry-date mono">2016 – 2021</p>
+              <div>
+                <h3>Master Informatique, Génie logiciel</h3>
+                <p class="entry-org">Université de Bordeaux · UC Santa Cruz</p>
+              </div>
+            </li>
+          </ol>
+          <a class="more-link" href="/fr/cv/">CV complet →</a>
+        </div>
+      </div>
+    </section>
 
-          <article class="project-card">
-            <span class="project-number" aria-hidden="true">04</span>
-            <p class="project-meta">Contributeur · TypeScript · Obsidian</p>
+    <section class="section" id="projets" aria-labelledby="projets-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="projets-title">Open source</h2>
+          <p>Projets que je crée ou maintiens sur mon temps libre.</p>
+        </div>
+        <ul class="projects">
+          <li class="project">
+            <h3><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">OCPI Toolkit</a></h3>
+            <span class="project-role mono">Mainteneur</span>
+            <p>Bibliothèque Kotlin pour implémenter le protocole OCPI (itinérance de la recharge de véhicules électriques) : modèles, validation et logique protocolaire, indépendamment du transport HTTP.</p>
+            <div class="project-links"><span class="mono">Kotlin · MIT</span><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">Code source ↗</a></div>
+          </li>
+          <li class="project">
+            <h3><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Konstruct</a></h3>
+            <span class="project-role mono">Créateur</span>
+            <p>Processeur KSP qui génère des serializers kotlinx.serialization pour des types que l’on ne peut pas annoter (bibliothèques tierces, modèles métier partagés).</p>
+            <div class="project-links"><span class="mono">Kotlin · KSP · MIT</span><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Code source ↗</a></div>
+          </li>
+          <li class="project">
+            <h3>Mods Minecraft</h3>
+            <span class="project-role mono">Créateur</span>
+            <p>Mods de confort et d’accessibilité : assistance à la visée pour manette, affichage des statistiques des chevaux. Plus de 800 000 téléchargements au total.</p>
+            <div class="project-links"><span class="mono">Java</span><a href="https://github.com/lilgallon/AimAssistanceMod" target="_blank" rel="noreferrer">Aim Assistance ↗</a><a href="https://github.com/lilgallon/HorseStatsMod" target="_blank" rel="noreferrer">Horse Stats ↗</a></div>
+          </li>
+          <li class="project">
             <h3><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Obsidian Jira Issue</a></h3>
-            <p class="project-description">Le fork communautaire qui garde Jira lisible et utile dans les notes Obsidian.</p>
-            <div class="project-footer">
-              <span class="project-meta">Fork communautaire · AGPL</span>
-              <div class="project-links"><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Sources ↗</a></div>
-            </div>
-          </article>
-        </div>
-      </section>
+            <span class="project-role mono">Contributeur</span>
+            <p>Fork communautaire du plugin qui affiche les tickets Jira dans les notes Obsidian.</p>
+            <div class="project-links"><span class="mono">TypeScript · AGPL</span><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Code source ↗</a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="section-shell" id="about" aria-labelledby="about-title">
-        <div class="about-grid">
-          <div>
-            <p class="section-index">02 / À propos</p>
-            <h2 class="section-heading" id="about-title">Construit avec soin. <em>Maintenu avec patience.</em></h2>
-            <p class="about-copy">J’aime les logiciels qui restent compréhensibles en grandissant : des compromis explicites, des abstractions utiles et des outils fiables en production. <strong>L’open source est l’endroit où je rends ce travail visible.</strong></p>
-            <p class="personal-note">Loin du clavier : je surfe dès que je peux, et j’ai un chien qui adore nager.</p>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div>
+          <div class="prose">
+            <p>Pour un projet, une question technique ou simplement échanger, le plus simple est de m’écrire par e-mail. Je réponds en français ou en anglais.</p>
+            <p class="note">En dehors du travail : je surfe dès que je peux, et j’ai un chien qui adore nager.</p>
           </div>
-
-          <aside class="contact-card" aria-label="Contacter Lilian Gallon">
-            <p class="code-label">contact.init()</p>
-            <a href="mailto:gallon.lilian@gmail.com">gallon.lilian@gmail.com</a>
+          <div class="contact-block">
+            <a class="contact-email" href="mailto:gallon.lilian@gmail.com">gallon.lilian@gmail.com</a>
             <div class="contact-links">
-              <a href="https://github.com/lilgallon" target="_blank" rel="noreferrer">GitHub ↗</a>
               <a href="https://www.linkedin.com/in/lilian-gallon" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href="https://github.com/lilgallon" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="/fr/cv/">CV</a>
             </div>
-          </aside>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <span>© 2026 Lilian Gallon · Réalisé en HTML & CSS.</span>
-      <a href="#top">Retour en haut ↑</a>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Lilian Gallon</span>
+      <a href="#top">Haut de page ↑</a>
+    </div>
+  </footer>
 </body>
 </html>

@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV de Lilian Gallon, tech lead, développeur backend Kotlin et mainteneur open source basé à Bordeaux.">
-  <meta name="theme-color" content="#f6f5ef">
-  <meta name="color-scheme" content="light">
+  <meta name="description" content="CV de Lilian Gallon, développeur backend Kotlin et tech lead à Bordeaux.">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="profile">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Lilian Gallon - CV">
-  <meta property="og:description" content="Tech lead, développeur backend Kotlin et mainteneur open source.">
+  <meta property="og:description" content="Développeur backend Kotlin et tech lead à Bordeaux.">
   <meta property="og:url" content="https://gallon.dev/fr/cv/">
   <meta property="og:image" content="https://gallon.dev/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Lilian Gallon - Des systèmes fiables et de l’open source qui dure.">
+  <meta property="og:image:alt" content="Lilian Gallon">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lilian Gallon - CV">
-  <meta name="twitter:description" content="Tech lead, développeur backend Kotlin et mainteneur open source.">
+  <meta name="twitter:description" content="Développeur backend Kotlin et tech lead à Bordeaux.">
   <meta name="twitter:image" content="https://gallon.dev/assets/og.png">
   <title>Lilian Gallon - CV</title>
   <link rel="canonical" href="https://gallon.dev/fr/cv/">
@@ -29,228 +30,182 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body id="top" class="cv-page">
-  <a class="skip-link" href="#main-content">Aller au contenu</a>
+<body id="top">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <div class="site-frame">
-    <header class="site-header">
-      <a class="brand" href="/fr/" aria-label="Lilian Gallon - accueil">
-        <span class="brand-mark" aria-hidden="true">&lt;</span>lg<span class="brand-mark" aria-hidden="true">/&gt;</span>
-      </a>
-
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/fr/">Lilian Gallon</a>
       <nav class="site-nav" aria-label="Navigation du CV">
-        <a class="nav-persistent" href="/fr/">Portfolio</a>
-        <a href="#experience">Expérience</a>
-        <a href="#education">Formation</a>
+        <a href="/fr/">Accueil</a>
+        <a class="nav-optional" href="#experience">Expérience</a>
+        <a class="nav-optional" href="#competences">Compétences</a>
+        <a class="nav-optional" href="#formation">Formation</a>
         <div class="locale-switch" aria-label="Langue">
           <a href="/cv/" lang="en" hreflang="en">EN</a>
-          <span class="locale-separator" aria-hidden="true">/</span>
           <span aria-current="page">FR</span>
         </div>
-        <a class="button-link" href="https://github.com/lilgallon" target="_blank" rel="noreferrer">
-          <span class="button-label-long">GitHub</span><span aria-hidden="true">↗</span>
-        </a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main id="main-content" class="cv-main">
-      <section class="cv-hero" aria-labelledby="cv-title">
-        <div class="cv-hero-grid">
-          <div>
-            <p class="eyebrow">
-              <span class="eyebrow-command">~/lilian/cv</span>
-              <span>Bordeaux, France · Mis à jour en août 2026</span>
-            </p>
-            <h1 id="cv-title">Tech lead. Développeur backend. <em>Mainteneur open source.</em></h1>
-            <p class="cv-lead">Je conçois des systèmes de production fiables, j’accompagne les décisions d’ingénierie et je maintiens des outils qui transforment la complexité en fondations durables.</p>
-            <div class="hero-actions cv-actions">
-              <a class="button button-primary" href="mailto:gallon.lilian@gmail.com">Me contacter <span aria-hidden="true">→</span></a>
-              <a class="button button-secondary" href="https://www.linkedin.com/in/lilian-gallon" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-              <button class="button button-secondary print-button" type="button" onclick="window.print()">Imprimer / PDF</button>
-            </div>
+  <main id="contenu">
+    <section class="cv-hero" aria-labelledby="cv-name">
+      <div class="container">
+        <div>
+          <h1 id="cv-name">Lilian Gallon</h1>
+          <p class="cv-title">Développeur backend Kotlin &amp; tech lead</p>
+          <p class="cv-summary">Cinq ans d’expérience sur des systèmes backend en production : conception de services Kotlin, choix d’architecture, déploiement sur GCP et Kubernetes, encadrement et formation de développeurs. Mainteneur de la bibliothèque open source OCPI Toolkit.</p>
+          <p class="cv-print-contact">gallon.lilian@gmail.com · gallon.dev · linkedin.com/in/lilian-gallon · github.com/lilgallon</p>
+          <div class="actions no-print">
+            <a class="button button-primary" href="mailto:gallon.lilian@gmail.com">Me contacter</a>
+            <a class="button" href="https://www.linkedin.com/in/lilian-gallon" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <button class="button" type="button" onclick="window.print()">Imprimer / PDF</button>
           </div>
-
-          <aside class="cv-summary-card" aria-label="Résumé du profil">
-            <div class="code-card-header">
-              <span class="code-label">profil.json</span>
-              <span class="status-dot" aria-hidden="true"></span>
-            </div>
-            <dl>
-              <div><dt>rôle</dt><dd>Tech lead chez <a class="company-link" href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a></dd></div>
-              <div><dt>spécialité</dt><dd>Kotlin · backend · architecture</dd></div>
-              <div><dt>plateforme</dt><dd>GCP · Kubernetes · Terraform</dd></div>
-              <div><dt>langues</dt><dd>Français · Anglais</dd></div>
-            </dl>
-          </aside>
         </div>
-      </section>
+        <dl class="facts" aria-label="En bref">
+          <div><dt>Localisation</dt><dd>Bordeaux, France</dd></div>
+          <div><dt>Poste actuel</dt><dd>Tech lead &amp; formateur, 4SH</dd></div>
+          <div><dt>Langues</dt><dd>Français (natif), anglais (professionnel)</dd></div>
+          <div><dt>Mise à jour</dt><dd>Novembre 2026</dd></div>
+        </dl>
+      </div>
+    </section>
 
-      <section class="cv-section" id="experience" aria-labelledby="experience-title">
-        <div class="cv-section-heading">
-          <p class="section-index">01 / Expérience</p>
-          <h2 id="experience-title">Construire, guider, <em>transmettre.</em></h2>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="experience-title">Expérience</h2>
         </div>
-
-        <div class="cv-timeline">
-          <article class="cv-entry">
-            <div class="cv-entry-date">
-              <span>Avr. 2021</span>
-              <span>Actuel</span>
-            </div>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">
-                <div>
-                  <p class="cv-company"><a class="company-link" href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a> · Bordeaux, France</p>
-                  <h3>Technical Lead et Formateur</h3>
-                </div>
-                <span class="cv-entry-index" aria-hidden="true">01</span>
-              </div>
-              <ol class="cv-progression" aria-label="Progression dans l’entreprise">
-                <li><span>Oct. 2025 - Actuel</span><strong>Technical Lead et Formateur</strong></li>
-                <li><span>Déc. 2024 - Oct. 2025</span><strong>Lead dev et Formateur</strong></li>
-                <li><span>Oct. 2023 - Nov. 2024</span><strong>Ingénieur développeur - Confirmé</strong></li>
-                <li><span>Sept. 2021 - Oct. 2023</span><strong>Ingénieur développeur - Junior</strong></li>
-                <li><span>Avr. 2021 - Août 2021</span><strong>Développeur - Stage</strong></li>
+        <ol class="timeline">
+          <li class="entry">
+            <p class="entry-date mono">Avr. 2021 – aujourd’hui</p>
+            <div>
+              <h3>Tech lead &amp; formateur</h3>
+              <p class="entry-org"><a href="https://www.4sh.fr/" target="_blank" rel="noreferrer">4SH</a> · Bordeaux</p>
+              <ol class="progression" aria-label="Évolution dans l’entreprise">
+                <li>Stagiaire (2021)</li>
+                <li>Junior (2021)</li>
+                <li>Senior (2023)</li>
+                <li>Lead developer (2024)</li>
+                <li>Tech lead (2025)</li>
               </ol>
               <ul>
-                <li>Pilotage de la direction technique et de la livraison de systèmes web en production, ainsi qu’animation de formations.</li>
-                <li>Développement de services Kotlin et gRPC avec MongoDB et SQL, déployés sur GCP avec Kubernetes et Terraform.</li>
-                <li>Transformation des contraintes produit en choix d’architecture explicites, abstractions maintenables et opérations fiables.</li>
+                <li>Direction technique et suivi de la livraison de systèmes web en production ; animation de formations pour développeurs.</li>
+                <li>Développement de services backend en Kotlin et gRPC avec MongoDB et SQL, déployés sur GCP avec Kubernetes et Terraform.</li>
+                <li>Traduction des contraintes produit en choix d’architecture explicites et en code maintenable.</li>
               </ul>
-              <div class="cv-tags" aria-label="Technologies">
+              <div class="tags" aria-label="Technologies">
                 <span>Kotlin</span><span>Spring</span><span>gRPC</span><span>GraphQL</span><span>Angular</span><span>Gradle</span><span>GCP</span><span>Kubernetes</span><span>Terraform</span><span>MongoDB</span><span>SQL</span>
               </div>
             </div>
-          </article>
-
-          <article class="cv-entry">
-            <div class="cv-entry-date">
-              <span>Janv. 2020</span>
-              <span>Juin 2020</span>
-            </div>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">
-                <div>
-                  <p class="cv-company">Cisco × UC Santa Cruz · San Jose, USA</p>
-                  <h3>Projet de conception logicielle en partenariat</h3>
-                </div>
-                <span class="cv-entry-index" aria-hidden="true">02</span>
-              </div>
+          </li>
+          <li class="entry">
+            <p class="entry-date mono">Janv. – juin 2020</p>
+            <div>
+              <h3>Projet de conception logicielle en partenariat</h3>
+              <p class="entry-org">Cisco × UC Santa Cruz · San Jose, États-Unis</p>
               <ul>
                 <li>Création d’un SDK pour développeurs de jeux et d’un prototype de routage cloud visant à réduire la latence et les pertes de paquets.</li>
-                <li>Étude des échanges client-serveur et des routes réseau, puis évaluation du routage entre des nœuds AWS et GCP.</li>
+                <li>Analyse des échanges client-serveur et des routes réseau, puis évaluation du routage entre des nœuds AWS et GCP.</li>
               </ul>
-              <div class="cv-tags" aria-label="Technologies">
+              <div class="tags" aria-label="Technologies">
                 <span>Python</span><span>C++</span><span>AWS</span><span>GCP</span><span>Docker</span><span>Elasticsearch</span>
               </div>
             </div>
-          </article>
-
-          <article class="cv-entry">
-            <div class="cv-entry-date">
-              <span>Avr. 2018</span>
-              <span>Juin 2018</span>
-            </div>
-            <div class="cv-entry-body">
-              <div class="cv-entry-title">
-                <div>
-                  <p class="cv-company">Engie Inéo · Pessac, France</p>
-                  <h3>Stage de développement logiciel</h3>
-                </div>
-                <span class="cv-entry-index" aria-hidden="true">03</span>
-              </div>
+          </li>
+          <li class="entry">
+            <p class="entry-date mono">Avr. – juin 2018</p>
+            <div>
+              <h3>Stage de développement logiciel</h3>
+              <p class="entry-org">Engie Inéo · Pessac</p>
               <ul>
-                <li>Conception d’une application Python d’analyse de données pour détecter et visualiser des modèles dans des relevés énergétiques.</li>
+                <li>Application Python d’analyse de données pour détecter et visualiser des motifs dans des relevés énergétiques.</li>
                 <li>Automatisation de la collecte de données authentifiée et de synchronisations FTP périodiques.</li>
               </ul>
-              <div class="cv-tags" aria-label="Technologies">
-                <span>Python</span><span>NumPy</span><span>Matplotlib</span><span>Tkinter</span><span>Beautiful Soup</span>
+              <div class="tags" aria-label="Technologies">
+                <span>Python</span><span>NumPy</span><span>Matplotlib</span><span>Tkinter</span>
               </div>
             </div>
-          </article>
-        </div>
-      </section>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-      <section class="cv-section" id="education" aria-labelledby="education-title">
-        <div class="cv-section-heading">
-          <p class="section-index">02 / Formation</p>
-          <h2 id="education-title">Le génie logiciel, <em>de Bordeaux à la Californie.</em></h2>
+    <section class="section" id="competences" aria-labelledby="competences-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="competences-title">Compétences</h2>
         </div>
+        <dl class="skills">
+          <div><dt>Backend</dt><dd>Kotlin, Java, Spring, gRPC, GraphQL, REST, conception d’API, modélisation métier</dd></div>
+          <div><dt>Données</dt><dd>MongoDB, SQL</dd></div>
+          <div><dt>Cloud &amp; ops</dt><dd>GCP, Kubernetes, Terraform, Docker, GitHub Actions, observabilité, support de production</dd></div>
+          <div><dt>Front &amp; outillage</dt><dd>TypeScript, Angular, Gradle</dd></div>
+          <div><dt>Équipe</dt><dd>Lead technique, décisions d’architecture, revue de code, formation, mentorat, Scrum</dd></div>
+          <div><dt>Domaine</dt><dd>Mobilité électrique, protocole OCPI</dd></div>
+        </dl>
+      </div>
+    </section>
 
-        <div class="cv-education-grid">
-          <article class="cv-panel cv-education-featured">
-            <p class="cv-panel-label">2020 - 2021</p>
-            <h3>Université de Bordeaux</h3>
-            <p>Master 2 Informatique, parcours Génie Logiciel.</p>
-            <span>Informatique quantique · Algorithmique distribuée</span>
-          </article>
-          <article class="cv-panel">
-            <p class="cv-panel-label">2019 - 2020</p>
-            <h3>UC Santa Cruz</h3>
-            <p>Master 1 Informatique, parcours Génie Logiciel.</p>
-            <span>Conception logicielle · Réseaux à faible latence</span>
-          </article>
-          <article class="cv-panel">
-            <p class="cv-panel-label">2018 - 2019</p>
-            <h3>Université de Bordeaux</h3>
-            <p>Licence Informatique.</p>
-          </article>
-          <article class="cv-panel">
-            <p class="cv-panel-label">2016 - 2018</p>
-            <h3>IUT Informatique de Bordeaux</h3>
-            <p>DUT Informatique.</p>
-          </article>
+    <section class="section" id="formation" aria-labelledby="formation-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="formation-title">Formation</h2>
         </div>
-      </section>
+        <ol class="timeline">
+          <li class="entry">
+            <p class="entry-date mono">2020 – 2021</p>
+            <div>
+              <h3>Master 2 Informatique, Génie logiciel</h3>
+              <p class="entry-org">Université de Bordeaux · Informatique quantique, algorithmique distribuée</p>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-date mono">2019 – 2020</p>
+            <div>
+              <h3>Master 1 Informatique, Génie logiciel</h3>
+              <p class="entry-org">UC Santa Cruz, États-Unis · Conception logicielle, réseaux basse latence</p>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-date mono">2018 – 2019</p>
+            <div>
+              <h3>Licence Informatique</h3>
+              <p class="entry-org">Université de Bordeaux</p>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-date mono">2016 – 2018</p>
+            <div>
+              <h3>DUT Informatique</h3>
+              <p class="entry-org">IUT de Bordeaux</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-      <section class="cv-section" id="skills" aria-labelledby="skills-title">
-        <div class="cv-section-heading">
-          <p class="section-index">03 / Compétences</p>
-          <h2 id="skills-title">Un cœur backend avec une <em>culture production.</em></h2>
+    <section class="section" id="open-source" aria-labelledby="oss-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="oss-title">Open source</h2>
         </div>
+        <ul class="cv-oss">
+          <li><a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer">OCPI Toolkit</a><span>Mainteneur · bibliothèque Kotlin pour le protocole OCPI</span></li>
+          <li><a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer">Konstruct</a><span>Créateur · processeur KSP pour kotlinx.serialization</span></li>
+          <li><a href="https://github.com/lilgallon" target="_blank" rel="noreferrer">Mods Minecraft</a><span>Créateur · plus de 800 000 téléchargements</span></li>
+          <li><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Obsidian Jira Issue</a><span>Contributeur · plugin TypeScript</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-        <div class="cv-skills-grid">
-          <article class="cv-skill-card">
-            <p class="cv-panel-label">01 / Backend</p>
-            <h3>Systèmes & architecture</h3>
-            <p>Kotlin, Java, Spring, gRPC, GraphQL, REST, SQL, MongoDB, conception d’API et modélisation métier.</p>
-          </article>
-          <article class="cv-skill-card">
-            <p class="cv-panel-label">02 / Plateforme</p>
-            <h3>Livraison & opérations</h3>
-            <p>GCP, Kubernetes, Terraform, Docker, GitHub Actions, observabilité et support de production.</p>
-          </article>
-          <article class="cv-skill-card">
-            <p class="cv-panel-label">03 / Web & outillage</p>
-            <h3>Interfaces & systèmes de build</h3>
-            <p>TypeScript, Angular, Gradle, GitHub Actions et livraison web de bout en bout.</p>
-          </article>
-          <article class="cv-skill-card">
-            <p class="cv-panel-label">04 / Leadership</p>
-            <h3>Direction & collaboration</h3>
-            <p>Leadership technique, formation, décisions d’architecture, accompagnement, Scrum, français et anglais professionnel.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="cv-section cv-oss-section" id="open-source" aria-labelledby="oss-title">
-        <div class="cv-section-heading">
-          <p class="section-index">04 / Open source</p>
-          <h2 id="oss-title">Un travail d’ingénierie qui reste <em>visible et utile.</em></h2>
-        </div>
-        <div class="cv-oss-grid">
-          <a href="https://github.com/IZIVIA/ocpi-toolkit" target="_blank" rel="noreferrer"><strong>OCPI Toolkit</strong><span>Mainteneur de la bibliothèque Kotlin ↗</span></a>
-          <a href="https://github.com/lilgallon/konstruct" target="_blank" rel="noreferrer"><strong>Konstruct</strong><span>Créateur de la bibliothèque KSP ↗</span></a>
-          <a href="https://github.com/lilgallon" target="_blank" rel="noreferrer"><strong>Mods Minecraft</strong><span>800k+ téléchargements ↗</span></a>
-          <a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer"><strong>Obsidian Jira Issue</strong><span>Contributeur communautaire ↗</span></a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
+  <footer class="site-footer">
+    <div class="container">
       <span>© 2026 Lilian Gallon · <a href="mailto:gallon.lilian@gmail.com">gallon.lilian@gmail.com</a></span>
-      <a href="#top">Retour en haut ↑</a>
-    </footer>
-  </div>
+      <a href="#top">Haut de page ↑</a>
+    </div>
+  </footer>
 </body>
 </html>

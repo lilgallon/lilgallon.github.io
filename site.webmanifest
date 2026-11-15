@@ -3,8 +3,8 @@
   "short_name": "Lilian Gallon",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f6f5ef",
-  "theme_color": "#f6f5ef",
+  "background_color": "#fafaf8",
+  "theme_color": "#fafaf8",
   "icons": [
     {
       "src": "/assets/icon.png",
