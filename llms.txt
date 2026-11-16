@@ -1,0 +1,50 @@
+# Lilian Gallon
+
+> Lilian Gallon is a fullstack engineer and tech lead based in Bordeaux, France, building complete production systems from frontend to infrastructure. At 4SH since 2021, now as tech lead and trainer. Specialised in high-availability platforms and electric mobility (OCPP, OCPI, smart charging, eMSP and CPO operations). Maintainer of the open-source OCPI Toolkit library. Website: https://gallon.dev
+
+## Profile
+
+- Role: Fullstack engineer & tech lead (Développeur fullstack & tech lead)
+- Current position: Tech lead & trainer at 4SH (https://www.4sh.fr/), Bordeaux, since April 2021 (intern → junior → senior → lead developer → tech lead)
+- Location: Bordeaux, France
+- Languages: French (native), English (professional)
+- Education: Master's in Computer Science, Software Engineering, University of Bordeaux and UC Santa Cruz (2016–2021)
+- Contact: gallon.lilian@gmail.com
+- LinkedIn: https://www.linkedin.com/in/lilian-gallon
+- GitHub: https://github.com/lilgallon
+
+## Experience highlights
+
+- Tech lead on a high-availability electric vehicle charging platform running 24/7, with no downtime even during major releases: some modules handle 1,000–2,000 requests per second, with thousands of drivers and internal users and a large set of highly technical features.
+- Leading a team of 5 developers, working with 2 product owners, a project manager and an architect.
+- End-to-end delivery: Angular frontends, Kotlin and gRPC services, Kafka, MongoDB, deployed on GCP with Kubernetes and Terraform.
+- Developer training.
+
+## Skills
+
+- Main stack: Kotlin, Angular, TypeScript, gRPC, Kafka, MongoDB, GCP, Kubernetes, Terraform
+- Also: Java, Spring, GraphQL, REST, SQL, Docker, GitHub Actions
+- Architecture: event-driven and high-availability systems, domain modelling, API design, migration planning
+- AI-assisted development: daily use of coding agents (Claude Code, Codex), agent workflows, reviewing generated code
+- Leadership: technical direction, code review, mentoring, training, Scrum
+
+## Domain expertise: electric mobility
+
+- OCPP and OCPI protocols: communication with charging stations and roaming between operators
+- Smart charging: load management and power allocation
+- eMSP: running the platform and services offered to drivers
+- CPO: charging station supervision and billing
+
+## Open source
+
+- [OCPI Toolkit](https://github.com/IZIVIA/ocpi-toolkit): maintainer. Kotlin library implementing the OCPI protocol (models, validation, protocol logic, transport-independent).
+- [Konstruct](https://github.com/lilgallon/konstruct): creator. KSP processor generating kotlinx.serialization serializers for types you can't annotate.
+- Minecraft mods ([Aim Assistance](https://github.com/lilgallon/AimAssistanceMod), [Horse Stats](https://github.com/lilgallon/HorseStatsMod)): creator, over 800,000 downloads in total.
+- [Obsidian Jira Issue](https://github.com/Obsidian-jira-plugin/obsidian-jira-issue): contributor.
+
+## Pages
+
+- [Home (English)](https://gallon.dev/): overview, services, experience, projects, contact
+- [Accueil (français)](https://gallon.dev/fr/)
+- [CV (English)](https://gallon.dev/cv/)
+- [CV (français)](https://gallon.dev/fr/cv/)

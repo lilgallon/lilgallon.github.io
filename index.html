@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
+  <meta name="author" content="Lilian Gallon">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Lilian Gallon - Fullstack engineer & tech lead">
@@ -30,6 +31,100 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
   <script src="/assets/bg.js" defer></script>
+  <script src="/assets/github-activity.js" defer></script>
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gallon.dev/#website",
+        "url": "https://gallon.dev/",
+        "name": "Lilian Gallon",
+        "inLanguage": [
+          "en",
+          "fr"
+        ],
+        "publisher": {
+          "@id": "https://gallon.dev/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://gallon.dev/#page",
+        "url": "https://gallon.dev/",
+        "name": "Lilian Gallon - Fullstack engineer & tech lead",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://gallon.dev/#website"
+        },
+        "mainEntity": {
+          "@id": "https://gallon.dev/#person"
+        },
+        "dateModified": "2026-11-16"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://gallon.dev/#person",
+        "name": "Lilian Gallon",
+        "givenName": "Lilian",
+        "familyName": "Gallon",
+        "url": "https://gallon.dev/",
+        "image": "https://gallon.dev/assets/icon.png",
+        "email": "mailto:gallon.lilian@gmail.com",
+        "jobTitle": "Fullstack engineer & tech lead",
+        "description": "Fullstack engineer and tech lead in Bordeaux, France. End-to-end systems from frontend to infrastructure, high-availability platforms, electric mobility (OCPP, OCPI).",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "4SH",
+          "url": "https://www.4sh.fr/"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bordeaux",
+          "addressCountry": "FR"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Université de Bordeaux"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "University of California, Santa Cruz"
+          }
+        ],
+        "knowsLanguage": [
+          "fr",
+          "en"
+        ],
+        "knowsAbout": [
+          "Kotlin",
+          "TypeScript",
+          "Angular",
+          "gRPC",
+          "Kafka",
+          "MongoDB",
+          "Google Cloud Platform",
+          "Kubernetes",
+          "Terraform",
+          "Software architecture",
+          "High availability",
+          "Electric vehicle charging",
+          "OCPP",
+          "OCPI",
+          "Smart charging",
+          "AI-assisted software development",
+          "Technical leadership"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/lilian-gallon",
+          "https://github.com/lilgallon"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body id="top">
   <a class="skip-link" href="#content">Skip to content</a>
@@ -211,6 +306,21 @@
             <div class="project-links"><span class="mono">TypeScript · AGPL</span><a href="https://github.com/Obsidian-jira-plugin/obsidian-jira-issue" target="_blank" rel="noreferrer">Source ↗</a></div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section" id="activity" aria-labelledby="activity-title">
+      <div class="container section-grid">
+        <div class="section-head">
+          <h2 id="activity-title">Recent activity</h2>
+          <p>My latest public activity on GitHub, updated live.</p>
+        </div>
+        <div data-github-activity="lilgallon">
+          <ol class="activity" aria-live="polite">
+            <li class="activity-status">Loading activity…</li>
+          </ol>
+          <a class="more-link" href="https://github.com/lilgallon" target="_blank" rel="noreferrer">All activity on GitHub ↗</a>
+        </div>
       </div>
     </section>
 

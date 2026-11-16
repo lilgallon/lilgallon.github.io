@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://gallon.dev/sitemap.xml
+# AI-readable summary: https://gallon.dev/llms.txt

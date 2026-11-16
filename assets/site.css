@@ -535,6 +535,58 @@ button:focus-visible {
   text-decoration: underline;
 }
 
+/* GitHub activity */
+
+.activity {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.activity-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.25rem 1.5rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.975rem;
+}
+
+.activity-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.activity-item p {
+  overflow-wrap: anywhere;
+}
+
+.activity-item .mono {
+  font-size: 0.875rem;
+}
+
+.activity-item a {
+  color: var(--ink);
+  text-decoration-color: var(--line-strong);
+}
+
+.activity-item a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.activity-date {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.activity-status {
+  color: var(--muted);
+  font-size: 0.975rem;
+}
+
 /* Projects */
 
 .projects {
@@ -802,7 +854,8 @@ button:focus-visible {
   }
 
   .entry,
-  .skills div {
+  .skills div,
+  .activity-item {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.35rem;
   }
