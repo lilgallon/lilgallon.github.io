@@ -306,6 +306,44 @@ button:focus-visible {
   font-weight: 600;
 }
 
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.identity .kicker {
+  margin: 0;
+}
+
+.identity-name {
+  color: var(--ink);
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.avatar {
+  display: block;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  outline: 1px solid var(--line);
+  outline-offset: -1px;
+}
+
+.identity-cv {
+  gap: 1.25rem;
+  margin-bottom: 0;
+}
+
+.identity-cv .avatar {
+  width: 88px;
+  height: 88px;
+}
+
 .facts {
   margin: 0;
   padding: 1.5rem;
@@ -964,6 +1002,12 @@ button:focus-visible {
   .facts {
     padding: 0;
     border: 0;
+  }
+
+  .identity-cv .avatar {
+    width: 20mm;
+    height: 20mm;
+    outline: 0;
   }
 
   .facts div {
